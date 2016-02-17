@@ -174,4 +174,14 @@ This Tutorial uses a Blended Image that looks like a circle with light blending 
 </p></td></tr>
 
 
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2019%20-%20Alpha%20Mapping%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 19: Alpha Mapping
+</h4><i>
+-  1444 lines   - (C++: 828 FPS  C#: 838 FPS)
+</i><br /><p>
+This Tutorial uses a Texture to bring out the effect of edged on a 3D rotating cube using SharpDX.
+</p></td></tr>
+
+
 </table>
