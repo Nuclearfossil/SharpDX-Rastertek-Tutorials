@@ -51,4 +51,14 @@ This Tutorial loads a rotating purple trangle that diffuses lighting as it rotat
 </p></td></tr>
 
 
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%207%20%20-%20%203D%20Mode%20lRendering%20Sm.png" width="100%"></td><td valign="top"><h4>
+Tutorial 7: 3D Model Rendering
+</h4><i>
+-  1241 lines   - (C++: 1386 FPS C#: 1400 FPS)
+</i><br /><p>
+This Tutorial renders a cube and rotates it on the screen using SharpDX.
+</p></td></tr>
+
+
 </table>
