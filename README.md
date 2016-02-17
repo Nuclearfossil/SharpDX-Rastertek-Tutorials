@@ -164,4 +164,14 @@ This Tutorial shows how to layer multiple textures on top of each other on a 3D 
 </p></td></tr>
 
 
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2018%20-%20Light%20Maps%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 18: Light Maps
+</h4><i>
+-  1357 lines - (C++: 953 FPS C#: 960 FPS)
+</i><br /><p>
+This Tutorial uses a Blended Image that looks like a circle with light blending towards the center or the circel, and with that texture, applies the lighting effect through HLSL against a flat square giving the effect of a Sphere using SharpDX.
+</p></td></tr>
+
+
 </table>
