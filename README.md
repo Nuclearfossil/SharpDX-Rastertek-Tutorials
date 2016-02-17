@@ -180,7 +180,17 @@ Tutorial 19: Alpha Mapping
 </h4><i>
 -  1444 lines   - (C++: 828 FPS  C#: 838 FPS)
 </i><br /><p>
-This Tutorial uses a Texture to bring out the effect of edged on a 3D rotating cube using SharpDX.
+This Tutorial uses Alpha blending meaning that two Textures are blended together along a 3D objects verticies using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2020%20-%20Bump%20Mapping%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 20: Bump Mapping
+</h4><i>
+-  1691 lines   - (C++: 962 FPS  C#: 975 FPS)
+</i><br /><p>
+This Tutorial uses a Texture for placing an edge effect and how lighting reflects against those edges on a 3D rotating cube using SharpDX.
 </p></td></tr>
 
 
