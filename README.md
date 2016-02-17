@@ -69,4 +69,15 @@ This Tutorial Loads a Windows Form that allows you to Open an .Obj file nad it s
 </p></td></tr>
 
 
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%209%20%20-%20%20Ambient%20Lighting%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 9: Ambient Lighting
+</h4><i>
+-  1248 lines   - (C++: 1387 FPS C#: 1400 FPS)
+</i><br /><p>
+This Tutorial renders a cube and rotates it on the screen with ambiant lighting using SharpDX.
+</p></td></tr>
+
+
+
 </table>
