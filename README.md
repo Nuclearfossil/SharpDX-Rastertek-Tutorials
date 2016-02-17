@@ -4,92 +4,50 @@ This is a C# repository based off the Rastertek Tutorial Series posted on www.Ra
 
 ** Notes:  All Screenshots were taken from this codes execution in C# so what you see is what you will get!. As well as All Performance Test Results in Frames Per Second, were run off my Desktop HP System., that only has DirectX 10.1, and all screen sizes were recorded in 800x600 for both the C++ and C# implementations.
 
-<table>
-<tr>
-<td width="40%">
-<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%202%20%20-%20%20Creating%20A%20Framework%20And%20Window%20Sm.png" width="100%">
-</td>
-<td valign="top">
-<h4>
+<table><tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%202%20%20-%20%20Creating%20A%20Framework%20And%20Window%20Sm.png" width="100%"></td><td valign="top"><h4>
 Tutorial 2: Creating a Framework and Window
-</h4>
-<i>
+</h4><i>
 -   278 lines   - (C++: 0 FPS C#: 0 FPS)
-</i><br />
-<p>
+</i><br /><p>
 This Tutorial just displays a blank Black screen for only 1 second, since its only a borderless Windows Form.
-</p>
-</td>
-</tr>
+</p></td></tr>
 
-<tr>
-<td width="40%">
-<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%203%20%20-%20%20Initializing%20DirectX%2011%20Sm.png" width="100%">
-</td>
-<td valign="top">
-<h4>
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%203%20%20-%20%20Initializing%20DirectX%2011%20Sm.png" width="100%"></td><td valign="top"><h4>
 Tutorial 3: Initializing DirectX 11.
-</h4>
-<i>
+</h4><i>
 -   563 lines   - (C++: 2255 FPS C#: 2290 FPS)
-</i><br />
-<p>
+</i><br /><p>
 This Tutorial just displays a blank Gray screen using a Windows Form utilizing DirectX 11 in SharpDX.
-</p>
-</td>
-</tr>
+</p></td></tr>
 
-<tr>
-<td width="40%">
-<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%204%20%20-%20%20Buffers%2C%20Shaders%2C%20And%20HLSL%20Sm.png" width="100%">
-</td>
-<td valign="top">
-<h4>
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%204%20%20-%20%20Buffers%2C%20Shaders%2C%20And%20HLSL%20Sm.png" width="100%"></td><td valign="top"><h4>
 Tutorial 4: Buffers, Shaders, and HLSL
-</h4>
-<i>
+</h4><i>
 -   997 lines   - (C++: 1482 FPS C#: 1488 FPS)
-</i><br />
-<p>
+</i><br /><p>
 This Tutorial loads a green trangle using Vertex Buffers Shaders nad HLSL in SharpDX.
-</p>
-</td>
-</tr>
+</p></td></tr>
 
-<tr>
-<td width="40%">
-<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%205%20%20-%20%20Texturing%20Sm.png" width="100%">
-</td>
-<td valign="top">
-<h4>
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%205%20%20-%20%20Texturing%20Sm.png" width="100%"></td><td valign="top"><h4>
 Tutorial 5: Texturing
-</h4>
-<i>
+</h4><i>
 -  1081 lines   - (C++: 1436 FPS C#: 1457 FPS)
-</i><br />
-<p>
+</i><br /><p>
+This tutorial loads a triangle and applied a Texture on top of it using SharpDX.
+</p></td></tr>
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%206%20%20-%20%20Diffuse%20Lighting%20Sm.png" width="100%"></td><td valign="top"><h4>
+Tutorial 6: Diffuse Lighting
+</h4><i>
+-  1203 lines   - (C++: 1445 FPS C#: 1493 FPS)
+</i><br /><p>
 This Tutorial loads a rotating purple trangle that diffuses lighting as it rotates using SharpDX.
-</p>
-</td>
-</tr>
+</p></td></tr>
 
-<tr>
-<td width="40%">
-<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%204%20%20-%20%20Buffers%2C%20Shaders%2C%20And%20HLSL%20Sm.png" width="100%">
-</td>
-<td valign="top">
-<h4>
-
-</h4>
-<i>
-
-</i><br />
-<p>
- using SharpDX.
-</p>
-</td>
-</tr>
 
 </table>
-
-
