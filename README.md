@@ -120,7 +120,7 @@ Tutorial 13: Direct Input
 </h4><i>
 -  1763 lines   - (C++: 1443 FPS C#: 1492 FPS)
 </i><br /><p>
-This Tutorial shows you how to utilize DirectInput, a now depricated API, however alot of examples use it, so this is what we are implementing here accepting input from both the keyboard and the mouse using SharpDX.
+This Tutorial shows you how to utilize DirectInput, a now depricated API, however alot of examples use it, so this is what we are implementing here accepting input from both the keyboard and the mouse using SharpDX. This functionality allows us to use the Arrow Keys and A for UP and Z for down & PagUp for Looking up nad PagDown for looking down, and we use this in most of the Tutorials to follow.
 </p></td></tr>
 
 
@@ -131,6 +131,36 @@ Tutorial 14: Direct Sound
 -  1111 lines   - (C++: 2267 FPS C#: 2288 FPS)
 </i><br /><p>
 This Tutorial shows you how to utilize DirectSound, also now depricated, however examples use it, so this is what we are implementing here playing a WAVE file using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2015%20-%20FPS%20CPU%20Usage%20And%20Timers%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 15: FPS, CPU Usage, and Timers
+</h4><i>
+-  1875 lines   - (C++: 1466 FPS C#: 1466 FPS)
+</i><br /><p>
+This Tutorial implementation uses the FPS Counter that is present for displaying the Frames Per Second on screen in the Rastertek tutorials, as well as the CPU Usage and the timer class using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2016%20-%20Frustum%20Culling%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 16: Frustum Culling
+</h4><i>
+-  2608 lines   - (C++: 340 FPS  C#: 343 FPS)  -  Render Count 21
+</i><br /><p>
+This Tutorial shows how you can keep track of the number of 3D object within your current cameras' view using SharpDX. The above FPS statisics was rendered with 21 objects showing on screen.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2017%20-%20MultiTexturing%20And%20TextureArrays%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 17: Multitexturing and Texture Arrays 
+</h4><i>
+-  1409 lines   - (C++: 975 FPS  C#: 962 FPS)
+</i><br /><p>
+This Tutorial shows how to layer multiple textures on top of each other on a 3D Object using SharpDX.
 </p></td></tr>
 
 
