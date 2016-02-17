@@ -98,6 +98,14 @@ This Tutorial renders simple 2D Texture on the screen using SharpDX.
 </p></td></tr>
 
 
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2012%20-%20Font%20Engine%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 12: Font Engine
+</h4><i>
+-  1208 lines   - (C++: 1375 FPS C#: 1395 FPS)
+</i><br /><p>
+This Tutorial renders a Font object that really is an amage placed on a square vector facing the screen to display as Text using SharpDX.
+</p></td></tr>
 
 
 </table>
