@@ -14,7 +14,39 @@ This is a C# repository based off the Rastertek Tutorial Series posted on www.Ra
 Tutorial 3: Initializing DirectX 11.</h4>
 <i>
 -   563 lines   - (C++: 2255 FPS C#: 2290 FPS)
--   </i><br />
+</i><br />
+<p>
+This Tutorial just displays a blank Gray screen using a Windows Form utilizing DirectX 11 in SharpDX.
+</p>
+</td>
+</tr>
+
+<tr>
+<td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%205%20%20-%20%20Texturing%20Sm.png" width="100%">
+</td>
+<td valign="top">
+<h4>
+Tutorial 3: Initializing DirectX 11.</h4>
+<i>
+-   563 lines   - (C++: 2255 FPS C#: 2290 FPS)
+</i><br />
+<p>
+This Tutorial just displays a blank Gray screen using a Windows Form utilizing DirectX 11 in SharpDX.
+</p>
+</td>
+</tr>
+
+<tr>
+<td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%205%20%20-%20%20Texturing%20Sm.png" width="100%">
+</td>
+<td valign="top">
+<h4>
+Tutorial 3: Initializing DirectX 11.</h4>
+<i>
+-   563 lines   - (C++: 2255 FPS C#: 2290 FPS)
+</i><br />
 <p>
 This Tutorial just displays a blank Gray screen using a Windows Form utilizing DirectX 11 in SharpDX.
 </p>
