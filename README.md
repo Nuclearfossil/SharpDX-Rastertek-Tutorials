@@ -88,5 +88,16 @@ This Tutorial renders a cube and rotates it on the screen with specular lighting
 </p></td></tr>
 
 
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2011%20-%202D%20Rendering%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 11: 2D Rendering
+</h4><i>
+-  1208 lines   - (C++: 1375 FPS C#: 1395 FPS)
+</i><br /><p>
+This Tutorial renders simple 2D Texture on the screen using SharpDX.
+</p></td></tr>
+
+
+
 
 </table>
