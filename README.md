@@ -194,4 +194,14 @@ This Tutorial uses a Texture for placing an edge effect and how lighting reflect
 </p></td></tr>
 
 
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2021%20-%20Specular%20Mapping%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 21: Specular Mapping
+</h4><i>
+-  1785 lines   - (C++: 840 FPS  C#: 852 FPS)
+</i><br /><p>
+This Tutorial uses a Texture map that following the edges of the cubes smaller squares and the bulging for each small square on a rotating 3D Cubeusing SharpDX.
+</p></td></tr>
+
+
 </table>
