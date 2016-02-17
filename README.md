@@ -2,7 +2,7 @@
 This is a C# repository based off the Rastertek Tutorial Series posted on www.Rastertek.com, is a literal conversion of the C++ iimplementations posted on the WebSite, to a .NET C# based implementation using SharpDX 2.6.3, DirectX 11 &amp; WinForms..
 
 
-** Note:  All Performance Test Results in Frames Per Second, were run off my Desktop HP System., that only has DirectX 10.1, and all screen sizes were recorded in 800x600 for both the C++ and C# implementations.
+** Notes:  All Screenshots were taken from this codes execution in C# so what you see is what you will get!. As well as All Performance Test Results in Frames Per Second, were run off my Desktop HP System., that only has DirectX 10.1, and all screen sizes were recorded in 800x600 for both the C++ and C# implementations.
 
 <table>
 <tr>
@@ -55,6 +55,41 @@ This Tutorial loads a green trangle using Vertex Buffers Shaders nad HLSL in Sha
 </p>
 </td>
 </tr>
+
+<tr>
+<td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%205%20%20-%20%20Texturing%20Sm.png" width="100%">
+</td>
+<td valign="top">
+<h4>
+Tutorial 5: Texturing
+</h4>
+<i>
+-  1081 lines   - (C++: 1436 FPS C#: 1457 FPS)
+</i><br />
+<p>
+This Tutorial loads a rotating purple trangle that diffuses lighting as it rotates using SharpDX.
+</p>
+</td>
+</tr>
+
+<tr>
+<td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%204%20%20-%20%20Buffers%2C%20Shaders%2C%20And%20HLSL%20Sm.png" width="100%">
+</td>
+<td valign="top">
+<h4>
+
+</h4>
+<i>
+
+</i><br />
+<p>
+ using SharpDX.
+</p>
+</td>
+</tr>
+
 </table>
 
 
