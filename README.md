@@ -69,7 +69,7 @@ This Tutorial renders a cube and rotates it on the screen using SharpDX.
 <tr><td width="40%">
 </td><td valign="top"><h4>
 Tutorial 8: Loading Maya 2011 Models
-</h4><br /><p>
+</h4><p>
 This Tutorial Loads a Windows Form that allows you to Open an .Obj file nad it saves it out as a .txt file formatted for 3D model importing in SharpDX.
 </p></td></tr>
 
