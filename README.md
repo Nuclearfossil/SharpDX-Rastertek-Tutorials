@@ -120,7 +120,7 @@ Tutorial 13: Direct Input
 </h4><i>
 -  1763 lines   - (C++: 1443 FPS C#: 1492 FPS)
 </i><br /><p>
-This Tutorial shows you how to utilize DirectInput, a now depricated API, however alot of examples use it, so this is what we are implementing here accepting input from both the keyboard and the mouse using SharpDX. This functionality allows us to use the Arrow Keys and A for UP and Z for down & PagUp for Looking up nad PagDown for looking down, and we use this in most of the Tutorials to follow.
+This Tutorial shows you how to utilize DirectInput, now depricated, however examples use it, so this is what we are implementing here accepting input from both the keyboard and the mouse using SharpDX. This functionality allows us to use the Arrow Keys and A for UP and Z for down & PagUp for Looking up nad PagDown for looking down, and we use this in most of the Tutorials to follow.
 </p></td></tr>
 
 
