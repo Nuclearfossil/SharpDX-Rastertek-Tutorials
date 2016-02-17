@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Series_1____Terrain_Tutorial_10___Sky_Domes_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Terrain Tutorial 10 - Sky Domes Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Terrain_Tutorial_11___Bitmap_Clouds_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Terrain Tutorial 11 - Bitmap Clouds Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Terrain_Tutorial_12___Perturbed_Clouds_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Terrain Tutorial 12 - Perturbed Clouds Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Terrain_Tutorial_13___Terrain_Detail_Mapping_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Terrain Tutorial 13 - Terrain Detail Mapping Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Terrain_Tutorial_14___Slope_Based_Texturing_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Terrain Tutorial 14 - Slope Based Texturing Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Terrain_Tutorial_15___Terrain_Bump_Mapping_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Terrain Tutorial 15 - Terrain Bump Mapping Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Terrain_Tutorial_16___Small_Body_Water_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Terrain Tutorial 16 - Small Body Water Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Terrain_Tutorial_17___Terrain_Texture_Layers_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Terrain Tutorial 17 - Terrain Texture Layers Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Terrain_Tutorial_19___Foliages_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Terrain Tutorial 19 - Foliages Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Terrain_Tutorial_1_____Grid_and_Camera_Movement_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Terrain Tutorial 1  -  Grid and Camera Movement Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Terrain_Tutorial_2_____Height_Mapst_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Terrain Tutorial 2  -  Height Mapst Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Terrain_Tutorial_3_____Terrain_Lightingt_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Terrain Tutorial 3  -  Terrain Lightingt Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Terrain_Tutorial_4_____Terrain_Texturing_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Terrain Tutorial 4  -  Terrain Texturing Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Terrain_Tutorial_5_____Quad_Trees_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Terrain Tutorial 5  -  Quad Trees Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Terrain_Tutorial_6_____Height_Based_Movement_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Terrain Tutorial 6  -  Height Based Movement Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Terrain_Tutorial_7_____Color_Mapped_Terrain_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Terrain Tutorial 7  -  Color Mapped Terrain Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Terrain_Tutorial_8_____Terrain_Mini_Maps_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Terrain Tutorial 8  -  Terrain Mini-Maps Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Terrain_Tutorial_9_____Terrain_Blending_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Terrain Tutorial 9  -  Terrain Blending Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_10___Specular_Lighting_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 10 - Specular Lighting Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_11___2D_Rendering_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 11 - 2D Rendering Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_12___Font_Engine_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 12 - Font Engine Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_13___Direct_Input_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 13 - Direct Input Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_14___Direct_Sound_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 14 - Direct Sound Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_15___FPS_CPU_Usage_And_Timers_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 15 - FPS CPU Usage And Timers Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_16___Frustum_Culling_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 16 - Frustum Culling Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_17___MultiTexturing_And_TextureArrays_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 17 - MultiTexturing And TextureArrays Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_18___Light_Maps_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 18 - Light Maps Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_19___Alpha_Mapping_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 19 - Alpha Mapping Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_20___Bump_Mapping_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 20 - Bump Mapping Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_21___Specular_Mapping_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 21 - Specular Mapping Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_22___Render_To_Texture_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 22 - Render To Texture Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_23___Fog_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 23 - Fog Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_24___Clipping_Planes_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 24 - Clipping Planes Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_25___Texture_Translation_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 25 - Texture Translation Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_26___Transparency_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 26 - Transparency Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_27___Reflection_Projective_Texturing_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 27 - Reflection Projective Texturing Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_28___Screen_Fades_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 28 - Screen Fades Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_29___Water_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 29 - Water Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_2_____Creating_A_Framework_And_Window_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 2  -  Creating A Framework And Window Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_30___Multiple_Point_Lights_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 30 - Multiple Point Lights Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_31___3D_Sound_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 31 - 3D Sound Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_32___Glass_And_Ice_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 32 - Glass And Ice Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_33___Fire_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 33 - Fire Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_34___Billboarding_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 34 - Billboarding Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_35___Depth_Buffer_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 35 - Depth Buffer Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_36___Blur_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 36 - Blur Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_37___Instancing_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 37 - Instancing Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_38___Hardware_Tessellation_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 38 - Hardware Tessellation Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_39___Particle_Systems_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 39 - Particle Systems Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_3_____Initializing_DirectX_11_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 3  -  Initializing DirectX 11 Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_40___Shadow_Mapping_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 40 - Shadow Mapping Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_41___Multiple_Light_Shadow_Mapping_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 41 - Multiple Light Shadow Mapping Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_42___Soft_Shadows_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 42 - Soft Shadows Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_43___Projective_Texturing_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 43 - Projective Texturing Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_44___Projected_Light_Maps_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 44 - Projected Light Maps Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_45___Managing_Multiple_Shaders_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 45 - Managing Multiple Shaders Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_46___Glow_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 46 - Glow Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_47___Picking_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 47 - Picking Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_48___Directional_Shadow_Maps_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 48 - Directional Shadow Maps Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_49___Shadow_Mapping_And_Transparency_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 49 - Shadow Mapping And Transparency Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_4_____Buffers__Shaders__And_HLSL_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 4  -  Buffers, Shaders, And HLSL Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_50___Deferred_Shading_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 50 - Deferred Shading Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_5_____Texturing_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 5  -  Texturing Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_6_____Diffuse_Lighting_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 6  -  Diffuse Lighting Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_7_____3D_Mode_lRendering_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 7  -  3D Mode lRendering Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Series_1____Tutorial_9_____Ambient_Lighting_Sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Series 1 -- Tutorial 9  -  Ambient Lighting Sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

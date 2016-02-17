@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FDCB6D84-B1F3-4F65-AC64-112999F7A285}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SharpDXWinForm</RootNamespace>
+    <AssemblyName>SharpDXWinForm</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>SharpDXWinForm0.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PerfTestResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerfTestResultForm.Designer.cs">
+      <DependentUpon>PerfTestResultForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SharpDXRastertekTutorialsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SharpDXRastertekTutorialsForm.Designer.cs">
+      <DependentUpon>SharpDXRastertekTutorialsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PerfTestResultForm.resx">
+      <DependentUpon>PerfTestResultForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SharpDXRastertekTutorialsForm.resx">
+      <DependentUpon>SharpDXRastertekTutorialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DSharpDXRastertek\DSharpDXRastertek.csproj">
+      <Project>{bd79af39-95fd-4bac-9c99-b42e98890abf}</Project>
+      <Name>DSharpDXRastertek</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Terrain Tutorial 1  -  Grid and Camera Movement Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Terrain Tutorial 2  -  Height Mapst Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Terrain Tutorial 3  -  Terrain Lightingt Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Terrain Tutorial 4  -  Terrain Texturing Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Terrain Tutorial 5  -  Quad Trees Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Terrain Tutorial 6  -  Height Based Movement Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Terrain Tutorial 7  -  Color Mapped Terrain Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Terrain Tutorial 8  -  Terrain Mini-Maps Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Terrain Tutorial 9  -  Terrain Blending Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Terrain Tutorial 10 - Sky Domes Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Terrain Tutorial 11 - Bitmap Clouds Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Terrain Tutorial 12 - Perturbed Clouds Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Terrain Tutorial 13 - Terrain Detail Mapping Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Terrain Tutorial 14 - Slope Based Texturing Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Terrain Tutorial 15 - Terrain Bump Mapping Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Terrain Tutorial 16 - Small Body Water Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Terrain Tutorial 17 - Terrain Texture Layers Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Terrain Tutorial 19 - Foliages Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 2  -  Creating A Framework And Window Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 3  -  Initializing DirectX 11 Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 4  -  Buffers, Shaders, And HLSL Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 5  -  Texturing Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 6  -  Diffuse Lighting Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 7  -  3D Mode lRendering Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 9  -  Ambient Lighting Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 10 - Specular Lighting Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 11 - 2D Rendering Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 12 - Font Engine Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 13 - Direct Input Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 14 - Direct Sound Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 15 - FPS CPU Usage And Timers Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 16 - Frustum Culling Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 17 - MultiTexturing And TextureArrays Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 18 - Light Maps Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 19 - Alpha Mapping Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 20 - Bump Mapping Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 21 - Specular Mapping Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 22 - Render To Texture Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 23 - Fog Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 24 - Clipping Planes Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 25 - Texture Translation Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 26 - Transparency Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 27 - Reflection Projective Texturing Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 28 - Screen Fades Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 29 - Water Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 30 - Multiple Point Lights Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 31 - 3D Sound Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 32 - Glass And Ice Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 33 - Fire Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 34 - Billboarding Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 35 - Depth Buffer Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 36 - Blur Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 37 - Instancing Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 38 - Hardware Tessellation Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 39 - Particle Systems Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 40 - Shadow Mapping Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 41 - Multiple Light Shadow Mapping Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 42 - Soft Shadows Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 43 - Projective Texturing Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 44 - Projected Light Maps Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 45 - Managing Multiple Shaders Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 46 - Glow Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 47 - Picking Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 48 - Directional Shadow Maps Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 49 - Shadow Mapping And Transparency Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Series 1 -- Tutorial 50 - Deferred Shading Sm.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

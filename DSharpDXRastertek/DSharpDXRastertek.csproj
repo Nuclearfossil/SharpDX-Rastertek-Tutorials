@@ -1,0 +1,1931 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD79AF39-95FD-4BAC-9C99-B42E98890ABF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DSharpDXRastertek</RootNamespace>
+    <AssemblyName>DSharpDXRastertek</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SharpDX">
+      <HintPath>$(SharpDXPackageBinDir)\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.D3DCompiler">
+      <HintPath>$(SharpDXPackageBinDir)\SharpDX.D3DCompiler.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11">
+      <HintPath>$(SharpDXPackageBinDir)\SharpDX.Direct3D11.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DirectInput">
+      <HintPath>$(SharpDXPackageBinDir)\SharpDX.DirectInput.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DirectSound">
+      <HintPath>$(SharpDXPackageBinDir)\SharpDX.DirectSound.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI">
+      <HintPath>$(SharpDXPackageBinDir)\SharpDX.DXGI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Series1\Tut02\Graphics\DGraphicsClass1.cs" />
+    <Compile Include="Series1\Tut02\Input\DInputClass1.cs" />
+    <Compile Include="Series1\Tut02\System\DSystemClass1.cs" />
+    <Compile Include="Series1\Tut02\System\DSystemConfigurationClass1.cs" />
+    <Compile Include="Series1\Tut02\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut03\Graphics\DDX11Class1.cs" />
+    <Compile Include="Series1\Tut03\Graphics\DGraphicsClass2.cs" />
+    <Compile Include="Series1\Tut03\Input\DInputClass1.cs" />
+    <Compile Include="Series1\Tut03\System\DSystemClass1.cs" />
+    <Compile Include="Series1\Tut03\System\DSystemConfigurationClass2.cs" />
+    <Compile Include="Series1\Tut03\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut04\Graphics\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut04\Graphics\DDX11Class2.cs" />
+    <Compile Include="Series1\Tut04\Graphics\DGraphicsClass3.cs" />
+    <Compile Include="Series1\Tut04\Graphics\DModelClass1.cs" />
+    <Compile Include="Series1\Tut04\Input\DInputClass1.cs" />
+    <Compile Include="Series1\Tut04\Graphics\DColorShaderClass1.cs" />
+    <Compile Include="Series1\Tut04\System\DSystemClass2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Series1\Tut04\System\DSystemConfigurationClass3.cs" />
+    <Compile Include="Series1\Tut04\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut05\Graphics\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut05\Graphics\DDX11Class2.cs" />
+    <Compile Include="Series1\Tut05\Graphics\DGraphicsClass4.cs" />
+    <Compile Include="Series1\Tut05\Graphics\DModelClass2.cs" />
+    <Compile Include="Series1\Tut05\Graphics\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut05\Graphics\DTextureShaderClass1.cs" />
+    <Compile Include="Series1\Tut05\Input\DInputClass1.cs" />
+    <Compile Include="Series1\Tut05\System\DSystemClass2.cs" />
+    <Compile Include="Series1\Tut05\System\DSystemConfigurationClass4.cs" />
+    <Compile Include="Series1\Tut05\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut06\Graphics\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut06\Graphics\DDX11Class2.cs" />
+    <Compile Include="Series1\Tut06\Graphics\DGraphicsClass5.cs" />
+    <Compile Include="Series1\Tut06\Graphics\DLightClass1.cs" />
+    <Compile Include="Series1\Tut06\Graphics\DLightShaderClass1.cs" />
+    <Compile Include="Series1\Tut06\Graphics\DModelClass3.cs" />
+    <Compile Include="Series1\Tut06\Graphics\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut06\Input\DInputClass1.cs" />
+    <Compile Include="Series1\Tut06\System\DSystemClass2.cs" />
+    <Compile Include="Series1\Tut06\System\DSystemConfigurationClass4.cs" />
+    <Compile Include="Series1\Tut06\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut07\Graphics\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut07\Graphics\DDX11Class2.cs" />
+    <Compile Include="Series1\Tut07\Graphics\DGraphicsClass6.cs" />
+    <Compile Include="Series1\Tut07\Graphics\DLightClass1.cs" />
+    <Compile Include="Series1\Tut07\Graphics\DLightShaderClass1.cs" />
+    <Compile Include="Series1\Tut07\Graphics\DModelClass4..cs" />
+    <Compile Include="Series1\Tut07\Graphics\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut07\Input\DInputClass1.cs" />
+    <Compile Include="Series1\Tut07\System\DSystemClass2.cs" />
+    <Compile Include="Series1\Tut07\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut07\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut08\DFaceClass1.cs" />
+    <Compile Include="Series1\Tut08\DNormalClass1.cs" />
+    <Compile Include="Series1\Tut08\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut08\DVertexClass1.cs" />
+    <Compile Include="Series1\Tut08\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series1\Tut08\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Series1\Tut08\OBJImporterClass1.cs" />
+    <Compile Include="Series1\Tut09\Graphics\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut09\Graphics\DDX11Class2.cs" />
+    <Compile Include="Series1\Tut09\Graphics\DGraphicsClass7.cs" />
+    <Compile Include="Series1\Tut09\Graphics\DLightClass2.cs" />
+    <Compile Include="Series1\Tut09\Graphics\DLightShaderClass2.cs" />
+    <Compile Include="Series1\Tut09\Graphics\DModelClass4..cs" />
+    <Compile Include="Series1\Tut09\Graphics\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut09\Input\DInputClass1.cs" />
+    <Compile Include="Series1\Tut09\System\DSystemClass2.cs" />
+    <Compile Include="Series1\Tut09\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut09\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut10\Graphics\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut10\Graphics\DDX11Class2.cs" />
+    <Compile Include="Series1\Tut10\Graphics\DGraphicsClass8.cs" />
+    <Compile Include="Series1\Tut10\Graphics\DLightClass3.cs" />
+    <Compile Include="Series1\Tut10\Graphics\DLightShaderClass3.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Series1\Tut10\Graphics\DModelClass4..cs" />
+    <Compile Include="Series1\Tut10\Graphics\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut10\Input\DInputClass1.cs" />
+    <Compile Include="Series1\Tut10\System\DSystemClass2.cs" />
+    <Compile Include="Series1\Tut10\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut10\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut11\Graphics\DBitmapClass1.cs" />
+    <Compile Include="Series1\Tut11\Graphics\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut11\Graphics\DDX11Class3.cs" />
+    <Compile Include="Series1\Tut11\Graphics\DGraphicsClass9.cs" />
+    <Compile Include="Series1\Tut11\Graphics\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut11\Graphics\DTextureShaderClass2.cs" />
+    <Compile Include="Series1\Tut11\Input\DInputClass1.cs" />
+    <Compile Include="Series1\Tut11\System\DSystemClass2.cs" />
+    <Compile Include="Series1\Tut11\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut11\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut12\Graphics\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut12\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut12\Graphics\DGraphicsClass10..cs" />
+    <Compile Include="Series1\Tut12\Graphics\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut12\Graphics\TextFont\DFontClass1.cs" />
+    <Compile Include="Series1\Tut12\Graphics\TextFont\DFontShaderClass1.cs" />
+    <Compile Include="Series1\Tut12\Graphics\TextFont\DTextClass1.cs" />
+    <Compile Include="Series1\Tut12\Input\DInputClass1.cs" />
+    <Compile Include="Series1\Tut12\System\DSystemClass2.cs" />
+    <Compile Include="Series1\Tut12\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut12\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut13\Graphics\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut13\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut13\Graphics\DGraphicsClass11.cs" />
+    <Compile Include="Series1\Tut13\Graphics\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut13\Graphics\TextFont\DFontClass1.cs" />
+    <Compile Include="Series1\Tut13\Graphics\TextFont\DFontShaderClass1.cs" />
+    <Compile Include="Series1\Tut13\Graphics\TextFont\DTextClass2.cs" />
+    <Compile Include="Series1\Tut13\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut13\System\DSystemClass3.cs" />
+    <Compile Include="Series1\Tut13\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut13\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut14\Graphics\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut14\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut14\Graphics\DGraphicsClass11.cs" />
+    <Compile Include="Series1\Tut14\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut14\Sound\DSoundClass1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Series1\Tut14\Sound\DWaveSoundClass1.cs" />
+    <Compile Include="Series1\Tut14\System\DSystemClass4.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Series1\Tut14\System\DSystemConfigurationClass5.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Series1\Tut14\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut15\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut15\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut15\Graphics\DGraphicsClass11.cs" />
+    <Compile Include="Series1\Tut15\Graphics\Dara\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut15\Graphics\Dara\DFontClass1.cs" />
+    <Compile Include="Series1\Tut15\Graphics\Shaders\DFontShaderClass1.cs" />
+    <Compile Include="Series1\Tut15\Graphics\Models\DTextClass2.cs" />
+    <Compile Include="Series1\Tut15\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut15\System\DCPUClass1.cs" />
+    <Compile Include="Series1\Tut15\System\DFPSClass1.cs" />
+    <Compile Include="Series1\Tut15\System\DSystemClass5.cs" />
+    <Compile Include="Series1\Tut15\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut15\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut16\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut16\Graphics\Data\DFontClass1.cs" />
+    <Compile Include="Series1\Tut16\Graphics\Data\DFrustumClass1.cs" />
+    <Compile Include="Series1\Tut16\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\Tut16\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut16\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut16\Graphics\DGraphicsClass12.cs" />
+    <Compile Include="Series1\Tut16\Graphics\Models\DModelClass4..cs" />
+    <Compile Include="Series1\Tut16\Graphics\Models\DModellistClass1.cs" />
+    <Compile Include="Series1\Tut16\Graphics\Models\DTextClass2.cs" />
+    <Compile Include="Series1\Tut16\Graphics\Shaders\DFontShaderClass1.cs" />
+    <Compile Include="Series1\Tut16\Graphics\Shaders\DLightShaderClass3.cs" />
+    <Compile Include="Series1\Tut16\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut16\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\Tut16\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut16\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut16\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut17\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut17\Graphics\Data\DTextureArrayClass1.cs" />
+    <Compile Include="Series1\Tut17\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut17\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut17\Graphics\DGraphicsClass12.cs" />
+    <Compile Include="Series1\Tut17\Graphics\Models\DModelClass4..cs" />
+    <Compile Include="Series1\Tut17\Graphics\Shaders\DMultiTextureLightShader1.cs" />
+    <Compile Include="Series1\Tut17\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut17\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut17\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut17\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut18\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut18\Graphics\Data\DTextureArrayClass1.cs" />
+    <Compile Include="Series1\Tut18\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut18\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut18\Graphics\DGraphicsClass13.cs" />
+    <Compile Include="Series1\Tut18\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut18\Graphics\Shaders\DLightMapShader1.cs" />
+    <Compile Include="Series1\Tut18\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut18\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut18\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut18\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut19\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut19\Graphics\Data\DTextureArrayClass1.cs" />
+    <Compile Include="Series1\Tut19\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut19\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut19\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut19\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut19\Graphics\Shaders\DAlphaMapShaderClass1.cs" />
+    <Compile Include="Series1\Tut19\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut19\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut19\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut19\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut20\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut20\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\Tut20\Graphics\Data\DTextureArrayClass1.cs" />
+    <Compile Include="Series1\Tut20\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut20\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut20\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut20\Graphics\Models\DBumpMapModelClass1.cs" />
+    <Compile Include="Series1\Tut20\Graphics\Shaders\DBumpMapShaderClass1.cs" />
+    <Compile Include="Series1\Tut20\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut20\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut20\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut20\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut21\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut21\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\Tut21\Graphics\Data\DTextureArrayClass1.cs" />
+    <Compile Include="Series1\Tut21\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut21\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut21\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut21\Graphics\Models\DBumpMapModelClass1.cs" />
+    <Compile Include="Series1\Tut21\Graphics\Shaders\DSpecMapShaderClass1.cs" />
+    <Compile Include="Series1\Tut21\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut21\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut21\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut21\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut22\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut22\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\Tut22\Graphics\Data\DRendertextureClass1.cs" />
+    <Compile Include="Series1\Tut22\Graphics\Data\DTextureArrayClass1.cs" />
+    <Compile Include="Series1\Tut22\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut22\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut22\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut22\Graphics\Models\DDebugwindowClass1.cs" />
+    <Compile Include="Series1\Tut22\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut22\Graphics\Shaders\DLightShaderClass3.cs" />
+    <Compile Include="Series1\Tut22\Graphics\Shaders\DTextureShaderClass2.cs" />
+    <Compile Include="Series1\Tut22\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut22\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut22\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut22\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut23\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut23\Graphics\Data\DTextureArrayClass1.cs" />
+    <Compile Include="Series1\Tut23\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut23\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut23\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut23\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut23\Graphics\Shaders\DFogShaderClass1.cs" />
+    <Compile Include="Series1\Tut23\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut23\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut23\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut23\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut24\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut24\Graphics\Data\DTextureArrayClass1.cs" />
+    <Compile Include="Series1\Tut24\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut24\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut24\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut24\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut24\Graphics\Shaders\DClipPlaneShaderClass1.cs" />
+    <Compile Include="Series1\Tut24\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut24\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut24\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut24\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut25\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut25\Graphics\Data\DTextureArrayClass1.cs" />
+    <Compile Include="Series1\Tut25\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut25\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut25\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut25\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut25\Graphics\Shaders\DTranslateShaderClass1.cs" />
+    <Compile Include="Series1\Tut25\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut25\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut25\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut25\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut26\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut26\Graphics\Data\DTextureArrayClass1.cs" />
+    <Compile Include="Series1\Tut26\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut26\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut26\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut26\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut26\Graphics\Shaders\DTextureShaderClass2.cs" />
+    <Compile Include="Series1\Tut26\Graphics\Shaders\DTransparentShaderClass1.cs" />
+    <Compile Include="Series1\Tut26\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut26\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut26\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut26\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut27\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut27\Graphics\Data\DRenderTextureClass1.cs" />
+    <Compile Include="Series1\Tut27\Graphics\Data\DTextureArrayClass1.cs" />
+    <Compile Include="Series1\Tut27\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut27\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut27\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut27\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut27\Graphics\Shaders\DReflectionShaderClass1.cs" />
+    <Compile Include="Series1\Tut27\Graphics\Shaders\DTextureShaderClass2.cs" />
+    <Compile Include="Series1\Tut27\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut27\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut27\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut27\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut28\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut28\Graphics\Data\DRenderTextureClass1.cs" />
+    <Compile Include="Series1\Tut28\Graphics\Data\DTextureArrayClass1.cs" />
+    <Compile Include="Series1\Tut28\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut28\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut28\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut28\Graphics\Models\DBitmapClass1.cs" />
+    <Compile Include="Series1\Tut28\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut28\Graphics\Shaders\DFadeShaderClass1.cs" />
+    <Compile Include="Series1\Tut28\Graphics\Shaders\DTextureShaderClass2.cs" />
+    <Compile Include="Series1\Tut28\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut28\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut28\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut28\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut29\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut29\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\Tut29\Graphics\Data\DRenderTextureClass1.cs" />
+    <Compile Include="Series1\Tut29\Graphics\Data\DTextureArrayClass1.cs" />
+    <Compile Include="Series1\Tut29\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut29\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut29\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut29\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut29\Graphics\Shaders\DLightShaderClass3.cs" />
+    <Compile Include="Series1\Tut29\Graphics\Shaders\DRefractionShaderClass1.cs" />
+    <Compile Include="Series1\Tut29\Graphics\Shaders\DWaterShaderClass1.cs" />
+    <Compile Include="Series1\Tut29\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut29\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut29\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut29\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut30\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut30\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\Tut30\Graphics\Data\DTextureArrayClass1.cs" />
+    <Compile Include="Series1\Tut30\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut30\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut30\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut30\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut30\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut30\Graphics\Shaders\DLightShaderClass3.cs" />
+    <Compile Include="Series1\Tut30\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut30\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut30\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut31\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut31\Graphics\DGraphicsClass11.cs" />
+    <Compile Include="Series1\Tut31\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut31\Sound\DSoundClass1.cs" />
+    <Compile Include="Series1\Tut31\Sound\DWaveSoundClass1.cs" />
+    <Compile Include="Series1\Tut31\System\DSystemClass4.cs" />
+    <Compile Include="Series1\Tut31\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut31\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut32\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut32\Graphics\Data\DRenderTextureClass1.cs" />
+    <Compile Include="Series1\Tut32\Graphics\Data\DTextureArrayClass1.cs" />
+    <Compile Include="Series1\Tut32\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut32\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut32\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut32\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut32\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut32\Graphics\Shaders\DGlassShaderClass1.cs" />
+    <Compile Include="Series1\Tut32\Graphics\Shaders\DTextureShaderClass2.cs" />
+    <Compile Include="Series1\Tut32\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut32\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut32\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut33\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut33\Graphics\Data\DTextureArrayClass1.cs" />
+    <Compile Include="Series1\Tut33\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut33\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut33\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut33\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut33\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut33\Graphics\Shaders\DFireShaderClass1.cs" />
+    <Compile Include="Series1\Tut33\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut33\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut33\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut34\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut34\Graphics\Data\DTextureArrayClass1.cs" />
+    <Compile Include="Series1\Tut34\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut34\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut34\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut34\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut34\Graphics\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\Tut34\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut34\Graphics\Shaders\DTextureShaderClass2.cs" />
+    <Compile Include="Series1\Tut34\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut34\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut34\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut35\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut35\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut35\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut35\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut35\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut35\Graphics\Shaders\DDepthShaderClass1.cs" />
+    <Compile Include="Series1\Tut35\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut35\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut35\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut36\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut36\Graphics\Data\DRenderTextureClass1.cs" />
+    <Compile Include="Series1\Tut36\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut36\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut36\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut36\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut36\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut36\Graphics\Models\DOrthoWindowClass1.cs" />
+    <Compile Include="Series1\Tut36\Graphics\Shaders\DTextureShaderClass2.cs" />
+    <Compile Include="Series1\Tut36\Graphics\Shaders\DVerticalBlurShaderClass1.cs" />
+    <Compile Include="Series1\Tut36\Graphics\Shaders\DHorizontalBlurShaderClass1.cs" />
+    <Compile Include="Series1\Tut36\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut36\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut36\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut37\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut37\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut37\Graphics\DDX11Class2.cs" />
+    <Compile Include="Series1\Tut37\Graphics\DGraphicsClass4.cs" />
+    <Compile Include="Series1\Tut37\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut37\Graphics\Models\DModelClass2.cs" />
+    <Compile Include="Series1\Tut37\Graphics\Shaders\DTextureShaderClass1.cs" />
+    <Compile Include="Series1\Tut37\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut37\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut37\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut38\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut38\Graphics\DDX11Class2.cs" />
+    <Compile Include="Series1\Tut38\Graphics\DGraphicsClass3.cs" />
+    <Compile Include="Series1\Tut38\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut38\Graphics\Models\DModelClass1.cs" />
+    <Compile Include="Series1\Tut38\Graphics\Shaders\DColorShaderClass1.cs" />
+    <Compile Include="Series1\Tut38\System\DSystemClass2.cs" />
+    <Compile Include="Series1\Tut38\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut38\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut39\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut39\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut39\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut39\Graphics\DGraphicsClass4.cs" />
+    <Compile Include="Series1\Tut39\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut39\Graphics\Models\DParticleSystemClass1.cs" />
+    <Compile Include="Series1\Tut39\Graphics\Shaders\DParticleShaderClass1.cs" />
+    <Compile Include="Series1\Tut39\System\DSystemClass2.cs" />
+    <Compile Include="Series1\Tut39\System\DSystemConfigurationClass4.cs" />
+    <Compile Include="Series1\Tut39\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut40\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut40\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\Tut40\Graphics\Data\DRenderTextureClass1.cs" />
+    <Compile Include="Series1\Tut40\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut40\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut40\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut40\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut40\Graphics\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\Tut40\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut40\Graphics\Shaders\DDepthShaderClass1.cs" />
+    <Compile Include="Series1\Tut40\Graphics\Shaders\DShadowShaderClass1.cs" />
+    <Compile Include="Series1\Tut40\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut40\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut40\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut41\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut41\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\Tut41\Graphics\Data\DRenderTextureClass1.cs" />
+    <Compile Include="Series1\Tut41\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut41\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut41\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut41\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut41\Graphics\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\Tut41\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut41\Graphics\Shaders\DDepthShaderClass1.cs" />
+    <Compile Include="Series1\Tut41\Graphics\Shaders\DShadowShaderClass1.cs" />
+    <Compile Include="Series1\Tut41\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut41\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut41\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut42\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut42\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\Tut42\Graphics\Data\DRenderTextureClass1.cs" />
+    <Compile Include="Series1\Tut42\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut42\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut42\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut42\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut42\Graphics\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\Tut42\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut42\Graphics\Models\DOrthoWindowClass1.cs" />
+    <Compile Include="Series1\Tut42\Graphics\Shaders\DDepthShaderClass1.cs" />
+    <Compile Include="Series1\Tut42\Graphics\Shaders\DHorizontalBlurShaderClass1.cs" />
+    <Compile Include="Series1\Tut42\Graphics\Shaders\DSoftShadowShaderClass1.cs" />
+    <Compile Include="Series1\Tut42\Graphics\Shaders\DShadowShaderClass2.cs" />
+    <Compile Include="Series1\Tut42\Graphics\Shaders\DTextureShaderClass1.cs" />
+    <Compile Include="Series1\Tut42\Graphics\Shaders\DVerticalBlurShaderClass1.cs" />
+    <Compile Include="Series1\Tut42\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut42\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut42\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut43\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut43\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\Tut43\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut43\Graphics\Data\DViewPointClass1.cs" />
+    <Compile Include="Series1\Tut43\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut43\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut43\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut43\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut43\Graphics\Shaders\DProjectionShaderlass1.cs" />
+    <Compile Include="Series1\Tut43\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut43\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut43\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut44\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut44\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\Tut44\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut44\Graphics\Data\DViewPointClass1.cs" />
+    <Compile Include="Series1\Tut44\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut44\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut44\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut44\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut44\Graphics\Shaders\DProjectionShaderlass1.cs" />
+    <Compile Include="Series1\Tut44\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut44\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut44\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut45\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut45\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\Tut45\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut45\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut45\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut45\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut45\Graphics\Models\DBumpMapModelClass1.cs" />
+    <Compile Include="Series1\Tut45\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut45\Graphics\Shaders\DBumpMapShaderClass1.cs" />
+    <Compile Include="Series1\Tut45\Graphics\Shaders\DLightShaderClass3.cs" />
+    <Compile Include="Series1\Tut45\Graphics\Shaders\DShaderManagerClass1.cs" />
+    <Compile Include="Series1\Tut45\Graphics\Shaders\DTextureShaderClass1.cs" />
+    <Compile Include="Series1\Tut45\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut45\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut45\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut46\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut46\Graphics\Data\DRenderTextureClass1.cs" />
+    <Compile Include="Series1\Tut46\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut46\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut46\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut46\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut46\Graphics\Models\DBitmapClass1.cs" />
+    <Compile Include="Series1\Tut46\Graphics\Models\DOrthoWindowClass1.cs" />
+    <Compile Include="Series1\Tut46\Graphics\Shaders\DGlowMapShaderClass1.cs" />
+    <Compile Include="Series1\Tut46\Graphics\Shaders\DGlowShaderClass1.cs" />
+    <Compile Include="Series1\Tut46\Graphics\Shaders\DHorizontalBlurShaderClass1.cs" />
+    <Compile Include="Series1\Tut46\Graphics\Shaders\DTextureShaderClass1.cs" />
+    <Compile Include="Series1\Tut46\Graphics\Shaders\DVerticalBlurShaderClass1.cs" />
+    <Compile Include="Series1\Tut46\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut46\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut46\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut47\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut47\Graphics\DApplicationClass1.cs" />
+    <Compile Include="Series1\Tut47\Graphics\Data\DFontClass1.cs" />
+    <Compile Include="Series1\Tut47\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\Tut47\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut47\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut47\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut47\Graphics\Models\DBitmapClass1.cs" />
+    <Compile Include="Series1\Tut47\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut47\Graphics\Models\DTextClass2.cs" />
+    <Compile Include="Series1\Tut47\Graphics\Shaders\DFontShaderClass1.cs" />
+    <Compile Include="Series1\Tut47\Graphics\Shaders\DLightShaderClass3.cs" />
+    <Compile Include="Series1\Tut47\Graphics\Shaders\DTextureShaderClass1.cs" />
+    <Compile Include="Series1\Tut47\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut47\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut47\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut48\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut48\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\Tut48\Graphics\Data\DRenderTextureClass1.cs" />
+    <Compile Include="Series1\Tut48\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut48\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut48\Graphics\DGraphicsClass14.cs" />
+    <Compile Include="Series1\Tut48\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut48\Graphics\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\Tut48\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut48\Graphics\Shaders\DDepthShaderClass1.cs" />
+    <Compile Include="Series1\Tut48\Graphics\Shaders\DShadowShaderClass1.cs" />
+    <Compile Include="Series1\Tut48\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut48\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut48\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut49\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut49\Graphics\DApplicationClass1.cs" />
+    <Compile Include="Series1\Tut49\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\Tut49\Graphics\Data\DRenderTextureClass1.cs" />
+    <Compile Include="Series1\Tut49\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut49\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut49\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut49\Graphics\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\Tut49\Graphics\Models\DTreeClass1.cs" />
+    <Compile Include="Series1\Tut49\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut49\Graphics\Shaders\DDepthShaderClass1.cs" />
+    <Compile Include="Series1\Tut49\Graphics\Shaders\DShadowShaderClass1.cs" />
+    <Compile Include="Series1\Tut49\Graphics\Shaders\DTransparentDepthShaderClass1.cs" />
+    <Compile Include="Series1\Tut49\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut49\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut49\System\DTimerClass1.cs" />
+    <Compile Include="Series1\Tut50\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\Tut50\Graphics\DApplicationClass1.cs" />
+    <Compile Include="Series1\Tut50\Graphics\Data\DDeferredBuffersClass1.cs" />
+    <Compile Include="Series1\Tut50\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\Tut50\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\Tut50\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\Tut50\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\Tut50\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\Tut50\Graphics\Models\DOrthoWindowClass1.cs" />
+    <Compile Include="Series1\Tut50\Graphics\Shaders\DDeferredShaderClass1.cs" />
+    <Compile Include="Series1\Tut50\Graphics\Shaders\DLightShaderClass1.cs" />
+    <Compile Include="Series1\Tut50\System\DSystemClass6.cs" />
+    <Compile Include="Series1\Tut50\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\Tut50\System\DTimerClass1.cs" />
+    <Compile Include="Series1\TutTerr01\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\TutTerr01\Graphics\Data\DFontClass1.cs" />
+    <Compile Include="Series1\TutTerr01\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\TutTerr01\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\TutTerr01\Graphics\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\TutTerr01\Graphics\Models\DTerrainClass1.cs" />
+    <Compile Include="Series1\TutTerr01\Graphics\Models\DTextClass2.cs" />
+    <Compile Include="Series1\TutTerr01\Graphics\Models\DTextureClass1.cs" />
+    <Compile Include="Series1\TutTerr01\Graphics\Shaders\DColorShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr01\Graphics\Shaders\DFontShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr01\System\DApplicationClass1.cs" />
+    <Compile Include="Series1\TutTerr01\System\DCPUClass1.cs" />
+    <Compile Include="Series1\TutTerr01\System\DFPSClass1.cs" />
+    <Compile Include="Series1\TutTerr01\System\DSystemClass6.cs" />
+    <Compile Include="Series1\TutTerr01\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\TutTerr01\System\DTimerClass1.cs" />
+    <Compile Include="Series1\TutTerr02\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\TutTerr02\Graphics\Data\DFontClass1.cs" />
+    <Compile Include="Series1\TutTerr02\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\TutTerr02\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\TutTerr02\Graphics\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\TutTerr02\Graphics\Models\DTerrainHeightMapClass1.cs" />
+    <Compile Include="Series1\TutTerr02\Graphics\Models\DTextClass2.cs" />
+    <Compile Include="Series1\TutTerr02\Graphics\Models\DTextureClass1.cs" />
+    <Compile Include="Series1\TutTerr02\Graphics\Shaders\DColorShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr02\Graphics\Shaders\DFontShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr02\System\DApplicationClass1.cs" />
+    <Compile Include="Series1\TutTerr02\System\DCPUClass1.cs" />
+    <Compile Include="Series1\TutTerr02\System\DFPSClass1.cs" />
+    <Compile Include="Series1\TutTerr02\System\DSystemClass6.cs" />
+    <Compile Include="Series1\TutTerr02\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\TutTerr02\System\DTimerClass1.cs" />
+    <Compile Include="Series1\TutTerr03\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\TutTerr03\Graphics\Data\DFontClass1.cs" />
+    <Compile Include="Series1\TutTerr03\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\TutTerr03\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\TutTerr03\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\TutTerr03\Graphics\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\TutTerr03\Graphics\Models\DTerrainClass1.cs" />
+    <Compile Include="Series1\TutTerr03\Graphics\Models\DTextClass2.cs" />
+    <Compile Include="Series1\TutTerr03\Graphics\Models\DTextureClass1.cs" />
+    <Compile Include="Series1\TutTerr03\Graphics\Shaders\DFontShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr03\Graphics\Shaders\DTerrainShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr03\System\DApplicationClass1.cs" />
+    <Compile Include="Series1\TutTerr03\System\DCPUClass1.cs" />
+    <Compile Include="Series1\TutTerr03\System\DFPSClass1.cs" />
+    <Compile Include="Series1\TutTerr03\System\DSystemClass6.cs" />
+    <Compile Include="Series1\TutTerr03\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\TutTerr03\System\DTimerClass1.cs" />
+    <Compile Include="Series1\TutTerr04\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\TutTerr04\Graphics\Data\DFontClass1.cs" />
+    <Compile Include="Series1\TutTerr04\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\TutTerr04\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\TutTerr04\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\TutTerr04\Graphics\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\TutTerr04\Graphics\Models\DTerrainClass1.cs" />
+    <Compile Include="Series1\TutTerr04\Graphics\Models\DTextClass2.cs" />
+    <Compile Include="Series1\TutTerr04\Graphics\Models\DTextureClass1.cs" />
+    <Compile Include="Series1\TutTerr04\Graphics\Shaders\DFontShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr04\Graphics\Shaders\DTerrainShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr04\System\DApplicationClass1.cs" />
+    <Compile Include="Series1\TutTerr04\System\DCPUClass1.cs" />
+    <Compile Include="Series1\TutTerr04\System\DFPSClass1.cs" />
+    <Compile Include="Series1\TutTerr04\System\DSystemClass6.cs" />
+    <Compile Include="Series1\TutTerr04\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\TutTerr04\System\DTimerClass1.cs" />
+    <Compile Include="Series1\TutTerr05\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\TutTerr05\Graphics\Data\DFontClass1.cs" />
+    <Compile Include="Series1\TutTerr05\Graphics\Data\DFrustumClass1.cs" />
+    <Compile Include="Series1\TutTerr05\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\TutTerr05\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\TutTerr05\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\TutTerr05\Graphics\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\TutTerr05\Graphics\Models\DQuadTreeClass1.cs" />
+    <Compile Include="Series1\TutTerr05\Graphics\Models\DTerrainClass1.cs" />
+    <Compile Include="Series1\TutTerr05\Graphics\Models\DTextClass2.cs" />
+    <Compile Include="Series1\TutTerr05\Graphics\Models\DTextureClass1.cs" />
+    <Compile Include="Series1\TutTerr05\Graphics\Shaders\DFontShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr05\Graphics\Shaders\DTerrainShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr05\System\DApplicationClass1.cs" />
+    <Compile Include="Series1\TutTerr05\System\DCPUClass1.cs" />
+    <Compile Include="Series1\TutTerr05\System\DFPSClass1.cs" />
+    <Compile Include="Series1\TutTerr05\System\DSystemClass6.cs" />
+    <Compile Include="Series1\TutTerr05\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\TutTerr05\System\DTimerClass1.cs" />
+    <Compile Include="Series1\TutTerr06\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\TutTerr06\Graphics\Data\DFontClass1.cs" />
+    <Compile Include="Series1\TutTerr06\Graphics\Data\DFrustumClass1.cs" />
+    <Compile Include="Series1\TutTerr06\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\TutTerr06\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\TutTerr06\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\TutTerr06\Graphics\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\TutTerr06\Graphics\Models\DQuadTreeClass1.cs" />
+    <Compile Include="Series1\TutTerr06\Graphics\Models\DTerrainClass1.cs" />
+    <Compile Include="Series1\TutTerr06\Graphics\Models\DTextClass2.cs" />
+    <Compile Include="Series1\TutTerr06\Graphics\Models\DTextureClass1.cs" />
+    <Compile Include="Series1\TutTerr06\Graphics\Shaders\DFontShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr06\Graphics\Shaders\DTerrainShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr06\System\DApplicationClass1.cs" />
+    <Compile Include="Series1\TutTerr06\System\DCPUClass1.cs" />
+    <Compile Include="Series1\TutTerr06\System\DFPSClass1.cs" />
+    <Compile Include="Series1\TutTerr06\System\DSystemClass6.cs" />
+    <Compile Include="Series1\TutTerr06\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\TutTerr06\System\DTimerClass1.cs" />
+    <Compile Include="Series1\TutTerr07\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\TutTerr07\Graphics\Data\DFontClass1.cs" />
+    <Compile Include="Series1\TutTerr07\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\TutTerr07\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\TutTerr07\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\TutTerr07\Graphics\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\TutTerr07\Graphics\Models\DTerrainClass1.cs" />
+    <Compile Include="Series1\TutTerr07\Graphics\Models\DTextClass2.cs" />
+    <Compile Include="Series1\TutTerr07\Graphics\Models\DTextureClass1.cs" />
+    <Compile Include="Series1\TutTerr07\Graphics\Shaders\DFontShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr07\Graphics\Shaders\DTerrainShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr07\System\DApplicationClass1.cs" />
+    <Compile Include="Series1\TutTerr07\System\DCPUClass1.cs" />
+    <Compile Include="Series1\TutTerr07\System\DFPSClass1.cs" />
+    <Compile Include="Series1\TutTerr07\System\DSystemClass6.cs" />
+    <Compile Include="Series1\TutTerr07\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\TutTerr07\System\DTimerClass1.cs" />
+    <Compile Include="Series1\TutTerr08\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\TutTerr08\Graphics\Data\DFontClass1.cs" />
+    <Compile Include="Series1\TutTerr08\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\TutTerr08\Graphics\Data\DTextureClass1.cs" />
+    <Compile Include="Series1\TutTerr08\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\TutTerr08\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\TutTerr08\Graphics\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\TutTerr08\Graphics\Models\DBitmapClass1.cs" />
+    <Compile Include="Series1\TutTerr08\Graphics\Models\DMiniMapClass1.cs" />
+    <Compile Include="Series1\TutTerr08\Graphics\Models\DTerrainClass1.cs" />
+    <Compile Include="Series1\TutTerr08\Graphics\Models\DTextClass2.cs" />
+    <Compile Include="Series1\TutTerr08\Graphics\Shaders\DFontShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr08\Graphics\Shaders\DTerrainShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr08\Graphics\Shaders\DTextureShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr08\System\DApplicationClass1.cs" />
+    <Compile Include="Series1\TutTerr08\System\DCPUClass1.cs" />
+    <Compile Include="Series1\TutTerr08\System\DFPSClass1.cs" />
+    <Compile Include="Series1\TutTerr08\System\DSystemClass6.cs" />
+    <Compile Include="Series1\TutTerr08\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\TutTerr08\System\DTimerClass1.cs" />
+    <Compile Include="Series1\TutTerr09\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\TutTerr09\Graphics\Data\DFontClass1.cs" />
+    <Compile Include="Series1\TutTerr09\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\TutTerr09\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\TutTerr09\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\TutTerr09\Graphics\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\TutTerr09\Graphics\Models\DTerrainClass1.cs" />
+    <Compile Include="Series1\TutTerr09\Graphics\Models\DTextClass2.cs" />
+    <Compile Include="Series1\TutTerr09\Graphics\Models\DTextureClass1.cs" />
+    <Compile Include="Series1\TutTerr09\Graphics\Shaders\DFontShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr09\Graphics\Shaders\DTerrainShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr09\System\DApplicationClass1.cs" />
+    <Compile Include="Series1\TutTerr09\System\DCPUClass1.cs" />
+    <Compile Include="Series1\TutTerr09\System\DFPSClass1.cs" />
+    <Compile Include="Series1\TutTerr09\System\DSystemClass6.cs" />
+    <Compile Include="Series1\TutTerr09\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\TutTerr09\System\DTimerClass1.cs" />
+    <Compile Include="Series1\TutTerr10\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\TutTerr10\Graphics\Data\DFontClass1.cs" />
+    <Compile Include="Series1\TutTerr10\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\TutTerr10\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\TutTerr10\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\TutTerr10\Graphics\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\TutTerr10\Graphics\Models\DSkyDomeClass.cs" />
+    <Compile Include="Series1\TutTerr10\Graphics\Models\DTerrainClass1.cs" />
+    <Compile Include="Series1\TutTerr10\Graphics\Models\DTextClass2.cs" />
+    <Compile Include="Series1\TutTerr10\Graphics\Models\DTextureClass1.cs" />
+    <Compile Include="Series1\TutTerr10\Graphics\Shaders\DFontShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr10\Graphics\Shaders\DSkyDomwShaderClass.cs" />
+    <Compile Include="Series1\TutTerr10\Graphics\Shaders\DTerrainShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr10\System\DApplicationClass1.cs" />
+    <Compile Include="Series1\TutTerr10\System\DCPUClass1.cs" />
+    <Compile Include="Series1\TutTerr10\System\DFPSClass1.cs" />
+    <Compile Include="Series1\TutTerr10\System\DSystemClass6.cs" />
+    <Compile Include="Series1\TutTerr10\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\TutTerr10\System\DTimerClass1.cs" />
+    <Compile Include="Series1\TutTerr11\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\TutTerr11\Graphics\Data\DFontClass1.cs" />
+    <Compile Include="Series1\TutTerr11\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\TutTerr11\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\TutTerr11\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\TutTerr11\Graphics\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\TutTerr11\Graphics\Models\DSkyDomeClass.cs" />
+    <Compile Include="Series1\TutTerr11\Graphics\Models\DSkyPlaneClass1.cs" />
+    <Compile Include="Series1\TutTerr11\Graphics\Models\DTerrainClass1.cs" />
+    <Compile Include="Series1\TutTerr11\Graphics\Models\DTextClass2.cs" />
+    <Compile Include="Series1\TutTerr11\Graphics\Models\DTextureClass1.cs" />
+    <Compile Include="Series1\TutTerr11\Graphics\Shaders\DFontShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr11\Graphics\Shaders\DSkyDomwShaderClass.cs" />
+    <Compile Include="Series1\TutTerr11\Graphics\Shaders\DSkyPlaneShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr11\Graphics\Shaders\DTerrainShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr11\System\DApplicationClass1.cs" />
+    <Compile Include="Series1\TutTerr11\System\DCPUClass1.cs" />
+    <Compile Include="Series1\TutTerr11\System\DFPSClass1.cs" />
+    <Compile Include="Series1\TutTerr11\System\DSystemClass6.cs" />
+    <Compile Include="Series1\TutTerr11\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\TutTerr11\System\DTimerClass1.cs" />
+    <Compile Include="Series1\TutTerr12\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\TutTerr12\Graphics\Data\DFontClass1.cs" />
+    <Compile Include="Series1\TutTerr12\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\TutTerr12\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\TutTerr12\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\TutTerr12\Graphics\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\TutTerr12\Graphics\Models\DSkyDomeClass.cs" />
+    <Compile Include="Series1\TutTerr12\Graphics\Models\DSkyPlaneClass1.cs" />
+    <Compile Include="Series1\TutTerr12\Graphics\Models\DTerrainClass1.cs" />
+    <Compile Include="Series1\TutTerr12\Graphics\Models\DTextClass2.cs" />
+    <Compile Include="Series1\TutTerr12\Graphics\Models\DTextureClass1.cs" />
+    <Compile Include="Series1\TutTerr12\Graphics\Shaders\DFontShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr12\Graphics\Shaders\DSkyDomeShaderClass..cs" />
+    <Compile Include="Series1\TutTerr12\Graphics\Shaders\DSkyPlaneShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr12\Graphics\Shaders\DTerrainShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr12\System\DApplicationClass1.cs" />
+    <Compile Include="Series1\TutTerr12\System\DCPUClass1.cs" />
+    <Compile Include="Series1\TutTerr12\System\DFPSClass1.cs" />
+    <Compile Include="Series1\TutTerr12\System\DSystemClass6.cs" />
+    <Compile Include="Series1\TutTerr12\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\TutTerr12\System\DTimerClass1.cs" />
+    <Compile Include="Series1\TutTerr13\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\TutTerr13\Graphics\Data\DFontClass1.cs" />
+    <Compile Include="Series1\TutTerr13\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\TutTerr13\Graphics\Data\DRenderTextureClass1.cs" />
+    <Compile Include="Series1\TutTerr13\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\TutTerr13\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\TutTerr13\Graphics\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\TutTerr13\Graphics\Models\DDebugwindowClass1.cs" />
+    <Compile Include="Series1\TutTerr13\Graphics\Models\DTerrainClass1.cs" />
+    <Compile Include="Series1\TutTerr13\Graphics\Models\DTextClass2.cs" />
+    <Compile Include="Series1\TutTerr13\Graphics\Models\DTextureClass1.cs" />
+    <Compile Include="Series1\TutTerr13\Graphics\Shaders\DDepthShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr13\Graphics\Shaders\DFontShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr13\Graphics\Shaders\DTerrainShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr13\Graphics\Shaders\DTextureShaderClass2.cs" />
+    <Compile Include="Series1\TutTerr13\System\DApplicationClass1.cs" />
+    <Compile Include="Series1\TutTerr13\System\DCPUClass1.cs" />
+    <Compile Include="Series1\TutTerr13\System\DFPSClass1.cs" />
+    <Compile Include="Series1\TutTerr13\System\DSystemClass6.cs" />
+    <Compile Include="Series1\TutTerr13\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\TutTerr13\System\DTimerClass1.cs" />
+    <Compile Include="Series1\TutTerr14\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\TutTerr14\Graphics\Data\DFontClass1.cs" />
+    <Compile Include="Series1\TutTerr14\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\TutTerr14\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\TutTerr14\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\TutTerr14\Graphics\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\TutTerr14\Graphics\Models\DTerrainClass1.cs" />
+    <Compile Include="Series1\TutTerr14\Graphics\Models\DTextClass2.cs" />
+    <Compile Include="Series1\TutTerr14\Graphics\Models\DTextureClass1.cs" />
+    <Compile Include="Series1\TutTerr14\Graphics\Shaders\DFontShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr14\Graphics\Shaders\DTerrainShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr14\System\DApplicationClass1.cs" />
+    <Compile Include="Series1\TutTerr14\System\DCPUClass1.cs" />
+    <Compile Include="Series1\TutTerr14\System\DFPSClass1.cs" />
+    <Compile Include="Series1\TutTerr14\System\DSystemClass6.cs" />
+    <Compile Include="Series1\TutTerr14\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\TutTerr14\System\DTimerClass1.cs" />
+    <Compile Include="Series1\TutTerr15\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\TutTerr15\Graphics\Data\DFontClass1.cs" />
+    <Compile Include="Series1\TutTerr15\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\TutTerr15\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\TutTerr15\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\TutTerr15\Graphics\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\TutTerr15\Graphics\Models\DTerrainHeightMapClass1.cs" />
+    <Compile Include="Series1\TutTerr15\Graphics\Models\DTextClass2.cs" />
+    <Compile Include="Series1\TutTerr15\Graphics\Models\DTextureClass1.cs" />
+    <Compile Include="Series1\TutTerr15\Graphics\Shaders\DBumpMapShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr15\Graphics\Shaders\DFontShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr15\System\DApplicationClass1.cs" />
+    <Compile Include="Series1\TutTerr15\System\DCPUClass1.cs" />
+    <Compile Include="Series1\TutTerr15\System\DFPSClass1.cs" />
+    <Compile Include="Series1\TutTerr15\System\DSystemClass6.cs" />
+    <Compile Include="Series1\TutTerr15\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\TutTerr15\System\DTimerClass1.cs" />
+    <Compile Include="Series1\TutTerr16\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\TutTerr16\Graphics\Data\DFontClass1.cs" />
+    <Compile Include="Series1\TutTerr16\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\TutTerr16\Graphics\Data\DRenderTextureClass1.cs" />
+    <Compile Include="Series1\TutTerr16\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\TutTerr16\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\TutTerr16\Graphics\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\TutTerr16\Graphics\Models\DSkyDomeClass.cs" />
+    <Compile Include="Series1\TutTerr16\Graphics\Models\DSkyPlaneClass1.cs" />
+    <Compile Include="Series1\TutTerr16\Graphics\Models\DTerrainHeightMapClass1.cs" />
+    <Compile Include="Series1\TutTerr16\Graphics\Models\DTextClass2.cs" />
+    <Compile Include="Series1\TutTerr16\Graphics\Models\DTextureClass1.cs" />
+    <Compile Include="Series1\TutTerr16\Graphics\Models\DWaterClass1.cs" />
+    <Compile Include="Series1\TutTerr16\Graphics\Shaders\DFontShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr16\Graphics\Shaders\DReflectionShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr16\Graphics\Shaders\DSkyDomeShaderClass.cs" />
+    <Compile Include="Series1\TutTerr16\Graphics\Shaders\DSkyPlaneShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr16\Graphics\Shaders\DTerrainShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr16\Graphics\Shaders\DWaterShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr16\System\DApplicationClass1.cs" />
+    <Compile Include="Series1\TutTerr16\System\DCPUClass1.cs" />
+    <Compile Include="Series1\TutTerr16\System\DFPSClass1.cs" />
+    <Compile Include="Series1\TutTerr16\System\DSystemClass6.cs" />
+    <Compile Include="Series1\TutTerr16\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\TutTerr16\System\DTimerClass1.cs" />
+    <Compile Include="Series1\TutTerr17\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\TutTerr17\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series1\TutTerr17\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\TutTerr17\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\TutTerr17\Graphics\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\TutTerr17\Graphics\Models\DTerrainHeightMapClass1.cs" />
+    <Compile Include="Series1\TutTerr17\Graphics\Models\DTextureClass1.cs" />
+    <Compile Include="Series1\TutTerr17\Graphics\Shaders\DTerrainShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr17\System\DApplicationClass1.cs" />
+    <Compile Include="Series1\TutTerr17\System\DSystemClass6.cs" />
+    <Compile Include="Series1\TutTerr17\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\TutTerr17\System\DTimerClass1.cs" />
+    <Compile Include="Series1\TutTerr19\Graphics\Camera\DCameraClass1.cs" />
+    <Compile Include="Series1\TutTerr19\Graphics\Data\DFontClass1.cs" />
+    <Compile Include="Series1\TutTerr19\Graphics\Data\DUserInterfaceClass1.cs" />
+    <Compile Include="Series1\TutTerr19\Graphics\DDX11Class4.cs" />
+    <Compile Include="Series1\TutTerr19\Graphics\Input\DInputClass2.cs" />
+    <Compile Include="Series1\TutTerr19\Graphics\Input\DPositionClass1.cs" />
+    <Compile Include="Series1\TutTerr19\Graphics\Models\DModelClass5..cs" />
+    <Compile Include="Series1\TutTerr19\Graphics\Models\DTextClass2.cs" />
+    <Compile Include="Series1\TutTerr19\Graphics\Models\DTextureClass1.cs" />
+    <Compile Include="Series1\TutTerr19\Graphics\Models\DFoliageClass1.cs" />
+    <Compile Include="Series1\TutTerr19\Graphics\Shaders\DFoliagesShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr19\Graphics\Shaders\DFontShaderClass1.cs" />
+    <Compile Include="Series1\TutTerr19\Graphics\Shaders\DShaderManagerClass1.cs" />
+    <Compile Include="Series1\TutTerr19\Graphics\Shaders\DTextureShaderClass2.cs" />
+    <Compile Include="Series1\TutTerr19\System\DApplicationClass1.cs" />
+    <Compile Include="Series1\TutTerr19\System\DFPSClass1.cs" />
+    <Compile Include="Series1\TutTerr19\System\DSystemClass6.cs" />
+    <Compile Include="Series1\TutTerr19\System\DSystemConfigurationClass5.cs" />
+    <Compile Include="Series1\TutTerr19\System\DTimerClass1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Externals\Data\alpha001.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\alpha002.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\alpha003.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\alpha004.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\alpha01.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\alpha02.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\alphaRoad001.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\blue.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\blue01.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\border01.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\bump.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\bump01.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\bump02.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\bump03.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\cloud001.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\cloud002.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\cm.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\colorm01.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\colorm01.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\colorm02.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\detail001.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\dirt.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\dirt001.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\dirt002.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\dirt004.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\dirt01.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\dirt02.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\dirt03.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\dirt04.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\dx11.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\fire01.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\glass01.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\glowmap.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\grass.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\grass01.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\grate.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\grid01.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\ground01.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\heightmap.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\heightmap01.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\heightmap02.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\hm.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\hm01.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\ice01.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\light01.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\marble.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\marble01.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\materialmap01.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\metal.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\metal001.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\mouse.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\noise01.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\normal.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\normal001.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\normal002.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\normal01.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\perturb001.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\point01.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\rock.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\rock015.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\seafloor.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\slope.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\spec02.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\star.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\stone.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\stone001.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\stone01.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\stone02.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\test.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\texture01.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\texture02.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\texture03.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\Trees\leaf001.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\Trees\trunk001.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\wall01.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\wall01sm.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\water01.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Data\waternormal.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Font\font.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Font\font01.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Font\font01.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Font\fontdata.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Models\bath.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Models\Cube.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Models\floor.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Models\ground.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Models\legend.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Models\plane01.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Models\skydome.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Models\sphere.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Models\square.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Models\Trees\leaf001.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Models\Trees\trunk001.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Models\Triangle.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Models\wall.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Models\water.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut31\Externals\Data\sound02.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr13\Externals\Shaders\shader-error.txt" />
+    <Content Include="Series1\Tut04\Shaders\Color.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut04\Shaders\Color.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut05\Shaders\Texture.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut05\Shaders\Texture.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut06\Shaders\Light.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut06\Shaders\Light.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut07\Shaders\Light.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut07\Shaders\Light.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Font\Font.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Externals\Font\Font.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="packages.config" />
+    <None Include="Series1\Tut08\cube.obj" />
+    <Content Include="Series1\Tut09\Shaders\Light.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut09\Shaders\Light.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut10\Shaders\Light.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut10\Shaders\Light.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut11\Shaders\Texture.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut11\Shaders\Texture.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut14\Data\sound01.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut18\Externals\Shaders\LightMap.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut18\Externals\Shaders\LightMap.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut19\Externals\Shaders\AlphaMap.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut19\Externals\Shaders\AlphaMap.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut20\Externals\Shaders\BumpMap.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut20\Externals\Shaders\BumpMap.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut21\Externals\Shaders\SpecMap.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut21\Externals\Shaders\SpecMap.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut22\Externals\Shaders\Texture.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut22\Externals\Shaders\Texture.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut23\Externals\Shaders\Fog.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut23\Externals\Shaders\Fog.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut24\Externals\Shaders\ClipPlane.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut24\Externals\Shaders\ClipPlane.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut25\Externals\Shaders\Translate.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut25\Externals\Shaders\Translate.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut26\Externals\Shaders\Transparent.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut26\Externals\Shaders\Transparent.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut26\Externals\Shaders\Texture.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut26\Externals\Shaders\Texture.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut27\Externals\Shaders\Reflection.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut27\Externals\Shaders\Reflection.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut27\Externals\Shaders\Texture.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut27\Externals\Shaders\Texture.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut28\Externals\Shaders\Fade.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut28\Externals\Shaders\Fade.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut28\Externals\Shaders\Texture.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut28\Externals\Shaders\Texture.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut29\Externals\Shaders\Water.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut29\Externals\Shaders\Water.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut29\Externals\Shaders\Refraction.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut29\Externals\Shaders\Refraction.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut29\Externals\Shaders\Light.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut29\Externals\Shaders\Light.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut30\Externals\Shaders\Light.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut30\Externals\Shaders\Light.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut32\Externals\Shaders\glass.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut32\Externals\Shaders\glass.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut32\Externals\Shaders\texture.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut32\Externals\Shaders\texture.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut33\Externals\Shaders\fire.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut33\Externals\Shaders\fire.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut34\Externals\Shaders\texture.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut34\Externals\Shaders\texture.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut35\Externals\Shaders\depth.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut35\Externals\Shaders\depth.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut36\Externals\Shaders\horizontalblur.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut36\Externals\Shaders\horizontalblur.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut36\Externals\Shaders\texture.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut36\Externals\Shaders\texture.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut36\Externals\Shaders\verticalblur.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut36\Externals\Shaders\verticalblur.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut37\Externals\Shaders\texture.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut37\Externals\Shaders\texture.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut38\Externals\Shaders\color.ds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut38\Externals\Shaders\color.hs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut38\Externals\Shaders\color.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut38\Externals\Shaders\color.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut39\Externals\Shaders\particle.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut39\Externals\Shaders\particle.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut40\Externals\Shaders\depth.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut40\Externals\Shaders\depth.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut40\Externals\Shaders\shadow.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut40\Externals\Shaders\shadow.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut41\Externals\Shaders\depth.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut41\Externals\Shaders\depth.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut41\Externals\Shaders\shadow.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut41\Externals\Shaders\shadow.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut42\Externals\Shaders\depth.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut42\Externals\Shaders\depth.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut42\Externals\Shaders\horizontalblur.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut42\Externals\Shaders\horizontalblur.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut42\Externals\Shaders\shadow.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut42\Externals\Shaders\shadow.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut42\Externals\Shaders\softshadow.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut42\Externals\Shaders\softshadow.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut42\Externals\Shaders\texture.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut42\Externals\Shaders\texture.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut42\Externals\Shaders\verticalblur.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut42\Externals\Shaders\verticalblur.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut43\Externals\Shaders\projection.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut43\Externals\Shaders\projection.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut44\Externals\Shaders\projection.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut44\Externals\Shaders\projection.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut45\Externals\Shaders\bumpmap.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut45\Externals\Shaders\bumpmap.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut45\Externals\Shaders\light.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut45\Externals\Shaders\light.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut45\Externals\Shaders\texture.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut45\Externals\Shaders\texture.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut46\Externals\Shaders\glow.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut46\Externals\Shaders\glow.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut46\Externals\Shaders\glowmap.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut46\Externals\Shaders\glowmap.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut46\Externals\Shaders\horizontalblur.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut46\Externals\Shaders\horizontalblur.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut46\Externals\Shaders\texture.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut46\Externals\Shaders\texture.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut46\Externals\Shaders\verticalblur.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut46\Externals\Shaders\verticalblur.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut47\Externals\Shaders\light.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut47\Externals\Shaders\light.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut47\Externals\Shaders\texture.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut47\Externals\Shaders\texture.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut48\Externals\Shaders\depth.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut48\Externals\Shaders\depth.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut48\Externals\Shaders\shadow.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut48\Externals\Shaders\shadow.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut49\Externals\Shaders\depth.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut49\Externals\Shaders\depth.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut49\Externals\Shaders\shadow.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut49\Externals\Shaders\shadow.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut49\Externals\Shaders\transparentdepth.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut49\Externals\Shaders\transparentdepth.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut50\Externals\Shaders\deferred.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut50\Externals\Shaders\deferred.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut50\Externals\Shaders\light.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut50\Externals\Shaders\light.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr01\Externals\Shaders\color.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr01\Externals\Shaders\color.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr02\Externals\Shaders\color.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr02\Externals\Shaders\color.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr03\Externals\Shaders\terrain.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr03\Externals\Shaders\terrain.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr04\Externals\Shaders\terrain.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr04\Externals\Shaders\terrain.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr05\Externals\Shaders\terrain.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr05\Externals\Shaders\terrain.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr06\Externals\Shaders\terrain.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr06\Externals\Shaders\terrain.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr07\Externals\Shaders\terrain.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr07\Externals\Shaders\terrain.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr08\Externals\Shaders\terrain.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr08\Externals\Shaders\terrain.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr08\Externals\Shaders\texture.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr08\Externals\Shaders\texture.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr09\Externals\Shaders\terrain.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr09\Externals\Shaders\terrain.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr10\Externals\Shaders\skydome.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr10\Externals\Shaders\skydome.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr10\Externals\Shaders\terrain.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr10\Externals\Shaders\terrain.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr11\Externals\Shaders\skydome.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr11\Externals\Shaders\skydome.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr11\Externals\Shaders\skyplane.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr11\Externals\Shaders\skyplane.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr11\Externals\Shaders\terrain.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr11\Externals\Shaders\terrain.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr12\Externals\Shaders\skydome.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr12\Externals\Shaders\skydome.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr12\Externals\Shaders\skyplane.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr12\Externals\Shaders\skyplane.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr12\Externals\Shaders\terrain.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr12\Externals\Shaders\terrain.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr13\Externals\Shaders\depth.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr13\Externals\Shaders\depth.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr13\Externals\Shaders\terrain.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr13\Externals\Shaders\terrain.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr13\Externals\Shaders\texture.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr13\Externals\Shaders\texture.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr14\Externals\Shaders\terrain.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr14\Externals\Shaders\terrain.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr15\Externals\Shaders\terrain.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr15\Externals\Shaders\terrain.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr16\Externals\Shaders\reflection.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr16\Externals\Shaders\reflection.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr16\Externals\Shaders\skydome.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr16\Externals\Shaders\skydome.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr16\Externals\Shaders\skyplane.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr16\Externals\Shaders\skyplane.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr16\Externals\Shaders\terrain.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr16\Externals\Shaders\terrain.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr16\Externals\Shaders\water.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr16\Externals\Shaders\water.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr17\Externals\Shaders\terrain.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr17\Externals\Shaders\terrain.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr19\Externals\Shaders\foliage.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr19\Externals\Shaders\foliage.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr19\Externals\Shaders\texture.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\TutTerr19\Externals\Shaders\texture.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut17\Shaders\multitexture.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut17\Shaders\multitexture.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut22\Externals\Shaders\light.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut22\Externals\Shaders\light.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut16\Shaders\light.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut16\Shaders\light.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Series1\TutTerr18\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DTestConsole\DTestConsole.csproj">
+      <Project>{e3da61ca-f2d6-48f0-90de-c724a926296a}</Project>
+      <Name>DTestConsole</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Series1\Tut08\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\SharpDX.2.6.3\build\SharpDX.targets" Condition="Exists('..\packages\SharpDX.2.6.3\build\SharpDX.targets')" />
+  <Import Project="packages\SharpDX.2.6.3\build\SharpDX.targets" Condition="Exists('packages\SharpDX.2.6.3\build\SharpDX.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\SharpDX.2.6.3\build\SharpDX.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\SharpDX.2.6.3\build\SharpDX.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
