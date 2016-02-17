@@ -214,4 +214,14 @@ This Tutorial introduces an important but expensive concept of drawing a rendere
 </p></td></tr>
 
 
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2023%20-%20Fog%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 23: Fog
+</h4><i>
+-  2391 lines   - (C++: 480 FPS  C#: 485 FPS)
+</i><br /><p>
+This Tutorial uses an old technique that used to be used to make distant objects dissapear, in this case we have a rotating cube amist a fog cloud and disappearing in the back sides using SharpDX.
+</p></td></tr>
+
+
 </table>
