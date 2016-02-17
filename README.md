@@ -113,6 +113,7 @@ Tutorial 12: Font Engine
 This Tutorial renders a Font object that really is an amage placed on a square vector facing the screen to display as Text using SharpDX.
 </p></td></tr>
 
+
 <tr><td width="40%">
 <image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2013%20-%20Direct%20Input%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
 Tutorial 13: Direct Input
@@ -120,6 +121,16 @@ Tutorial 13: Direct Input
 -  1763 lines   - (C++: 1443 FPS C#: 1492 FPS)
 </i><br /><p>
 This Tutorial shows you how to utilize DirectInput, a now depricated API, however alot of examples use it, so this is what we are implementing here accepting input from both the keyboard and the mouse using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2014%20-%20Direct%20Sound%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 14: Direct Sound
+</h4><i>
+-  1111 lines   - (C++: 2267 FPS C#: 2288 FPS)
+</i><br /><p>
+This Tutorial shows you how to utilize DirectSound, also now depricated, however examples use it, so this is what we are implementing here playing a WAVE file using SharpDX.
 </p></td></tr>
 
 
