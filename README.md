@@ -200,7 +200,17 @@ Tutorial 21: Specular Mapping
 </h4><i>
 -  1785 lines   - (C++: 840 FPS  C#: 852 FPS)
 </i><br /><p>
-This Tutorial uses a Texture map that following the edges of the cubes smaller squares and the bulging for each small square on a rotating 3D Cubeusing SharpDX.
+This Tutorial uses a Texture map that following the edges of the cubes smaller squares and the bulging for each small square on a rotating 3D Cube using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2022%20-%20Render%20To%20Texture%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 22: Render to Texture
+</h4><i>
+-  2391 lines   - (C++: 480 FPS  C#: 485 FPS)
+</i><br /><p>
+This Tutorial introduces an important but expensive concept of drawing a rendered 3D object in a small window on the scree using SharpDX.
 </p></td></tr>
 
 
