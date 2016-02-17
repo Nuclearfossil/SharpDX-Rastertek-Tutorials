@@ -80,11 +80,11 @@ This Tutorial renders a cube and rotates it on the screen with ambiant lighting 
 
 <tr><td width="40%">
 <image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2010%20-%20Specular%20Lighting%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
-Tutorial 9: Ambient Lighting
+Tutorial 10: Specular Lighting
 </h4><i>
--  1248 lines   - (C++: 1387 FPS C#: 1400 FPS)
+  1281 lines   - (C++: 1380 FPS C#: 1394 FPS)
 </i><br /><p>
-This Tutorial renders a cube and rotates it on the screen with ambiant lighting using SharpDX.
+This Tutorial renders a cube and rotates it on the screen with specular lighting using SharpDX.
 </p></td></tr>
 
 
