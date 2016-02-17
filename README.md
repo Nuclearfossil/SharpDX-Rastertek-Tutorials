@@ -6,7 +6,7 @@ This is a C# repository based off the Rastertek Tutorial Series posted on www.Ra
 <td>
 Tutorial 2: Creating a Framework and Window.
 </td>
-<td>
+<td> 
 ![alt text](SharpDXWinForm/Resources/Series%201%20--%20Tutorial%202%20%20-%20%20Creating%20A%20Framework%20And%20Window%20Sm.png?raw=true "Tutorial 2: Creating a Framework and Window")
 </td>
 </tr>
