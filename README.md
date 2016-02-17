@@ -3,6 +3,6 @@ This is a C# repository based off the Rastertek Tutorial Series posted on www.Ra
 
 
 Tutorial 2: Creating a Framework and Window.<br />
-![alt text](SharpDXWinForm/Resources/Series%201%20--%20Tutorial%202%20%20-%20%20Creating%20A%20Framework%20And%20Window%20Sm.png?raw=true "Tutorial 2: Creating a Framework and Window")
+![alt text](SharpDXWinForm/Resources/Series%201%20--%20Tutorial%202%20%20-%20%20Creating%20A%20Framework%20And%20Window%20Sm.png?raw=true "Tutorial 2: Creating a Framework and Window")<br />
 Tutorial 3: Initializing DirectX 11.<br />
-![alt text](SharpDXWinForm/Resources/Series%201%20--%20Tutorial%203%20%20-%20%20Initializing%20DirectX%2011%20Sm.png?raw=true "Tutorial 3: Initializing DirectX 11")
+![alt text](SharpDXWinForm/Resources/Series%201%20--%20Tutorial%203%20%20-%20%20Initializing%20DirectX%2011%20Sm.png?raw=true "Tutorial 3: Initializing DirectX 11")<br />
