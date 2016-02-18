@@ -224,4 +224,74 @@ This Tutorial uses an old technique that used to be used to make distant objects
 </p></td></tr>
 
 
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2024%20-%20Clipping%20Planes%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 24: Clipping Planes
+</h4><i>
+-  1450 lines   - (C++: 1424 FPS C#: 1440 FPS)
+</i><br /><p>
+This Tutorial demonstrates how you omit a certain section of a 3D object from within the cameras view using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2025%20-%20Texture%20Translation%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 25: Texture Translation
+</h4><i>
+-  1488 lines   - (C++: 1448 FPS C#: 1455 FPS)
+</i><br /><p>
+This Tutorial shows how a texture can me moved or translated across an existing 3D object's surface using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2026%20-%20Transparency%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 26: Transparency
+</h4><i>
+-  1804 lines   - (C++: 878 FPS  C#: 888 FPS)
+</i><br /><p>
+This Tutorial shows how a texture can me set to a level of transparency using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2027%20-%20Reflection%20Projective%20Texturing%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 27: Reflection (Projective Texturing)
+</h4><i>
+-  1933 lines   - (C++: 514 FPS  C#: 520 FPS)
+</i><br /><p>
+This Tutorial shows a 3D Cube is projected and rendered as a reflection against another 3D Object using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2028%20-%20Screen%20Fades%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 28: Screen Fades
+</h4><i>
+-  2219 lines   - (C++: 1410 FPS C#: 1410 FPS)
+</i><br /><p>
+This Tutorial blends a 3D Cube for 4 seconds until its full intensity on the screen using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2029%20-%20Water%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 29: Water
+</h4><i>
+-  2667 lines   - (C++: 277 FPS  C#: 275 FPS)
+</i><br /><p>
+This Tutorial creates a small ripple effect of water in a concrete bath also displaying the relflections of nearby objects and the refracting of those reflections in the rippling water using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2030%20-%20Multiple%20Point%20Lights%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 30: Multiple Point Lights
+</h4><i>
+-  1628 lines   - (C++: 1210 FPS C#: 1220 FPS)
+</i><br /><p>
+This Tutorial shows how multiple different coloured lights are displayed up against a 3D Floor object using SharpDX.
+</p></td></tr>
+
+
 </table>
