@@ -294,4 +294,54 @@ This Tutorial shows how multiple different coloured lights are displayed up agai
 </p></td></tr>
 
 
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2031%20-%203D%20Sound%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 31: 3D Sound
+</h4><i>
+-  1026 lines   - (C++: 2256 FPS C#: 2290 FPS)
+</i><br /><p>
+This Tutorial demonstrates a looping WAV file that is rotated around the listener and this works on Surround sound speakers that is connected to your PC as well using SharpDX and DirectSound.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2032%20-%20Glass%20And%20Ice%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 32: Glass and Ice
+</h4><i>
+-  1888 lines   - (C++: 381 FPS  C#: 377 FPS)
+</i><br /><p>
+This Tutorial uses a multitude of techniques to ahcieve this effect where a rotating 3D Cube is placed behind a Green glass pane that perturbs the shape and colour of the Cube with a level of transparency using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2033%20-%20Fire%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 33: Fire
+</h4><i>
+-  1511 lines   - (C++: 895 FPS  C#: 892 FPS)
+</i><br /><p>
+This Tutorial uses multiple Textures that are translated along a flat rectangle with alpha blending which gives us the effect of moving Fire using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2034%20-%20Billboarding%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 34: Billboarding
+</h4><i>
+-  1567 lines   - (C++: 1220 FPS C#: 1220 FPS)
+</i><br /><p>
+This Tutorial uses an old technique of re positioning a flat rectangle to always face the camera as the camera moves or turns using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2035%20-%20Depth%20Buffer%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 35: Depth Buffers
+</h4><i>
+-  1213 lines   - (C++: 1350 FPS C#: 1350 FPS)
+</i><br /><p>
+This Tutorial uses a common technique of slipping up the distance from the camera into sections of depth, of which you can implement different rendering settings for each depth section using SharpDX.
+</p></td></tr>
+
+
 </table>
