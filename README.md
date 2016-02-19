@@ -390,7 +390,7 @@ Tutorial 40: Shadow Mapping
 </h4><i>
 -  2205 lines  - (C++:  270 FPS C#:  270 FPS)
 </i><br /><p>
-This Tutorial projects a shodow from a 3D Sphere against a square floor object with a directional light using SharpDX.
+This Tutorial projects a shodow from a 3D Sphere and a 3D Cube against a square floor object with a directional light setting over the scene like the sun using SharpDX.
 </p></td></tr>
 
 
