@@ -394,4 +394,54 @@ This Tutorial projects a shodow from a 3D Sphere and a 3D Cube against a square 
 </p></td></tr>
 
 
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2041%20-%20Multiple%20Light%20Shadow%20Mapping%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 41: Multiple Light Shadow Mapping
+</h4><i>
+-  2584 lines   - (C++:  124 FPS C#:  124 FPS)
+</i><br /><p>
+This Tutorial uses multiple directional light sources shining up against a 3D Sphere and 3D Cube using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2042%20-%20Soft%20Shadows%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 42: Soft Shadows
+</h4><i>
+-  3994 lines   - (C++:   55 FPS C#:  56 FPS)
+</i><br /><p>
+This Tutorial issistrates how the shadows being cast against a 3D Floor from the Sphere and Cube are sampled at a high resulotion in order to make the shodow shape appear smooth on the floor using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2043%20-%20Projective%20Texturing%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 43: Projective Texturing
+</h4><i>
+-  1467 lines   - (C++: 1045 FPS C#: 1058 FPS)
+</i><br /><p>
+This Tutorial projects a texture along a 3D Floor and up against a 3D Cube from a given point and the perspective is also translated in this projection  using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2044%20-%20Projected%20Light%20Maps%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 44: Projected Light Maps
+</h4><i>
+-  1384 lines    - (C++: 960 FPS C#:  964 FPS)
+</i><br /><p>
+This Tutorial projects light along a 3D Floor and up against a 3D Cube, using the shape of light being projected defined in a black and white texture using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2045%20-%20Managing%20Multiple%20Shaders%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 45: Managing Multiple Shaders
+</h4><i>
+-  2518 lines    - (C++: 1155 FPS C#: 1155 FPS)
+</i><br /><p>
+This Tutorial shows how you how to use more then one shader during a single execution using SharpDX.
+</p></td></tr>
+
+
 </table>
