@@ -444,4 +444,64 @@ This Tutorial shows how you how to use more then one shader during a single exec
 </p></td></tr>
 
 
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2046%20-%20Glow%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 46: Glow
+</h4><i>
+-  3203 lines     - (C++:  104 FPS C#:  105 FPS)
+</i><br /><p>
+This Tutorial uses a complex set of HLSL Shader operations in order to create the effect of a glowing Border around a string named 'Text' using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2047%20-%20Picking%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 47: Picking
+</h4><i>
+-  2883 lines     - (C++: 1290 FPS C#: 1293 FPS)
+</i><br /><p>
+This Tutorial uses DirectInput for allowing you control of the mouse by moving a small bitmap representing the mouse pointer, and when clicked its tested whether or not the mouse pointer was over a 3D Sphere object or not and reports it on screen using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2048%20-%20Directional%20Shadow%20Maps%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 48: Directional Shadow Maps
+</h4><i>
+-  2300 lines     - (C++:  300 FPS C#:  300 FPS)
+</i><br /><p>
+This Tutorial uses two directional lights against a 3D Cube and Sphere against a 3D Floor and projects the shodows against the repective Cube or sphere beside it as the light sets like the sun using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2049%20-%20Shadow%20Mapping%20And%20Transparency%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 49: Shadow Mapping and Transparency
+</h4><i>
+-  2845 lines     - (C++:  110 FPS C#:  130 FPS)
+</i><br /><p>
+This Tutorial renders a beautiful tree using an array of textures and while the light sets over the tree like the sun, it projects the shodow of the tree against the 3D Fllor that is textured as well, and all leaves are individually projected as part of the trees shadow as well, and very impressive too using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2050%20-%20Deferred%20Shading%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 50: Deferred Shading
+</h4><i>
+-  2147 lines     - (C++:  240 FPS C#:  240 FPS)
+</i><br /><p>
+This Tutorial demonstrated a technique that is used when you want more then 8 light sources rendered on any given scene. Eight lights is a DirectX11 limitation that when using the GPU for shading, only 8 light positions can be processed realtime, so this is rendering the lighting and then as an additional step placing that rendering on a texture and placing that texture on a 3D Cube using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Terrain%20Tutorial%201%20%20-%20%20Grid%20and%20Camera%20Movement%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Terrain Tutorial 1: Grid and Camera Movement
+</h4><i>
+-  2673 lines     - (C++:  687 FPS C#:  692 FPS)
+</i><br /><p>
+This Tutorial using lines, creates a large flat grid with a camera placed in front of it looking along a perspective view of the flat landscape using SharpDX.
+</p></td></tr>
+
+
 </table>
