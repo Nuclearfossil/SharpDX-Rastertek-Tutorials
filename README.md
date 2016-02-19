@@ -500,7 +500,7 @@ Terrain Tutorial 1: Grid and Camera Movement
 </h4><i>
 -  2673 lines     - (C++:  687 FPS C#:  692 FPS)
 </i><br /><p>
-This Tutorial using lines, creates a large flat grid with a camera placed in front of it looking along a perspective view of the flat landscape using SharpDX.
+This Tutorial using lines, creates a large flat grid with a camera placed in front of it looking along a perspective view of the flat landscape using SharpDX. This and all following Tutorials all have movement capabilities with arrow keys and az for up/down movement.
 </p></td></tr>
 
 
