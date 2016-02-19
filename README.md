@@ -544,4 +544,104 @@ This Tutorial introduces a conceot of dividing out the entore scene of 3D Object
 </p></td></tr>
 
 
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Terrain%20Tutorial%206%20%20-%20%20Height%20Based%20Movement%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Terrain Tutorial 6: Height Based Movement
+</h4><i>
+-  3831 lines   - (C++:  371 FPS C#:  390 FPS)
+</i><br /><p>
+This Tutorial allows you to freely move around the landscapaae and the height is calculated as you move in order to reposition the camera on that new height in the landscape using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Terrain%20Tutorial%207%20%20-%20%20Color%20Mapped%20Terrain%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Terrain Tutorial 7: Color Mapped Terrain
+</h4><i>
+-  3268 lines   - (C++:  287 FPS C#:  297 FPS)
+</i><br /><p>
+This Tutorial layers more then one Texture across the 3D Landscape using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Terrain%20Tutorial%208%20%20-%20%20Terrain%20Mini-Maps%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Terrain Tutorial 8: Terrain Mini-Maps
+</h4><i>
+-  3894 lines   - (C++  281 FPS C#:  291 FPS)
+</i><br /><p>
+This Tutorial keeps track of the number of vectors that the camera sees while moving around the 3D Landscape and trims out any objects that are not in the camera view using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Terrain%20Tutorial%209%20%20-%20%20Terrain%20Blending%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Terrain Tutorial 9: Terrain Blending
+</h4><i>
+-  3380 lines   - (C++:  796 FPS C#:  860 FPS)
+</i><br /><p>
+This Tutorial spreads multiple textures across the 3D Landscape in a blended means using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Terrain%20Tutorial%2010%20-%20Sky%20Domes%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Terrain Tutorial 10: Sky Domes
+</h4><i>
+-  3888 lines   - (C++:  270 FPS C#:  280 FPS)
+</i><br /><p>
+This Tutorial creates an umbrella like dome that hovers in the sky and follows the camera as you move along the 3D landscape, also the background is statically blended from blue on the top to pink at the landscapes level in the horizon using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Terrain%20Tutorial%2011%20-%20Bitmap%20Clouds%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Terrain Tutorial 11: Bitmap Clouds
+</h4><i>
+-  4400 lines   - (C++: 250 FPS  C#: 259 FPS)
+</i><br /><p>
+This Tutorial uses the previous layout and skkydomw and background blending as well as placing and translating bitmap clouds and blending them up against the background using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Terrain%20Tutorial%2012%20-%20Perturbed%20Clouds%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Terrain Tutorial 12: Perturbed Clouds
+</h4><i>
+-  4373 lines   - (C++:  246 FPS C#:  255 FPS)
+</i><br /><p>
+This Tutorial adds the effect of the bitmap clouds being translated across the sky in a three dimeniosnal manner also makes those coulds "look" three dimentional using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Terrain%20Tutorial%2013%20-%20Terrain%20Detail%20Mapping%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Terrain Tutorial 13: Terrain Detail Mapping
+</h4><i>
+-  4141 lines   - (C++:  115 FPS C#:  115 FPS)
+</i><br /><p>
+This Tutorial creates a small window in the upper left corner of the screen and from calculating differences in distances that you are currently viewing, seperates sections based on that distance for you to render each section differently using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Terrain%20Tutorial%2014%20-%20Slope%20Based%20Texturing%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Terrain Tutorial 14: Slope Based Texturing
+</h4><i>
+-  3257 lines   - (C++:  267 FPS C#:  270 FPS)
+</i><br /><p>
+This Tutorial caluclates the slope angle of each vector in the 3D landscape, and based on the angle of that slope, places a certain texture over those verticies that pertain to that particular slope using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Terrain%20Tutorial%2015%20-%20Terrain%20Bump%20Mapping%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Terrain Tutorial 15: Terrain Bump Mapping
+</h4><i>
+-  3367 lines   - (C++:  265 FPS C#:  269 FPS)
+</i><br /><p>
+This Tutorial uses bumpmapping with SharpDX.
+</p></td></tr>
+
+
 </table>
