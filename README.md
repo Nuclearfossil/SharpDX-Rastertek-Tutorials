@@ -344,4 +344,54 @@ This Tutorial uses a common technique of slipping up the distance from the camer
 </p></td></tr>
 
 
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2036%20-%20Blur%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 36: Blur
+</h4><i>
+-  2646 lines   - (C++: 126 FPS  C#: 126 FPS)
+</i><br /><p>
+This Tutorial creates a Blur effect on a rotating 3D Cube. As you can See with the FramesPerSecond reported above, this is an expensive process that downsamples, or depixelates Textures and redraws them to create a Bluring effect using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2037%20-%20Instancing%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 37: Instancing
+</h4><i>
+-  1307 lines   - (C++: 1316 FPS C#: 1312 FPS)
+</i><br /><p>
+This Tutorial creates 4 triangles using only the verticies to create one in the vertex buffers using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2038%20-%20Hardware%20Tessellation%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 38: Hardware Tessellation
+</h4><i>
+-  1256 lines   - (C++:  745 FPS C#:  715 FPS)
+</i><br /><p>
+This Tutorial creates one griant trangle that is further broken down into smaller triangles, creating more surface vectors from the one trangle object using SharpDX. This is the only Tutorial that utilizes Software WARP rendering because the machine I am developeing on only supports DirectX feature level 10.1, and Hardware rendered tesselations are only supported with graphics cards supporting DirectX feature level 11.0 for processing to be done on the GPU instead of the CPU.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2039%20-%20Particle%20Systems%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 39: Particle Systems
+</h4><i>
+-  1565 lines   - (C++:  335 FPS C#:  435 FPS)
+</i><br /><p>
+This Tutorial creates particles using alpha blending, textures and ablended colour on square vector objects that are billboarded, created in a rondom position and drop from the top of the screen to the bottom, and then removed from the vertex buffers when below the screen all using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%2040%20-%20Shadow%20Mapping%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Tutorial 40: Shadow Mapping
+</h4><i>
+-  2205 lines  - (C++:  270 FPS C#:  270 FPS)
+</i><br /><p>
+This Tutorial projects a shodow from a 3D Sphere against a square floor object with a directional light using SharpDX.
+</p></td></tr>
+
+
 </table>
