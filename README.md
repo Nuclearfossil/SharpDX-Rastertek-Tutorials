@@ -504,4 +504,44 @@ This Tutorial using lines, creates a large flat grid with a camera placed in fro
 </p></td></tr>
 
 
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Terrain%20Tutorial%202%20%20-%20%20Height%20Mapst%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Terrain Tutorial 2: Height Maps
+</h4><i>
+-  2796 lines   - (C++: 148 FPS  C#: 148 FPS)
+</i><br /><p>
+This Tutorial uses a grayscale texture with white being represented as the peeks of mountains and black as the ground and it lifts the grid based upon its position in that texture creating a wireframe landscape using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Terrain%20Tutorial%203%20%20-%20%20Terrain%20Lightingt%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Terrain Tutorial 3: Terrain Lighting
+</h4><i>
+-  2907 lines   - (C++:  294 FPS C#:  292 FPS)
+</i><br /><p>
+This Tutorial uses the previously created height based grid nad uses HLSL Shading to calculate the lighting effect against these rased grid vectors on the landscape creating a grayscale landscape using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Terrain%20Tutorial%204%20%20-%20%20Terrain%20Texturing%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Terrain Tutorial 4: Terrain Texturing
+</h4><i>
+-  2945 lines   - (C++:  293 FPS C#:  291 FPS)
+</i><br /><p>
+This Tutorial uses a texture for assigned heights like in previous terrain tutorials, and another texture to map up against the raised vectors in the Landscapes grid floor creating a colour landscape using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Terrain%20Tutorial%205%20%20-%20%20Quad%20Trees%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Terrain Tutorial 5: Quad Tree
+</h4><i>
+-  3684 lines   - (C++:  371 FPS C#:  380 FPS)
+</i><br /><p>
+This Tutorial introduces a conceot of dividing out the entore scene of 3D Objects into subsections in order to do or not do processing on those objects in that quad tree subsection, this subsectioniing is done by spliting the entire landscape into equal smaller parts using SharpDX.
+</p></td></tr>
+
+
 </table>
