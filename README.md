@@ -644,4 +644,34 @@ This Tutorial uses bumpmapping with SharpDX.
 </p></td></tr>
 
 
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Terrain%20Tutorial%2016%20-%20Small%20Body%20Water%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Terrain Tutorial 16: Small Body Water
+</h4><i>
+-  5732 lines   - (C++:   19 FPS C#:   19 FPS)
+</i><br /><p>
+This Tutorial is a complex example of using multiple techniques in shading with HLSL. Reflections, Refractions and texture translations are performsed against the waters surface to create the effect of a shiny semi-translucent rippling effect against the shoreline of the water, as well as a specular light representing the suns position against the water using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Terrain%20Tutorial%2017%20-%20Terrain%20Texture%20Layers%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Terrain Tutorial 17: Terrain Texture Layers
+</h4><i>
+-  2191 lines   - (C++:  370 FPS C#:  355 FPS)
+</i><br /><p>
+This Tutorial uses multiple textures for layering different levels of detail at different distances across the landscape using SharpDX.
+</p></td></tr>
+
+
+<tr><td width="40%">
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Terrain%20Tutorial%2019%20-%20Foliages%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+Terrain Tutorial 19: Foliage
+</h4><i>
+-  3458 lines   - (C++:  119 FPS C#:  120 FPS)
+</i><br /><p>
+This Tutorial applies bush clusters across the landscape in random places, nillboards these clusters to always face the camera as well as a slight swaying effect representing a slight wind blowing for a realistic random movement effect using SharpDX.
+</p></td></tr>
+
+
 </table>
