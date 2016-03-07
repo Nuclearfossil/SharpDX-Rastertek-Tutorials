@@ -7,8 +7,7 @@ This is indented for C# developers to use as a reference when trying to learn Di
 
 <table><tr><td width="40%">
 
-
-<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%202%20%20-%20%20Creating%20A%20Framework%20And%20Window%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+-<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%202%20%20-%20%20Creating%20A%20Framework%20And%20Window%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
 Tutorial 2: Creating a Framework and Window
 </h4><i>
 -   278 lines   - (C++: 0 FPS C#: 0 FPS)
