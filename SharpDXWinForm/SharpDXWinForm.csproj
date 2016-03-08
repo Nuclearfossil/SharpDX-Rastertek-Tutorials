@@ -24,13 +24,13 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>true</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>https://raw.github.com/Dan6040/SharpDX-Rastertek-Tutorials/raw/master/SharpDXWinForm/Publish/</InstallUrl>
-    <UpdateUrl>https://raw.github.com/Dan6040/SharpDX-Rastertek-Tutorials/raw/master/SharpDXWinForm/Publish/</UpdateUrl>
+    <InstallUrl>https://raw.github.com/Dan6040/SharpDX-Rastertek-Tutorials/master/SharpDXWinForm/publish/</InstallUrl>
+    <UpdateUrl>https://raw.github.com/Dan6040/SharpDX-Rastertek-Tutorials/master/SharpDXWinForm/publish/</UpdateUrl>
     <ProductName>DRastertek</ProductName>
     <PublisherName>Kalinich Productions</PublisherName>
     <SuiteName>DRastertek Tutorials</SuiteName>
     <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
