@@ -128,10 +128,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Content Include="Series1\Tut05\Texture.ps">
+    <Content Include="Series1\Tut05\Shaders\Texture.ps">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Series1\Tut05\Texture.vs">
+    <Content Include="Series1\Tut05\Shaders\Texture.vs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="SharpDXWinForm_TemporaryKey.pfx" />
