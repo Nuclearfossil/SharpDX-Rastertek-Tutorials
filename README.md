@@ -1,5 +1,5 @@
 # SharpDX Rastertek Tutorials Series I
-  Install Link: https://github.com/Dan6040/SharpDX-Rastertek-Tutorials/blob/master/SharpDXWinForm/publish/setup.exe?raw=true
+  Install Link: https://raw.githubusercontent.com/Dan6040/SharpDX-Rastertek-Tutorials/master/SharpDXWinForm/publish/setup.exe
 This is a C# repository based off the Rastertek Tutorial Series posted on www.Rastertek.com, is a literal conversion of the C++ iimplementations posted on the WebSite, to a .NET C# based implementation using SharpDX 2.6.3, DirectX 11 &amp; WinForms. 
 This is indented for C# developers to use as a reference when trying to learn DirectX 11 3D programminf, especially when most examples using DirectX are written in C++, so this repo is mimiking ALOT of common C++ DirectX style code writing but in your favorite language C#! So please unless you find an error its not intended for new contributions, its easy to run these tutorials as I have included a Winforms UI for executing every Tutorial example found on www.Rastertek.com. Enjoy!.
 
