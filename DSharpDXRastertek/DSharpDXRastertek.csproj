@@ -1175,7 +1175,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Externals\Data\seafloor.dds">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Externals\Data\slope.dds">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
