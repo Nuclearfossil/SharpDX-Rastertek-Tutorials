@@ -1058,12 +1058,6 @@
     <Content Include="Series1\Tut04\Shaders\Color.vs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Series1\Tut05\Shaders\Texture.ps">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Series1\Tut05\Shaders\Texture.vs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Series1\Tut06\Shaders\Light.ps">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

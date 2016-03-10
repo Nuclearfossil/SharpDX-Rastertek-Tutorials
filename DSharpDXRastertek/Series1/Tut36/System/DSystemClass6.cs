@@ -48,7 +48,7 @@ namespace DSharpDXRastertek.Tut36.System
             {
                 Graphics = new DGraphics();
                 if (!Graphics.Initialize(Configuration, RenderForm.Handle))
-                    return false;
+                    result = false;
             }
 
             DPerfLogger.Initialize("WinForms C# SharpDX: " + Configuration.Width + "x" + Configuration.Height + " VSync:" + DSystemConfiguration.VerticalSyncEnabled + " FullScreen:" + DSystemConfiguration.FullScreen + "   " + RenderForm.Text, testTimeSeconds, Configuration.Width, Configuration.Height);;
@@ -61,7 +61,7 @@ namespace DSharpDXRastertek.Tut36.System
                 return false;
             }
 
-            return true;
+            return result;
         }
         private void InitializeWindows(string title)
         {
