@@ -365,6 +365,12 @@
     <Content Include="Series1\Tut05\Shaders\Texture.vs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Series1\Tut04\Shaders\Color.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut04\Shaders\Color.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="SharpDXWinForm_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
