@@ -999,24 +999,6 @@
     </Content>
     <Content Include="Series1\TutTerr13\Externals\Shaders\shader-error.txt" />
     <None Include="packages.config" />
-    <Content Include="Series1\Tut09\Shaders\Light.ps">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Series1\Tut09\Shaders\Light.vs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Series1\Tut10\Shaders\Light.ps">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Series1\Tut10\Shaders\Light.vs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Series1\Tut11\Shaders\Texture.ps">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Series1\Tut11\Shaders\Texture.vs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Series1\Tut14\Data\sound01.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
