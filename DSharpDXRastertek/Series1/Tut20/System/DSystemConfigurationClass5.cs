@@ -50,7 +50,7 @@ namespace DSharpDXRastertek.Tut20.System
             ScreenNear = 0.1f;
             BorderStyle = FormBorderStyle.None;
 
-            ShaderFilePath = @"Series1\Tut20\Externals\Shaders\";
+            ShaderFilePath = @"Series1\Tut20\Shaders\";
             DataFilePath = @"Externals\Data\";
             ModelFilePath = @"Externals\Models\";
         }
