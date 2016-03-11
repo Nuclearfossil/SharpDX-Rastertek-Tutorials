@@ -999,9 +999,6 @@
     </Content>
     <Content Include="Series1\TutTerr13\Externals\Shaders\shader-error.txt" />
     <None Include="packages.config" />
-    <Content Include="Series1\Tut14\Data\sound01.wav">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Series1\Tut18\Externals\Shaders\LightMap.ps">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

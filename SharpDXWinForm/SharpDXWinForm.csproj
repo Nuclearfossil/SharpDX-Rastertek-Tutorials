@@ -103,6 +103,9 @@
     <Compile Include="SharpDXRastertekTutorialsForm.Designer.cs">
       <DependentUpon>SharpDXRastertekTutorialsForm.cs</DependentUpon>
     </Compile>
+    <Content Include="Series1\Tut14\Data\sound01.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <EmbeddedResource Include="PerfTestResultForm.resx">
       <DependentUpon>PerfTestResultForm.cs</DependentUpon>
     </EmbeddedResource>
