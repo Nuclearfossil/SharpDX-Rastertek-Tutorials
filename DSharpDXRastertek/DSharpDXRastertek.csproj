@@ -999,7 +999,6 @@
     </Content>
     <Content Include="Series1\TutTerr13\Externals\Shaders\shader-error.txt" />
     <None Include="packages.config" />
-    <None Include="Series1\Tut08\cube.obj" />
     <Content Include="Series1\Tut09\Shaders\Light.ps">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
