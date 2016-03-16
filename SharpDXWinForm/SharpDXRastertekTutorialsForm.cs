@@ -180,7 +180,7 @@ namespace SharpDXWinForm
         {
             // Tutorial 8: Loading Maya 2011 Models
             DSharpDXRastertek.Tut08.Tut08LoadMaya2011ModelForm form = new DSharpDXRastertek.Tut08.Tut08LoadMaya2011ModelForm();
-            form.Show(this);
+            form.ShowDialog(this);
         }
         private void buttonTutorial9_Click(object sender, EventArgs e)
         {

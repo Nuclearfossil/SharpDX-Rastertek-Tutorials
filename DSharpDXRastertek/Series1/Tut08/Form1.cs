@@ -16,9 +16,11 @@ namespace DSharpDXRastertek.Tut08
         private void buttonSource_Click(object sender, EventArgs e)
         {
             // Read in the name of the model file.
-            openFileDialog1.ShowDialog();
-            textBoxFrom.Text = openFileDialog1.FileName;
-            importedOBJ = new OBJImporter(textBoxFrom.Text);
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                textBoxFrom.Text = openFileDialog1.FileName;
+                importedOBJ = new OBJImporter(textBoxFrom.Text);
+            }
         }
         private void buttonDestination_Click(object sender, EventArgs e)
         {
