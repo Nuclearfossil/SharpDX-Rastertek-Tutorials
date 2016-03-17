@@ -52,7 +52,7 @@ namespace DSharpDXRastertek.TutTerr19.System
             ScreenNear = 0.1f;      // 0.1f
             BorderStyle = FormBorderStyle.None;
 
-            ShaderFilePath = @"Series1\TutTerr19\Externals\Shaders\";
+            ShaderFilePath = @"Series1\TutTerr19\Shaders\";
             FontFilePath = @"Externals\Font\";
             DataFilePath = @"Externals\Data\";
             ModelFilePath = @"Externals\Models\";
