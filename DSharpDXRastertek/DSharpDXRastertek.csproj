@@ -1008,42 +1008,6 @@
     <Content Include="Series1\Tut40\Externals\Shaders\shadow.vs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Series1\TutTerr01\Externals\Shaders\color.ps">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Series1\TutTerr01\Externals\Shaders\color.vs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Series1\TutTerr02\Externals\Shaders\color.ps">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Series1\TutTerr02\Externals\Shaders\color.vs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Series1\TutTerr03\Externals\Shaders\terrain.ps">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Series1\TutTerr03\Externals\Shaders\terrain.vs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Series1\TutTerr04\Externals\Shaders\terrain.ps">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Series1\TutTerr04\Externals\Shaders\terrain.vs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Series1\TutTerr05\Externals\Shaders\terrain.ps">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Series1\TutTerr05\Externals\Shaders\terrain.vs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Series1\TutTerr06\Externals\Shaders\terrain.ps">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Series1\TutTerr06\Externals\Shaders\terrain.vs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Series1\TutTerr07\Externals\Shaders\terrain.ps">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
