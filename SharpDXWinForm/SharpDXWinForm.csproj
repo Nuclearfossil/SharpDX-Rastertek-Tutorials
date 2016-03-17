@@ -644,6 +644,12 @@
     <Content Include="Series1\Tut36\Shaders\verticalblur.vs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Series1\Tut37\Shaders\texture.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut37\Shaders\texture.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="SharpDXWinForm_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
