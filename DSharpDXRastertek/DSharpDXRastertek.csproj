@@ -996,12 +996,6 @@
   <ItemGroup>
     <Content Include="Series1\TutTerr13\Externals\Shaders\shader-error.txt" />
     <None Include="packages.config" />
-    <Content Include="Series1\Tut35\Externals\Shaders\depth.ps">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Series1\Tut35\Externals\Shaders\depth.vs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Series1\Tut36\Externals\Shaders\horizontalblur.ps">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

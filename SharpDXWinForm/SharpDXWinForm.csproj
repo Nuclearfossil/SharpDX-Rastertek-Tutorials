@@ -620,6 +620,12 @@
     <Content Include="Series1\Tut34\Shaders\texture.vs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Series1\Tut35\Shaders\depth.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series1\Tut35\Shaders\depth.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="SharpDXWinForm_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
