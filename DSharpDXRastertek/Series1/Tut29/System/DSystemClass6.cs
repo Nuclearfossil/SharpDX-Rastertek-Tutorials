@@ -93,7 +93,6 @@ namespace DSharpDXRastertek.Tut29.System
 
             // Update the system stats.
             Timer.Frame2();
-            Timer.Frame2();
             if (DPerfLogger.IsTimedTest)
             {
                 DPerfLogger.Frame(Timer.FrameTime);
