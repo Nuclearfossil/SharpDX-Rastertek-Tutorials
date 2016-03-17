@@ -20,6 +20,10 @@ namespace SharpDXWinForm
         private void PerfTestResultForm_Load(object sender, EventArgs e)
         {
             richTextBoxDisplay.Text = File.ReadAllText("Test.txt");
+
+            // Scroll to bottom of Text file to show latest results.
+            richTextBoxDisplay.SelectionStart = richTextBoxDisplay.Text.Length;
+            richTextBoxDisplay.ScrollToCaret();
         }
     }
 }
