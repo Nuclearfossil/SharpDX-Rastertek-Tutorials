@@ -994,9 +994,6 @@
     <Compile Include="Series1\TutTerr19\System\DTimerClass1.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Series1\Tut31\Externals\Data\sound02.wav">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Series1\TutTerr13\Externals\Shaders\shader-error.txt" />
     <None Include="packages.config" />
     <Content Include="Series1\Tut32\Externals\Shaders\glass.ps">

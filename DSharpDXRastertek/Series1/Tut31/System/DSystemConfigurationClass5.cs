@@ -43,7 +43,7 @@ namespace DSharpDXRastertek.Tut31.System
             VerticalSyncEnabled = false;
             BorderStyle = FormBorderStyle.None;
 
-            DataFilePath = @"Series1\Tut31\Externals\Data\";
+            DataFilePath = @"Series1\Tut31\Data\";
         }
     }
 }
