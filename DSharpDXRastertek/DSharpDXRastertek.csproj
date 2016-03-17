@@ -996,12 +996,6 @@
   <ItemGroup>
     <Content Include="Series1\TutTerr13\Externals\Shaders\shader-error.txt" />
     <None Include="packages.config" />
-    <Content Include="Series1\Tut39\Externals\Shaders\particle.ps">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Series1\Tut39\Externals\Shaders\particle.vs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Series1\Tut40\Externals\Shaders\depth.ps">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
