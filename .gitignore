@@ -121,7 +121,6 @@ DocProject/Help/Html2
 DocProject/Help/html
 
 # Click-Once directory
-app.publish/
 !publish/
 
 # Publish Web Output
