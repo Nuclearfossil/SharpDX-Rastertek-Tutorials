@@ -999,24 +999,6 @@
     </Content>
     <Content Include="Series1\TutTerr13\Externals\Shaders\shader-error.txt" />
     <None Include="packages.config" />
-    <Content Include="Series1\Tut29\Externals\Shaders\Water.ps">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Series1\Tut29\Externals\Shaders\Water.vs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Series1\Tut29\Externals\Shaders\Refraction.ps">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Series1\Tut29\Externals\Shaders\Refraction.vs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Series1\Tut29\Externals\Shaders\Light.ps">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Series1\Tut29\Externals\Shaders\Light.vs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Series1\Tut30\Externals\Shaders\Light.vs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
