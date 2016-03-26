@@ -71,7 +71,7 @@ namespace SharpDXWinForm
             tabControl1.SelectedTab = tabPage2;
             PressAllButtons();
             // And finally the last Series 2 Tutorials as well.
-            tabControl1.Select = tabPage3;
+            tabControl1.SelectedTab = tabPage3;
             PressAllButtons();
 
             // Display Performance Test Results
