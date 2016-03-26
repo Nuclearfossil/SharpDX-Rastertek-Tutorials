@@ -1035,6 +1035,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DSharpDXRastertekSeries2\DSharpDXRastertekSeries2.csproj">
+      <Project>{cb16e57b-ac3c-470a-af59-4f7c5a1ae35a}</Project>
+      <Name>DSharpDXRastertekSeries2</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DSharpDXRastertek\DSharpDXRastertek.csproj">
       <Project>{bd79af39-95fd-4bac-9c99-b42e98890abf}</Project>
       <Name>DSharpDXRastertek</Name>
@@ -1255,7 +1259,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ExternalsSeries2\Data\" />
+    <Folder Include="ExternalsSeries2\Font\" />
+    <Folder Include="ExternalsSeries2\Models\" />
+    <Folder Include="Series2\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

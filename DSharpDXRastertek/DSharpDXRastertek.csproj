@@ -992,11 +992,6 @@
     <Compile Include="Series1\TutTerr19\System\DSystemClass6.cs" />
     <Compile Include="Series1\TutTerr19\System\DSystemConfigurationClass5.cs" />
     <Compile Include="Series1\TutTerr19\System\DTimerClass1.cs" />
-    <Compile Include="Series2\Tut02\Graphics\DGraohics.cs" />
-    <Compile Include="Series2\Tut02\Input\DInput.cs" />
-    <Compile Include="Series2\Tut02\System\DSystem.cs" />
-    <Compile Include="Series2\Tut02\System\DSystemConfiguration.cs" />
-    <Compile Include="Series2\Tut02\System\DTimer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

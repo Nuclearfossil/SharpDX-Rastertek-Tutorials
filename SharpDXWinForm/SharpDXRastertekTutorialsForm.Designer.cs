@@ -109,12 +109,17 @@
             this.checkBoxTimer = new System.Windows.Forms.CheckBox();
             this.numericUpDownTimeInSeconds = new System.Windows.Forms.NumericUpDown();
             this.buttonRunPerfTests = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.buttonS2Tutorial2 = new System.Windows.Forms.Button();
+            this.buttonS2Tutorial3 = new System.Windows.Forms.Button();
+            this.buttonS2Tutorial4 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWidth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTimeInSeconds)).BeginInit();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonTutorial02
@@ -922,17 +927,19 @@
             this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.Buttons;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.ItemSize = new System.Drawing.Size(60, 28);
             this.tabControl1.Location = new System.Drawing.Point(10, 145);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.ShowToolTips = true;
             this.tabControl1.Size = new System.Drawing.Size(814, 504);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
             // 
             this.tabPage1.AutoScroll = true;
-            this.tabPage1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.tabPage1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.tabPage1.Controls.Add(this.buttonTutorial50);
             this.tabPage1.Controls.Add(this.buttonTutorial31);
             this.tabPage1.Controls.Add(this.buttonTutorial49);
@@ -1484,6 +1491,65 @@
             this.buttonRunPerfTests.UseVisualStyleBackColor = false;
             this.buttonRunPerfTests.Click += new System.EventHandler(this.buttonRunPerfTests_Click);
             // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.tabPage3.Controls.Add(this.buttonS2Tutorial2);
+            this.tabPage3.Controls.Add(this.buttonS2Tutorial3);
+            this.tabPage3.Controls.Add(this.buttonS2Tutorial4);
+            this.tabPage3.ForeColor = System.Drawing.Color.Black;
+            this.tabPage3.Location = new System.Drawing.Point(4, 32);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(806, 468);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Series 2 Tutorials";
+            // 
+            // buttonS2Tutorial2
+            // 
+            this.buttonS2Tutorial2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonS2Tutorial2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonS2Tutorial2.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonS2Tutorial2.ForeColor = System.Drawing.Color.White;
+            this.buttonS2Tutorial2.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_2_____Creating_A_Framework_And_Window_Sm;
+            this.buttonS2Tutorial2.Location = new System.Drawing.Point(14, 15);
+            this.buttonS2Tutorial2.Name = "buttonS2Tutorial2";
+            this.buttonS2Tutorial2.Size = new System.Drawing.Size(250, 140);
+            this.buttonS2Tutorial2.TabIndex = 3;
+            this.buttonS2Tutorial2.Text = "Tutorial 2: Creating a Framework and Window";
+            this.buttonS2Tutorial2.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonS2Tutorial2.UseVisualStyleBackColor = true;
+            this.buttonS2Tutorial2.Click += new System.EventHandler(this.buttonS2Tutorial2_Click);
+            // 
+            // buttonS2Tutorial3
+            // 
+            this.buttonS2Tutorial3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonS2Tutorial3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonS2Tutorial3.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonS2Tutorial3.ForeColor = System.Drawing.Color.White;
+            this.buttonS2Tutorial3.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_3_____Initializing_DirectX_11_Sm;
+            this.buttonS2Tutorial3.Location = new System.Drawing.Point(270, 15);
+            this.buttonS2Tutorial3.Name = "buttonS2Tutorial3";
+            this.buttonS2Tutorial3.Size = new System.Drawing.Size(250, 140);
+            this.buttonS2Tutorial3.TabIndex = 4;
+            this.buttonS2Tutorial3.Text = "Tutorial 3: Initializing DirectX 11";
+            this.buttonS2Tutorial3.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonS2Tutorial3.UseVisualStyleBackColor = true;
+            // 
+            // buttonS2Tutorial4
+            // 
+            this.buttonS2Tutorial4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonS2Tutorial4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonS2Tutorial4.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonS2Tutorial4.ForeColor = System.Drawing.Color.White;
+            this.buttonS2Tutorial4.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_4_____Buffers__Shaders__And_HLSL_Sm;
+            this.buttonS2Tutorial4.Location = new System.Drawing.Point(526, 15);
+            this.buttonS2Tutorial4.Name = "buttonS2Tutorial4";
+            this.buttonS2Tutorial4.Size = new System.Drawing.Size(250, 140);
+            this.buttonS2Tutorial4.TabIndex = 5;
+            this.buttonS2Tutorial4.Text = "Tutorial 4: Buffers, Shaders, and HLSL";
+            this.buttonS2Tutorial4.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonS2Tutorial4.UseVisualStyleBackColor = true;
+            // 
             // SharpDXRastertekTutorialsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -1518,6 +1584,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWidth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHeight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTimeInSeconds)).EndInit();
+            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1606,5 +1673,9 @@
         private System.Windows.Forms.CheckBox checkBoxTimer;
         private System.Windows.Forms.NumericUpDown numericUpDownTimeInSeconds;
         private System.Windows.Forms.Button buttonRunPerfTests;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Button buttonS2Tutorial2;
+        private System.Windows.Forms.Button buttonS2Tutorial3;
+        private System.Windows.Forms.Button buttonS2Tutorial4;
     }
 }
