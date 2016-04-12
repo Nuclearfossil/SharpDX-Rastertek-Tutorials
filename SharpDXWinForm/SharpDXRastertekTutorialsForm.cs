@@ -1032,12 +1032,26 @@ namespace SharpDXWinForm
             ToogleAllButtons();
 
             // Series 2 Tutorial 2: Creating a Framework and Window - 278 lines - (C++: 0 FPS C#: 0 FPS)
-            DSharpDXRastertek.Series2.Tut02.System.DSystem.StartRenderForm("Terrain Tutorial 19: Foliag", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, checkBoxScreenSize.Checked, (int)numericUpDownTimeInSeconds.Value);
+            DSharpDXRastertek.Series2.Tut02.System.DSystem.StartRenderForm("Series 2 Tutorial 2: Creating a Framework and Window", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, checkBoxScreenSize.Checked, (int)numericUpDownTimeInSeconds.Value);
             Thread.Sleep(3000);
 
             // Execute Second pass with the Full Screen off since it was first sent in Fullscreen.
             if (checkBoxScreenSize.CheckState == CheckState.Indeterminate)
                 DSharpDXRastertek.Series2.Tut02.System.DSystem.StartRenderForm("Series 2 Tutorial 2: Creating a Framework and Window", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, false, (int)numericUpDownTimeInSeconds.Value);
+
+            ToogleAllButtons();
+        }
+        private void buttonS2Tutorial3_Click(object sender, EventArgs e)
+        {
+            ToogleAllButtons();
+
+            // Series 2 Tutorial 3: Initializing DirectX 11    -   563 lines   - (C++: 2255 FPS C#: 2290 FPS)
+            DSharpDXRastertek.Series2.Tut03.System.DSystem.StartRenderForm("Series 2 Tutorial 3: Initializing DirectX 11", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, checkBoxScreenSize.Checked, (int)numericUpDownTimeInSeconds.Value);
+            Thread.Sleep(3000);
+
+            // Execute Second pass with the Full Screen off since it was first sent in Fullscreen.
+            if (checkBoxScreenSize.CheckState == CheckState.Indeterminate)
+                DSharpDXRastertek.Series2.Tut03.System.DSystem.StartRenderForm("Series 2 Tutorial 3: Initializing DirectX 11", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, false, (int)numericUpDownTimeInSeconds.Value);
 
             ToogleAllButtons();
         }

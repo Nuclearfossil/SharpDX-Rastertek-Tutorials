@@ -1,10 +1,11 @@
-﻿using DSharpDXRastertek.Series2.Tut02.Graphics;
-using DSharpDXRastertek.Series2.Tut02.Input;
+﻿using DSharpDXRastertek.Series2.Tut02.Input;
+using DSharpDXRastertek.Series2.Tut03.Graphics;
 using SharpDX.Windows;
 using System.Drawing;
 using System.Windows.Forms;
+using TestConsole;
 
-namespace DSharpDXRastertek.Series2.Tut02.System
+namespace DSharpDXRastertek.Series2.Tut03.System
 {
     public class DSystem
     {
@@ -12,7 +13,6 @@ namespace DSharpDXRastertek.Series2.Tut02.System
         public DSystemConfiguration Configuration { get; private set; }
         public DInput Input { get; private set; }
         public DGraphics Graphics { get; private set; }
-        public DTimer Timer { get; private set; }
 
         public DSystem() { }
 
@@ -28,13 +28,11 @@ namespace DSharpDXRastertek.Series2.Tut02.System
 
             Configuration = new DSystemConfiguration(title, width, height, fullScreen, vSync);
             InitializeWindows(title);
-            RenderForm.BackColor = Color.Black;
             Input = new DInput();
-            result = Input.Initialize();
+            Input.Initialize();
             Graphics = new DGraphics();
-            result = Graphics.Initialize(Configuration);
-            Timer = new DTimer();
-            result = Timer.Initialize();
+            result = Graphics.Initialize(Configuration, RenderForm.Handle);
+            DPerfLogger.Initialize("RenderForm C# SharpDX: " + Configuration.Width + "x" + Configuration.Height + " VSync:" + DSystemConfiguration.VerticalSyncEnabled + " FullScreen:" + DSystemConfiguration.FullScreen + "   " + RenderForm.Text, testTimeSeconds, Configuration.Width, Configuration.Height);
 
             return result;
         }
@@ -68,16 +66,21 @@ namespace DSharpDXRastertek.Series2.Tut02.System
             if (Input.IsKeyDown(Keys.Escape))
                 return false;
 
-            Timer.Frame2();
-            if (Timer.CumulativeFrameTime >= (1 * 1000))
-                return false;
+            Graphics.Timer.Frame2();
+            if (DPerfLogger.IsTimedTest)
+            {
+                DPerfLogger.Frame(Graphics.Timer.FrameTime);
+                if (Graphics.Timer.CumulativeFrameTime >= DPerfLogger.TestTimeInSeconds * 1000)
+                    return false;
+            }
 
             return Graphics.Frame();
         }
         public void ShutDown()
         {
             ShutdownWindows();
-            Timer = null;
+            DPerfLogger.ShutDown();
+
             Graphics?.ShutDown();
             Graphics = null;
             Input = null;

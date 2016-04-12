@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace DSharpDXRastertek.Series2.Tut02.System
+namespace DSharpDXRastertek.Series2.Tut03.System
 {
     public class DTimer
     {

@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace DSharpDXRastertek.Series2.Tut02.System
+namespace DSharpDXRastertek.Series2.Tut03.System
 {
     public class DSystemConfiguration
     {
@@ -9,6 +9,7 @@ namespace DSharpDXRastertek.Series2.Tut02.System
         public int Height { get; set; }
 
         public static bool FullScreen { get; private set; }
+        public static bool VerticalSyncEnabled { get; private set; }
 
         public DSystemConfiguration(bool fullScreen, bool vSync) : this("SharpDX Demo", fullScreen, vSync) { }
         public DSystemConfiguration(string title, bool fullScreen, bool vSync) : this(title, 800, 600, fullScreen, vSync) { }
@@ -16,6 +17,7 @@ namespace DSharpDXRastertek.Series2.Tut02.System
         {
             FullScreen = fullScreen;
             Title = title;
+            VerticalSyncEnabled = vSync;
 
             if (!FullScreen)
             {

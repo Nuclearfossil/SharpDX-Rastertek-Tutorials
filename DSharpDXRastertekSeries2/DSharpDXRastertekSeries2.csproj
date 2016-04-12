@@ -28,6 +28,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="SharpDX, Version=3.0.2.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
@@ -76,10 +77,22 @@
     <Compile Include="Series2\Tut02\System\DSystem.cs" />
     <Compile Include="Series2\Tut02\System\DSystemConfiguration.cs" />
     <Compile Include="Series2\Tut02\System\DTimer.cs" />
+    <Compile Include="Series2\Tut03\Graphics\DDX11.cs" />
+    <Compile Include="Series2\Tut03\Graphics\DGraphics.cs" />
+    <Compile Include="Series2\Tut03\Input\DInput.cs" />
+    <Compile Include="Series2\Tut03\System\DSystem.cs" />
+    <Compile Include="Series2\Tut03\System\DSystemConfiguration.cs" />
+    <Compile Include="Series2\Tut03\System\DTimer.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DTestConsole\DTestConsole.csproj">
+      <Project>{e3da61ca-f2d6-48f0-90de-c724a926296a}</Project>
+      <Name>DTestConsole</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
