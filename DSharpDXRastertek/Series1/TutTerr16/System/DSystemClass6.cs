@@ -19,15 +19,15 @@ namespace DSharpDXRastertek.TutTerr16.System
         public static void StartRenderForm(string title, int width, int height, bool vSync, bool fullScreen = true, int testTimeSeconds = 0)
         {
             DSystem system = new DSystem();
-            system.Initialize(title, width, height, vSync, fullScreen, testTimeSeconds);
-            system.RunRenderForm();
+            if (system.Initialize(title, width, height, vSync, fullScreen, testTimeSeconds))
+                system.RunRenderForm();
+            else
+                system.ShutDown();
         }
 
         // Methods
         public virtual bool Initialize(string title, int width, int height, bool vSync, bool fullScreen, int testTimeSeconds)
         {
-            bool result = false;
-
             if (Configuration == null)
                 Configuration = new DSystemConfiguration(title, width, height, fullScreen, vSync);
 
@@ -51,7 +51,7 @@ namespace DSharpDXRastertek.TutTerr16.System
             if (!DApplication.Initialize(Configuration, RenderForm.Handle))
                 return false;
 
-            return result;
+            return true;
         }
         private void InitializeWindows(string title)
         {
