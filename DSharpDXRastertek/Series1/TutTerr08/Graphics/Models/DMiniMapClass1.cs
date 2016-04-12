@@ -39,21 +39,21 @@ namespace DSharpDXRastertek.TutTerr08.Graphics.Models
             MiniMapBitmap = new DBitmap();
 
             // Initialize the mini-map bitmap object.
-            if (!MiniMapBitmap.Initialize(device, screenWidth, screenHeight, "colorm01.dds", 150, 150))
+            if (!MiniMapBitmap.Initialize(device, screenWidth, screenHeight, "colorm01.bmp", 150, 150))
                 return false;
 
             // Create the border bitmap object.
             Border = new DBitmap();
 
             // Initialize the border bitmap object.
-            if (!Border.Initialize(device, screenWidth, screenHeight,"border01.dds", 154, 154 ))
+            if (!Border.Initialize(device, screenWidth, screenHeight,"border01.bmp", 154, 154 ))
                 return false;
 
             // Create the point bitmap object.
             Point = new DBitmap();
 
             // Initialize the point bitmap object.
-            if (!Point.Initialize(device, screenWidth, screenHeight, "point01.dds", 3, 3))
+            if (!Point.Initialize(device, screenWidth, screenHeight, "point01.bmp", 3, 3))
                 return false;
 
             return true;

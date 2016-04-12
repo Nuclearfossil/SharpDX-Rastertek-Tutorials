@@ -94,7 +94,7 @@ namespace DSharpDXRastertek.Tut49.Graphics
                 GroundModel = new DModel();
 
                 // Initialize the ground model object.
-                if (!GroundModel.Initialize(D3D.Device, "plane01.txt", "dirt.dds", 2.0f))
+                if (!GroundModel.Initialize(D3D.Device, "plane01.txt", "dirt.bmp", 2.0f))
                     return false;
 
                 // Set the position for the ground model.
@@ -104,7 +104,7 @@ namespace DSharpDXRastertek.Tut49.Graphics
                 TreeModel = new DTreeModel();
 
                 // Initialize the shadow shader object.
-                if (!TreeModel.Initialize(D3D.Device, "trunk001.txt", "trunk001.dds", "leaf001.txt", "leaf001.dds", 0.1f))
+                if (!TreeModel.Initialize(D3D.Device, "trunk001.txt", "trunk001.bmp", "leaf001.txt", "leaf001.bmp", 0.1f))
                     return false;
 
                 // Set the position for the tree model.

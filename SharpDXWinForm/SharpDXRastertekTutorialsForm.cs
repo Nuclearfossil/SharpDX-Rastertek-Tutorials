@@ -84,7 +84,7 @@ namespace SharpDXWinForm
             // iterate through all the buttons for clicking a Tutorial Performace Test.
             foreach (Control control in tabControl1.SelectedTab.Controls)
                 if (control is Button)
-                    sorted.Add((control as Button));
+                    sorted.Add((control as Button)); 
 
             // Sort the buttons in Order and trim out Tutorial 8 for loading Maya objects does not execute as a running engine..
             sorted = sorted.OrderBy(e => e.Name).Where(e => !e.Name.Equals("buttonTutorial08")).ToList();
@@ -1037,7 +1037,7 @@ namespace SharpDXWinForm
 
             // Execute Second pass with the Full Screen off since it was first sent in Fullscreen.
             if (checkBoxScreenSize.CheckState == CheckState.Indeterminate)
-                DSharpDXRastertek.Series2.Tut02.System.DSystem.StartRenderForm("Terrain Tutorial 19: Foliag", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, false, (int)numericUpDownTimeInSeconds.Value);
+                DSharpDXRastertek.Series2.Tut02.System.DSystem.StartRenderForm("Series 2 Tutorial 2: Creating a Framework and Window", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, false, (int)numericUpDownTimeInSeconds.Value);
 
             ToogleAllButtons();
         }

@@ -73,7 +73,7 @@ namespace DSharpDXRastertek.TutTerr10.System
                 TerrainModel = new DTerrain();
 
                // Initialize the terrain object.
-                if (!TerrainModel.Initialize(D3D.Device, "heightmap01.bmp", "dirt02.dds", "colorm01.bmp"))
+                if (!TerrainModel.Initialize(D3D.Device, "heightmap01.bmp", "dirt02.bmp", "colorm01.bmp"))
                     return false;
 
                 // Create the position object.

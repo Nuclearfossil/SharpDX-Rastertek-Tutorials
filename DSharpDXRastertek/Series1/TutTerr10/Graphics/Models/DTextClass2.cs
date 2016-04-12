@@ -53,7 +53,7 @@ namespace DSharpDXRastertek.TutTerr10.Graphics.Models
             Font = new DFont();
 
             // Initialize the font object.
-            if (!Font.Initialize(device, "fontdata.txt", "font.dds"))
+            if (!Font.Initialize(device, "fontdata.txt", "font.bmp"))
                 return false;
 
             // Create the font shader object.

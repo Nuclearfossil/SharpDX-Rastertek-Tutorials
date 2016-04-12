@@ -35,10 +35,10 @@ namespace DSharpDXRastertek.Tut34.Graphics
                 VerticalSyncEnabled = DSystemConfiguration.VerticalSyncEnabled;
 
                 // Create a DirectX graphics interface factory.
-                var factory = new Factory();
+                var factory = new Factory1();
 
                 // Use the factory to create an adapter for the primary graphics interface (video card).
-                var adapter = factory.GetAdapter(0);
+                var adapter = factory.GetAdapter1(0);
 
                 // Get the primary adapter output (monitor).
                 var monitor = adapter.GetOutput(0);
@@ -69,7 +69,7 @@ namespace DSharpDXRastertek.Tut34.Graphics
                 VideoCardMemory = adapterDescription.DedicatedVideoMemory >> 10 >> 10;
 
                 // Convert the name of the video card to a character array and store it.
-                VideoCardDescription = adapterDescription.Description;
+                VideoCardDescription = adapterDescription.Description.Trim('\0');
 
                 // Release the adapter output.
                 monitor.Dispose();

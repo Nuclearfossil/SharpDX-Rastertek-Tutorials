@@ -42,7 +42,7 @@ namespace DSharpDXRastertek.Tut18.Graphics
                 Model = new DModel();
 
                 // Initialize the model object.
-                if (!Model.Initialize(D3D.Device, "square.txt", new[] { "stone01.dds", "light01.dds" }))
+                if (!Model.Initialize(D3D.Device, "square.txt", new[] { "stone01.bmp", "light01.bmp" }))
                 {
                     MessageBox.Show("Could not initialize the model object", "Error", MessageBoxButtons.OK);
                     return false;

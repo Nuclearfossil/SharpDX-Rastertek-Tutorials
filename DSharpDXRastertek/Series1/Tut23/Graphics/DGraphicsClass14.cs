@@ -51,7 +51,7 @@ namespace DSharpDXRastertek.Tut23.Graphics
                 Model = new DModel();
 
                 // Initialize the model object.
-                if (!Model.Initialize(D3D.Device, "cube.txt", new[] { "seafloor.dds" }))
+                if (!Model.Initialize(D3D.Device, "cube.txt", new[] { "seafloor.bmp" }))
                 {
                     MessageBox.Show("Could not initialize the model object", "Error", MessageBoxButtons.OK);
                     return false;

@@ -71,7 +71,7 @@ namespace DSharpDXRastertek.Tut36.Graphics
                 Model = new DModel();
 
                 // Create the floor model object.
-                if (!Model.Initialize(D3D.Device, "cube.txt", "seafloor.dds"))
+                if (!Model.Initialize(D3D.Device, "cube.txt", "seafloor.bmp"))
                 {
                     MessageBox.Show("Could not initialize the ground model object", "Error", MessageBoxButtons.OK);
                     return false;

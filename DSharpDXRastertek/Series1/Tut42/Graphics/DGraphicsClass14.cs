@@ -77,7 +77,7 @@ namespace DSharpDXRastertek.Tut42.Graphics
                 CubeModel = new DModel();
 
                 // Initialize the cube model object.
-                if (!CubeModel.Initialize(D3D.Device, "cube.txt", "wall01.dds"))
+                if (!CubeModel.Initialize(D3D.Device, "cube.txt", "wall01.bmp"))
                     return false;
 
                 // Set the position for the cube model.
@@ -87,7 +87,7 @@ namespace DSharpDXRastertek.Tut42.Graphics
                 SphereModel = new DModel();
 
                 // Initialize the sphere model object.
-                if (!SphereModel.Initialize(D3D.Device, "sphere.txt", "ice01.dds"))
+                if (!SphereModel.Initialize(D3D.Device, "sphere.txt", "ice01.bmp"))
                     return false;
 
                 // Set the position for the sphere model.
@@ -97,7 +97,7 @@ namespace DSharpDXRastertek.Tut42.Graphics
                 GroundModel = new DModel();
 
                 // Initialize the ground model object.
-                if (!GroundModel.Initialize(D3D.Device, "plane01.txt", "metal001.dds"))
+                if (!GroundModel.Initialize(D3D.Device, "plane01.txt", "metal001.bmp"))
                     return false;
 
                 // Set the position for the ground model.

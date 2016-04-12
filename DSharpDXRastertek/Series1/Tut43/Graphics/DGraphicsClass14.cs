@@ -61,14 +61,14 @@ namespace DSharpDXRastertek.Tut43.Graphics
                 GroundModel = new DModel();
 
                 // Initialize the ground model object.
-                if (!GroundModel.Initialize(D3D.Device, "floor.txt", "stone.dds"))
+                if (!GroundModel.Initialize(D3D.Device, "floor.txt", "stone.bmp"))
                     return false;
 
                 // Create the ground model object.
                 CubeModel = new DModel();
 
                 // Initialize the cube model object.
-                if (!CubeModel.Initialize(D3D.Device, "cube.txt", "seafloor.dds"))
+                if (!CubeModel.Initialize(D3D.Device, "cube.txt", "seafloor.bmp"))
                     return false;
                 #endregion
 
@@ -94,7 +94,7 @@ namespace DSharpDXRastertek.Tut43.Graphics
                 ProjectionTexture = new DTexture();
 
                 // Initialize the projection texture object.
-                if (!ProjectionTexture.Initialize(D3D.Device, DSystemConfiguration.DataFilePath +"dx11.dds"))
+                if (!ProjectionTexture.Initialize(D3D.Device, DSystemConfiguration.DataFilePath +"dx11.bmp"))
                     return false;
 
                 // Create the view point object.

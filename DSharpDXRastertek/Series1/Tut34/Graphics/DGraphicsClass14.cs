@@ -61,7 +61,7 @@ namespace DSharpDXRastertek.Tut34.Graphics
                 FloorModel = new DModel();
 
                 // Create the floor model object.
-                if (!FloorModel.Initialize(D3D.Device, "floor.txt", new[] { "grid01.dds"}))
+                if (!FloorModel.Initialize(D3D.Device, "floor.txt", new[] { "grid01.bmp"}))
                 {
                     MessageBox.Show("Could not initialize the ground model object", "Error", MessageBoxButtons.OK);
                     return false;
@@ -71,7 +71,7 @@ namespace DSharpDXRastertek.Tut34.Graphics
                 BillboardModel = new DModel();
 
                 // Initialize the billboard model object.
-                if (!BillboardModel.Initialize(D3D.Device, "square.txt", new[]{ "seafloor.dds" } ))
+                if (!BillboardModel.Initialize(D3D.Device, "square.txt", new[]{ "seafloor.bmp" } ))
                     return false;
                 #endregion
 

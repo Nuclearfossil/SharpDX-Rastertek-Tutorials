@@ -74,7 +74,7 @@ namespace DSharpDXRastertek.Tut47.Graphics
                 Model = new DModel();
 
                 // Initialize the model object.
-                if (!Model.Initialize(D3D.Device, "sphere.txt", "blue.dds"))
+                if (!Model.Initialize(D3D.Device, "sphere.txt", "blue.bmp"))
                     return false;
 
                 // Create the texture shader object.
@@ -108,7 +108,7 @@ namespace DSharpDXRastertek.Tut47.Graphics
                 BitMap = new DBitmap();
 
                 // Initialize the bitmap object.
-                if (!BitMap.Initialize(D3D.Device, configuration.Width, configuration.Height, "mouse.dds", 32, 32))
+                if (!BitMap.Initialize(D3D.Device, configuration.Width, configuration.Height, "mouse.bmp", 32, 32))
                     return false;
 
                 // Initialize that the user has not clicked on the screen to try an intersection test yet.

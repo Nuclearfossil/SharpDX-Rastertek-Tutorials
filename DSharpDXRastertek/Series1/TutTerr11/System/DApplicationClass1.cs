@@ -74,7 +74,7 @@ namespace DSharpDXRastertek.TutTerr11.System
                 TerrainModel = new DTerrain();
 
                // Initialize the terrain object.
-                if (!TerrainModel.Initialize(D3D.Device, "heightmap01.bmp", "dirt02.dds", "colorm01.bmp"))
+                if (!TerrainModel.Initialize(D3D.Device, "heightmap01.bmp", "dirt02.bmp", "colorm01.bmp"))
                     return false;
 
                 // Create the position object.
@@ -139,7 +139,7 @@ namespace DSharpDXRastertek.TutTerr11.System
                 SkyPlane = new DSkyPlane();
 
                 // Initialize the sky plane object.
-                if (!SkyPlane.Initialze(D3D.Device, "cloud001.dds", "cloud002.dds"))
+                if (!SkyPlane.Initialze(D3D.Device, "cloud001.bmp", "cloud002.bmp"))
                     return false;
 
                 // Create the sky plane shader object.

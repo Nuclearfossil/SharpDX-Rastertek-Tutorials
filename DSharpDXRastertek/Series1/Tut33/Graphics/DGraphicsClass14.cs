@@ -56,7 +56,7 @@ namespace DSharpDXRastertek.Tut33.Graphics
                 Model = new DModel();
 
                 //// Initialize the ground model object.
-                if (!Model.Initialize(D3D.Device, "square.txt", new[] { "fire01.dds", "noise01.dds", "alpha02.dds" }))
+                if (!Model.Initialize(D3D.Device, "square.txt", new[] { "fire01.bmp", "noise01.bmp", "alpha02.bmp" }))
                 {
                     MessageBox.Show("Could not initialize the ground model object", "Error", MessageBoxButtons.OK);
                     return false;

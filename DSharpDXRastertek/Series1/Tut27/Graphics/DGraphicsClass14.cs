@@ -64,7 +64,7 @@ namespace DSharpDXRastertek.Tut27.Graphics
                 Model = new DModel();
 
                 // Initialize the model object.
-                if (!Model.Initialize(D3D.Device, "Cube.txt", new[] { "seafloor.dds" }))
+                if (!Model.Initialize(D3D.Device, "Cube.txt", new[] { "seafloor.bmp" }))
                 {
                     MessageBox.Show("Could not initialize the model object", "Error", MessageBoxButtons.OK);
                     return false;
@@ -74,7 +74,7 @@ namespace DSharpDXRastertek.Tut27.Graphics
                 FloorModel = new DModel();
 
                 // Initialize the model object.
-                if (!FloorModel.Initialize(D3D.Device, "floor.txt", new[] { "blue01.dds" }))
+                if (!FloorModel.Initialize(D3D.Device, "floor.txt", new[] { "blue01.bmp" }))
                 {
                     MessageBox.Show("Could not initialize the model object", "Error", MessageBoxButtons.OK);
                     return false;

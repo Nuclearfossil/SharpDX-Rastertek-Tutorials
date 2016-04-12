@@ -81,21 +81,21 @@ namespace DSharpDXRastertek.Tut45.Graphics
                 CubeModel1 = new DModel();
 
                 // Initialize the cube model object.
-                if (!CubeModel1.Initialize(D3D.Device, "cube.txt", "marble.dds"))
+                if (!CubeModel1.Initialize(D3D.Device, "cube.txt", "marble.bmp"))
                     return false;
 
                 // Create the second model object.
                 CubeModel2 = new DModel();
 
                 // Initialize the cube model object.
-                if (!CubeModel2.Initialize(D3D.Device, "cube.txt", "metal.dds"))
+                if (!CubeModel2.Initialize(D3D.Device, "cube.txt", "metal.bmp"))
                     return false;
 
                 // Create the third bump model object for models with normal maps and related vectors.
                 CubeBumpMapModel3 = new DBumpMapModel();
 
                 // Initialize the bump model object.
-                if (!CubeBumpMapModel3.Initialize(D3D.Device, "cube.txt", "stone01.dds", "normal.dds"))
+                if (!CubeBumpMapModel3.Initialize(D3D.Device, "cube.txt", "stone01.bmp", "normal.bmp"))
                     return false;
                 #endregion
 

@@ -27,7 +27,7 @@ namespace DSharpDXRastertek.TutTerr19.Graphics.Data
             Font1 = new DFont();
 
             // Initialize the first font object.
-            if (!Font1.Initialize(D3Ddevice.Device, "font01.txt", "font01.dds", 32.0f, 3))
+            if (!Font1.Initialize(D3Ddevice.Device, "font01.txt", "font01.bmp", 32.0f, 3))
                 return false;
 
             // Create the text object for the fps string.

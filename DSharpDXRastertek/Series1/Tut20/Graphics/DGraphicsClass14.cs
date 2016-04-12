@@ -48,7 +48,7 @@ namespace DSharpDXRastertek.Tut20.Graphics
                 BumpMapModel = new DBumpMapModel();
 
                 // Initialize the model object.
-                if (!BumpMapModel.Initialize(D3D.Device, "Cube.txt", new[] { "stone01.dds", "bump01.dds" }))
+                if (!BumpMapModel.Initialize(D3D.Device, "Cube.txt", new[] { "stone01.bmp", "bump01.bmp" }))
                 {
                     MessageBox.Show("Could not initialize the model object", "Error", MessageBoxButtons.OK);
                     return false;

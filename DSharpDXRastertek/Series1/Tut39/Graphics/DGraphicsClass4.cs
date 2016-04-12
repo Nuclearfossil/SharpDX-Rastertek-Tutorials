@@ -44,7 +44,7 @@ namespace DSharpDXRastertek.Tut39.Graphics
                 ParticleSystem = new DParticleSystem();
 
                 // Initialize the particle system object.
-                if (!ParticleSystem.Initialize(D3D.Device, "star.dds"))
+                if (!ParticleSystem.Initialize(D3D.Device, "star.bmp"))
                     return false;
 
                 return true;

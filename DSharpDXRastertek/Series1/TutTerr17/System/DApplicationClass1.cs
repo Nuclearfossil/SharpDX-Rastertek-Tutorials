@@ -94,49 +94,49 @@ namespace DSharpDXRastertek.TutTerr17.System
                 ColourTexture1 = new DTexture();
 
                 // Load the first color texture object.
-                if (!ColourTexture1.Initialize(D3D.Device, DSystemConfiguration.DataFilePath + "dirt001.dds"))
+                if (!ColourTexture1.Initialize(D3D.Device, DSystemConfiguration.DataFilePath + "dirt001.bmp"))
                     return false;
 
                 // Create the second color texture object.
                 ColourTexture2 = new DTexture();
 
                 // Load the second color texture object.
-                if (!ColourTexture2.Initialize(D3D.Device, DSystemConfiguration.DataFilePath + "dirt004.dds"))
+                if (!ColourTexture2.Initialize(D3D.Device, DSystemConfiguration.DataFilePath + "dirt004.bmp"))
                     return false;
 
                 // Create the third color texture object.
                 ColourTexture3 = new DTexture();
 
                 // Load the third color texture object.
-                if (!ColourTexture3.Initialize(D3D.Device, DSystemConfiguration.DataFilePath + "dirt002.dds"))
+                if (!ColourTexture3.Initialize(D3D.Device, DSystemConfiguration.DataFilePath + "dirt002.bmp"))
                     return false;
 
                 // Create the fourth color texture object.
                 ColourTexture4 = new DTexture();
 
                 // Load the forth color texture object.
-                if (!ColourTexture4.Initialize(D3D.Device, DSystemConfiguration.DataFilePath + "stone001.dds"))
+                if (!ColourTexture4.Initialize(D3D.Device, DSystemConfiguration.DataFilePath + "stone001.bmp"))
                     return false;
 
                 // Create the first alpha texture object.
                 AlphaTexture1 = new DTexture();
 
                 // Load the first alpha texture object.
-                if (!AlphaTexture1.Initialize(D3D.Device, DSystemConfiguration.DataFilePath + "alphaRoad001.dds"))
+                if (!AlphaTexture1.Initialize(D3D.Device, DSystemConfiguration.DataFilePath + "alphaRoad001.bmp"))
                     return false;
 
                 // Create the first normal texture object.
                 NormalTexture1 = new DTexture();
 
                 // Load the first alpha/Normal texture object.
-                if (!NormalTexture1.Initialize(D3D.Device, DSystemConfiguration.DataFilePath + "normal001.dds"))
+                if (!NormalTexture1.Initialize(D3D.Device, DSystemConfiguration.DataFilePath + "normal001.bmp"))
                     return false;
 
                 // Create the second normal texture object.
                 NormalTexture2 = new DTexture();
 
                 // Load the second alpha/Normal texture object.
-                if (!NormalTexture2.Initialize(D3D.Device, DSystemConfiguration.DataFilePath + "normal002.dds"))
+                if (!NormalTexture2.Initialize(D3D.Device, DSystemConfiguration.DataFilePath + "normal002.bmp"))
                     return false;
                 
                 return true;

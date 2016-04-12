@@ -77,7 +77,7 @@ namespace DSharpDXRastertek.Tut46.Graphics
                 BitMap = new DBitmap();
 
                 // Initialize the bitmap object.
-                if (!BitMap.Initialize(D3D.Device, configuration.Width, configuration.Height, "test.dds", "glowmap.dds", 256, 32))
+                if (!BitMap.Initialize(D3D.Device, configuration.Width, configuration.Height, "test.bmp", "glowmap.bmp", 256, 32))
                     return false;
 
                 // Create the render to texture object.

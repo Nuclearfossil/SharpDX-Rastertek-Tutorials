@@ -68,7 +68,7 @@ namespace DSharpDXRastertek.Tut03.Graphics
                 VideoCardMemory = adapterDescription.DedicatedVideoMemory >> 10 >> 10;
 
                 // Convert the name of the video card to a character array and store it.
-                VideoCardDescription = adapterDescription.Description;
+                VideoCardDescription = adapterDescription.Description.Trim('\0');
                 
                 // Release the adapter output.
                 monitor.Dispose();

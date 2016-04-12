@@ -75,7 +75,7 @@ namespace DSharpDXRastertek.Tut29.Graphics
                 GroundModel = new DModel();
 
                 // Initialize the ground model object.
-                if (!GroundModel.Initialize(D3D.Device, "ground.txt", new[] { "ground01.dds" }))
+                if (!GroundModel.Initialize(D3D.Device, "ground.txt", new[] { "ground01.bmp" }))
                 {
                     MessageBox.Show("Could not initialize the ground model object", "Error", MessageBoxButtons.OK);
                     return false;
@@ -85,7 +85,7 @@ namespace DSharpDXRastertek.Tut29.Graphics
                 WallModel = new DModel();
 
                 // Initialize the wall model object.
-                if (!WallModel.Initialize(D3D.Device, "wall.txt", new[] { "wall01.dds" }))
+                if (!WallModel.Initialize(D3D.Device, "wall.txt", new[] { "wall01.bmp" }))
                 {
                     MessageBox.Show("Could not initialize the wall model object", "Error", MessageBoxButtons.OK);
                     return false;
@@ -95,7 +95,7 @@ namespace DSharpDXRastertek.Tut29.Graphics
 				BathModel = new DModel();
 
 				// Initialize the bath model object.
-				if (!BathModel.Initialize(D3D.Device, "bath.txt", new[] { "marble01.dds" }))
+				if (!BathModel.Initialize(D3D.Device, "bath.txt", new[] { "marble01.bmp" }))
 				{
 					MessageBox.Show("Could not initialize the bath model object", "Error", MessageBoxButtons.OK);
 					return false;
@@ -105,7 +105,7 @@ namespace DSharpDXRastertek.Tut29.Graphics
                 WaterModel = new DModel();
 
                 // Initialize the water model object.
-                if (!WaterModel.Initialize(D3D.Device, "water.txt", new[] { "water01.dds" }))
+                if (!WaterModel.Initialize(D3D.Device, "water.txt", new[] { "water01.bmp" }))
                 {
                     MessageBox.Show("Could not initialize the bath model object", "Error", MessageBoxButtons.OK);
                     return false;

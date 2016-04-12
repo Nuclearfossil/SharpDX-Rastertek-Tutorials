@@ -94,14 +94,14 @@ namespace DSharpDXRastertek.TutTerr19.System
                 GroundModel = new DModel();
 
                 // Initialize the ground model object.
-                if (!GroundModel.Initialize(D3D.Device, "plane01.txt", "rock015.dds"))
+                if (!GroundModel.Initialize(D3D.Device, "plane01.txt", "rock015.bmp"))
                     return false;
 
                 // Create the foliage object.
                 Foliage = new DFoliage();
 
                 // Initialize the foliage object.
-                if (!Foliage.Initialize(D3D.Device, "grass01.dds", 500))
+                if (!Foliage.Initialize(D3D.Device, "grass01.bmp", 500))
                     return false;
 
                 return true;

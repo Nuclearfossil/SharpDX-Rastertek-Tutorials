@@ -46,7 +46,7 @@ namespace DSharpDXRastertek.Tut05.Graphics
                 Model = new DModel();
 
                 // Initialize the model object.
-                if (!Model.Initialize(D3D.Device, DSystemConfiguration.DataFilePath + "seafloor.dds"))
+                if (!Model.Initialize(D3D.Device, DSystemConfiguration.DataFilePath + "seafloor.bmp"))
                 {
                     MessageBox.Show("Could not initialize the model object.");
 					return false;

@@ -91,7 +91,7 @@ namespace DSharpDXRastertek.TutTerr16.System
                 TerrainModel = new DTerrainHeightMap();
 
                 // Initialize the terrain object.
-                if (!TerrainModel.Initialize(D3D.Device, "hm.bmp", "cm.bmp", 20.0f, "dirt04.dds", "normal01.dds"))
+                if (!TerrainModel.Initialize(D3D.Device, "hm.bmp", "cm.bmp", 20.0f, "dirt04.bmp", "normal01.bmp"))
                     return false;
 
                 // Create the color shader object.
@@ -119,7 +119,7 @@ namespace DSharpDXRastertek.TutTerr16.System
                 SkyPlane = new DSkyPlane();
 
                 // Initialize the sky plane object.
-                if (!SkyPlane.Initialze(D3D.Device, "cloud001.dds", "perturb001.dds"))
+                if (!SkyPlane.Initialze(D3D.Device, "cloud001.bmp", "perturb001.bmp"))
                     return false;
 
                 // Create the sky plane shader object.
@@ -177,7 +177,7 @@ namespace DSharpDXRastertek.TutTerr16.System
                 WaterModel = new DWater();
 
                 // Initialize the water object.
-                if (!WaterModel.Initilize(D3D.Device, "waternormal.dds", 3.75f, 110.0f))
+                if (!WaterModel.Initilize(D3D.Device, "waternormal.bmp", 3.75f, 110.0f))
                     return false;
 
                 // Create the water shader object.

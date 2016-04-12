@@ -62,7 +62,7 @@ namespace DSharpDXRastertek.Tut32.Graphics
                 Model = new DModel();
 
                 // Initialize the ground model object.
-                if (!Model.Initialize(D3D.Device, "cube.txt", new[] { "seafloor.dds", "bump03.dds" }))
+                if (!Model.Initialize(D3D.Device, "cube.txt", new[] { "seafloor.bmp", "bump03.bmp" }))
                 {
                     MessageBox.Show("Could not initialize the ground model object", "Error", MessageBoxButtons.OK);
                     return false;
@@ -72,7 +72,7 @@ namespace DSharpDXRastertek.Tut32.Graphics
                 WindowModel = new DModel();
 
                 // Initialize the wall model object.    "lens2.txt"   "triangle.txt"
-                if (!WindowModel.Initialize(D3D.Device, "square.txt", new[] { "glass01.dds", "bump03.dds" }))
+                if (!WindowModel.Initialize(D3D.Device, "square.txt", new[] { "glass01.bmp", "bump03.bmp" }))
                 {
                     MessageBox.Show("Could not initialize the wall model object", "Error", MessageBoxButtons.OK);
                     return false;

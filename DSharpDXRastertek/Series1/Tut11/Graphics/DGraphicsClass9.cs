@@ -56,7 +56,7 @@ namespace DSharpDXRastertek.Tut11.Graphics
                 Bitmap = new DBitmap();
 
                 // Initialize the bitmap object.
-                if (!Bitmap.Initialize(D3D.Device, configuration.Width, configuration.Height, "seafloor.dds", 256, 256))
+                if (!Bitmap.Initialize(D3D.Device, configuration.Width, configuration.Height, "seafloor.bmp", 256, 256))
                     return false;
 
                 return true;

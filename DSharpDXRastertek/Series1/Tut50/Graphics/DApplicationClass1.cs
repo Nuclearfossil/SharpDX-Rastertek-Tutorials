@@ -72,7 +72,7 @@ namespace DSharpDXRastertek.Tut50.Graphics
                 Model = new DModel();
 
                 // Initialize the ground model object.
-                if (!Model.Initialize(D3D.Device, "cube.txt", "seafloor.dds"))
+                if (!Model.Initialize(D3D.Device, "cube.txt", "seafloor.bmp"))
                     return false;
 
                 // Create the full screen ortho window object.

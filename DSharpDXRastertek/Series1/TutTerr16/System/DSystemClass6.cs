@@ -34,13 +34,6 @@ namespace DSharpDXRastertek.TutTerr16.System
             // Initialize Window.
             InitializeWindows(title);
 
-            // Create the application wrapper object.
-            DApplication = new DApplication();
-
-            // Initialize the  application wrapper object.
-            if (!DApplication.Initialize(Configuration, RenderForm.Handle))
-                return false;
-
             DPerfLogger.Initialize("RenderForm C# SharpDX: " + Configuration.Width + "x" + Configuration.Height + " VSync:" + DSystemConfiguration.VerticalSyncEnabled + " FullScreen:" + DSystemConfiguration.FullScreen + "   " + RenderForm.Text, testTimeSeconds, Configuration.Width, Configuration.Height);;
 
             // Create and initialize Timer.
@@ -50,6 +43,13 @@ namespace DSharpDXRastertek.TutTerr16.System
                 MessageBox.Show("Could not initialize Timer object", "Error", MessageBoxButtons.OK);
                 return false;
             }
+
+            // Create the application wrapper object.
+            DApplication = new DApplication();
+
+            // Initialize the  application wrapper object.
+            if (!DApplication.Initialize(Configuration, RenderForm.Handle))
+                return false;
 
             return result;
         }

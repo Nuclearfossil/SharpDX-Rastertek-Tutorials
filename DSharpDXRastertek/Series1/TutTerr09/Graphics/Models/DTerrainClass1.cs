@@ -98,7 +98,7 @@ namespace DSharpDXRastertek.TutTerr09.Graphics.Models
             for (int i = 0; i < lines.Length; i++)
             {
                 // Short circuit any superfluous lines
-                if (!lines[i].EndsWith(".dds") && m_TextureCount > 0)
+                if (!lines[i].EndsWith(".bmp") && m_TextureCount > 0)
                     continue;
 
                 // Read in the texture count.
@@ -112,14 +112,14 @@ namespace DSharpDXRastertek.TutTerr09.Graphics.Models
 
                     // Therre is nothing further for this line to process so continue on.
                     continue;
-                }
+                } 
 
                 // Split this line with a file path into segments.
                 var lineSegments = lines[i].Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
 
                 // Check each segment of this line for a file path with a .dds file in it.
                 foreach (string segment in lineSegments)
-                    if (segment.EndsWith(".dds") && segment.StartsWith("..") && segment.Contains("/"))
+                    if (segment.EndsWith(".bmp") && segment.StartsWith("..") && segment.Contains("/"))
                     {
                         // we have a filepath to load in.
                         int startIndex = segment.LastIndexOf('/');
