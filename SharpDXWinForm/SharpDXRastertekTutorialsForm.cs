@@ -1,8 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
-using System.Linq;
-using System.Collections.Generic;
 
 namespace SharpDXWinForm
 {
@@ -1053,6 +1053,20 @@ namespace SharpDXWinForm
             // Execute Second pass with the Full Screen off since it was first sent in Fullscreen.
             if (checkBoxScreenSize.CheckState == CheckState.Indeterminate)
                 DSharpDXRastertek.Series2.Tut03.System.DSystem.StartRenderForm("Series 2 Tutorial 3: Initializing DirectX 11", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, false, (int)numericUpDownTimeInSeconds.Value);
+
+            ToogleAllButtons();
+        }
+        private void buttonS2Tutorial4_Click(object sender, EventArgs e)
+        {
+            ToogleAllButtons();
+
+            // Series 2 Tutorial 4: Buffers, Shaders, and HLSL         -   997 lines   - (C++: 1482 FPS C#: 1488 FPS)
+            DSharpDXRastertek.Series2.Tut04.System.DSystem.StartRenderForm("Series 2 Tutorial 4: Buffers, Shaders, and HLSL", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, checkBoxScreenSize.Checked, (int)numericUpDownTimeInSeconds.Value);
+            Thread.Sleep(3000);
+
+            // Execute Second pass with the Full Screen off since it was first sent in Fullscreen.
+            if (checkBoxScreenSize.CheckState == CheckState.Indeterminate)
+                DSharpDXRastertek.Series2.Tut04.System.DSystem.StartRenderForm("Series 2 Tutorial 4: Buffers, Shaders, and HLSL", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, false, (int)numericUpDownTimeInSeconds.Value);
 
             ToogleAllButtons();
         }

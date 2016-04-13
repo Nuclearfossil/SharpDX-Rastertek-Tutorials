@@ -1391,6 +1391,7 @@
             this.buttonS2Tutorial4.Text = "Tutorial 4: Buffers, Shaders, and HLSL";
             this.buttonS2Tutorial4.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.buttonS2Tutorial4.UseVisualStyleBackColor = true;
+            this.buttonS2Tutorial4.Click += new System.EventHandler(this.buttonS2Tutorial4_Click);
             // 
             // checkBoxVSync
             // 

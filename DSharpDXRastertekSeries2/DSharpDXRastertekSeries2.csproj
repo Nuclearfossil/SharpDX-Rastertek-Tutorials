@@ -36,6 +36,10 @@
       <HintPath>..\DSharpDXRastertek\packages\SharpDX.3.0.2\lib\net45\SharpDX.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="SharpDX.D3DCompiler, Version=3.0.2.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\DSharpDXRastertek\packages\SharpDX.D3DCompiler.3.0.2\lib\net45\SharpDX.D3DCompiler.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="SharpDX.Desktop, Version=3.0.2.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
       <HintPath>..\DSharpDXRastertek\packages\SharpDX.Desktop.3.0.2\lib\net45\SharpDX.Desktop.dll</HintPath>
       <Private>True</Private>
@@ -84,6 +88,15 @@
     <Compile Include="Series2\Tut03\System\DSystem.cs" />
     <Compile Include="Series2\Tut03\System\DSystemConfiguration.cs" />
     <Compile Include="Series2\Tut03\System\DTimer.cs" />
+    <Compile Include="Series2\Tut04\Graphics\DCamera.cs" />
+    <Compile Include="Series2\Tut04\Graphics\DColorShader.cs" />
+    <Compile Include="Series2\Tut04\Graphics\DDX11.cs" />
+    <Compile Include="Series2\Tut04\Graphics\DGraphics.cs" />
+    <Compile Include="Series2\Tut04\Graphics\DModel.cs" />
+    <Compile Include="Series2\Tut04\Input\DInput.cs" />
+    <Compile Include="Series2\Tut04\System\DSystem.cs" />
+    <Compile Include="Series2\Tut04\System\DSystemConfiguration.cs" />
+    <Compile Include="Series2\Tut04\System\DTimer.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

@@ -1029,6 +1029,12 @@
     <Content Include="Series1\TutTerr19\Shaders\texture.vs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Series2\Tut04\Shaders\Color.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\Tut04\Shaders\Color.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="SharpDXWinForm_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -1258,7 +1264,6 @@
     <Folder Include="ExternalsSeries2\Data\" />
     <Folder Include="ExternalsSeries2\Font\" />
     <Folder Include="ExternalsSeries2\Models\" />
-    <Folder Include="Series2\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
