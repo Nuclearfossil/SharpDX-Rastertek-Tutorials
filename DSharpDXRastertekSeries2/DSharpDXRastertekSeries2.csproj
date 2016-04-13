@@ -97,6 +97,16 @@
     <Compile Include="Series2\Tut04\System\DSystem.cs" />
     <Compile Include="Series2\Tut04\System\DSystemConfiguration.cs" />
     <Compile Include="Series2\Tut04\System\DTimer.cs" />
+    <Compile Include="Series2\Tut05\Graphics\DCamera.cs" />
+    <Compile Include="Series2\Tut05\Graphics\DDX11.cs" />
+    <Compile Include="Series2\Tut05\Graphics\DGraphics.cs" />
+    <Compile Include="Series2\Tut05\Graphics\DModel.cs" />
+    <Compile Include="Series2\Tut05\Graphics\DTexture.cs" />
+    <Compile Include="Series2\Tut05\Graphics\DTextureShader.cs" />
+    <Compile Include="Series2\Tut05\Input\DInput.cs" />
+    <Compile Include="Series2\Tut05\System\DSystem.cs" />
+    <Compile Include="Series2\Tut05\System\DSystemConfiguration.cs" />
+    <Compile Include="Series2\Tut05\System\DTimer.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

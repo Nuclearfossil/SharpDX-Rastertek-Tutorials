@@ -28,59 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonTutorial02 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonTutorial03 = new System.Windows.Forms.Button();
-            this.buttonTutorial04 = new System.Windows.Forms.Button();
-            this.buttonTutorial05 = new System.Windows.Forms.Button();
-            this.buttonTutorial06 = new System.Windows.Forms.Button();
-            this.buttonTutorial07 = new System.Windows.Forms.Button();
-            this.buttonTutorial09 = new System.Windows.Forms.Button();
-            this.buttonTutorial10 = new System.Windows.Forms.Button();
-            this.buttonTutorial14 = new System.Windows.Forms.Button();
-            this.buttonTutorial11 = new System.Windows.Forms.Button();
-            this.buttonTutorial12 = new System.Windows.Forms.Button();
-            this.buttonTutorial13 = new System.Windows.Forms.Button();
-            this.buttonTutorial15 = new System.Windows.Forms.Button();
             this.buttonTutorial08 = new System.Windows.Forms.Button();
-            this.buttonTutorial16 = new System.Windows.Forms.Button();
-            this.buttonTutorial17 = new System.Windows.Forms.Button();
-            this.buttonTutorial18 = new System.Windows.Forms.Button();
-            this.buttonTutorial19 = new System.Windows.Forms.Button();
-            this.buttonTutorial20 = new System.Windows.Forms.Button();
-            this.buttonTutorial21 = new System.Windows.Forms.Button();
-            this.buttonTutorial22 = new System.Windows.Forms.Button();
-            this.buttonTutorial31 = new System.Windows.Forms.Button();
-            this.buttonTutorial28 = new System.Windows.Forms.Button();
-            this.buttonTutorial25 = new System.Windows.Forms.Button();
-            this.buttonTutorial30 = new System.Windows.Forms.Button();
-            this.buttonTutorial43 = new System.Windows.Forms.Button();
-            this.buttonTutorial40 = new System.Windows.Forms.Button();
-            this.buttonTutorial37 = new System.Windows.Forms.Button();
-            this.buttonTutorial34 = new System.Windows.Forms.Button();
-            this.buttonTutorial27 = new System.Windows.Forms.Button();
-            this.buttonTutorial42 = new System.Windows.Forms.Button();
-            this.buttonTutorial39 = new System.Windows.Forms.Button();
-            this.buttonTutorial24 = new System.Windows.Forms.Button();
-            this.buttonTutorial36 = new System.Windows.Forms.Button();
-            this.buttonTutorial33 = new System.Windows.Forms.Button();
-            this.buttonTutorial29 = new System.Windows.Forms.Button();
-            this.buttonTutorial26 = new System.Windows.Forms.Button();
-            this.buttonTutorial41 = new System.Windows.Forms.Button();
-            this.buttonTutorial38 = new System.Windows.Forms.Button();
-            this.buttonTutorial23 = new System.Windows.Forms.Button();
-            this.buttonTutorial35 = new System.Windows.Forms.Button();
-            this.buttonTutorial32 = new System.Windows.Forms.Button();
-            this.buttonTutorial44 = new System.Windows.Forms.Button();
-            this.buttonTutorial45 = new System.Windows.Forms.Button();
-            this.buttonTutorial46 = new System.Windows.Forms.Button();
-            this.buttonTutorial47 = new System.Windows.Forms.Button();
-            this.buttonTutorial48 = new System.Windows.Forms.Button();
-            this.buttonTutorial49 = new System.Windows.Forms.Button();
-            this.buttonTutorial50 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.checkBoxVSync = new System.Windows.Forms.CheckBox();
+            this.checkBoxScreenSize = new System.Windows.Forms.CheckBox();
+            this.numericUpDownWidth = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownHeight = new System.Windows.Forms.NumericUpDown();
+            this.labelWidth = new System.Windows.Forms.Label();
+            this.labelHeight = new System.Windows.Forms.Label();
+            this.checkBoxTimer = new System.Windows.Forms.CheckBox();
+            this.numericUpDownTimeInSeconds = new System.Windows.Forms.NumericUpDown();
+            this.buttonRunPerfTests = new System.Windows.Forms.Button();
+            this.buttonTutorial50 = new System.Windows.Forms.Button();
+            this.buttonTutorial31 = new System.Windows.Forms.Button();
+            this.buttonTutorial49 = new System.Windows.Forms.Button();
+            this.buttonTutorial02 = new System.Windows.Forms.Button();
+            this.buttonTutorial46 = new System.Windows.Forms.Button();
+            this.buttonTutorial28 = new System.Windows.Forms.Button();
+            this.buttonTutorial48 = new System.Windows.Forms.Button();
+            this.buttonTutorial43 = new System.Windows.Forms.Button();
+            this.buttonTutorial45 = new System.Windows.Forms.Button();
+            this.buttonTutorial05 = new System.Windows.Forms.Button();
+            this.buttonTutorial47 = new System.Windows.Forms.Button();
+            this.buttonTutorial40 = new System.Windows.Forms.Button();
+            this.buttonTutorial44 = new System.Windows.Forms.Button();
+            this.buttonTutorial30 = new System.Windows.Forms.Button();
+            this.buttonTutorial37 = new System.Windows.Forms.Button();
+            this.buttonTutorial25 = new System.Windows.Forms.Button();
+            this.buttonTutorial13 = new System.Windows.Forms.Button();
+            this.buttonTutorial42 = new System.Windows.Forms.Button();
+            this.buttonTutorial12 = new System.Windows.Forms.Button();
+            this.buttonTutorial39 = new System.Windows.Forms.Button();
+            this.buttonTutorial03 = new System.Windows.Forms.Button();
+            this.buttonTutorial36 = new System.Windows.Forms.Button();
+            this.buttonTutorial11 = new System.Windows.Forms.Button();
+            this.buttonTutorial04 = new System.Windows.Forms.Button();
+            this.buttonTutorial10 = new System.Windows.Forms.Button();
+            this.buttonTutorial41 = new System.Windows.Forms.Button();
+            this.buttonTutorial34 = new System.Windows.Forms.Button();
+            this.buttonTutorial38 = new System.Windows.Forms.Button();
+            this.buttonTutorial09 = new System.Windows.Forms.Button();
+            this.buttonTutorial35 = new System.Windows.Forms.Button();
+            this.buttonTutorial07 = new System.Windows.Forms.Button();
+            this.buttonTutorial27 = new System.Windows.Forms.Button();
+            this.buttonTutorial06 = new System.Windows.Forms.Button();
+            this.buttonTutorial14 = new System.Windows.Forms.Button();
+            this.buttonTutorial18 = new System.Windows.Forms.Button();
+            this.buttonTutorial19 = new System.Windows.Forms.Button();
+            this.buttonTutorial33 = new System.Windows.Forms.Button();
+            this.buttonTutorial22 = new System.Windows.Forms.Button();
+            this.buttonTutorial29 = new System.Windows.Forms.Button();
+            this.buttonTutorial17 = new System.Windows.Forms.Button();
+            this.buttonTutorial16 = new System.Windows.Forms.Button();
+            this.buttonTutorial24 = new System.Windows.Forms.Button();
+            this.buttonTutorial26 = new System.Windows.Forms.Button();
+            this.buttonTutorial15 = new System.Windows.Forms.Button();
+            this.buttonTutorial20 = new System.Windows.Forms.Button();
+            this.buttonTutorial23 = new System.Windows.Forms.Button();
+            this.buttonTutorial32 = new System.Windows.Forms.Button();
+            this.buttonTutorial21 = new System.Windows.Forms.Button();
             this.buttonTerrainTutorial15 = new System.Windows.Forms.Button();
             this.buttonTerrainTutorial12 = new System.Windows.Forms.Button();
             this.buttonTerrainTutorial09 = new System.Windows.Forms.Button();
@@ -100,19 +110,12 @@
             this.buttonTerrainTutorial07 = new System.Windows.Forms.Button();
             this.buttonTerrainTutorial04 = new System.Windows.Forms.Button();
             this.buttonTerrainTutorial01 = new System.Windows.Forms.Button();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.buttonS2Tutorial2 = new System.Windows.Forms.Button();
             this.buttonS2Tutorial3 = new System.Windows.Forms.Button();
             this.buttonS2Tutorial4 = new System.Windows.Forms.Button();
-            this.checkBoxVSync = new System.Windows.Forms.CheckBox();
-            this.checkBoxScreenSize = new System.Windows.Forms.CheckBox();
-            this.numericUpDownWidth = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownHeight = new System.Windows.Forms.NumericUpDown();
-            this.labelWidth = new System.Windows.Forms.Label();
-            this.labelHeight = new System.Windows.Forms.Label();
-            this.checkBoxTimer = new System.Windows.Forms.CheckBox();
-            this.numericUpDownTimeInSeconds = new System.Windows.Forms.NumericUpDown();
-            this.buttonRunPerfTests = new System.Windows.Forms.Button();
+            this.buttonS2TerrainTutorial2 = new System.Windows.Forms.Button();
+            this.buttonS2TerrainTutorial1 = new System.Windows.Forms.Button();
+            this.buttonS2Tutorial5 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -121,22 +124,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTimeInSeconds)).BeginInit();
             this.SuspendLayout();
-            // 
-            // buttonTutorial02
-            // 
-            this.buttonTutorial02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial02.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial02.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial02.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial02.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_2_____Creating_A_Framework_And_Window_Sm;
-            this.buttonTutorial02.Location = new System.Drawing.Point(10, 16);
-            this.buttonTutorial02.Name = "buttonTutorial02";
-            this.buttonTutorial02.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial02.TabIndex = 0;
-            this.buttonTutorial02.Text = "Tutorial 2: Creating a Framework and Window";
-            this.buttonTutorial02.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial02.UseVisualStyleBackColor = true;
-            this.buttonTutorial02.Click += new System.EventHandler(this.buttonTutorial2_Click);
             // 
             // label1
             // 
@@ -149,198 +136,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Rastertek Tutorials in SharpDX & C#";
             this.label1.UseMnemonic = false;
-            // 
-            // buttonTutorial03
-            // 
-            this.buttonTutorial03.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial03.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial03.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial03.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial03.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_3_____Initializing_DirectX_11_Sm;
-            this.buttonTutorial03.Location = new System.Drawing.Point(266, 16);
-            this.buttonTutorial03.Name = "buttonTutorial03";
-            this.buttonTutorial03.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial03.TabIndex = 1;
-            this.buttonTutorial03.Text = "Tutorial 3: Initializing DirectX 11";
-            this.buttonTutorial03.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial03.UseVisualStyleBackColor = true;
-            this.buttonTutorial03.Click += new System.EventHandler(this.buttonTutorial3_Click);
-            // 
-            // buttonTutorial04
-            // 
-            this.buttonTutorial04.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial04.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial04.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial04.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial04.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_4_____Buffers__Shaders__And_HLSL_Sm;
-            this.buttonTutorial04.Location = new System.Drawing.Point(522, 16);
-            this.buttonTutorial04.Name = "buttonTutorial04";
-            this.buttonTutorial04.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial04.TabIndex = 2;
-            this.buttonTutorial04.Text = "Tutorial 4: Buffers, Shaders, and HLSL";
-            this.buttonTutorial04.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial04.UseVisualStyleBackColor = true;
-            this.buttonTutorial04.Click += new System.EventHandler(this.buttonTutorial4_Click);
-            // 
-            // buttonTutorial05
-            // 
-            this.buttonTutorial05.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial05.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial05.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial05.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial05.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_5_____Texturing_Sm;
-            this.buttonTutorial05.Location = new System.Drawing.Point(10, 162);
-            this.buttonTutorial05.Name = "buttonTutorial05";
-            this.buttonTutorial05.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial05.TabIndex = 3;
-            this.buttonTutorial05.Text = "Tutorial 5: Texturing";
-            this.buttonTutorial05.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial05.UseVisualStyleBackColor = true;
-            this.buttonTutorial05.Click += new System.EventHandler(this.buttonTutorial5_Click);
-            // 
-            // buttonTutorial06
-            // 
-            this.buttonTutorial06.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial06.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial06.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial06.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial06.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_6_____Diffuse_Lighting_Sm;
-            this.buttonTutorial06.Location = new System.Drawing.Point(266, 162);
-            this.buttonTutorial06.Name = "buttonTutorial06";
-            this.buttonTutorial06.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial06.TabIndex = 4;
-            this.buttonTutorial06.Text = "Tutorial 6: Diffuse Lighting";
-            this.buttonTutorial06.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial06.UseVisualStyleBackColor = true;
-            this.buttonTutorial06.Click += new System.EventHandler(this.buttonTutorial6_Click);
-            // 
-            // buttonTutorial07
-            // 
-            this.buttonTutorial07.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial07.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial07.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial07.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial07.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_7_____3D_Mode_lRendering_Sm;
-            this.buttonTutorial07.Location = new System.Drawing.Point(522, 162);
-            this.buttonTutorial07.Name = "buttonTutorial07";
-            this.buttonTutorial07.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial07.TabIndex = 5;
-            this.buttonTutorial07.Text = "Tutorial 7: 3D Model Rendering";
-            this.buttonTutorial07.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial07.UseVisualStyleBackColor = true;
-            this.buttonTutorial07.Click += new System.EventHandler(this.buttonTutorial7_Click);
-            // 
-            // buttonTutorial09
-            // 
-            this.buttonTutorial09.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial09.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial09.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial09.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial09.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_9_____Ambient_Lighting_Sm;
-            this.buttonTutorial09.Location = new System.Drawing.Point(266, 308);
-            this.buttonTutorial09.Name = "buttonTutorial09";
-            this.buttonTutorial09.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial09.TabIndex = 7;
-            this.buttonTutorial09.Text = "Tutorial 9: Ambient Lighting";
-            this.buttonTutorial09.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial09.UseVisualStyleBackColor = true;
-            this.buttonTutorial09.Click += new System.EventHandler(this.buttonTutorial9_Click);
-            // 
-            // buttonTutorial10
-            // 
-            this.buttonTutorial10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial10.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial10.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial10.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_10___Specular_Lighting_Sm;
-            this.buttonTutorial10.Location = new System.Drawing.Point(522, 308);
-            this.buttonTutorial10.Name = "buttonTutorial10";
-            this.buttonTutorial10.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial10.TabIndex = 8;
-            this.buttonTutorial10.Text = "Tutorial 10: Specular Lighting";
-            this.buttonTutorial10.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial10.UseVisualStyleBackColor = true;
-            this.buttonTutorial10.Click += new System.EventHandler(this.buttonTutorial10_Click);
-            // 
-            // buttonTutorial14
-            // 
-            this.buttonTutorial14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial14.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial14.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial14.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial14.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_14___Direct_Sound_Sm;
-            this.buttonTutorial14.Location = new System.Drawing.Point(10, 600);
-            this.buttonTutorial14.Name = "buttonTutorial14";
-            this.buttonTutorial14.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial14.TabIndex = 12;
-            this.buttonTutorial14.Text = "Tutorial 14: Direct Sound";
-            this.buttonTutorial14.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial14.UseVisualStyleBackColor = true;
-            this.buttonTutorial14.Click += new System.EventHandler(this.buttonTutorial14_Click);
-            // 
-            // buttonTutorial11
-            // 
-            this.buttonTutorial11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial11.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial11.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial11.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_11___2D_Rendering_Sm;
-            this.buttonTutorial11.Location = new System.Drawing.Point(10, 454);
-            this.buttonTutorial11.Name = "buttonTutorial11";
-            this.buttonTutorial11.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial11.TabIndex = 9;
-            this.buttonTutorial11.Text = "Tutorial 11: 2D Rendering";
-            this.buttonTutorial11.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial11.UseVisualStyleBackColor = true;
-            this.buttonTutorial11.Click += new System.EventHandler(this.buttonTutorial11_Click);
-            // 
-            // buttonTutorial12
-            // 
-            this.buttonTutorial12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial12.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial12.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial12.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_12___Font_Engine_Sm;
-            this.buttonTutorial12.Location = new System.Drawing.Point(266, 454);
-            this.buttonTutorial12.Name = "buttonTutorial12";
-            this.buttonTutorial12.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial12.TabIndex = 10;
-            this.buttonTutorial12.Text = "Tutorial 12: Font Engine";
-            this.buttonTutorial12.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial12.UseVisualStyleBackColor = true;
-            this.buttonTutorial12.Click += new System.EventHandler(this.buttonTutorial12_Click);
-            // 
-            // buttonTutorial13
-            // 
-            this.buttonTutorial13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial13.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial13.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial13.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_13___Direct_Input_Sm;
-            this.buttonTutorial13.Location = new System.Drawing.Point(522, 454);
-            this.buttonTutorial13.Name = "buttonTutorial13";
-            this.buttonTutorial13.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial13.TabIndex = 11;
-            this.buttonTutorial13.Text = "Tutorial 13: Direct Input";
-            this.buttonTutorial13.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial13.UseVisualStyleBackColor = true;
-            this.buttonTutorial13.Click += new System.EventHandler(this.buttonTutorial13_Click);
-            // 
-            // buttonTutorial15
-            // 
-            this.buttonTutorial15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial15.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial15.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial15.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_15___FPS_CPU_Usage_And_Timers_Sm;
-            this.buttonTutorial15.Location = new System.Drawing.Point(266, 600);
-            this.buttonTutorial15.Name = "buttonTutorial15";
-            this.buttonTutorial15.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial15.TabIndex = 13;
-            this.buttonTutorial15.Text = "Tutorial 15: FPS, CPU Usage, and Timers";
-            this.buttonTutorial15.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial15.UseVisualStyleBackColor = false;
-            this.buttonTutorial15.Click += new System.EventHandler(this.buttonTutorial15_Click);
             // 
             // buttonTutorial08
             // 
@@ -357,567 +152,6 @@
             this.buttonTutorial08.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.buttonTutorial08.UseVisualStyleBackColor = false;
             this.buttonTutorial08.Click += new System.EventHandler(this.buttonTutorial8_Click);
-            // 
-            // buttonTutorial16
-            // 
-            this.buttonTutorial16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial16.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial16.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial16.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_16___Frustum_Culling_Sm;
-            this.buttonTutorial16.Location = new System.Drawing.Point(522, 600);
-            this.buttonTutorial16.Name = "buttonTutorial16";
-            this.buttonTutorial16.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial16.TabIndex = 14;
-            this.buttonTutorial16.Text = "Tutorial 16: Frustum Culling";
-            this.buttonTutorial16.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial16.UseVisualStyleBackColor = true;
-            this.buttonTutorial16.Click += new System.EventHandler(this.buttonTutorial16_Click);
-            // 
-            // buttonTutorial17
-            // 
-            this.buttonTutorial17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial17.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial17.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial17.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_17___MultiTexturing_And_TextureArrays_Sm;
-            this.buttonTutorial17.Location = new System.Drawing.Point(10, 746);
-            this.buttonTutorial17.Name = "buttonTutorial17";
-            this.buttonTutorial17.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial17.TabIndex = 15;
-            this.buttonTutorial17.Text = "Tutorial 17: Multitexturing and Texture Arrays";
-            this.buttonTutorial17.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial17.UseVisualStyleBackColor = true;
-            this.buttonTutorial17.Click += new System.EventHandler(this.buttonTutorial17_Click);
-            // 
-            // buttonTutorial18
-            // 
-            this.buttonTutorial18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial18.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial18.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial18.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_18___Light_Maps_Sm;
-            this.buttonTutorial18.Location = new System.Drawing.Point(266, 746);
-            this.buttonTutorial18.Name = "buttonTutorial18";
-            this.buttonTutorial18.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial18.TabIndex = 16;
-            this.buttonTutorial18.Text = "Tutorial 18: Light Maps";
-            this.buttonTutorial18.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial18.UseVisualStyleBackColor = true;
-            this.buttonTutorial18.Click += new System.EventHandler(this.buttonTutorial18_Click);
-            // 
-            // buttonTutorial19
-            // 
-            this.buttonTutorial19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial19.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial19.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial19.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial19.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_19___Alpha_Mapping_Sm;
-            this.buttonTutorial19.Location = new System.Drawing.Point(522, 746);
-            this.buttonTutorial19.Name = "buttonTutorial19";
-            this.buttonTutorial19.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial19.TabIndex = 17;
-            this.buttonTutorial19.Text = "Tutorial 19: Alpha Mapping";
-            this.buttonTutorial19.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial19.UseVisualStyleBackColor = true;
-            this.buttonTutorial19.Click += new System.EventHandler(this.buttonTutorial19_Click);
-            // 
-            // buttonTutorial20
-            // 
-            this.buttonTutorial20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial20.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial20.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial20.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial20.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_20___Bump_Mapping_Sm;
-            this.buttonTutorial20.Location = new System.Drawing.Point(10, 892);
-            this.buttonTutorial20.Name = "buttonTutorial20";
-            this.buttonTutorial20.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial20.TabIndex = 18;
-            this.buttonTutorial20.Text = "Tutorial 20: Bump Mapping";
-            this.buttonTutorial20.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial20.UseVisualStyleBackColor = true;
-            this.buttonTutorial20.Click += new System.EventHandler(this.buttonTutorial20_Click);
-            // 
-            // buttonTutorial21
-            // 
-            this.buttonTutorial21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial21.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial21.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial21.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial21.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_21___Specular_Mapping_Sm;
-            this.buttonTutorial21.Location = new System.Drawing.Point(266, 892);
-            this.buttonTutorial21.Name = "buttonTutorial21";
-            this.buttonTutorial21.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial21.TabIndex = 19;
-            this.buttonTutorial21.Text = "Tutorial 21: Specular Mapping";
-            this.buttonTutorial21.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial21.UseVisualStyleBackColor = true;
-            this.buttonTutorial21.Click += new System.EventHandler(this.buttonTutorial21_Click);
-            // 
-            // buttonTutorial22
-            // 
-            this.buttonTutorial22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial22.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial22.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial22.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial22.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_22___Render_To_Texture_Sm;
-            this.buttonTutorial22.Location = new System.Drawing.Point(522, 892);
-            this.buttonTutorial22.Name = "buttonTutorial22";
-            this.buttonTutorial22.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial22.TabIndex = 20;
-            this.buttonTutorial22.Text = "Tutorial 22: Render to Texture";
-            this.buttonTutorial22.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial22.UseVisualStyleBackColor = true;
-            this.buttonTutorial22.Click += new System.EventHandler(this.buttonTutorial22_Click);
-            // 
-            // buttonTutorial31
-            // 
-            this.buttonTutorial31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial31.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial31.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial31.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial31.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_31___3D_Sound_Sm;
-            this.buttonTutorial31.Location = new System.Drawing.Point(522, 1330);
-            this.buttonTutorial31.Name = "buttonTutorial31";
-            this.buttonTutorial31.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial31.TabIndex = 29;
-            this.buttonTutorial31.Text = "Tutorial 31: 3D Sound";
-            this.buttonTutorial31.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial31.UseVisualStyleBackColor = true;
-            this.buttonTutorial31.Click += new System.EventHandler(this.buttonTutorial31_Click);
-            // 
-            // buttonTutorial28
-            // 
-            this.buttonTutorial28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial28.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial28.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial28.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial28.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_28___Screen_Fades_Sm;
-            this.buttonTutorial28.Location = new System.Drawing.Point(522, 1184);
-            this.buttonTutorial28.Name = "buttonTutorial28";
-            this.buttonTutorial28.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial28.TabIndex = 26;
-            this.buttonTutorial28.Text = "Tutorial 28: Screen Fades";
-            this.buttonTutorial28.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial28.UseVisualStyleBackColor = true;
-            this.buttonTutorial28.Click += new System.EventHandler(this.buttonTutorial28_Click);
-            // 
-            // buttonTutorial25
-            // 
-            this.buttonTutorial25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial25.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial25.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial25.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial25.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_25___Texture_Translation_Sm;
-            this.buttonTutorial25.Location = new System.Drawing.Point(522, 1038);
-            this.buttonTutorial25.Name = "buttonTutorial25";
-            this.buttonTutorial25.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial25.TabIndex = 23;
-            this.buttonTutorial25.Text = "Tutorial 25: Texture Translation";
-            this.buttonTutorial25.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial25.UseVisualStyleBackColor = true;
-            this.buttonTutorial25.Click += new System.EventHandler(this.buttonTutorial25_Click);
-            // 
-            // buttonTutorial30
-            // 
-            this.buttonTutorial30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial30.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial30.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial30.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial30.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_30___Multiple_Point_Lights_Sm;
-            this.buttonTutorial30.Location = new System.Drawing.Point(266, 1330);
-            this.buttonTutorial30.Name = "buttonTutorial30";
-            this.buttonTutorial30.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial30.TabIndex = 28;
-            this.buttonTutorial30.Text = "Tutorial 30: Multiple Point Lights";
-            this.buttonTutorial30.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial30.UseVisualStyleBackColor = true;
-            this.buttonTutorial30.Click += new System.EventHandler(this.buttonTutorial30_Click);
-            // 
-            // buttonTutorial43
-            // 
-            this.buttonTutorial43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial43.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial43.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial43.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial43.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_43___Projective_Texturing_Sm;
-            this.buttonTutorial43.Location = new System.Drawing.Point(522, 1914);
-            this.buttonTutorial43.Name = "buttonTutorial43";
-            this.buttonTutorial43.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial43.TabIndex = 41;
-            this.buttonTutorial43.Text = "Tutorial 43: Projective Texturing";
-            this.buttonTutorial43.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial43.UseVisualStyleBackColor = true;
-            this.buttonTutorial43.Click += new System.EventHandler(this.buttonTutorial43_Click);
-            // 
-            // buttonTutorial40
-            // 
-            this.buttonTutorial40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial40.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial40.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial40.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial40.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_40___Shadow_Mapping_Sm;
-            this.buttonTutorial40.Location = new System.Drawing.Point(522, 1768);
-            this.buttonTutorial40.Name = "buttonTutorial40";
-            this.buttonTutorial40.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial40.TabIndex = 38;
-            this.buttonTutorial40.Text = "Tutorial 40: Shadow Mapping";
-            this.buttonTutorial40.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial40.UseVisualStyleBackColor = true;
-            this.buttonTutorial40.Click += new System.EventHandler(this.buttonTutorial40_Click);
-            // 
-            // buttonTutorial37
-            // 
-            this.buttonTutorial37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial37.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial37.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial37.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial37.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_37___Instancing_Sm;
-            this.buttonTutorial37.Location = new System.Drawing.Point(522, 1622);
-            this.buttonTutorial37.Name = "buttonTutorial37";
-            this.buttonTutorial37.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial37.TabIndex = 35;
-            this.buttonTutorial37.Text = "Tutorial 37: Instancing";
-            this.buttonTutorial37.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial37.UseVisualStyleBackColor = true;
-            this.buttonTutorial37.Click += new System.EventHandler(this.buttonTutorial37_Click);
-            // 
-            // buttonTutorial34
-            // 
-            this.buttonTutorial34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial34.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial34.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial34.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial34.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_34___Billboarding_Sm;
-            this.buttonTutorial34.Location = new System.Drawing.Point(522, 1476);
-            this.buttonTutorial34.Name = "buttonTutorial34";
-            this.buttonTutorial34.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial34.TabIndex = 32;
-            this.buttonTutorial34.Text = "Tutorial 34: Billboarding";
-            this.buttonTutorial34.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial34.UseVisualStyleBackColor = true;
-            this.buttonTutorial34.Click += new System.EventHandler(this.buttonTutorial34_Click);
-            // 
-            // buttonTutorial27
-            // 
-            this.buttonTutorial27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial27.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial27.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial27.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial27.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_27___Reflection_Projective_Texturing_Sm;
-            this.buttonTutorial27.Location = new System.Drawing.Point(266, 1184);
-            this.buttonTutorial27.Name = "buttonTutorial27";
-            this.buttonTutorial27.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial27.TabIndex = 25;
-            this.buttonTutorial27.Text = "Tutorial 27: Reflection (Projective Texturing)";
-            this.buttonTutorial27.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial27.UseVisualStyleBackColor = true;
-            this.buttonTutorial27.Click += new System.EventHandler(this.buttonTutorial27_Click);
-            // 
-            // buttonTutorial42
-            // 
-            this.buttonTutorial42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial42.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial42.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial42.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial42.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_42___Soft_Shadows_Sm;
-            this.buttonTutorial42.Location = new System.Drawing.Point(266, 1914);
-            this.buttonTutorial42.Name = "buttonTutorial42";
-            this.buttonTutorial42.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial42.TabIndex = 40;
-            this.buttonTutorial42.Text = "Tutorial 42: Soft Shadows";
-            this.buttonTutorial42.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial42.UseVisualStyleBackColor = true;
-            this.buttonTutorial42.Click += new System.EventHandler(this.buttonTutorial42_Click);
-            // 
-            // buttonTutorial39
-            // 
-            this.buttonTutorial39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial39.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial39.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial39.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial39.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_39___Particle_Systems_Sm;
-            this.buttonTutorial39.Location = new System.Drawing.Point(266, 1768);
-            this.buttonTutorial39.Name = "buttonTutorial39";
-            this.buttonTutorial39.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial39.TabIndex = 37;
-            this.buttonTutorial39.Text = "Tutorial 39: Particle Systems";
-            this.buttonTutorial39.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial39.UseVisualStyleBackColor = true;
-            this.buttonTutorial39.Click += new System.EventHandler(this.buttonTutorial39_Click);
-            // 
-            // buttonTutorial24
-            // 
-            this.buttonTutorial24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial24.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial24.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial24.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial24.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_24___Clipping_Planes_Sm;
-            this.buttonTutorial24.Location = new System.Drawing.Point(266, 1038);
-            this.buttonTutorial24.Name = "buttonTutorial24";
-            this.buttonTutorial24.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial24.TabIndex = 22;
-            this.buttonTutorial24.Text = "Tutorial 24: Clipping Planes";
-            this.buttonTutorial24.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial24.UseVisualStyleBackColor = true;
-            this.buttonTutorial24.Click += new System.EventHandler(this.buttonTutorial24_Click);
-            // 
-            // buttonTutorial36
-            // 
-            this.buttonTutorial36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial36.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial36.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial36.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial36.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_36___Blur_Sm;
-            this.buttonTutorial36.Location = new System.Drawing.Point(266, 1622);
-            this.buttonTutorial36.Name = "buttonTutorial36";
-            this.buttonTutorial36.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial36.TabIndex = 34;
-            this.buttonTutorial36.Text = "Tutorial 36: Blur";
-            this.buttonTutorial36.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial36.UseVisualStyleBackColor = true;
-            this.buttonTutorial36.Click += new System.EventHandler(this.buttonTutorial36_Click);
-            // 
-            // buttonTutorial33
-            // 
-            this.buttonTutorial33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial33.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial33.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial33.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial33.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_33___Fire_Sm;
-            this.buttonTutorial33.Location = new System.Drawing.Point(266, 1476);
-            this.buttonTutorial33.Name = "buttonTutorial33";
-            this.buttonTutorial33.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial33.TabIndex = 31;
-            this.buttonTutorial33.Text = "Tutorial 33: Fire";
-            this.buttonTutorial33.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial33.UseVisualStyleBackColor = true;
-            this.buttonTutorial33.Click += new System.EventHandler(this.buttonTutorial33_Click);
-            // 
-            // buttonTutorial29
-            // 
-            this.buttonTutorial29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial29.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial29.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial29.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial29.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_29___Water_Sm;
-            this.buttonTutorial29.Location = new System.Drawing.Point(10, 1330);
-            this.buttonTutorial29.Name = "buttonTutorial29";
-            this.buttonTutorial29.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial29.TabIndex = 27;
-            this.buttonTutorial29.Text = "Tutorial 29: Water";
-            this.buttonTutorial29.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial29.UseVisualStyleBackColor = true;
-            this.buttonTutorial29.Click += new System.EventHandler(this.buttonTutorial29_Click);
-            // 
-            // buttonTutorial26
-            // 
-            this.buttonTutorial26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial26.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial26.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial26.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial26.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_26___Transparency_Sm;
-            this.buttonTutorial26.Location = new System.Drawing.Point(10, 1184);
-            this.buttonTutorial26.Name = "buttonTutorial26";
-            this.buttonTutorial26.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial26.TabIndex = 24;
-            this.buttonTutorial26.Text = "Tutorial 26: Transparency";
-            this.buttonTutorial26.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial26.UseVisualStyleBackColor = true;
-            this.buttonTutorial26.Click += new System.EventHandler(this.buttonTutorial26_Click);
-            // 
-            // buttonTutorial41
-            // 
-            this.buttonTutorial41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial41.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial41.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial41.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial41.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_41___Multiple_Light_Shadow_Mapping_Sm;
-            this.buttonTutorial41.Location = new System.Drawing.Point(10, 1914);
-            this.buttonTutorial41.Name = "buttonTutorial41";
-            this.buttonTutorial41.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial41.TabIndex = 39;
-            this.buttonTutorial41.Text = "Tutorial 41: Multiple Light Shadow Mapping";
-            this.buttonTutorial41.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial41.UseVisualStyleBackColor = true;
-            this.buttonTutorial41.Click += new System.EventHandler(this.buttonTutorial41_Click);
-            // 
-            // buttonTutorial38
-            // 
-            this.buttonTutorial38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial38.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial38.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial38.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial38.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_38___Hardware_Tessellation_Sm;
-            this.buttonTutorial38.Location = new System.Drawing.Point(10, 1768);
-            this.buttonTutorial38.Name = "buttonTutorial38";
-            this.buttonTutorial38.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial38.TabIndex = 36;
-            this.buttonTutorial38.Text = "Tutorial 38: Hardware Tessellation";
-            this.buttonTutorial38.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial38.UseVisualStyleBackColor = true;
-            this.buttonTutorial38.Click += new System.EventHandler(this.buttonTutorial38_Click);
-            // 
-            // buttonTutorial23
-            // 
-            this.buttonTutorial23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial23.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial23.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial23.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial23.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_23___Fog_Sm;
-            this.buttonTutorial23.Location = new System.Drawing.Point(10, 1038);
-            this.buttonTutorial23.Name = "buttonTutorial23";
-            this.buttonTutorial23.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial23.TabIndex = 21;
-            this.buttonTutorial23.Text = "Tutorial 23: Fog";
-            this.buttonTutorial23.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial23.UseVisualStyleBackColor = true;
-            this.buttonTutorial23.Click += new System.EventHandler(this.buttonTutorial23_Click);
-            // 
-            // buttonTutorial35
-            // 
-            this.buttonTutorial35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial35.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial35.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial35.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial35.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_35___Depth_Buffer_Sm;
-            this.buttonTutorial35.Location = new System.Drawing.Point(10, 1622);
-            this.buttonTutorial35.Name = "buttonTutorial35";
-            this.buttonTutorial35.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial35.TabIndex = 33;
-            this.buttonTutorial35.Text = "Tutorial 35: Depth Buffers";
-            this.buttonTutorial35.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial35.UseVisualStyleBackColor = true;
-            this.buttonTutorial35.Click += new System.EventHandler(this.buttonTutorial35_Click);
-            // 
-            // buttonTutorial32
-            // 
-            this.buttonTutorial32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial32.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial32.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial32.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial32.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_32___Glass_And_Ice_Sm;
-            this.buttonTutorial32.Location = new System.Drawing.Point(10, 1476);
-            this.buttonTutorial32.Name = "buttonTutorial32";
-            this.buttonTutorial32.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial32.TabIndex = 30;
-            this.buttonTutorial32.Text = "Tutorial 32: Glass and Ice";
-            this.buttonTutorial32.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial32.UseVisualStyleBackColor = true;
-            this.buttonTutorial32.Click += new System.EventHandler(this.buttonTutorial32_Click);
-            // 
-            // buttonTutorial44
-            // 
-            this.buttonTutorial44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial44.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial44.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial44.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial44.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_44___Projected_Light_Maps_Sm;
-            this.buttonTutorial44.Location = new System.Drawing.Point(10, 2060);
-            this.buttonTutorial44.Name = "buttonTutorial44";
-            this.buttonTutorial44.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial44.TabIndex = 42;
-            this.buttonTutorial44.Text = "Tutorial 44: Projected Light Maps";
-            this.buttonTutorial44.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial44.UseVisualStyleBackColor = true;
-            this.buttonTutorial44.Click += new System.EventHandler(this.buttonTutorial44_Click);
-            // 
-            // buttonTutorial45
-            // 
-            this.buttonTutorial45.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial45.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial45.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial45.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial45.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_45___Managing_Multiple_Shaders_Sm;
-            this.buttonTutorial45.Location = new System.Drawing.Point(266, 2060);
-            this.buttonTutorial45.Name = "buttonTutorial45";
-            this.buttonTutorial45.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial45.TabIndex = 43;
-            this.buttonTutorial45.Text = "Tutorial 45: Managing Multiple Shaders";
-            this.buttonTutorial45.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial45.UseVisualStyleBackColor = true;
-            this.buttonTutorial45.Click += new System.EventHandler(this.buttonTutorial45_Click);
-            // 
-            // buttonTutorial46
-            // 
-            this.buttonTutorial46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial46.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial46.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial46.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial46.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_46___Glow_Sm;
-            this.buttonTutorial46.Location = new System.Drawing.Point(522, 2060);
-            this.buttonTutorial46.Name = "buttonTutorial46";
-            this.buttonTutorial46.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonTutorial46.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial46.TabIndex = 44;
-            this.buttonTutorial46.Text = "Tutorial 46: Glow";
-            this.buttonTutorial46.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial46.UseVisualStyleBackColor = true;
-            this.buttonTutorial46.Click += new System.EventHandler(this.buttonTutorial46_Click);
-            // 
-            // buttonTutorial47
-            // 
-            this.buttonTutorial47.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial47.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial47.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial47.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial47.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_47___Picking_Sm;
-            this.buttonTutorial47.Location = new System.Drawing.Point(10, 2206);
-            this.buttonTutorial47.Name = "buttonTutorial47";
-            this.buttonTutorial47.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial47.TabIndex = 45;
-            this.buttonTutorial47.Text = "Tutorial 47: Picking";
-            this.buttonTutorial47.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial47.UseVisualStyleBackColor = true;
-            this.buttonTutorial47.Click += new System.EventHandler(this.buttonTutorial47_Click);
-            // 
-            // buttonTutorial48
-            // 
-            this.buttonTutorial48.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial48.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial48.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial48.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial48.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_48___Directional_Shadow_Maps_Sm;
-            this.buttonTutorial48.Location = new System.Drawing.Point(266, 2206);
-            this.buttonTutorial48.Name = "buttonTutorial48";
-            this.buttonTutorial48.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial48.TabIndex = 46;
-            this.buttonTutorial48.Text = "Tutorial 48: Directional Shadow Maps";
-            this.buttonTutorial48.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial48.UseVisualStyleBackColor = true;
-            this.buttonTutorial48.Click += new System.EventHandler(this.buttonTutorial48_Click);
-            // 
-            // buttonTutorial49
-            // 
-            this.buttonTutorial49.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial49.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial49.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial49.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial49.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_49___Shadow_Mapping_And_Transparency_Sm;
-            this.buttonTutorial49.Location = new System.Drawing.Point(522, 2206);
-            this.buttonTutorial49.Name = "buttonTutorial49";
-            this.buttonTutorial49.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial49.TabIndex = 47;
-            this.buttonTutorial49.Text = "Tutorial 49: Shadow Mapping and Transparency";
-            this.buttonTutorial49.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial49.UseVisualStyleBackColor = true;
-            this.buttonTutorial49.Click += new System.EventHandler(this.buttonTutorial49_Click);
-            // 
-            // buttonTutorial50
-            // 
-            this.buttonTutorial50.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTutorial50.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTutorial50.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTutorial50.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial50.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_50___Deferred_Shading_Sm;
-            this.buttonTutorial50.Location = new System.Drawing.Point(266, 2352);
-            this.buttonTutorial50.Name = "buttonTutorial50";
-            this.buttonTutorial50.Size = new System.Drawing.Size(250, 140);
-            this.buttonTutorial50.TabIndex = 48;
-            this.buttonTutorial50.Text = "Tutorial 50: Deferred Shading";
-            this.buttonTutorial50.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTutorial50.UseVisualStyleBackColor = true;
-            this.buttonTutorial50.Click += new System.EventHandler(this.buttonTutorial50_Click);
             // 
             // tabControl1
             // 
@@ -1027,6 +261,950 @@
             this.tabPage2.Size = new System.Drawing.Size(806, 468);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Series I Terrain Tutorials";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.tabPage3.Controls.Add(this.buttonS2Tutorial5);
+            this.tabPage3.Controls.Add(this.buttonS2Tutorial2);
+            this.tabPage3.Controls.Add(this.buttonS2TerrainTutorial1);
+            this.tabPage3.Controls.Add(this.buttonS2Tutorial3);
+            this.tabPage3.Controls.Add(this.buttonS2TerrainTutorial2);
+            this.tabPage3.Controls.Add(this.buttonS2Tutorial4);
+            this.tabPage3.ForeColor = System.Drawing.Color.Black;
+            this.tabPage3.Location = new System.Drawing.Point(4, 32);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(806, 468);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Series 2 Tutorials";
+            // 
+            // checkBoxVSync
+            // 
+            this.checkBoxVSync.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBoxVSync.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(24)))), ((int)(((byte)(61)))));
+            this.checkBoxVSync.Enabled = false;
+            this.checkBoxVSync.FlatAppearance.BorderSize = 0;
+            this.checkBoxVSync.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBoxVSync.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxVSync.ForeColor = System.Drawing.Color.Yellow;
+            this.checkBoxVSync.Location = new System.Drawing.Point(13, 72);
+            this.checkBoxVSync.Name = "checkBoxVSync";
+            this.checkBoxVSync.Size = new System.Drawing.Size(115, 42);
+            this.checkBoxVSync.TabIndex = 4;
+            this.checkBoxVSync.Text = "VSync";
+            this.checkBoxVSync.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBoxVSync.UseVisualStyleBackColor = false;
+            // 
+            // checkBoxScreenSize
+            // 
+            this.checkBoxScreenSize.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBoxScreenSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(24)))), ((int)(((byte)(61)))));
+            this.checkBoxScreenSize.Checked = true;
+            this.checkBoxScreenSize.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxScreenSize.FlatAppearance.BorderSize = 0;
+            this.checkBoxScreenSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBoxScreenSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxScreenSize.ForeColor = System.Drawing.Color.Yellow;
+            this.checkBoxScreenSize.Location = new System.Drawing.Point(134, 72);
+            this.checkBoxScreenSize.Name = "checkBoxScreenSize";
+            this.checkBoxScreenSize.Size = new System.Drawing.Size(115, 42);
+            this.checkBoxScreenSize.TabIndex = 4;
+            this.checkBoxScreenSize.Text = "Full Screen";
+            this.checkBoxScreenSize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBoxScreenSize.ThreeState = true;
+            this.checkBoxScreenSize.UseVisualStyleBackColor = false;
+            this.checkBoxScreenSize.Click += new System.EventHandler(this.checkBoxScreenSize_Click);
+            // 
+            // numericUpDownWidth
+            // 
+            this.numericUpDownWidth.BackColor = System.Drawing.Color.Black;
+            this.numericUpDownWidth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numericUpDownWidth.Enabled = false;
+            this.numericUpDownWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownWidth.ForeColor = System.Drawing.Color.White;
+            this.numericUpDownWidth.Location = new System.Drawing.Point(267, 68);
+            this.numericUpDownWidth.Maximum = new decimal(new int[] {
+            800,
+            0,
+            0,
+            0});
+            this.numericUpDownWidth.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.numericUpDownWidth.Name = "numericUpDownWidth";
+            this.numericUpDownWidth.Size = new System.Drawing.Size(85, 26);
+            this.numericUpDownWidth.TabIndex = 5;
+            this.numericUpDownWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDownWidth.Value = new decimal(new int[] {
+            800,
+            0,
+            0,
+            0});
+            // 
+            // numericUpDownHeight
+            // 
+            this.numericUpDownHeight.BackColor = System.Drawing.Color.Black;
+            this.numericUpDownHeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numericUpDownHeight.Enabled = false;
+            this.numericUpDownHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownHeight.ForeColor = System.Drawing.Color.White;
+            this.numericUpDownHeight.Location = new System.Drawing.Point(267, 98);
+            this.numericUpDownHeight.Maximum = new decimal(new int[] {
+            600,
+            0,
+            0,
+            0});
+            this.numericUpDownHeight.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.numericUpDownHeight.Name = "numericUpDownHeight";
+            this.numericUpDownHeight.Size = new System.Drawing.Size(85, 26);
+            this.numericUpDownHeight.TabIndex = 5;
+            this.numericUpDownHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDownHeight.Value = new decimal(new int[] {
+            600,
+            0,
+            0,
+            0});
+            // 
+            // labelWidth
+            // 
+            this.labelWidth.AutoSize = true;
+            this.labelWidth.Enabled = false;
+            this.labelWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWidth.Location = new System.Drawing.Point(358, 70);
+            this.labelWidth.Name = "labelWidth";
+            this.labelWidth.Size = new System.Drawing.Size(55, 20);
+            this.labelWidth.TabIndex = 6;
+            this.labelWidth.Text = "Width";
+            // 
+            // labelHeight
+            // 
+            this.labelHeight.AutoSize = true;
+            this.labelHeight.Enabled = false;
+            this.labelHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHeight.Location = new System.Drawing.Point(358, 100);
+            this.labelHeight.Name = "labelHeight";
+            this.labelHeight.Size = new System.Drawing.Size(62, 20);
+            this.labelHeight.TabIndex = 6;
+            this.labelHeight.Text = "Height";
+            // 
+            // checkBoxTimer
+            // 
+            this.checkBoxTimer.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBoxTimer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(24)))), ((int)(((byte)(61)))));
+            this.checkBoxTimer.FlatAppearance.BorderSize = 0;
+            this.checkBoxTimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBoxTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTimer.ForeColor = System.Drawing.Color.Yellow;
+            this.checkBoxTimer.Location = new System.Drawing.Point(455, 72);
+            this.checkBoxTimer.Name = "checkBoxTimer";
+            this.checkBoxTimer.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkBoxTimer.Size = new System.Drawing.Size(115, 49);
+            this.checkBoxTimer.TabIndex = 4;
+            this.checkBoxTimer.Text = "Time in Seconds";
+            this.checkBoxTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBoxTimer.UseVisualStyleBackColor = false;
+            this.checkBoxTimer.CheckedChanged += new System.EventHandler(this.checkBoxTimer_CheckedChanged);
+            // 
+            // numericUpDownTimeInSeconds
+            // 
+            this.numericUpDownTimeInSeconds.BackColor = System.Drawing.Color.Black;
+            this.numericUpDownTimeInSeconds.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numericUpDownTimeInSeconds.Enabled = false;
+            this.numericUpDownTimeInSeconds.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownTimeInSeconds.ForeColor = System.Drawing.Color.White;
+            this.numericUpDownTimeInSeconds.Location = new System.Drawing.Point(585, 84);
+            this.numericUpDownTimeInSeconds.Name = "numericUpDownTimeInSeconds";
+            this.numericUpDownTimeInSeconds.Size = new System.Drawing.Size(85, 26);
+            this.numericUpDownTimeInSeconds.TabIndex = 5;
+            this.numericUpDownTimeInSeconds.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // buttonRunPerfTests
+            // 
+            this.buttonRunPerfTests.BackColor = System.Drawing.Color.DarkGreen;
+            this.buttonRunPerfTests.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonRunPerfTests.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRunPerfTests.Location = new System.Drawing.Point(695, 60);
+            this.buttonRunPerfTests.Name = "buttonRunPerfTests";
+            this.buttonRunPerfTests.Size = new System.Drawing.Size(130, 73);
+            this.buttonRunPerfTests.TabIndex = 7;
+            this.buttonRunPerfTests.Text = "Run ALL Performance Tests";
+            this.buttonRunPerfTests.UseVisualStyleBackColor = false;
+            this.buttonRunPerfTests.Click += new System.EventHandler(this.buttonRunPerfTests_Click);
+            // 
+            // buttonTutorial50
+            // 
+            this.buttonTutorial50.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial50.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial50.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial50.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial50.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_50___Deferred_Shading_Sm;
+            this.buttonTutorial50.Location = new System.Drawing.Point(266, 2352);
+            this.buttonTutorial50.Name = "buttonTutorial50";
+            this.buttonTutorial50.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial50.TabIndex = 48;
+            this.buttonTutorial50.Text = "Tutorial 50: Deferred Shading";
+            this.buttonTutorial50.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial50.UseVisualStyleBackColor = true;
+            this.buttonTutorial50.Click += new System.EventHandler(this.buttonTutorial50_Click);
+            // 
+            // buttonTutorial31
+            // 
+            this.buttonTutorial31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial31.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial31.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial31.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial31.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_31___3D_Sound_Sm;
+            this.buttonTutorial31.Location = new System.Drawing.Point(522, 1330);
+            this.buttonTutorial31.Name = "buttonTutorial31";
+            this.buttonTutorial31.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial31.TabIndex = 29;
+            this.buttonTutorial31.Text = "Tutorial 31: 3D Sound";
+            this.buttonTutorial31.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial31.UseVisualStyleBackColor = true;
+            this.buttonTutorial31.Click += new System.EventHandler(this.buttonTutorial31_Click);
+            // 
+            // buttonTutorial49
+            // 
+            this.buttonTutorial49.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial49.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial49.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial49.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial49.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_49___Shadow_Mapping_And_Transparency_Sm;
+            this.buttonTutorial49.Location = new System.Drawing.Point(522, 2206);
+            this.buttonTutorial49.Name = "buttonTutorial49";
+            this.buttonTutorial49.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial49.TabIndex = 47;
+            this.buttonTutorial49.Text = "Tutorial 49: Shadow Mapping and Transparency";
+            this.buttonTutorial49.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial49.UseVisualStyleBackColor = true;
+            this.buttonTutorial49.Click += new System.EventHandler(this.buttonTutorial49_Click);
+            // 
+            // buttonTutorial02
+            // 
+            this.buttonTutorial02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial02.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial02.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial02.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial02.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_2_____Creating_A_Framework_And_Window_Sm;
+            this.buttonTutorial02.Location = new System.Drawing.Point(10, 16);
+            this.buttonTutorial02.Name = "buttonTutorial02";
+            this.buttonTutorial02.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial02.TabIndex = 0;
+            this.buttonTutorial02.Text = "Tutorial 2: Creating a Framework and Window";
+            this.buttonTutorial02.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial02.UseVisualStyleBackColor = true;
+            this.buttonTutorial02.Click += new System.EventHandler(this.buttonTutorial2_Click);
+            // 
+            // buttonTutorial46
+            // 
+            this.buttonTutorial46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial46.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial46.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial46.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial46.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_46___Glow_Sm;
+            this.buttonTutorial46.Location = new System.Drawing.Point(522, 2060);
+            this.buttonTutorial46.Name = "buttonTutorial46";
+            this.buttonTutorial46.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.buttonTutorial46.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial46.TabIndex = 44;
+            this.buttonTutorial46.Text = "Tutorial 46: Glow";
+            this.buttonTutorial46.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial46.UseVisualStyleBackColor = true;
+            this.buttonTutorial46.Click += new System.EventHandler(this.buttonTutorial46_Click);
+            // 
+            // buttonTutorial28
+            // 
+            this.buttonTutorial28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial28.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial28.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial28.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial28.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_28___Screen_Fades_Sm;
+            this.buttonTutorial28.Location = new System.Drawing.Point(522, 1184);
+            this.buttonTutorial28.Name = "buttonTutorial28";
+            this.buttonTutorial28.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial28.TabIndex = 26;
+            this.buttonTutorial28.Text = "Tutorial 28: Screen Fades";
+            this.buttonTutorial28.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial28.UseVisualStyleBackColor = true;
+            this.buttonTutorial28.Click += new System.EventHandler(this.buttonTutorial28_Click);
+            // 
+            // buttonTutorial48
+            // 
+            this.buttonTutorial48.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial48.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial48.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial48.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial48.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_48___Directional_Shadow_Maps_Sm;
+            this.buttonTutorial48.Location = new System.Drawing.Point(266, 2206);
+            this.buttonTutorial48.Name = "buttonTutorial48";
+            this.buttonTutorial48.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial48.TabIndex = 46;
+            this.buttonTutorial48.Text = "Tutorial 48: Directional Shadow Maps";
+            this.buttonTutorial48.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial48.UseVisualStyleBackColor = true;
+            this.buttonTutorial48.Click += new System.EventHandler(this.buttonTutorial48_Click);
+            // 
+            // buttonTutorial43
+            // 
+            this.buttonTutorial43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial43.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial43.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial43.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial43.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_43___Projective_Texturing_Sm;
+            this.buttonTutorial43.Location = new System.Drawing.Point(522, 1914);
+            this.buttonTutorial43.Name = "buttonTutorial43";
+            this.buttonTutorial43.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial43.TabIndex = 41;
+            this.buttonTutorial43.Text = "Tutorial 43: Projective Texturing";
+            this.buttonTutorial43.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial43.UseVisualStyleBackColor = true;
+            this.buttonTutorial43.Click += new System.EventHandler(this.buttonTutorial43_Click);
+            // 
+            // buttonTutorial45
+            // 
+            this.buttonTutorial45.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial45.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial45.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial45.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial45.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_45___Managing_Multiple_Shaders_Sm;
+            this.buttonTutorial45.Location = new System.Drawing.Point(266, 2060);
+            this.buttonTutorial45.Name = "buttonTutorial45";
+            this.buttonTutorial45.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial45.TabIndex = 43;
+            this.buttonTutorial45.Text = "Tutorial 45: Managing Multiple Shaders";
+            this.buttonTutorial45.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial45.UseVisualStyleBackColor = true;
+            this.buttonTutorial45.Click += new System.EventHandler(this.buttonTutorial45_Click);
+            // 
+            // buttonTutorial05
+            // 
+            this.buttonTutorial05.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial05.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial05.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial05.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial05.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_5_____Texturing_Sm;
+            this.buttonTutorial05.Location = new System.Drawing.Point(10, 162);
+            this.buttonTutorial05.Name = "buttonTutorial05";
+            this.buttonTutorial05.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial05.TabIndex = 3;
+            this.buttonTutorial05.Text = "Tutorial 5: Texturing";
+            this.buttonTutorial05.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial05.UseVisualStyleBackColor = true;
+            this.buttonTutorial05.Click += new System.EventHandler(this.buttonTutorial5_Click);
+            // 
+            // buttonTutorial47
+            // 
+            this.buttonTutorial47.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial47.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial47.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial47.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial47.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_47___Picking_Sm;
+            this.buttonTutorial47.Location = new System.Drawing.Point(10, 2206);
+            this.buttonTutorial47.Name = "buttonTutorial47";
+            this.buttonTutorial47.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial47.TabIndex = 45;
+            this.buttonTutorial47.Text = "Tutorial 47: Picking";
+            this.buttonTutorial47.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial47.UseVisualStyleBackColor = true;
+            this.buttonTutorial47.Click += new System.EventHandler(this.buttonTutorial47_Click);
+            // 
+            // buttonTutorial40
+            // 
+            this.buttonTutorial40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial40.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial40.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial40.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial40.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_40___Shadow_Mapping_Sm;
+            this.buttonTutorial40.Location = new System.Drawing.Point(522, 1768);
+            this.buttonTutorial40.Name = "buttonTutorial40";
+            this.buttonTutorial40.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial40.TabIndex = 38;
+            this.buttonTutorial40.Text = "Tutorial 40: Shadow Mapping";
+            this.buttonTutorial40.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial40.UseVisualStyleBackColor = true;
+            this.buttonTutorial40.Click += new System.EventHandler(this.buttonTutorial40_Click);
+            // 
+            // buttonTutorial44
+            // 
+            this.buttonTutorial44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial44.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial44.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial44.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial44.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_44___Projected_Light_Maps_Sm;
+            this.buttonTutorial44.Location = new System.Drawing.Point(10, 2060);
+            this.buttonTutorial44.Name = "buttonTutorial44";
+            this.buttonTutorial44.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial44.TabIndex = 42;
+            this.buttonTutorial44.Text = "Tutorial 44: Projected Light Maps";
+            this.buttonTutorial44.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial44.UseVisualStyleBackColor = true;
+            this.buttonTutorial44.Click += new System.EventHandler(this.buttonTutorial44_Click);
+            // 
+            // buttonTutorial30
+            // 
+            this.buttonTutorial30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial30.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial30.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial30.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial30.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_30___Multiple_Point_Lights_Sm;
+            this.buttonTutorial30.Location = new System.Drawing.Point(266, 1330);
+            this.buttonTutorial30.Name = "buttonTutorial30";
+            this.buttonTutorial30.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial30.TabIndex = 28;
+            this.buttonTutorial30.Text = "Tutorial 30: Multiple Point Lights";
+            this.buttonTutorial30.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial30.UseVisualStyleBackColor = true;
+            this.buttonTutorial30.Click += new System.EventHandler(this.buttonTutorial30_Click);
+            // 
+            // buttonTutorial37
+            // 
+            this.buttonTutorial37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial37.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial37.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial37.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial37.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_37___Instancing_Sm;
+            this.buttonTutorial37.Location = new System.Drawing.Point(522, 1622);
+            this.buttonTutorial37.Name = "buttonTutorial37";
+            this.buttonTutorial37.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial37.TabIndex = 35;
+            this.buttonTutorial37.Text = "Tutorial 37: Instancing";
+            this.buttonTutorial37.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial37.UseVisualStyleBackColor = true;
+            this.buttonTutorial37.Click += new System.EventHandler(this.buttonTutorial37_Click);
+            // 
+            // buttonTutorial25
+            // 
+            this.buttonTutorial25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial25.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial25.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial25.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial25.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_25___Texture_Translation_Sm;
+            this.buttonTutorial25.Location = new System.Drawing.Point(522, 1038);
+            this.buttonTutorial25.Name = "buttonTutorial25";
+            this.buttonTutorial25.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial25.TabIndex = 23;
+            this.buttonTutorial25.Text = "Tutorial 25: Texture Translation";
+            this.buttonTutorial25.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial25.UseVisualStyleBackColor = true;
+            this.buttonTutorial25.Click += new System.EventHandler(this.buttonTutorial25_Click);
+            // 
+            // buttonTutorial13
+            // 
+            this.buttonTutorial13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial13.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial13.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial13.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_13___Direct_Input_Sm;
+            this.buttonTutorial13.Location = new System.Drawing.Point(522, 454);
+            this.buttonTutorial13.Name = "buttonTutorial13";
+            this.buttonTutorial13.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial13.TabIndex = 11;
+            this.buttonTutorial13.Text = "Tutorial 13: Direct Input";
+            this.buttonTutorial13.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial13.UseVisualStyleBackColor = true;
+            this.buttonTutorial13.Click += new System.EventHandler(this.buttonTutorial13_Click);
+            // 
+            // buttonTutorial42
+            // 
+            this.buttonTutorial42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial42.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial42.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial42.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial42.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_42___Soft_Shadows_Sm;
+            this.buttonTutorial42.Location = new System.Drawing.Point(266, 1914);
+            this.buttonTutorial42.Name = "buttonTutorial42";
+            this.buttonTutorial42.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial42.TabIndex = 40;
+            this.buttonTutorial42.Text = "Tutorial 42: Soft Shadows";
+            this.buttonTutorial42.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial42.UseVisualStyleBackColor = true;
+            this.buttonTutorial42.Click += new System.EventHandler(this.buttonTutorial42_Click);
+            // 
+            // buttonTutorial12
+            // 
+            this.buttonTutorial12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial12.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial12.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial12.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_12___Font_Engine_Sm;
+            this.buttonTutorial12.Location = new System.Drawing.Point(266, 454);
+            this.buttonTutorial12.Name = "buttonTutorial12";
+            this.buttonTutorial12.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial12.TabIndex = 10;
+            this.buttonTutorial12.Text = "Tutorial 12: Font Engine";
+            this.buttonTutorial12.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial12.UseVisualStyleBackColor = true;
+            this.buttonTutorial12.Click += new System.EventHandler(this.buttonTutorial12_Click);
+            // 
+            // buttonTutorial39
+            // 
+            this.buttonTutorial39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial39.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial39.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial39.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial39.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_39___Particle_Systems_Sm;
+            this.buttonTutorial39.Location = new System.Drawing.Point(266, 1768);
+            this.buttonTutorial39.Name = "buttonTutorial39";
+            this.buttonTutorial39.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial39.TabIndex = 37;
+            this.buttonTutorial39.Text = "Tutorial 39: Particle Systems";
+            this.buttonTutorial39.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial39.UseVisualStyleBackColor = true;
+            this.buttonTutorial39.Click += new System.EventHandler(this.buttonTutorial39_Click);
+            // 
+            // buttonTutorial03
+            // 
+            this.buttonTutorial03.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial03.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial03.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial03.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial03.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_3_____Initializing_DirectX_11_Sm;
+            this.buttonTutorial03.Location = new System.Drawing.Point(266, 16);
+            this.buttonTutorial03.Name = "buttonTutorial03";
+            this.buttonTutorial03.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial03.TabIndex = 1;
+            this.buttonTutorial03.Text = "Tutorial 3: Initializing DirectX 11";
+            this.buttonTutorial03.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial03.UseVisualStyleBackColor = true;
+            this.buttonTutorial03.Click += new System.EventHandler(this.buttonTutorial3_Click);
+            // 
+            // buttonTutorial36
+            // 
+            this.buttonTutorial36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial36.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial36.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial36.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial36.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_36___Blur_Sm;
+            this.buttonTutorial36.Location = new System.Drawing.Point(266, 1622);
+            this.buttonTutorial36.Name = "buttonTutorial36";
+            this.buttonTutorial36.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial36.TabIndex = 34;
+            this.buttonTutorial36.Text = "Tutorial 36: Blur";
+            this.buttonTutorial36.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial36.UseVisualStyleBackColor = true;
+            this.buttonTutorial36.Click += new System.EventHandler(this.buttonTutorial36_Click);
+            // 
+            // buttonTutorial11
+            // 
+            this.buttonTutorial11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial11.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial11.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial11.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_11___2D_Rendering_Sm;
+            this.buttonTutorial11.Location = new System.Drawing.Point(10, 454);
+            this.buttonTutorial11.Name = "buttonTutorial11";
+            this.buttonTutorial11.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial11.TabIndex = 9;
+            this.buttonTutorial11.Text = "Tutorial 11: 2D Rendering";
+            this.buttonTutorial11.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial11.UseVisualStyleBackColor = true;
+            this.buttonTutorial11.Click += new System.EventHandler(this.buttonTutorial11_Click);
+            // 
+            // buttonTutorial04
+            // 
+            this.buttonTutorial04.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial04.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial04.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial04.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial04.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_4_____Buffers__Shaders__And_HLSL_Sm;
+            this.buttonTutorial04.Location = new System.Drawing.Point(522, 16);
+            this.buttonTutorial04.Name = "buttonTutorial04";
+            this.buttonTutorial04.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial04.TabIndex = 2;
+            this.buttonTutorial04.Text = "Tutorial 4: Buffers, Shaders, and HLSL";
+            this.buttonTutorial04.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial04.UseVisualStyleBackColor = true;
+            this.buttonTutorial04.Click += new System.EventHandler(this.buttonTutorial4_Click);
+            // 
+            // buttonTutorial10
+            // 
+            this.buttonTutorial10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial10.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial10.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial10.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_10___Specular_Lighting_Sm;
+            this.buttonTutorial10.Location = new System.Drawing.Point(522, 308);
+            this.buttonTutorial10.Name = "buttonTutorial10";
+            this.buttonTutorial10.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial10.TabIndex = 8;
+            this.buttonTutorial10.Text = "Tutorial 10: Specular Lighting";
+            this.buttonTutorial10.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial10.UseVisualStyleBackColor = true;
+            this.buttonTutorial10.Click += new System.EventHandler(this.buttonTutorial10_Click);
+            // 
+            // buttonTutorial41
+            // 
+            this.buttonTutorial41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial41.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial41.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial41.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial41.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_41___Multiple_Light_Shadow_Mapping_Sm;
+            this.buttonTutorial41.Location = new System.Drawing.Point(10, 1914);
+            this.buttonTutorial41.Name = "buttonTutorial41";
+            this.buttonTutorial41.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial41.TabIndex = 39;
+            this.buttonTutorial41.Text = "Tutorial 41: Multiple Light Shadow Mapping";
+            this.buttonTutorial41.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial41.UseVisualStyleBackColor = true;
+            this.buttonTutorial41.Click += new System.EventHandler(this.buttonTutorial41_Click);
+            // 
+            // buttonTutorial34
+            // 
+            this.buttonTutorial34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial34.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial34.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial34.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial34.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_34___Billboarding_Sm;
+            this.buttonTutorial34.Location = new System.Drawing.Point(522, 1476);
+            this.buttonTutorial34.Name = "buttonTutorial34";
+            this.buttonTutorial34.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial34.TabIndex = 32;
+            this.buttonTutorial34.Text = "Tutorial 34: Billboarding";
+            this.buttonTutorial34.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial34.UseVisualStyleBackColor = true;
+            this.buttonTutorial34.Click += new System.EventHandler(this.buttonTutorial34_Click);
+            // 
+            // buttonTutorial38
+            // 
+            this.buttonTutorial38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial38.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial38.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial38.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial38.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_38___Hardware_Tessellation_Sm;
+            this.buttonTutorial38.Location = new System.Drawing.Point(10, 1768);
+            this.buttonTutorial38.Name = "buttonTutorial38";
+            this.buttonTutorial38.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial38.TabIndex = 36;
+            this.buttonTutorial38.Text = "Tutorial 38: Hardware Tessellation";
+            this.buttonTutorial38.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial38.UseVisualStyleBackColor = true;
+            this.buttonTutorial38.Click += new System.EventHandler(this.buttonTutorial38_Click);
+            // 
+            // buttonTutorial09
+            // 
+            this.buttonTutorial09.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial09.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial09.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial09.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial09.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_9_____Ambient_Lighting_Sm;
+            this.buttonTutorial09.Location = new System.Drawing.Point(266, 308);
+            this.buttonTutorial09.Name = "buttonTutorial09";
+            this.buttonTutorial09.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial09.TabIndex = 7;
+            this.buttonTutorial09.Text = "Tutorial 9: Ambient Lighting";
+            this.buttonTutorial09.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial09.UseVisualStyleBackColor = true;
+            this.buttonTutorial09.Click += new System.EventHandler(this.buttonTutorial9_Click);
+            // 
+            // buttonTutorial35
+            // 
+            this.buttonTutorial35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial35.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial35.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial35.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial35.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_35___Depth_Buffer_Sm;
+            this.buttonTutorial35.Location = new System.Drawing.Point(10, 1622);
+            this.buttonTutorial35.Name = "buttonTutorial35";
+            this.buttonTutorial35.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial35.TabIndex = 33;
+            this.buttonTutorial35.Text = "Tutorial 35: Depth Buffers";
+            this.buttonTutorial35.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial35.UseVisualStyleBackColor = true;
+            this.buttonTutorial35.Click += new System.EventHandler(this.buttonTutorial35_Click);
+            // 
+            // buttonTutorial07
+            // 
+            this.buttonTutorial07.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial07.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial07.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial07.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial07.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_7_____3D_Mode_lRendering_Sm;
+            this.buttonTutorial07.Location = new System.Drawing.Point(522, 162);
+            this.buttonTutorial07.Name = "buttonTutorial07";
+            this.buttonTutorial07.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial07.TabIndex = 5;
+            this.buttonTutorial07.Text = "Tutorial 7: 3D Model Rendering";
+            this.buttonTutorial07.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial07.UseVisualStyleBackColor = true;
+            this.buttonTutorial07.Click += new System.EventHandler(this.buttonTutorial7_Click);
+            // 
+            // buttonTutorial27
+            // 
+            this.buttonTutorial27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial27.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial27.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial27.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial27.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_27___Reflection_Projective_Texturing_Sm;
+            this.buttonTutorial27.Location = new System.Drawing.Point(266, 1184);
+            this.buttonTutorial27.Name = "buttonTutorial27";
+            this.buttonTutorial27.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial27.TabIndex = 25;
+            this.buttonTutorial27.Text = "Tutorial 27: Reflection (Projective Texturing)";
+            this.buttonTutorial27.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial27.UseVisualStyleBackColor = true;
+            this.buttonTutorial27.Click += new System.EventHandler(this.buttonTutorial27_Click);
+            // 
+            // buttonTutorial06
+            // 
+            this.buttonTutorial06.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial06.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial06.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial06.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial06.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_6_____Diffuse_Lighting_Sm;
+            this.buttonTutorial06.Location = new System.Drawing.Point(266, 162);
+            this.buttonTutorial06.Name = "buttonTutorial06";
+            this.buttonTutorial06.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial06.TabIndex = 4;
+            this.buttonTutorial06.Text = "Tutorial 6: Diffuse Lighting";
+            this.buttonTutorial06.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial06.UseVisualStyleBackColor = true;
+            this.buttonTutorial06.Click += new System.EventHandler(this.buttonTutorial6_Click);
+            // 
+            // buttonTutorial14
+            // 
+            this.buttonTutorial14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial14.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial14.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial14.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial14.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_14___Direct_Sound_Sm;
+            this.buttonTutorial14.Location = new System.Drawing.Point(10, 600);
+            this.buttonTutorial14.Name = "buttonTutorial14";
+            this.buttonTutorial14.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial14.TabIndex = 12;
+            this.buttonTutorial14.Text = "Tutorial 14: Direct Sound";
+            this.buttonTutorial14.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial14.UseVisualStyleBackColor = true;
+            this.buttonTutorial14.Click += new System.EventHandler(this.buttonTutorial14_Click);
+            // 
+            // buttonTutorial18
+            // 
+            this.buttonTutorial18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial18.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial18.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial18.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_18___Light_Maps_Sm;
+            this.buttonTutorial18.Location = new System.Drawing.Point(266, 746);
+            this.buttonTutorial18.Name = "buttonTutorial18";
+            this.buttonTutorial18.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial18.TabIndex = 16;
+            this.buttonTutorial18.Text = "Tutorial 18: Light Maps";
+            this.buttonTutorial18.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial18.UseVisualStyleBackColor = true;
+            this.buttonTutorial18.Click += new System.EventHandler(this.buttonTutorial18_Click);
+            // 
+            // buttonTutorial19
+            // 
+            this.buttonTutorial19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial19.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial19.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial19.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial19.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_19___Alpha_Mapping_Sm;
+            this.buttonTutorial19.Location = new System.Drawing.Point(522, 746);
+            this.buttonTutorial19.Name = "buttonTutorial19";
+            this.buttonTutorial19.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial19.TabIndex = 17;
+            this.buttonTutorial19.Text = "Tutorial 19: Alpha Mapping";
+            this.buttonTutorial19.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial19.UseVisualStyleBackColor = true;
+            this.buttonTutorial19.Click += new System.EventHandler(this.buttonTutorial19_Click);
+            // 
+            // buttonTutorial33
+            // 
+            this.buttonTutorial33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial33.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial33.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial33.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial33.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_33___Fire_Sm;
+            this.buttonTutorial33.Location = new System.Drawing.Point(266, 1476);
+            this.buttonTutorial33.Name = "buttonTutorial33";
+            this.buttonTutorial33.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial33.TabIndex = 31;
+            this.buttonTutorial33.Text = "Tutorial 33: Fire";
+            this.buttonTutorial33.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial33.UseVisualStyleBackColor = true;
+            this.buttonTutorial33.Click += new System.EventHandler(this.buttonTutorial33_Click);
+            // 
+            // buttonTutorial22
+            // 
+            this.buttonTutorial22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial22.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial22.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial22.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial22.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_22___Render_To_Texture_Sm;
+            this.buttonTutorial22.Location = new System.Drawing.Point(522, 892);
+            this.buttonTutorial22.Name = "buttonTutorial22";
+            this.buttonTutorial22.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial22.TabIndex = 20;
+            this.buttonTutorial22.Text = "Tutorial 22: Render to Texture";
+            this.buttonTutorial22.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial22.UseVisualStyleBackColor = true;
+            this.buttonTutorial22.Click += new System.EventHandler(this.buttonTutorial22_Click);
+            // 
+            // buttonTutorial29
+            // 
+            this.buttonTutorial29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial29.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial29.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial29.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial29.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_29___Water_Sm;
+            this.buttonTutorial29.Location = new System.Drawing.Point(10, 1330);
+            this.buttonTutorial29.Name = "buttonTutorial29";
+            this.buttonTutorial29.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial29.TabIndex = 27;
+            this.buttonTutorial29.Text = "Tutorial 29: Water";
+            this.buttonTutorial29.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial29.UseVisualStyleBackColor = true;
+            this.buttonTutorial29.Click += new System.EventHandler(this.buttonTutorial29_Click);
+            // 
+            // buttonTutorial17
+            // 
+            this.buttonTutorial17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial17.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial17.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial17.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_17___MultiTexturing_And_TextureArrays_Sm;
+            this.buttonTutorial17.Location = new System.Drawing.Point(10, 746);
+            this.buttonTutorial17.Name = "buttonTutorial17";
+            this.buttonTutorial17.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial17.TabIndex = 15;
+            this.buttonTutorial17.Text = "Tutorial 17: Multitexturing and Texture Arrays";
+            this.buttonTutorial17.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial17.UseVisualStyleBackColor = true;
+            this.buttonTutorial17.Click += new System.EventHandler(this.buttonTutorial17_Click);
+            // 
+            // buttonTutorial16
+            // 
+            this.buttonTutorial16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial16.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial16.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial16.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_16___Frustum_Culling_Sm;
+            this.buttonTutorial16.Location = new System.Drawing.Point(522, 600);
+            this.buttonTutorial16.Name = "buttonTutorial16";
+            this.buttonTutorial16.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial16.TabIndex = 14;
+            this.buttonTutorial16.Text = "Tutorial 16: Frustum Culling";
+            this.buttonTutorial16.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial16.UseVisualStyleBackColor = true;
+            this.buttonTutorial16.Click += new System.EventHandler(this.buttonTutorial16_Click);
+            // 
+            // buttonTutorial24
+            // 
+            this.buttonTutorial24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial24.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial24.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial24.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial24.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_24___Clipping_Planes_Sm;
+            this.buttonTutorial24.Location = new System.Drawing.Point(266, 1038);
+            this.buttonTutorial24.Name = "buttonTutorial24";
+            this.buttonTutorial24.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial24.TabIndex = 22;
+            this.buttonTutorial24.Text = "Tutorial 24: Clipping Planes";
+            this.buttonTutorial24.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial24.UseVisualStyleBackColor = true;
+            this.buttonTutorial24.Click += new System.EventHandler(this.buttonTutorial24_Click);
+            // 
+            // buttonTutorial26
+            // 
+            this.buttonTutorial26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial26.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial26.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial26.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial26.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_26___Transparency_Sm;
+            this.buttonTutorial26.Location = new System.Drawing.Point(10, 1184);
+            this.buttonTutorial26.Name = "buttonTutorial26";
+            this.buttonTutorial26.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial26.TabIndex = 24;
+            this.buttonTutorial26.Text = "Tutorial 26: Transparency";
+            this.buttonTutorial26.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial26.UseVisualStyleBackColor = true;
+            this.buttonTutorial26.Click += new System.EventHandler(this.buttonTutorial26_Click);
+            // 
+            // buttonTutorial15
+            // 
+            this.buttonTutorial15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial15.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial15.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial15.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_15___FPS_CPU_Usage_And_Timers_Sm;
+            this.buttonTutorial15.Location = new System.Drawing.Point(266, 600);
+            this.buttonTutorial15.Name = "buttonTutorial15";
+            this.buttonTutorial15.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial15.TabIndex = 13;
+            this.buttonTutorial15.Text = "Tutorial 15: FPS, CPU Usage, and Timers";
+            this.buttonTutorial15.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial15.UseVisualStyleBackColor = false;
+            this.buttonTutorial15.Click += new System.EventHandler(this.buttonTutorial15_Click);
+            // 
+            // buttonTutorial20
+            // 
+            this.buttonTutorial20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial20.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial20.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial20.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial20.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_20___Bump_Mapping_Sm;
+            this.buttonTutorial20.Location = new System.Drawing.Point(10, 892);
+            this.buttonTutorial20.Name = "buttonTutorial20";
+            this.buttonTutorial20.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial20.TabIndex = 18;
+            this.buttonTutorial20.Text = "Tutorial 20: Bump Mapping";
+            this.buttonTutorial20.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial20.UseVisualStyleBackColor = true;
+            this.buttonTutorial20.Click += new System.EventHandler(this.buttonTutorial20_Click);
+            // 
+            // buttonTutorial23
+            // 
+            this.buttonTutorial23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial23.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial23.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial23.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial23.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_23___Fog_Sm;
+            this.buttonTutorial23.Location = new System.Drawing.Point(10, 1038);
+            this.buttonTutorial23.Name = "buttonTutorial23";
+            this.buttonTutorial23.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial23.TabIndex = 21;
+            this.buttonTutorial23.Text = "Tutorial 23: Fog";
+            this.buttonTutorial23.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial23.UseVisualStyleBackColor = true;
+            this.buttonTutorial23.Click += new System.EventHandler(this.buttonTutorial23_Click);
+            // 
+            // buttonTutorial32
+            // 
+            this.buttonTutorial32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial32.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial32.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial32.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial32.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_32___Glass_And_Ice_Sm;
+            this.buttonTutorial32.Location = new System.Drawing.Point(10, 1476);
+            this.buttonTutorial32.Name = "buttonTutorial32";
+            this.buttonTutorial32.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial32.TabIndex = 30;
+            this.buttonTutorial32.Text = "Tutorial 32: Glass and Ice";
+            this.buttonTutorial32.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial32.UseVisualStyleBackColor = true;
+            this.buttonTutorial32.Click += new System.EventHandler(this.buttonTutorial32_Click);
+            // 
+            // buttonTutorial21
+            // 
+            this.buttonTutorial21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTutorial21.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTutorial21.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTutorial21.ForeColor = System.Drawing.Color.White;
+            this.buttonTutorial21.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_21___Specular_Mapping_Sm;
+            this.buttonTutorial21.Location = new System.Drawing.Point(266, 892);
+            this.buttonTutorial21.Name = "buttonTutorial21";
+            this.buttonTutorial21.Size = new System.Drawing.Size(250, 140);
+            this.buttonTutorial21.TabIndex = 19;
+            this.buttonTutorial21.Text = "Tutorial 21: Specular Mapping";
+            this.buttonTutorial21.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTutorial21.UseVisualStyleBackColor = true;
+            this.buttonTutorial21.Click += new System.EventHandler(this.buttonTutorial21_Click);
             // 
             // buttonTerrainTutorial15
             // 
@@ -1332,19 +1510,6 @@
             this.buttonTerrainTutorial01.UseVisualStyleBackColor = true;
             this.buttonTerrainTutorial01.Click += new System.EventHandler(this.buttonTerrainTutorial1_Click);
             // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.tabPage3.Controls.Add(this.buttonS2Tutorial2);
-            this.tabPage3.Controls.Add(this.buttonS2Tutorial3);
-            this.tabPage3.Controls.Add(this.buttonS2Tutorial4);
-            this.tabPage3.ForeColor = System.Drawing.Color.Black;
-            this.tabPage3.Location = new System.Drawing.Point(4, 32);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(806, 468);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Series 2 Tutorials";
-            // 
             // buttonS2Tutorial2
             // 
             this.buttonS2Tutorial2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -1356,7 +1521,7 @@
             this.buttonS2Tutorial2.Name = "buttonS2Tutorial2";
             this.buttonS2Tutorial2.Size = new System.Drawing.Size(250, 140);
             this.buttonS2Tutorial2.TabIndex = 3;
-            this.buttonS2Tutorial2.Text = "Tutorial 2: Creating a Framework and Window";
+            this.buttonS2Tutorial2.Text = "Series 2 Tutorial 2: Creating a Framework and Window";
             this.buttonS2Tutorial2.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.buttonS2Tutorial2.UseVisualStyleBackColor = true;
             this.buttonS2Tutorial2.Click += new System.EventHandler(this.buttonS2Tutorial2_Click);
@@ -1372,7 +1537,7 @@
             this.buttonS2Tutorial3.Name = "buttonS2Tutorial3";
             this.buttonS2Tutorial3.Size = new System.Drawing.Size(250, 140);
             this.buttonS2Tutorial3.TabIndex = 4;
-            this.buttonS2Tutorial3.Text = "Tutorial 3: Initializing DirectX 11";
+            this.buttonS2Tutorial3.Text = "Series 2 Tutorial 3: Initializing DirectX 11";
             this.buttonS2Tutorial3.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.buttonS2Tutorial3.UseVisualStyleBackColor = true;
             this.buttonS2Tutorial3.Click += new System.EventHandler(this.buttonS2Tutorial3_Click);
@@ -1388,169 +1553,58 @@
             this.buttonS2Tutorial4.Name = "buttonS2Tutorial4";
             this.buttonS2Tutorial4.Size = new System.Drawing.Size(250, 140);
             this.buttonS2Tutorial4.TabIndex = 5;
-            this.buttonS2Tutorial4.Text = "Tutorial 4: Buffers, Shaders, and HLSL";
+            this.buttonS2Tutorial4.Text = "Series 2 Tutorial 4: Buffers, Shaders, and HLSL";
             this.buttonS2Tutorial4.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.buttonS2Tutorial4.UseVisualStyleBackColor = true;
             this.buttonS2Tutorial4.Click += new System.EventHandler(this.buttonS2Tutorial4_Click);
             // 
-            // checkBoxVSync
+            // buttonS2TerrainTutorial2
             // 
-            this.checkBoxVSync.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBoxVSync.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(24)))), ((int)(((byte)(61)))));
-            this.checkBoxVSync.Enabled = false;
-            this.checkBoxVSync.FlatAppearance.BorderSize = 0;
-            this.checkBoxVSync.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBoxVSync.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxVSync.ForeColor = System.Drawing.Color.Yellow;
-            this.checkBoxVSync.Location = new System.Drawing.Point(13, 72);
-            this.checkBoxVSync.Name = "checkBoxVSync";
-            this.checkBoxVSync.Size = new System.Drawing.Size(115, 42);
-            this.checkBoxVSync.TabIndex = 4;
-            this.checkBoxVSync.Text = "VSync";
-            this.checkBoxVSync.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBoxVSync.UseVisualStyleBackColor = false;
+            this.buttonS2TerrainTutorial2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonS2TerrainTutorial2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonS2TerrainTutorial2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonS2TerrainTutorial2.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonS2TerrainTutorial2.ForeColor = System.Drawing.Color.White;
+            this.buttonS2TerrainTutorial2.Location = new System.Drawing.Point(526, 161);
+            this.buttonS2TerrainTutorial2.Name = "buttonS2TerrainTutorial2";
+            this.buttonS2TerrainTutorial2.Size = new System.Drawing.Size(250, 140);
+            this.buttonS2TerrainTutorial2.TabIndex = 5;
+            this.buttonS2TerrainTutorial2.Text = "Series 2 Terrain Tutorial 2: Bitmap Height Maps";
+            this.buttonS2TerrainTutorial2.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonS2TerrainTutorial2.UseVisualStyleBackColor = false;
+            this.buttonS2TerrainTutorial2.Click += new System.EventHandler(this.buttonS2TerrainTutorial2_Click);
             // 
-            // checkBoxScreenSize
+            // buttonS2TerrainTutorial1
             // 
-            this.checkBoxScreenSize.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBoxScreenSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(24)))), ((int)(((byte)(61)))));
-            this.checkBoxScreenSize.Checked = true;
-            this.checkBoxScreenSize.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxScreenSize.FlatAppearance.BorderSize = 0;
-            this.checkBoxScreenSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBoxScreenSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxScreenSize.ForeColor = System.Drawing.Color.Yellow;
-            this.checkBoxScreenSize.Location = new System.Drawing.Point(134, 72);
-            this.checkBoxScreenSize.Name = "checkBoxScreenSize";
-            this.checkBoxScreenSize.Size = new System.Drawing.Size(115, 42);
-            this.checkBoxScreenSize.TabIndex = 4;
-            this.checkBoxScreenSize.Text = "Full Screen";
-            this.checkBoxScreenSize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBoxScreenSize.ThreeState = true;
-            this.checkBoxScreenSize.UseVisualStyleBackColor = false;
-            this.checkBoxScreenSize.Click += new System.EventHandler(this.checkBoxScreenSize_Click);
+            this.buttonS2TerrainTutorial1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonS2TerrainTutorial1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonS2TerrainTutorial1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonS2TerrainTutorial1.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonS2TerrainTutorial1.ForeColor = System.Drawing.Color.White;
+            this.buttonS2TerrainTutorial1.Location = new System.Drawing.Point(270, 161);
+            this.buttonS2TerrainTutorial1.Name = "buttonS2TerrainTutorial1";
+            this.buttonS2TerrainTutorial1.Size = new System.Drawing.Size(250, 140);
+            this.buttonS2TerrainTutorial1.TabIndex = 4;
+            this.buttonS2TerrainTutorial1.Text = "Series 2 Terrain Tutorial 1: Grid and Camera Movement";
+            this.buttonS2TerrainTutorial1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonS2TerrainTutorial1.UseVisualStyleBackColor = false;
+            this.buttonS2TerrainTutorial1.Click += new System.EventHandler(this.buttonS2TerrainTutorial1_Click);
             // 
-            // numericUpDownWidth
+            // buttonS2Tutorial5
             // 
-            this.numericUpDownWidth.BackColor = System.Drawing.Color.Black;
-            this.numericUpDownWidth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numericUpDownWidth.Enabled = false;
-            this.numericUpDownWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownWidth.ForeColor = System.Drawing.Color.White;
-            this.numericUpDownWidth.Location = new System.Drawing.Point(267, 68);
-            this.numericUpDownWidth.Maximum = new decimal(new int[] {
-            800,
-            0,
-            0,
-            0});
-            this.numericUpDownWidth.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.numericUpDownWidth.Name = "numericUpDownWidth";
-            this.numericUpDownWidth.Size = new System.Drawing.Size(85, 26);
-            this.numericUpDownWidth.TabIndex = 5;
-            this.numericUpDownWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDownWidth.Value = new decimal(new int[] {
-            800,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDownHeight
-            // 
-            this.numericUpDownHeight.BackColor = System.Drawing.Color.Black;
-            this.numericUpDownHeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numericUpDownHeight.Enabled = false;
-            this.numericUpDownHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownHeight.ForeColor = System.Drawing.Color.White;
-            this.numericUpDownHeight.Location = new System.Drawing.Point(267, 98);
-            this.numericUpDownHeight.Maximum = new decimal(new int[] {
-            600,
-            0,
-            0,
-            0});
-            this.numericUpDownHeight.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.numericUpDownHeight.Name = "numericUpDownHeight";
-            this.numericUpDownHeight.Size = new System.Drawing.Size(85, 26);
-            this.numericUpDownHeight.TabIndex = 5;
-            this.numericUpDownHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDownHeight.Value = new decimal(new int[] {
-            600,
-            0,
-            0,
-            0});
-            // 
-            // labelWidth
-            // 
-            this.labelWidth.AutoSize = true;
-            this.labelWidth.Enabled = false;
-            this.labelWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWidth.Location = new System.Drawing.Point(358, 70);
-            this.labelWidth.Name = "labelWidth";
-            this.labelWidth.Size = new System.Drawing.Size(55, 20);
-            this.labelWidth.TabIndex = 6;
-            this.labelWidth.Text = "Width";
-            // 
-            // labelHeight
-            // 
-            this.labelHeight.AutoSize = true;
-            this.labelHeight.Enabled = false;
-            this.labelHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHeight.Location = new System.Drawing.Point(358, 100);
-            this.labelHeight.Name = "labelHeight";
-            this.labelHeight.Size = new System.Drawing.Size(62, 20);
-            this.labelHeight.TabIndex = 6;
-            this.labelHeight.Text = "Height";
-            // 
-            // checkBoxTimer
-            // 
-            this.checkBoxTimer.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBoxTimer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(24)))), ((int)(((byte)(61)))));
-            this.checkBoxTimer.FlatAppearance.BorderSize = 0;
-            this.checkBoxTimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBoxTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxTimer.ForeColor = System.Drawing.Color.Yellow;
-            this.checkBoxTimer.Location = new System.Drawing.Point(455, 72);
-            this.checkBoxTimer.Name = "checkBoxTimer";
-            this.checkBoxTimer.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBoxTimer.Size = new System.Drawing.Size(115, 49);
-            this.checkBoxTimer.TabIndex = 4;
-            this.checkBoxTimer.Text = "Time in Seconds";
-            this.checkBoxTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBoxTimer.UseVisualStyleBackColor = false;
-            this.checkBoxTimer.CheckedChanged += new System.EventHandler(this.checkBoxTimer_CheckedChanged);
-            // 
-            // numericUpDownTimeInSeconds
-            // 
-            this.numericUpDownTimeInSeconds.BackColor = System.Drawing.Color.Black;
-            this.numericUpDownTimeInSeconds.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numericUpDownTimeInSeconds.Enabled = false;
-            this.numericUpDownTimeInSeconds.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownTimeInSeconds.ForeColor = System.Drawing.Color.White;
-            this.numericUpDownTimeInSeconds.Location = new System.Drawing.Point(585, 84);
-            this.numericUpDownTimeInSeconds.Name = "numericUpDownTimeInSeconds";
-            this.numericUpDownTimeInSeconds.Size = new System.Drawing.Size(85, 26);
-            this.numericUpDownTimeInSeconds.TabIndex = 5;
-            this.numericUpDownTimeInSeconds.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // buttonRunPerfTests
-            // 
-            this.buttonRunPerfTests.BackColor = System.Drawing.Color.DarkGreen;
-            this.buttonRunPerfTests.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonRunPerfTests.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRunPerfTests.Location = new System.Drawing.Point(695, 60);
-            this.buttonRunPerfTests.Name = "buttonRunPerfTests";
-            this.buttonRunPerfTests.Size = new System.Drawing.Size(130, 73);
-            this.buttonRunPerfTests.TabIndex = 7;
-            this.buttonRunPerfTests.Text = "Run ALL Performance Tests";
-            this.buttonRunPerfTests.UseVisualStyleBackColor = false;
-            this.buttonRunPerfTests.Click += new System.EventHandler(this.buttonRunPerfTests_Click);
+            this.buttonS2Tutorial5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonS2Tutorial5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonS2Tutorial5.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonS2Tutorial5.ForeColor = System.Drawing.Color.White;
+            this.buttonS2Tutorial5.Image = global::SharpDXWinForm.Properties.Resources.Series_2____Tutorial_5_____Texturing_Sm;
+            this.buttonS2Tutorial5.Location = new System.Drawing.Point(14, 161);
+            this.buttonS2Tutorial5.Name = "buttonS2Tutorial5";
+            this.buttonS2Tutorial5.Size = new System.Drawing.Size(250, 140);
+            this.buttonS2Tutorial5.TabIndex = 3;
+            this.buttonS2Tutorial5.Text = "Series 2 Tutorial 5: Texturing";
+            this.buttonS2Tutorial5.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonS2Tutorial5.UseVisualStyleBackColor = true;
+            this.buttonS2Tutorial5.Click += new System.EventHandler(this.buttonS2Tutorial5_Click);
             // 
             // SharpDXRastertekTutorialsForm
             // 
@@ -1679,5 +1733,8 @@
         private System.Windows.Forms.Button buttonS2Tutorial2;
         private System.Windows.Forms.Button buttonS2Tutorial3;
         private System.Windows.Forms.Button buttonS2Tutorial4;
+        private System.Windows.Forms.Button buttonS2Tutorial5;
+        private System.Windows.Forms.Button buttonS2TerrainTutorial1;
+        private System.Windows.Forms.Button buttonS2TerrainTutorial2;
     }
 }

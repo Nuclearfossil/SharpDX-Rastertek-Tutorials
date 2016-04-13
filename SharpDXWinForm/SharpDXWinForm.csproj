@@ -103,6 +103,9 @@
     <Compile Include="SharpDXRastertekTutorialsForm.Designer.cs">
       <DependentUpon>SharpDXRastertekTutorialsForm.cs</DependentUpon>
     </Compile>
+    <Content Include="ExternalsSeries2\Data\stone01.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Externals\Data\alpha001.bmp">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -313,6 +316,7 @@
     <Content Include="Externals\Font\font01.bmp">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Series 2 -- Tutorial 5  -  Texturing Sm.png" />
     <Content Include="Series1\Tut14\Data\sound01.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -1035,6 +1039,12 @@
     <Content Include="Series2\Tut04\Shaders\Color.vs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Series2\Tut05\Shaders\Texture.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\Tut05\Shaders\Texture.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="SharpDXWinForm_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -1261,7 +1271,6 @@
     <None Include="Resources\Series 1 -- Tutorial 50 - Deferred Shading Sm.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ExternalsSeries2\Data\" />
     <Folder Include="ExternalsSeries2\Font\" />
     <Folder Include="ExternalsSeries2\Models\" />
   </ItemGroup>

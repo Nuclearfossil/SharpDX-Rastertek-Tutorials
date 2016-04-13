@@ -1069,6 +1069,29 @@ namespace SharpDXWinForm
                 DSharpDXRastertek.Series2.Tut04.System.DSystem.StartRenderForm("Series 2 Tutorial 4: Buffers, Shaders, and HLSL", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, false, (int)numericUpDownTimeInSeconds.Value);
 
             ToogleAllButtons();
+
+        }
+        private void buttonS2Tutorial5_Click(object sender, EventArgs e)
+        {
+            ToogleAllButtons();
+
+            // Series 2 Tutorial 5: Texturing                          -  1081 lines   - (C++: 1436 FPS C#: 1457 FPS)
+            DSharpDXRastertek.Series2.Tut05.System.DSystem.StartRenderForm("Series 2 Tutorial 5: Texturing ", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, checkBoxScreenSize.Checked, (int)numericUpDownTimeInSeconds.Value);
+            Thread.Sleep(3000);
+
+            // Execute Second pass with the Full Screen off since it was first sent in Fullscreen.
+            if (checkBoxScreenSize.CheckState == CheckState.Indeterminate)
+                DSharpDXRastertek.Series2.Tut05.System.DSystem.StartRenderForm("Series 2 Tutorial 5: Texturing ", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, false, (int)numericUpDownTimeInSeconds.Value);
+
+            ToogleAllButtons();
+        }
+        private void buttonS2TerrainTutorial1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void buttonS2TerrainTutorial2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
