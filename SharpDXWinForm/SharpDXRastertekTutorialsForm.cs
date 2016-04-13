@@ -988,6 +988,7 @@ namespace SharpDXWinForm
         private void buttonTerrainTutorial16_Click(object sender, EventArgs e)
         {
             ToogleAllButtons();
+            Thread.Sleep(2000);
 
             // Terrain Tutorial 16: Small Body Water          -  5732 lines   - (C++:   19 FPS C#:   19 FPS)
             DSharpDXRastertek.TutTerr16.System.DSystem.StartRenderForm("Terrain Tutorial 16: Small Body Water", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, checkBoxScreenSize.Checked, (int)numericUpDownTimeInSeconds.Value);
