@@ -33,6 +33,18 @@
             this.buttonTutorial08 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.buttonS2TerrainTutorial2 = new System.Windows.Forms.Button();
+            this.checkBoxVSync = new System.Windows.Forms.CheckBox();
+            this.checkBoxScreenSize = new System.Windows.Forms.CheckBox();
+            this.numericUpDownWidth = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownHeight = new System.Windows.Forms.NumericUpDown();
+            this.labelWidth = new System.Windows.Forms.Label();
+            this.labelHeight = new System.Windows.Forms.Label();
+            this.checkBoxTimer = new System.Windows.Forms.CheckBox();
+            this.numericUpDownTimeInSeconds = new System.Windows.Forms.NumericUpDown();
+            this.buttonRunPerfTests = new System.Windows.Forms.Button();
             this.buttonTutorial50 = new System.Windows.Forms.Button();
             this.buttonTutorial31 = new System.Windows.Forms.Button();
             this.buttonTutorial49 = new System.Windows.Forms.Button();
@@ -81,7 +93,6 @@
             this.buttonTutorial23 = new System.Windows.Forms.Button();
             this.buttonTutorial32 = new System.Windows.Forms.Button();
             this.buttonTutorial21 = new System.Windows.Forms.Button();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.buttonTerrainTutorial15 = new System.Windows.Forms.Button();
             this.buttonTerrainTutorial12 = new System.Windows.Forms.Button();
             this.buttonTerrainTutorial09 = new System.Windows.Forms.Button();
@@ -101,22 +112,11 @@
             this.buttonTerrainTutorial07 = new System.Windows.Forms.Button();
             this.buttonTerrainTutorial04 = new System.Windows.Forms.Button();
             this.buttonTerrainTutorial01 = new System.Windows.Forms.Button();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.buttonS2Tutorial5 = new System.Windows.Forms.Button();
             this.buttonS2Tutorial2 = new System.Windows.Forms.Button();
             this.buttonS2TutorialTerrain1 = new System.Windows.Forms.Button();
             this.buttonS2Tutorial3 = new System.Windows.Forms.Button();
-            this.buttonS2TerrainTutorial2 = new System.Windows.Forms.Button();
             this.buttonS2Tutorial4 = new System.Windows.Forms.Button();
-            this.checkBoxVSync = new System.Windows.Forms.CheckBox();
-            this.checkBoxScreenSize = new System.Windows.Forms.CheckBox();
-            this.numericUpDownWidth = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownHeight = new System.Windows.Forms.NumericUpDown();
-            this.labelWidth = new System.Windows.Forms.Label();
-            this.labelHeight = new System.Windows.Forms.Label();
-            this.checkBoxTimer = new System.Windows.Forms.CheckBox();
-            this.numericUpDownTimeInSeconds = new System.Windows.Forms.NumericUpDown();
-            this.buttonRunPerfTests = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -231,6 +231,229 @@
             this.tabPage1.Size = new System.Drawing.Size(806, 468);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Series I Tutorials";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.AutoScroll = true;
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial15);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial12);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial09);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial06);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial03);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial18);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial19);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial17);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial16);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial14);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial11);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial08);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial05);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial02);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial13);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial10);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial07);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial04);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial01);
+            this.tabPage2.ForeColor = System.Drawing.Color.Black;
+            this.tabPage2.Location = new System.Drawing.Point(4, 32);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(806, 468);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Series I Terrain Tutorials";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.tabPage3.Controls.Add(this.buttonS2Tutorial5);
+            this.tabPage3.Controls.Add(this.buttonS2Tutorial2);
+            this.tabPage3.Controls.Add(this.buttonS2TutorialTerrain1);
+            this.tabPage3.Controls.Add(this.buttonS2Tutorial3);
+            this.tabPage3.Controls.Add(this.buttonS2TerrainTutorial2);
+            this.tabPage3.Controls.Add(this.buttonS2Tutorial4);
+            this.tabPage3.ForeColor = System.Drawing.Color.Black;
+            this.tabPage3.Location = new System.Drawing.Point(4, 32);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(806, 468);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Series 2 Tutorials";
+            // 
+            // buttonS2TerrainTutorial2
+            // 
+            this.buttonS2TerrainTutorial2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonS2TerrainTutorial2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonS2TerrainTutorial2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonS2TerrainTutorial2.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonS2TerrainTutorial2.ForeColor = System.Drawing.Color.White;
+            this.buttonS2TerrainTutorial2.Image = global::SharpDXWinForm.Properties.Resources.Series_2____Terrain_Tutorial_2_____Height_Mapst_Sm;
+            this.buttonS2TerrainTutorial2.Location = new System.Drawing.Point(526, 161);
+            this.buttonS2TerrainTutorial2.Name = "buttonS2TerrainTutorial2";
+            this.buttonS2TerrainTutorial2.Size = new System.Drawing.Size(250, 140);
+            this.buttonS2TerrainTutorial2.TabIndex = 5;
+            this.buttonS2TerrainTutorial2.Text = "Series 2 Terrain Tutorial 2: Bitmap Height Maps";
+            this.buttonS2TerrainTutorial2.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonS2TerrainTutorial2.UseVisualStyleBackColor = false;
+            this.buttonS2TerrainTutorial2.Click += new System.EventHandler(this.buttonS2TerrainTutorial2_Click);
+            // 
+            // checkBoxVSync
+            // 
+            this.checkBoxVSync.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBoxVSync.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(24)))), ((int)(((byte)(61)))));
+            this.checkBoxVSync.Enabled = false;
+            this.checkBoxVSync.FlatAppearance.BorderSize = 0;
+            this.checkBoxVSync.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBoxVSync.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxVSync.ForeColor = System.Drawing.Color.Yellow;
+            this.checkBoxVSync.Location = new System.Drawing.Point(13, 72);
+            this.checkBoxVSync.Name = "checkBoxVSync";
+            this.checkBoxVSync.Size = new System.Drawing.Size(115, 42);
+            this.checkBoxVSync.TabIndex = 4;
+            this.checkBoxVSync.Text = "VSync";
+            this.checkBoxVSync.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBoxVSync.UseVisualStyleBackColor = false;
+            // 
+            // checkBoxScreenSize
+            // 
+            this.checkBoxScreenSize.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBoxScreenSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(24)))), ((int)(((byte)(61)))));
+            this.checkBoxScreenSize.Checked = true;
+            this.checkBoxScreenSize.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxScreenSize.FlatAppearance.BorderSize = 0;
+            this.checkBoxScreenSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBoxScreenSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxScreenSize.ForeColor = System.Drawing.Color.Yellow;
+            this.checkBoxScreenSize.Location = new System.Drawing.Point(134, 72);
+            this.checkBoxScreenSize.Name = "checkBoxScreenSize";
+            this.checkBoxScreenSize.Size = new System.Drawing.Size(115, 42);
+            this.checkBoxScreenSize.TabIndex = 4;
+            this.checkBoxScreenSize.Text = "Full Screen";
+            this.checkBoxScreenSize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBoxScreenSize.ThreeState = true;
+            this.checkBoxScreenSize.UseVisualStyleBackColor = false;
+            this.checkBoxScreenSize.Click += new System.EventHandler(this.checkBoxScreenSize_Click);
+            // 
+            // numericUpDownWidth
+            // 
+            this.numericUpDownWidth.BackColor = System.Drawing.Color.Black;
+            this.numericUpDownWidth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numericUpDownWidth.Enabled = false;
+            this.numericUpDownWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownWidth.ForeColor = System.Drawing.Color.White;
+            this.numericUpDownWidth.Location = new System.Drawing.Point(267, 68);
+            this.numericUpDownWidth.Maximum = new decimal(new int[] {
+            800,
+            0,
+            0,
+            0});
+            this.numericUpDownWidth.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.numericUpDownWidth.Name = "numericUpDownWidth";
+            this.numericUpDownWidth.Size = new System.Drawing.Size(85, 26);
+            this.numericUpDownWidth.TabIndex = 5;
+            this.numericUpDownWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDownWidth.Value = new decimal(new int[] {
+            800,
+            0,
+            0,
+            0});
+            // 
+            // numericUpDownHeight
+            // 
+            this.numericUpDownHeight.BackColor = System.Drawing.Color.Black;
+            this.numericUpDownHeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numericUpDownHeight.Enabled = false;
+            this.numericUpDownHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownHeight.ForeColor = System.Drawing.Color.White;
+            this.numericUpDownHeight.Location = new System.Drawing.Point(267, 98);
+            this.numericUpDownHeight.Maximum = new decimal(new int[] {
+            600,
+            0,
+            0,
+            0});
+            this.numericUpDownHeight.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.numericUpDownHeight.Name = "numericUpDownHeight";
+            this.numericUpDownHeight.Size = new System.Drawing.Size(85, 26);
+            this.numericUpDownHeight.TabIndex = 5;
+            this.numericUpDownHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDownHeight.Value = new decimal(new int[] {
+            600,
+            0,
+            0,
+            0});
+            // 
+            // labelWidth
+            // 
+            this.labelWidth.AutoSize = true;
+            this.labelWidth.Enabled = false;
+            this.labelWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWidth.Location = new System.Drawing.Point(358, 70);
+            this.labelWidth.Name = "labelWidth";
+            this.labelWidth.Size = new System.Drawing.Size(55, 20);
+            this.labelWidth.TabIndex = 6;
+            this.labelWidth.Text = "Width";
+            // 
+            // labelHeight
+            // 
+            this.labelHeight.AutoSize = true;
+            this.labelHeight.Enabled = false;
+            this.labelHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHeight.Location = new System.Drawing.Point(358, 100);
+            this.labelHeight.Name = "labelHeight";
+            this.labelHeight.Size = new System.Drawing.Size(62, 20);
+            this.labelHeight.TabIndex = 6;
+            this.labelHeight.Text = "Height";
+            // 
+            // checkBoxTimer
+            // 
+            this.checkBoxTimer.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBoxTimer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(24)))), ((int)(((byte)(61)))));
+            this.checkBoxTimer.FlatAppearance.BorderSize = 0;
+            this.checkBoxTimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBoxTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTimer.ForeColor = System.Drawing.Color.Yellow;
+            this.checkBoxTimer.Location = new System.Drawing.Point(455, 72);
+            this.checkBoxTimer.Name = "checkBoxTimer";
+            this.checkBoxTimer.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkBoxTimer.Size = new System.Drawing.Size(115, 49);
+            this.checkBoxTimer.TabIndex = 4;
+            this.checkBoxTimer.Text = "Time in Seconds";
+            this.checkBoxTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBoxTimer.UseVisualStyleBackColor = false;
+            this.checkBoxTimer.CheckedChanged += new System.EventHandler(this.checkBoxTimer_CheckedChanged);
+            // 
+            // numericUpDownTimeInSeconds
+            // 
+            this.numericUpDownTimeInSeconds.BackColor = System.Drawing.Color.Black;
+            this.numericUpDownTimeInSeconds.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numericUpDownTimeInSeconds.Enabled = false;
+            this.numericUpDownTimeInSeconds.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownTimeInSeconds.ForeColor = System.Drawing.Color.White;
+            this.numericUpDownTimeInSeconds.Location = new System.Drawing.Point(585, 84);
+            this.numericUpDownTimeInSeconds.Name = "numericUpDownTimeInSeconds";
+            this.numericUpDownTimeInSeconds.Size = new System.Drawing.Size(85, 26);
+            this.numericUpDownTimeInSeconds.TabIndex = 5;
+            this.numericUpDownTimeInSeconds.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // buttonRunPerfTests
+            // 
+            this.buttonRunPerfTests.BackColor = System.Drawing.Color.DarkGreen;
+            this.buttonRunPerfTests.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonRunPerfTests.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRunPerfTests.Location = new System.Drawing.Point(695, 60);
+            this.buttonRunPerfTests.Name = "buttonRunPerfTests";
+            this.buttonRunPerfTests.Size = new System.Drawing.Size(130, 73);
+            this.buttonRunPerfTests.TabIndex = 7;
+            this.buttonRunPerfTests.Text = "Run ALL Performance Tests";
+            this.buttonRunPerfTests.UseVisualStyleBackColor = false;
+            this.buttonRunPerfTests.Click += new System.EventHandler(this.buttonRunPerfTests_Click);
             // 
             // buttonTutorial50
             // 
@@ -1001,37 +1224,6 @@
             this.buttonTutorial21.UseVisualStyleBackColor = true;
             this.buttonTutorial21.Click += new System.EventHandler(this.buttonTutorial21_Click);
             // 
-            // tabPage2
-            // 
-            this.tabPage2.AutoScroll = true;
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial15);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial12);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial09);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial06);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial03);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial18);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial19);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial17);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial16);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial14);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial11);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial08);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial05);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial02);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial13);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial10);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial07);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial04);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial01);
-            this.tabPage2.ForeColor = System.Drawing.Color.Black;
-            this.tabPage2.Location = new System.Drawing.Point(4, 32);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(806, 468);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Series I Terrain Tutorials";
-            // 
             // buttonTerrainTutorial15
             // 
             this.buttonTerrainTutorial15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -1336,22 +1528,6 @@
             this.buttonTerrainTutorial01.UseVisualStyleBackColor = true;
             this.buttonTerrainTutorial01.Click += new System.EventHandler(this.buttonTerrainTutorial1_Click);
             // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.tabPage3.Controls.Add(this.buttonS2Tutorial5);
-            this.tabPage3.Controls.Add(this.buttonS2Tutorial2);
-            this.tabPage3.Controls.Add(this.buttonS2TutorialTerrain1);
-            this.tabPage3.Controls.Add(this.buttonS2Tutorial3);
-            this.tabPage3.Controls.Add(this.buttonS2TerrainTutorial2);
-            this.tabPage3.Controls.Add(this.buttonS2Tutorial4);
-            this.tabPage3.ForeColor = System.Drawing.Color.Black;
-            this.tabPage3.Location = new System.Drawing.Point(4, 32);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(806, 468);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Series 2 Tutorials";
-            // 
             // buttonS2Tutorial5
             // 
             this.buttonS2Tutorial5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -1417,22 +1593,6 @@
             this.buttonS2Tutorial3.UseVisualStyleBackColor = true;
             this.buttonS2Tutorial3.Click += new System.EventHandler(this.buttonS2Tutorial3_Click);
             // 
-            // buttonS2TerrainTutorial2
-            // 
-            this.buttonS2TerrainTutorial2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonS2TerrainTutorial2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonS2TerrainTutorial2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonS2TerrainTutorial2.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonS2TerrainTutorial2.ForeColor = System.Drawing.Color.White;
-            this.buttonS2TerrainTutorial2.Location = new System.Drawing.Point(526, 161);
-            this.buttonS2TerrainTutorial2.Name = "buttonS2TerrainTutorial2";
-            this.buttonS2TerrainTutorial2.Size = new System.Drawing.Size(250, 140);
-            this.buttonS2TerrainTutorial2.TabIndex = 5;
-            this.buttonS2TerrainTutorial2.Text = "Series 2 Terrain Tutorial 2: Bitmap Height Maps";
-            this.buttonS2TerrainTutorial2.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonS2TerrainTutorial2.UseVisualStyleBackColor = false;
-            this.buttonS2TerrainTutorial2.Click += new System.EventHandler(this.buttonS2TerrainTutorial2_Click);
-            // 
             // buttonS2Tutorial4
             // 
             this.buttonS2Tutorial4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -1448,165 +1608,6 @@
             this.buttonS2Tutorial4.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.buttonS2Tutorial4.UseVisualStyleBackColor = true;
             this.buttonS2Tutorial4.Click += new System.EventHandler(this.buttonS2Tutorial4_Click);
-            // 
-            // checkBoxVSync
-            // 
-            this.checkBoxVSync.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBoxVSync.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(24)))), ((int)(((byte)(61)))));
-            this.checkBoxVSync.Enabled = false;
-            this.checkBoxVSync.FlatAppearance.BorderSize = 0;
-            this.checkBoxVSync.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBoxVSync.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxVSync.ForeColor = System.Drawing.Color.Yellow;
-            this.checkBoxVSync.Location = new System.Drawing.Point(13, 72);
-            this.checkBoxVSync.Name = "checkBoxVSync";
-            this.checkBoxVSync.Size = new System.Drawing.Size(115, 42);
-            this.checkBoxVSync.TabIndex = 4;
-            this.checkBoxVSync.Text = "VSync";
-            this.checkBoxVSync.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBoxVSync.UseVisualStyleBackColor = false;
-            // 
-            // checkBoxScreenSize
-            // 
-            this.checkBoxScreenSize.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBoxScreenSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(24)))), ((int)(((byte)(61)))));
-            this.checkBoxScreenSize.Checked = true;
-            this.checkBoxScreenSize.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxScreenSize.FlatAppearance.BorderSize = 0;
-            this.checkBoxScreenSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBoxScreenSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxScreenSize.ForeColor = System.Drawing.Color.Yellow;
-            this.checkBoxScreenSize.Location = new System.Drawing.Point(134, 72);
-            this.checkBoxScreenSize.Name = "checkBoxScreenSize";
-            this.checkBoxScreenSize.Size = new System.Drawing.Size(115, 42);
-            this.checkBoxScreenSize.TabIndex = 4;
-            this.checkBoxScreenSize.Text = "Full Screen";
-            this.checkBoxScreenSize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBoxScreenSize.ThreeState = true;
-            this.checkBoxScreenSize.UseVisualStyleBackColor = false;
-            this.checkBoxScreenSize.Click += new System.EventHandler(this.checkBoxScreenSize_Click);
-            // 
-            // numericUpDownWidth
-            // 
-            this.numericUpDownWidth.BackColor = System.Drawing.Color.Black;
-            this.numericUpDownWidth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numericUpDownWidth.Enabled = false;
-            this.numericUpDownWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownWidth.ForeColor = System.Drawing.Color.White;
-            this.numericUpDownWidth.Location = new System.Drawing.Point(267, 68);
-            this.numericUpDownWidth.Maximum = new decimal(new int[] {
-            800,
-            0,
-            0,
-            0});
-            this.numericUpDownWidth.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.numericUpDownWidth.Name = "numericUpDownWidth";
-            this.numericUpDownWidth.Size = new System.Drawing.Size(85, 26);
-            this.numericUpDownWidth.TabIndex = 5;
-            this.numericUpDownWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDownWidth.Value = new decimal(new int[] {
-            800,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDownHeight
-            // 
-            this.numericUpDownHeight.BackColor = System.Drawing.Color.Black;
-            this.numericUpDownHeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numericUpDownHeight.Enabled = false;
-            this.numericUpDownHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownHeight.ForeColor = System.Drawing.Color.White;
-            this.numericUpDownHeight.Location = new System.Drawing.Point(267, 98);
-            this.numericUpDownHeight.Maximum = new decimal(new int[] {
-            600,
-            0,
-            0,
-            0});
-            this.numericUpDownHeight.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.numericUpDownHeight.Name = "numericUpDownHeight";
-            this.numericUpDownHeight.Size = new System.Drawing.Size(85, 26);
-            this.numericUpDownHeight.TabIndex = 5;
-            this.numericUpDownHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDownHeight.Value = new decimal(new int[] {
-            600,
-            0,
-            0,
-            0});
-            // 
-            // labelWidth
-            // 
-            this.labelWidth.AutoSize = true;
-            this.labelWidth.Enabled = false;
-            this.labelWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWidth.Location = new System.Drawing.Point(358, 70);
-            this.labelWidth.Name = "labelWidth";
-            this.labelWidth.Size = new System.Drawing.Size(55, 20);
-            this.labelWidth.TabIndex = 6;
-            this.labelWidth.Text = "Width";
-            // 
-            // labelHeight
-            // 
-            this.labelHeight.AutoSize = true;
-            this.labelHeight.Enabled = false;
-            this.labelHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHeight.Location = new System.Drawing.Point(358, 100);
-            this.labelHeight.Name = "labelHeight";
-            this.labelHeight.Size = new System.Drawing.Size(62, 20);
-            this.labelHeight.TabIndex = 6;
-            this.labelHeight.Text = "Height";
-            // 
-            // checkBoxTimer
-            // 
-            this.checkBoxTimer.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBoxTimer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(24)))), ((int)(((byte)(61)))));
-            this.checkBoxTimer.FlatAppearance.BorderSize = 0;
-            this.checkBoxTimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBoxTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxTimer.ForeColor = System.Drawing.Color.Yellow;
-            this.checkBoxTimer.Location = new System.Drawing.Point(455, 72);
-            this.checkBoxTimer.Name = "checkBoxTimer";
-            this.checkBoxTimer.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBoxTimer.Size = new System.Drawing.Size(115, 49);
-            this.checkBoxTimer.TabIndex = 4;
-            this.checkBoxTimer.Text = "Time in Seconds";
-            this.checkBoxTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBoxTimer.UseVisualStyleBackColor = false;
-            this.checkBoxTimer.CheckedChanged += new System.EventHandler(this.checkBoxTimer_CheckedChanged);
-            // 
-            // numericUpDownTimeInSeconds
-            // 
-            this.numericUpDownTimeInSeconds.BackColor = System.Drawing.Color.Black;
-            this.numericUpDownTimeInSeconds.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numericUpDownTimeInSeconds.Enabled = false;
-            this.numericUpDownTimeInSeconds.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownTimeInSeconds.ForeColor = System.Drawing.Color.White;
-            this.numericUpDownTimeInSeconds.Location = new System.Drawing.Point(585, 84);
-            this.numericUpDownTimeInSeconds.Name = "numericUpDownTimeInSeconds";
-            this.numericUpDownTimeInSeconds.Size = new System.Drawing.Size(85, 26);
-            this.numericUpDownTimeInSeconds.TabIndex = 5;
-            this.numericUpDownTimeInSeconds.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // buttonRunPerfTests
-            // 
-            this.buttonRunPerfTests.BackColor = System.Drawing.Color.DarkGreen;
-            this.buttonRunPerfTests.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonRunPerfTests.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRunPerfTests.Location = new System.Drawing.Point(695, 60);
-            this.buttonRunPerfTests.Name = "buttonRunPerfTests";
-            this.buttonRunPerfTests.Size = new System.Drawing.Size(130, 73);
-            this.buttonRunPerfTests.TabIndex = 7;
-            this.buttonRunPerfTests.Text = "Run ALL Performance Tests";
-            this.buttonRunPerfTests.UseVisualStyleBackColor = false;
-            this.buttonRunPerfTests.Click += new System.EventHandler(this.buttonRunPerfTests_Click);
             // 
             // SharpDXRastertekTutorialsForm
             // 

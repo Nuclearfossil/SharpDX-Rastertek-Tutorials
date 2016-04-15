@@ -1089,19 +1089,29 @@ namespace SharpDXWinForm
         {
             ToogleAllButtons();
 
-            // Series 2 Tutorial 5: Texturing                          -  1081 lines   - (C++: 1436 FPS C#: 1457 FPS)
-            DSharpDXRastertek.Series2.TutTerr01.System.DSystem.StartRenderForm("Series 2 Tutorial 5: Texturing ", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, checkBoxScreenSize.Checked, (int)numericUpDownTimeInSeconds.Value);
+            // Series 2 Terrain Tutorial 1: Grid and Camera Movement   -2673 lines - (C++:  687 FPS C#:  692 FPS)
+            DSharpDXRastertek.Series2.TutTerr01.System.DSystem.StartRenderForm(" Series 2 Terrain Tutorial 1: Grid and Camera Movement", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, checkBoxScreenSize.Checked, (int)numericUpDownTimeInSeconds.Value);
             Thread.Sleep(3000);
 
             // Execute Second pass with the Full Screen off since it was first sent in Fullscreen.
             if (checkBoxScreenSize.CheckState == CheckState.Indeterminate)
-                DSharpDXRastertek.Series2.TutTerr01.System.DSystem.StartRenderForm("Series 2 Tutorial 5: Texturing ", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, false, (int)numericUpDownTimeInSeconds.Value);
+                DSharpDXRastertek.Series2.TutTerr01.System.DSystem.StartRenderForm(" Series 2 Terrain Tutorial 1: Grid and Camera Movement", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, false, (int)numericUpDownTimeInSeconds.Value);
 
             ToogleAllButtons();
         }
         private void buttonS2TerrainTutorial2_Click(object sender, EventArgs e)
         {
+            ToogleAllButtons();
 
+            // Series 2 Terrain Tutorial 2: Bitmap Height Maps         -  2796 lines     - (C++: 148 FPS  C#: 148 FPS)
+            DSharpDXRastertek.Series2.TutTerr02.System.DSystem.StartRenderForm("Series 2 Terrain Tutorial 2: Bitmap Height Maps", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, checkBoxScreenSize.Checked, (int)numericUpDownTimeInSeconds.Value);
+            Thread.Sleep(3000);
+
+            // Execute Second pass with the Full Screen off since it was first sent in Fullscreen.
+            if (checkBoxScreenSize.CheckState == CheckState.Indeterminate)
+                DSharpDXRastertek.Series2.TutTerr02.System.DSystem.StartRenderForm("Series 2 Terrain Tutorial 2: Bitmap Height Maps", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, false, (int)numericUpDownTimeInSeconds.Value);
+
+            ToogleAllButtons();
         }
     }
 }
