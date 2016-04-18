@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace DSharpDXRastertek.Series2.TutTerr02.System
+namespace DSharpDXRastertek.Series2.TutTerr03.System
 {
     public class DSystemConfiguration
     {
@@ -51,7 +51,7 @@ namespace DSharpDXRastertek.Series2.TutTerr02.System
             ScreenNear = 0.1f;      // 0.1f
 
             FontFilePath = @"ExternalsSeries2\Font\";
-            ShaderFilePath = @"Series2\TutTerr02\Shaders\";
+            ShaderFilePath = @"Series2\TutTerr03\Shaders\";
             DataFilePath = @"ExternalsSeries2\Models\";
             TextureFilePath = @"ExternalsSeries2\Data\";
         }

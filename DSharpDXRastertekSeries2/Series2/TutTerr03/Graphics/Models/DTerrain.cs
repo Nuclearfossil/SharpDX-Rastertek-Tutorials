@@ -1,4 +1,4 @@
-﻿using DSharpDXRastertek.Series2.TutTerr02.System;
+﻿using DSharpDXRastertek.Series2.TutTerr03.System;
 using SharpDX;
 using SharpDX.Direct3D;
 using SharpDX.Direct3D11;
@@ -8,7 +8,7 @@ using System.Drawing;
 using System.IO;
 using System.Runtime.InteropServices;
 
-namespace DSharpDXRastertek.Series2.TutTerr02.Graphics.Models
+namespace DSharpDXRastertek.Series2.TutTerr03.Graphics.Models
 {
     public class DTerrain
     {
@@ -17,13 +17,19 @@ namespace DSharpDXRastertek.Series2.TutTerr02.Graphics.Models
         internal struct DVertexType
         {
             internal Vector3 position;
-            internal Vector4 color;
+            internal Vector2 texture;
         }
         [StructLayout(LayoutKind.Sequential)]
         public struct DHeightMapType
         {
             public float x, y, z;
             // public float nx, ny, nz;
+        }
+        [StructLayout(LayoutKind.Sequential)]
+        internal struct DVectorTypeShareNormal
+        {
+            internal float x, y, z;
+            internal float tu, tv;
         }
 
         // Variables
@@ -129,9 +135,6 @@ namespace DSharpDXRastertek.Series2.TutTerr02.Graphics.Models
         {
             try
             {
-                // Set the color of the terrain grid.
-                Vector4 color = SharpDX.Color.Gray.ToColor4(); // new Vector4(1.0f, 1.0f, 1.0f, 1.0f);
-
                 // Calculate the number of vertices in the terrain mesh.
                 VertexCount = (m_TerrainWidth - 1) * (m_TerrainHeight - 1) * 6;
                 // Set the index count to the same as the vertex count.
@@ -160,21 +163,21 @@ namespace DSharpDXRastertek.Series2.TutTerr02.Graphics.Models
                         vertices[index] = new DVertexType()
                         {
                             position = new Vector3(HeightMap[indexUpperLeft3].x, HeightMap[indexUpperLeft3].y, HeightMap[indexUpperLeft3].z),
-                            color = color
+                            texture = new Vector2(0.0f, 0.0f)
                         };
                         indices[index] = index++;
                         // Upper right.
                         vertices[index] = new DVertexType()
                         {
                             position = new Vector3(HeightMap[indexUpperRight4].x, HeightMap[indexUpperRight4].y, HeightMap[indexUpperRight4].z),
-                            color = color
+                            texture = new Vector2(1.0f, 0.0f)
                         };
                         indices[index] = index++;
                         // Bottom left.
                         vertices[index] = new DVertexType()
                         {
                             position = new Vector3(HeightMap[indexBottomLeft1].x, HeightMap[indexBottomLeft1].y, HeightMap[indexBottomLeft1].z),
-                            color = color
+                            texture = new Vector2(0.0f, 1.0f)
                         };
                         indices[index] = index++;
                         #endregion
@@ -184,21 +187,21 @@ namespace DSharpDXRastertek.Series2.TutTerr02.Graphics.Models
                         vertices[index] = new DVertexType()
                         {
                             position = new Vector3(HeightMap[indexBottomLeft1].x, HeightMap[indexBottomLeft1].y, HeightMap[indexBottomLeft1].z),
-                            color = color
+                            texture = new Vector2(0.0f, 1.0f)
                         };
                         indices[index] = index++;
                         // Upper right.
                         vertices[index] = new DVertexType()
                         {
                             position = new Vector3(HeightMap[indexUpperRight4].x, HeightMap[indexUpperRight4].y, HeightMap[indexUpperRight4].z),
-                            color = color
+                            texture = new Vector2(1.0f, 0.0f)
                         };
                         indices[index] = index++;
                         // Bottom right.
                         vertices[index] = new DVertexType()
                         {
                             position = new Vector3(HeightMap[indexBottomRight2].x, HeightMap[indexBottomRight2].y, HeightMap[indexBottomRight2].z),
-                            color = color
+                            texture = new Vector2(1.0f, 1.0f)
                         };
                         indices[index] = index++;
                         #endregion

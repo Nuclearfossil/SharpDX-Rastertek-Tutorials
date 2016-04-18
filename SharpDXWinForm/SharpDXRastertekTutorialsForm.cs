@@ -1113,5 +1113,19 @@ namespace SharpDXWinForm
 
             ToogleAllButtons();
         }
+        private void buttonS2TerrainTutorial3_Click(object sender, EventArgs e)
+        {
+            ToogleAllButtons();
+
+            // Series 2 Terrain Tutorial 3: Terrain Texturing           - 2945 lines      - (C++:  293 FPS C#:  291 FPS)
+            DSharpDXRastertek.Series2.TutTerr03.System.DSystem.StartRenderForm("Series 2 Terrain Tutorial 3: Terrain Texturing", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, checkBoxScreenSize.Checked, (int)numericUpDownTimeInSeconds.Value);
+            Thread.Sleep(3000);
+
+            // Execute Second pass with the Full Screen off since it was first sent in Fullscreen.
+            if (checkBoxScreenSize.CheckState == CheckState.Indeterminate)
+                DSharpDXRastertek.Series2.TutTerr03.System.DSystem.StartRenderForm("Series 2 Terrain Tutorial 3: Terrain Texturing", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, false, (int)numericUpDownTimeInSeconds.Value);
+
+            ToogleAllButtons();
+        }
     }
 }
