@@ -344,6 +344,7 @@
     <None Include="Resources\Series 2 -- Terrain Tutorial 1  -  Grid and Camera Movement Sm.png" />
     <None Include="Resources\Series 2 -- Terrain Tutorial 2  -  Height Mapst Sm.png" />
     <None Include="Resources\Series 2 -- Terrain Tutorial 3  -  Terrain Texturing Sm.png" />
+    <None Include="Resources\Series 2 -- Terrain Tutorial 4  -  Terrain Lighting Sm.png" />
     <Content Include="Series1\Tut14\Data\sound01.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -1094,6 +1095,24 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Series2\TutTerr03\Shaders\texture.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr04\Shaders\color.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr04\Shaders\color.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr04\Shaders\texture.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr04\Shaders\texture.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr04\Shaders\light.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr04\Shaders\light.vs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="SharpDXWinForm_TemporaryKey.pfx" />
