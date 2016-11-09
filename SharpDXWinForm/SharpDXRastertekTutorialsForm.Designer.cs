@@ -1656,7 +1656,7 @@
             this.buttonS2TerrainTutorial5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonS2TerrainTutorial5.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonS2TerrainTutorial5.ForeColor = System.Drawing.Color.White;
-            this.buttonS2TerrainTutorial5.Image = global::SharpDXWinForm.Properties.Resources.Series_2____Terrain_Tutorial_4_____Terrain_Lighting_Sm;
+            this.buttonS2TerrainTutorial5.Image = global::SharpDXWinForm.Properties.Resources.Series_2____Terrain_Tutorial_5_____Color_Mapped_Terrain_Sm;
             this.buttonS2TerrainTutorial5.Location = new System.Drawing.Point(526, 307);
             this.buttonS2TerrainTutorial5.Name = "buttonS2TerrainTutorial5";
             this.buttonS2TerrainTutorial5.Size = new System.Drawing.Size(250, 140);

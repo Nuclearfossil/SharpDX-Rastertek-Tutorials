@@ -348,6 +348,7 @@
     <None Include="Resources\Series 2 -- Terrain Tutorial 2  -  Height Mapst Sm.png" />
     <None Include="Resources\Series 2 -- Terrain Tutorial 3  -  Terrain Texturing Sm.png" />
     <None Include="Resources\Series 2 -- Terrain Tutorial 4  -  Terrain Lighting Sm.png" />
+    <None Include="Resources\Series 2 -- Terrain Tutorial 5  -  Color Mapped Terrain Sm.png" />
     <Content Include="Series1\Tut14\Data\sound01.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
