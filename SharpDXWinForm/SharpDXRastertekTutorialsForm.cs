@@ -1147,13 +1147,13 @@ namespace SharpDXWinForm
         {
             ToogleAllButtons();
 
-            // Series 2 Terrain Tutorial 3: Terrain Texturing          -  3268 lines   - (C++:  287 FPS C#:  297 FPS)
-            DSharpDXRastertek.Series2.TutTerr04.System.DSystem.StartRenderForm("Series 2 Terrain Tutorial 4: Terrain Lighting", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, checkBoxScreenSize.Checked, (int)numericUpDownTimeInSeconds.Value);
-            Thread.Sleep(3000);
+            // Series 2 Terrain Tutorial 5: Color Mapped Terrain          -  3268 lines   - (C++:  287 FPS C#:  297 FPS)
+            //DSharpDXRastertek.Series2.TutTerr05.System.DSystem.StartRenderForm("Series 2 Terrain Tutorial 5: Color Mapped Terrain", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, checkBoxScreenSize.Checked, (int)numericUpDownTimeInSeconds.Value);
+            //Thread.Sleep(3000);
 
-            // Execute Second pass with the Full Screen off since it was first sent in Fullscreen.
-            if (checkBoxScreenSize.CheckState == CheckState.Indeterminate)
-                DSharpDXRastertek.Series2.TutTerr04.System.DSystem.StartRenderForm("Series 2 Terrain Tutorial 4: Terrain Lighting", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, false, (int)numericUpDownTimeInSeconds.Value);
+            //// Execute Second pass with the Full Screen off since it was first sent in Fullscreen.
+            //if (checkBoxScreenSize.CheckState == CheckState.Indeterminate)
+            //    DSharpDXRastertek.Series2.TutTerr05.System.DSystem.StartRenderForm("Series 2 Terrain Tutorial 5: Color Mapped Terrain", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, false, (int)numericUpDownTimeInSeconds.Value);
 
             ToogleAllButtons();
         }

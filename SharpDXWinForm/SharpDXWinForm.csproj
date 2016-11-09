@@ -103,6 +103,9 @@
     <Compile Include="SharpDXRastertekTutorialsForm.Designer.cs">
       <DependentUpon>SharpDXRastertekTutorialsForm.cs</DependentUpon>
     </Compile>
+    <Content Include="ExternalsSeries2\Data\colormap.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="ExternalsSeries2\Data\dirt01d.bmp">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -1113,6 +1116,30 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Series2\TutTerr04\Shaders\light.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr05\Shaders\color.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr05\Shaders\color.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr05\Shaders\light.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr05\Shaders\light.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr05\Shaders\terrain.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr05\Shaders\terrain.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr05\Shaders\texture.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr05\Shaders\texture.vs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="SharpDXWinForm_TemporaryKey.pfx" />
