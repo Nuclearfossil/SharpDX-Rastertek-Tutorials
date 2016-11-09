@@ -1032,7 +1032,7 @@ namespace SharpDXWinForm
         {
             ToogleAllButtons();
 
-            // Series 2 Tutorial 2: Creating a Framework and Window - 278 lines - (C++: 0 FPS C#: 0 FPS)
+            // Series 2 Tutorial 2: Creating a Framework and Window -   278 lines   - (C++: 0 FPS C#: 0 FPS)
             DSharpDXRastertek.Series2.Tut02.System.DSystem.StartRenderForm("Series 2 Tutorial 2: Creating a Framework and Window", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, checkBoxScreenSize.Checked, (int)numericUpDownTimeInSeconds.Value);
             Thread.Sleep(3000);
 
@@ -1046,7 +1046,7 @@ namespace SharpDXWinForm
         {
             ToogleAllButtons();
 
-            // Series 2 Tutorial 3: Initializing DirectX 11    -   563 lines   - (C++: 2255 FPS C#: 2290 FPS)
+            // Series 2 Tutorial 3: Initializing DirectX 11       563 lines   - (C++: 2255 FPS C#: 2290 FPS)
             DSharpDXRastertek.Series2.Tut03.System.DSystem.StartRenderForm("Series 2 Tutorial 3: Initializing DirectX 11", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, checkBoxScreenSize.Checked, (int)numericUpDownTimeInSeconds.Value);
             Thread.Sleep(3000);
 
@@ -1075,7 +1075,7 @@ namespace SharpDXWinForm
         {
             ToogleAllButtons();
 
-            // Series 2 Tutorial 5: Texturing                          -  1081 lines   - (C++: 1436 FPS C#: 1457 FPS)
+            // Series 2 Tutorial 5: Texturing                         -  1081 lines   - (C++: 1436 FPS C#: 1457 FPS)
             DSharpDXRastertek.Series2.Tut05.System.DSystem.StartRenderForm("Series 2 Tutorial 5: Texturing ", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, checkBoxScreenSize.Checked, (int)numericUpDownTimeInSeconds.Value);
             Thread.Sleep(3000);
 
@@ -1089,7 +1089,7 @@ namespace SharpDXWinForm
         {
             ToogleAllButtons();
 
-            // Series 2 Terrain Tutorial 1: Grid and Camera Movement   -2673 lines - (C++:  687 FPS C#:  692 FPS)
+            // Series 2 Terrain Tutorial 1: Grid and Camera Movement   -  2673 lines     - (C++:  687 FPS C#:  692 FPS)
             DSharpDXRastertek.Series2.TutTerr01.System.DSystem.StartRenderForm(" Series 2 Terrain Tutorial 1: Grid and Camera Movement", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, checkBoxScreenSize.Checked, (int)numericUpDownTimeInSeconds.Value);
             Thread.Sleep(3000);
 
@@ -1103,7 +1103,7 @@ namespace SharpDXWinForm
         {
             ToogleAllButtons();
 
-            // Series 2 Terrain Tutorial 2: Bitmap Height Maps         -  2796 lines     - (C++: 148 FPS  C#: 148 FPS)
+            // Series 2 Terrain Tutorial 2: Bitmap Height Maps        -  2796 lines   - (C++: 148 FPS  C#: 148 FPS)  <-- Series I has Wire-Frame ONLY
             DSharpDXRastertek.Series2.TutTerr02.System.DSystem.StartRenderForm("Series 2 Terrain Tutorial 2: Bitmap Height Maps", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, checkBoxScreenSize.Checked, (int)numericUpDownTimeInSeconds.Value);
             Thread.Sleep(3000);
 
@@ -1117,7 +1117,7 @@ namespace SharpDXWinForm
         {
             ToogleAllButtons();
 
-            // Series 2 Terrain Tutorial 3: Terrain Texturing           - 2945 lines      - (C++:  293 FPS C#:  291 FPS)
+            // Series 2 Terrain Tutorial 3: Terrain Texturing           -  2945 lines   - (C++:  293 FPS C#:  291 FPS)
             DSharpDXRastertek.Series2.TutTerr03.System.DSystem.StartRenderForm("Series 2 Terrain Tutorial 3: Terrain Texturing", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, checkBoxScreenSize.Checked, (int)numericUpDownTimeInSeconds.Value);
             Thread.Sleep(3000);
 
@@ -1132,7 +1132,22 @@ namespace SharpDXWinForm
         {
             ToogleAllButtons();
 
-            // Series 2 Terrain Tutorial 3: Terrain Texturing           - 2945 lines      - (C++:  293 FPS C#:  291 FPS)
+            // Series 2 Terrain Tutorial 4: Terrain Lighting            -  2907 lines   - (C++:  294 FPS C#:  292 FPS)
+            DSharpDXRastertek.Series2.TutTerr04.System.DSystem.StartRenderForm("Series 2 Terrain Tutorial 4: Terrain Lighting", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, checkBoxScreenSize.Checked, (int)numericUpDownTimeInSeconds.Value);
+            Thread.Sleep(3000);
+
+            // Execute Second pass with the Full Screen off since it was first sent in Fullscreen.
+            if (checkBoxScreenSize.CheckState == CheckState.Indeterminate)
+                DSharpDXRastertek.Series2.TutTerr04.System.DSystem.StartRenderForm("Series 2 Terrain Tutorial 4: Terrain Lighting", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, false, (int)numericUpDownTimeInSeconds.Value);
+
+            ToogleAllButtons();
+        }
+
+        private void buttonS2TerrainTutorial5_Click(object sender, EventArgs e)
+        {
+            ToogleAllButtons();
+
+            // Series 2 Terrain Tutorial 3: Terrain Texturing          -  3268 lines   - (C++:  287 FPS C#:  297 FPS)
             DSharpDXRastertek.Series2.TutTerr04.System.DSystem.StartRenderForm("Series 2 Terrain Tutorial 4: Terrain Lighting", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, checkBoxScreenSize.Checked, (int)numericUpDownTimeInSeconds.Value);
             Thread.Sleep(3000);
 
