@@ -1,4 +1,4 @@
-﻿using DSharpDXRastertek.Series2.Tut05.System;
+﻿using DSharpDXRastertek.Series2.TutTerr06.System;
 using SharpDX;
 using SharpDX.D3DCompiler;
 using SharpDX.Direct3D11;
@@ -7,22 +7,22 @@ using System;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace DSharpDXRastertek.Series2.Tut05.Graphics
+namespace DSharpDXRastertek.Series2.TutTerr06.Graphics.Shaders
 {
     public class DTextureShader
     {
         [StructLayout(LayoutKind.Sequential)]
         internal struct DVertex
         {
-            public Vector3 position;
-            public Vector2 texture;
+            public RawVector3 position;
+            public RawVector2 texture;
         }
         [StructLayout(LayoutKind.Sequential)]
         internal struct DMatrixBuffer
         {
-            public Matrix world;
-            public Matrix view;
-            public Matrix projection;
+            public RawMatrix world;
+            public RawMatrix view;
+            public RawMatrix projection;
         }
 
         public VertexShader VertexShader { get; set; }
@@ -43,8 +43,8 @@ namespace DSharpDXRastertek.Series2.Tut05.Graphics
             {
                 vsFileName = DSystemConfiguration.ShaderFilePath + vsFileName;
                 psFileName = DSystemConfiguration.ShaderFilePath + psFileName;
-                ShaderBytecode vertexShaderByteCode = ShaderBytecode.CompileFromFile(vsFileName, "TextureVertexShader", "vs_4_0", ShaderFlags.None, EffectFlags.None);
-                ShaderBytecode pixelShaderByteCode = ShaderBytecode.CompileFromFile(psFileName, "TexturePixelShader", "ps_4_0", ShaderFlags.None, EffectFlags.None);
+                ShaderBytecode vertexShaderByteCode = ShaderBytecode.CompileFromFile(vsFileName, "TextureVertexShader", "vs_4_0", ShaderFlags.EnableStrictness, EffectFlags.None);
+                ShaderBytecode pixelShaderByteCode = ShaderBytecode.CompileFromFile(psFileName, "TexturePixelShader", "ps_4_0", ShaderFlags.EnableStrictness, EffectFlags.None);
                 VertexShader = new VertexShader(device, vertexShaderByteCode);
                 PixelShader = new PixelShader(device, pixelShaderByteCode);
                 InputElement[] inputElements = new InputElement[]
@@ -88,9 +88,9 @@ namespace DSharpDXRastertek.Series2.Tut05.Graphics
                 SamplerStateDescription samplerDesc = new SamplerStateDescription()
                 {
                     Filter = Filter.MinMagMipLinear,
-                    AddressU = TextureAddressMode.Wrap,
-                    AddressV = TextureAddressMode.Wrap,
-                    AddressW = TextureAddressMode.Wrap,
+                    AddressU = TextureAddressMode.Clamp,
+                    AddressV = TextureAddressMode.Clamp,
+                    AddressW = TextureAddressMode.Clamp,
                     MipLodBias = 0,
                     MaximumAnisotropy = 1,
                     ComparisonFunction = Comparison.Always,

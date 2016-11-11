@@ -1,22 +1,16 @@
-﻿using DSharpDXRastertek.Series2.Tut05.System;
+﻿using DSharpDXRastertek.Series2.TutTerr06.System;
 using SharpDX;
 using SharpDX.D3DCompiler;
 using SharpDX.Direct3D11;
-using SharpDX.Mathematics.Interop;
 using System;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace DSharpDXRastertek.Series2.Tut05.Graphics
+namespace DSharpDXRastertek.Series2.TutTerr06.Graphics.Shaders
 {
-    public class DTextureShader
+    public class DColorShader
     {
-        [StructLayout(LayoutKind.Sequential)]
-        internal struct DVertex
-        {
-            public Vector3 position;
-            public Vector2 texture;
-        }
+        // Structures.
         [StructLayout(LayoutKind.Sequential)]
         internal struct DMatrixBuffer
         {
@@ -25,28 +19,40 @@ namespace DSharpDXRastertek.Series2.Tut05.Graphics
             public Matrix projection;
         }
 
+        // Properties.
         public VertexShader VertexShader { get; set; }
         public PixelShader PixelShader { get; set; }
         public InputLayout Layout { get; set; }
         public SharpDX.Direct3D11.Buffer ConstantMatrixBuffer { get; set; }
-        public SamplerState SamplerState { get; set; }
 
-        public DTextureShader() { }
+        // Constructor
+        public DColorShader() { }
 
-        public bool Initialize(Device device, IntPtr windowsHandler)
+        // Methods.
+        public bool Initialize(Device device, IntPtr windowsHandle)
         {
-            return InitializeShader(device, windowsHandler, "texture.vs", "texture.ps");
+            // Initialize the vertex and pixel shaders.
+            return InitializeShader(device, windowsHandle, @"color.vs", @"color.ps");
         }
-        private bool InitializeShader(Device device, IntPtr windowsHandler, string vsFileName, string psFileName)
+        private bool InitializeShader(Device device, IntPtr windowsHandle, string vsFileName, string psFileName)
         {
             try
             {
                 vsFileName = DSystemConfiguration.ShaderFilePath + vsFileName;
                 psFileName = DSystemConfiguration.ShaderFilePath + psFileName;
-                ShaderBytecode vertexShaderByteCode = ShaderBytecode.CompileFromFile(vsFileName, "TextureVertexShader", "vs_4_0", ShaderFlags.None, EffectFlags.None);
-                ShaderBytecode pixelShaderByteCode = ShaderBytecode.CompileFromFile(psFileName, "TexturePixelShader", "ps_4_0", ShaderFlags.None, EffectFlags.None);
+
+                // Compile the vertex shader code.
+                ShaderBytecode vertexShaderByteCode = ShaderBytecode.CompileFromFile(vsFileName, "ColorVertexShader", "vs_4_0", ShaderFlags.None, EffectFlags.None);
+                // Compile the pixel shader code.
+                ShaderBytecode pixelShaderByteCode = ShaderBytecode.CompileFromFile(psFileName, "ColorPixelShader", "ps_4_0", ShaderFlags.None, EffectFlags.None);
+
+                // Create the vertex shader from the buffer.
                 VertexShader = new VertexShader(device, vertexShaderByteCode);
+                // Create the pixel shader from the buffer.
                 PixelShader = new PixelShader(device, pixelShaderByteCode);
+
+                // Now setup the layout of the data that goes into the shader.
+                // This setup needs to match the VertexType structure in the Model and in the shader.
                 InputElement[] inputElements = new InputElement[]
                 {
                     new InputElement()
@@ -61,44 +67,36 @@ namespace DSharpDXRastertek.Series2.Tut05.Graphics
                     },
                     new InputElement()
                     {
-                        SemanticName = "TEXCOORD",
+                        SemanticName = "COLOR",
                         SemanticIndex = 0,
-                        Format = SharpDX.DXGI.Format.R32G32_Float,
+                        Format = SharpDX.DXGI.Format.R32G32B32A32_Float,
                         Slot = 0,
                         AlignedByteOffset = InputElement.AppendAligned,
                         Classification = InputClassification.PerVertexData,
                         InstanceDataStepRate = 0
                     }
                 };
+
+                // Create the vertex input the layout.
                 Layout = new InputLayout(device, ShaderSignature.GetInputSignature(vertexShaderByteCode), inputElements);
+
+                // Release the vertex and pixel shader buffers, since they are no longer needed.
                 vertexShaderByteCode.Dispose();
                 pixelShaderByteCode.Dispose();
 
-                BufferDescription matrixBufferDescription = new BufferDescription()
+                // Setup the description of the dynamic matrix constant buffer that is in the vertex shader.
+                BufferDescription matrixBufDesc = new BufferDescription()
                 {
                     Usage = ResourceUsage.Dynamic,
-                    SizeInBytes = Utilities.SizeOf<DMatrixBuffer>(),
+                    SizeInBytes = Utilities.SizeOf<DMatrixBuffer>(), // was Matrix
                     BindFlags = BindFlags.ConstantBuffer,
                     CpuAccessFlags = CpuAccessFlags.Write,
                     OptionFlags = ResourceOptionFlags.None,
                     StructureByteStride = 0
                 };
-                ConstantMatrixBuffer = new SharpDX.Direct3D11.Buffer(device, matrixBufferDescription);
 
-                SamplerStateDescription samplerDesc = new SamplerStateDescription()
-                {
-                    Filter = Filter.MinMagMipLinear,
-                    AddressU = TextureAddressMode.Wrap,
-                    AddressV = TextureAddressMode.Wrap,
-                    AddressW = TextureAddressMode.Wrap,
-                    MipLodBias = 0,
-                    MaximumAnisotropy = 1,
-                    ComparisonFunction = Comparison.Always,
-                    BorderColor = new Color4(0, 0, 0, 0),  // Black Border.
-                    MinimumLod = 0,
-                    MaximumLod = float.MaxValue
-                };
-                SamplerState = new SamplerState(device, samplerDesc);
+                // Create the constant buffer pointer so we can access the vertex shader constant buffer from within this class.
+                ConstantMatrixBuffer = new SharpDX.Direct3D11.Buffer(device, matrixBufDesc);
 
                 return true;
             }
@@ -110,39 +108,49 @@ namespace DSharpDXRastertek.Series2.Tut05.Graphics
         }
         public void ShutDown()
         {
+            // Shutdown the vertex and pixel shaders as well as the related objects.
             ShuddownShader();
         }
         private void ShuddownShader()
         {
-            SamplerState?.Dispose();
-            SamplerState = null;
+            // Release the matrix constant buffer.
             ConstantMatrixBuffer?.Dispose();
             ConstantMatrixBuffer = null;
+            // Release the layout.
             Layout?.Dispose();
             Layout = null;
+            // Release the pixel shader.
             PixelShader?.Dispose();
             PixelShader = null;
+            // Release the vertex shader.
             VertexShader?.Dispose();
             VertexShader = null;
         }
-        public bool Render(DeviceContext deviceContext, int indexCount, Matrix worldMatrix, Matrix viewMatrix, Matrix projectionMatrix, ShaderResourceView texture)
+        public bool Render(DeviceContext deviceContext, int indexCount, Matrix worldMatrix, Matrix viewMatrix, Matrix projectionMatrix)
         {
-            if (!SetShaderParameters(deviceContext, worldMatrix, viewMatrix, projectionMatrix, texture))
+            // Set the shader parameters that it will use for rendering.
+            if (!SetShaderParameters(deviceContext, worldMatrix, viewMatrix, projectionMatrix))
                 return false;
 
+            // Now render the prepared buffers with the shader.
             RenderShader(deviceContext, indexCount);
+
             return true;
         }
-        private bool SetShaderParameters(DeviceContext deviceContext, Matrix worldMatrix, Matrix viewMatrix, Matrix projectionMatrix, ShaderResourceView texture)
+        private bool SetShaderParameters(DeviceContext deviceContext, Matrix worldMatrix, Matrix viewMatrix, Matrix projectionMatrix)
         {
             try
             {
+                // Transpose the matrices to prepare them for shader.
                 worldMatrix.Transpose();
                 viewMatrix.Transpose();
                 projectionMatrix.Transpose();
 
+                // Lock the constant buffer so it can be written to.
                 DataStream mappedResource;
                 deviceContext.MapSubresource(ConstantMatrixBuffer, MapMode.WriteDiscard, MapFlags.None, out mappedResource);
+
+                // Copy the matrices into the constant buffer.
                 DMatrixBuffer matrixBuffer = new DMatrixBuffer()
                 {
                     world = worldMatrix,
@@ -150,11 +158,15 @@ namespace DSharpDXRastertek.Series2.Tut05.Graphics
                     projection = projectionMatrix
                 };
                 mappedResource.Write(matrixBuffer);
+
+                // Unlock the constant buffer.
                 deviceContext.UnmapSubresource(ConstantMatrixBuffer, 0);
 
-                int bufferPositionNumber = 0;
-                deviceContext.VertexShader.SetConstantBuffer(bufferPositionNumber, ConstantMatrixBuffer);
-                deviceContext.PixelShader.SetShaderResource(0, texture);
+                // Set the position of the constant buffer in the vertex shader.
+                int bufferSlotNuber = 0;
+
+                // Finally set the constant buffer in the vertex shader with the updated values.
+                deviceContext.VertexShader.SetConstantBuffer(bufferSlotNuber, ConstantMatrixBuffer);
 
                 return true;
             }
@@ -165,10 +177,14 @@ namespace DSharpDXRastertek.Series2.Tut05.Graphics
         }
         private void RenderShader(DeviceContext deviceContext, int indexCount)
         {
+            // Set the vertex input layout.
             deviceContext.InputAssembler.InputLayout = Layout;
+
+            // Set the vertex and pixel shaders that will be used to render this triangle.
             deviceContext.VertexShader.Set(VertexShader);
             deviceContext.PixelShader.Set(PixelShader);
-            deviceContext.PixelShader.SetSampler(0, SamplerState);
+
+            // Render the triangle.
             deviceContext.DrawIndexed(indexCount, 0, 0);
         }
     }
