@@ -1,13 +1,13 @@
-﻿using DSharpDXRastertek.Series2.TutTerr06.Graphics.Camera;
-using DSharpDXRastertek.Series2.TutTerr06.Graphics.Data;
-using DSharpDXRastertek.Series2.TutTerr06.Graphics.Input;
-using DSharpDXRastertek.Series2.TutTerr06.Graphics.Models;
-using DSharpDXRastertek.Series2.TutTerr06.Graphics.Shaders;
-using DSharpDXRastertek.Series2.TutTerr06.System;
+﻿using DSharpDXRastertek.Series2.TutTerr07.Graphics.Camera;
+using DSharpDXRastertek.Series2.TutTerr07.Graphics.Data;
+using DSharpDXRastertek.Series2.TutTerr07.Graphics.Input;
+using DSharpDXRastertek.Series2.TutTerr07.Graphics.Models;
+using DSharpDXRastertek.Series2.TutTerr07.Graphics.Shaders;
+using DSharpDXRastertek.Series2.TutTerr07.System;
 using SharpDX;
 using System;
 
-namespace DSharpDXRastertek.Series2.TutTerr06.Graphics
+namespace DSharpDXRastertek.Series2.TutTerr07.Graphics
 {
     public class DZone
     {
@@ -16,6 +16,7 @@ namespace DSharpDXRastertek.Series2.TutTerr06.Graphics
         private DLight Light { get; set; }
         public DPosition Position { get; set; }
         public DTerrain Terrain { get; set; }
+        public DSkyDome SkyDomeModel { get; set; }
         public bool DisplayUI { get; set; }
         public bool WireFrame { get; set; }
 
@@ -49,6 +50,13 @@ namespace DSharpDXRastertek.Series2.TutTerr06.Graphics
             Light.SetDiffuseColor(1.0f, 1.0f, 1.0f, 1.0f);
             Light.Direction = new Vector3(-0.5f, -1.0f, -0.5f);
 
+            // Create the sky dome object.
+            SkyDomeModel = new DSkyDome();
+
+            // Initialize the sky dome object.
+            if (!SkyDomeModel.Initialize(D3D.Device, "skydome.txt"))
+                return false;
+
             // Initialize the terrain object.
             Terrain = new DTerrain();
             // Initialize the ground model object.
@@ -67,6 +75,9 @@ namespace DSharpDXRastertek.Series2.TutTerr06.Graphics
         {
             // Release the light object.
             Light = null;
+            // Release the sky dome object.
+            SkyDomeModel?.ShutDown();
+            SkyDomeModel = null;
             // Release the terrain object.
             Terrain?.ShutDown();
             Terrain = null;
@@ -144,6 +155,22 @@ namespace DSharpDXRastertek.Series2.TutTerr06.Graphics
 
             // Clear the buffers to begin the scene.
             direct3D.BeginScene(0.0f, 0.0f, 0.0f, 1.0f);
+
+
+            // Turn off back face culling and turn off the Z buffer.
+            direct3D.TurnOffCulling();
+            direct3D.TurnZBufferOff();
+            // Translate the sky dome to be centered around the camera position.
+            Matrix.Translation(Camera.GetPosition().X, Camera.GetPosition().Y, Camera.GetPosition().Z, out worldMatrix);
+            // Render the sky dome using the sky dome shader.
+            SkyDomeModel.Render(direct3D.DeviceContext);
+            if (!shaderManager.RenderSkyDomeShader(direct3D.DeviceContext, SkyDomeModel.IndexCount, worldMatrix, viewCameraMatrix, projectionMatrix, SkyDomeModel.m_apexColor, SkyDomeModel.m_centerColor))
+                return false;
+            // Reset the world matrix.
+            worldMatrix = direct3D.WorldMatrix;
+            // Turn the Z buffer back and back face culling on.
+            direct3D.TurnOnCulling();
+            direct3D.TurnZBufferOn();
 
             // Turn on wire frame rendering of the terrain if needed.
             if (WireFrame)

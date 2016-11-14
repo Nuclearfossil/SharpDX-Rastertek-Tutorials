@@ -130,6 +130,9 @@
     <Content Include="ExternalsSeries2\Models\setup.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="ExternalsSeries2\Models\skydome.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Externals\Data\alpha001.bmp">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -353,6 +356,7 @@
     <None Include="Resources\Series 2 -- Terrain Tutorial 4  -  Terrain Lighting Sm.png" />
     <None Include="Resources\Series 2 -- Terrain Tutorial 5  -  Color Mapped Terrain Sm.png" />
     <None Include="Resources\Series 2 -- Terrain Tutorial 6  -  Terrain Normal Mapping Sm.png" />
+    <None Include="Resources\Series 2 -- Terrain Tutorial 7 - Sky Domes Sm .png" />
     <Content Include="Series1\Tut14\Data\sound01.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -1169,6 +1173,42 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Series2\TutTerr06\Shaders\texture.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr07\Shaders\color.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr07\Shaders\color.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr07\Shaders\font.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr07\Shaders\font.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr07\Shaders\light.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr07\Shaders\light.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr07\Shaders\skydome.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr07\Shaders\skydome.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr07\Shaders\terrain.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr07\Shaders\terrain.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr07\Shaders\texture.ps">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Series2\TutTerr07\Shaders\texture.vs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="SharpDXWinForm_TemporaryKey.pfx" />

@@ -20,9 +20,9 @@ namespace DSharpDXRastertek.Series2.TutTerr03.Graphics.Shaders
         [StructLayout(LayoutKind.Sequential)]
         internal struct DMatrixBuffer
         {
-            public RawMatrix world;
-            public RawMatrix view;
-            public RawMatrix projection;
+            public Matrix world;
+            public Matrix view;
+            public Matrix projection;
         }
 
         public VertexShader VertexShader { get; set; }
@@ -43,8 +43,8 @@ namespace DSharpDXRastertek.Series2.TutTerr03.Graphics.Shaders
             {
                 vsFileName = DSystemConfiguration.ShaderFilePath + vsFileName;
                 psFileName = DSystemConfiguration.ShaderFilePath + psFileName;
-                ShaderBytecode vertexShaderByteCode = ShaderBytecode.CompileFromFile(vsFileName, "TextureVertexShader", "vs_4_0", ShaderFlags.None, EffectFlags.None);
-                ShaderBytecode pixelShaderByteCode = ShaderBytecode.CompileFromFile(psFileName, "TexturePixelShader", "ps_4_0", ShaderFlags.None, EffectFlags.None);
+                ShaderBytecode vertexShaderByteCode = ShaderBytecode.CompileFromFile(vsFileName, "TextureVertexShader", "vs_4_0", ShaderFlags.EnableStrictness, EffectFlags.None);
+                ShaderBytecode pixelShaderByteCode = ShaderBytecode.CompileFromFile(psFileName, "TexturePixelShader", "ps_4_0", ShaderFlags.EnableStrictness, EffectFlags.None);
                 VertexShader = new VertexShader(device, vertexShaderByteCode);
                 PixelShader = new PixelShader(device, pixelShaderByteCode);
                 InputElement[] inputElements = new InputElement[]
@@ -91,7 +91,7 @@ namespace DSharpDXRastertek.Series2.TutTerr03.Graphics.Shaders
                     AddressU = TextureAddressMode.Wrap,
                     AddressV = TextureAddressMode.Wrap,
                     AddressW = TextureAddressMode.Wrap,
-                    MipLodBias = 0,
+                    MipLodBias = 0.0f,
                     MaximumAnisotropy = 1,
                     ComparisonFunction = Comparison.Always,
                     BorderColor = new Color4(0, 0, 0, 0),  // Black Border.

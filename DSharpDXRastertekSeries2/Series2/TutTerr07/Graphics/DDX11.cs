@@ -1,11 +1,11 @@
-﻿using DSharpDXRastertek.Series2.TutTerr06.System;
+﻿using DSharpDXRastertek.Series2.TutTerr07.System;
 using SharpDX;
 using SharpDX.Direct3D;
 using SharpDX.Direct3D11;
 using SharpDX.DXGI;
 using System;
 
-namespace DSharpDXRastertek.Series2.TutTerr06.Graphics
+namespace DSharpDXRastertek.Series2.TutTerr07.Graphics
 {
     public class DDX11
     {
@@ -28,6 +28,7 @@ namespace DSharpDXRastertek.Series2.TutTerr06.Graphics
         public BlendState AlphaEnableBlendingState { get; private set; }
         public BlendState AlphaDisableBlendingState { get; private set; }
         public ViewportF ViewPort { get; set; }
+        private RasterizerState RasterStateNoCulling { get; set; }
 
         public DDX11() { }
 
@@ -173,6 +174,24 @@ namespace DSharpDXRastertek.Series2.TutTerr06.Graphics
                     SlopeScaledDepthBias = 0.0f
                 };
                 RasterStateWirefram = new RasterizerState(Device, rasterDescWireFrame);
+
+                // Setup a raster description which turns off back face culling.
+                var rasterNoCullDesc = new RasterizerStateDescription()
+                {
+                    IsAntialiasedLineEnabled = false,
+                    CullMode = CullMode.None,
+                    DepthBias = 0,
+                    DepthBiasClamp = .0f,
+                    IsDepthClipEnabled = true,
+                    FillMode = FillMode.Solid,
+                    IsFrontCounterClockwise = false,
+                    IsMultisampleEnabled = false,
+                    IsScissorEnabled = false,
+                    SlopeScaledDepthBias = .0f
+                };
+
+                // Create the no culling rasterizer state.
+                RasterStateNoCulling = new RasterizerState(Device, rasterNoCullDesc);
                 #endregion
 
                 #region Initialize Rasterizer
@@ -251,6 +270,8 @@ namespace DSharpDXRastertek.Series2.TutTerr06.Graphics
             DepthDisabledStencilState = null;
             RasterState?.Dispose();
             RasterState = null;
+            RasterStateNoCulling?.Dispose();
+            RasterStateNoCulling = null;
             DepthStencilView?.Dispose();
             DepthStencilView = null;
             DepthStencilState?.Dispose();
@@ -313,6 +334,15 @@ namespace DSharpDXRastertek.Series2.TutTerr06.Graphics
         {
             // Set the solid fill rasterizer state.
             DeviceContext.Rasterizer.State = RasterState;
+        }
+        public void TurnOnCulling()
+        {
+            // Set the culling rasterizer state.
+            DeviceContext.Rasterizer.State = RasterState;
+        }
+        public void TurnOffCulling()
+        {
+            DeviceContext.Rasterizer.State = RasterStateNoCulling;
         }
     }
 }

@@ -96,7 +96,7 @@ namespace DSharpDXRastertek.TutTerr12.Graphics.Shaders
                 BufferDescription gradientBufferDesc = new BufferDescription()
                 {
                     Usage = ResourceUsage.Dynamic,
-                    SizeInBytes = Utilities.SizeOf<DMatrixBuffer>(),
+                    SizeInBytes = Utilities.SizeOf<DGradientBuffer>(),
                     BindFlags = BindFlags.ConstantBuffer,
                     CpuAccessFlags = CpuAccessFlags.Write,
                     OptionFlags = ResourceOptionFlags.None,

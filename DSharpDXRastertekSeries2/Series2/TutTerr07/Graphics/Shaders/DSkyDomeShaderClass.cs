@@ -1,13 +1,13 @@
-﻿using DSharpDXRastertek.TutTerr11.System;
+﻿using DSharpDXRastertek.Series2.TutTerr07.System;
 using SharpDX;
 using SharpDX.D3DCompiler;
 using SharpDX.Direct3D11;
 using System;
 using System.Runtime.InteropServices;
 
-namespace DSharpDXRastertek.TutTerr11.Graphics.Shaders
+namespace DSharpDXRastertek.Series2.TutTerr07.Graphics.Shaders
 {
-    public class DSkyDomwShader                 // 216 lines
+    public class DSkyDomeShader                 // 216 lines
     {
         //Structs
         [StructLayout(LayoutKind.Sequential)]
@@ -77,31 +77,31 @@ namespace DSharpDXRastertek.TutTerr11.Graphics.Shaders
                 // Release the vertex and pixel shader buffers, since they are no longer needed.
                 vertexShaderByteCode.Dispose();
                 pixelShaderByteCode.Dispose();
-
+                
                 // Setup the description of the dynamic matrix constant buffer that is in the vertex shader.
                 BufferDescription matrixBufferDesc = new BufferDescription()
-                {
-                    Usage = ResourceUsage.Dynamic,
-                    SizeInBytes = Utilities.SizeOf<DMatrixBuffer>(),
-                    BindFlags = BindFlags.ConstantBuffer,
-                    CpuAccessFlags = CpuAccessFlags.Write,
-                    OptionFlags = ResourceOptionFlags.None,
-                    StructureByteStride = 0
-                };
+               {
+                   Usage = ResourceUsage.Dynamic,
+                   SizeInBytes = Utilities.SizeOf<DMatrixBuffer>(),
+                   BindFlags = BindFlags.ConstantBuffer,
+                   CpuAccessFlags = CpuAccessFlags.Write,
+                   OptionFlags = ResourceOptionFlags.None,
+                   StructureByteStride = 0
+               };
 
                 // Create the constant buffer pointer so we can access the vertex shader constant buffer from within this class.
                 ConstantMatrixBuffer = new SharpDX.Direct3D11.Buffer(device, matrixBufferDesc);
 
                 // Setup the description of the gradient constant buffer that is in the pixel shader.
                 BufferDescription gradientBufferDesc = new BufferDescription()
-                {
-                    Usage = ResourceUsage.Dynamic,
-                    SizeInBytes = Utilities.SizeOf<DGradientBuffer>(),
-                    BindFlags = BindFlags.ConstantBuffer,
-                    CpuAccessFlags = CpuAccessFlags.Write,
-                    OptionFlags = ResourceOptionFlags.None,
-                    StructureByteStride = 0
-                };
+              {
+                  Usage = ResourceUsage.Dynamic,
+                  SizeInBytes = Utilities.SizeOf<DGradientBuffer>(),
+                  BindFlags = BindFlags.ConstantBuffer,
+                  CpuAccessFlags = CpuAccessFlags.Write,
+                  OptionFlags = ResourceOptionFlags.None,
+                  StructureByteStride = 0
+              };
 
                 // Create the constant buffer pointer so we can access the pixel shader constant buffer from within this class.
                 ConstantGradientBuffer = new SharpDX.Direct3D11.Buffer(device, gradientBufferDesc);
@@ -110,7 +110,7 @@ namespace DSharpDXRastertek.TutTerr11.Graphics.Shaders
             }
             catch
             {
-
+                
                 return false;
             }
         }

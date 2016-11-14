@@ -100,7 +100,7 @@ namespace DSharpDXRastertek.Series2.TutTerr03.Graphics
                 };
                 DepthStencilBuffer = new Texture2D(device, depthBufferDesc);
                 #endregion
-
+                
                 #region Initialize Depth Enabled Stencil
                 var depthStencilDesc = new DepthStencilStateDescription()
                 {
@@ -140,7 +140,9 @@ namespace DSharpDXRastertek.Series2.TutTerr03.Graphics
                     }
                 };
                 DepthStencilView = new DepthStencilView(Device, DepthStencilBuffer, depthStencilViewDesc);
-                DeviceContext.OutputMerger.SetTargets(DepthStencilView, RenderTargetView);
+                // Bind the render target view and depth stencil buffer to the output render pipeline.
+                // DeviceContext.OutputMerger.SetTargets(DepthStencilView, RenderTargetView);
+                DeviceContext.OutputMerger.SetRenderTargets(DepthStencilView, RenderTargetView);
                 #endregion
 
                 #region Initialize Raster State
@@ -149,13 +151,13 @@ namespace DSharpDXRastertek.Series2.TutTerr03.Graphics
                     IsAntialiasedLineEnabled = false,
                     CullMode = CullMode.Back,
                     DepthBias = 0,
-                    DepthBiasClamp = .0f,
+                    DepthBiasClamp = 0.0f,
                     IsDepthClipEnabled = true,
                     FillMode = FillMode.Solid,
                     IsFrontCounterClockwise = false,
                     IsMultisampleEnabled = false,
                     IsScissorEnabled = false,
-                    SlopeScaledDepthBias = .0f
+                    SlopeScaledDepthBias = 0.0f
                 };
                 RasterState = new RasterizerState(Device, rasterDesc);
 
@@ -164,13 +166,13 @@ namespace DSharpDXRastertek.Series2.TutTerr03.Graphics
                     IsAntialiasedLineEnabled = false,
                     CullMode = CullMode.Back,
                     DepthBias = 0,
-                    DepthBiasClamp = .0f,
+                    DepthBiasClamp = 0.0f,
                     IsDepthClipEnabled = true,
                     FillMode = FillMode.Wireframe,
                     IsFrontCounterClockwise = false,
                     IsMultisampleEnabled = false,
                     IsScissorEnabled = false,
-                    SlopeScaledDepthBias = .0f
+                    SlopeScaledDepthBias = 0.0f
                 };
                 RasterStateWirefram = new RasterizerState(Device, rasterDescWireFrame);
                 #endregion
@@ -182,7 +184,7 @@ namespace DSharpDXRastertek.Series2.TutTerr03.Graphics
                 #endregion
 
                 #region Initialize matrices
-                ProjectionMatrix = Matrix.PerspectiveFovLH((float)(Math.PI / 4), ((float)configuration.Width / (float)configuration.Height), DSystemConfiguration.ScreenNear, DSystemConfiguration.ScreenDepth);
+                ProjectionMatrix = Matrix.PerspectiveFovLH((float)(Math.PI / 4), (float)((float)configuration.Width / (float)configuration.Height), DSystemConfiguration.ScreenNear, DSystemConfiguration.ScreenDepth);
                 WorldMatrix = Matrix.Identity;
                 OrthoMatrix = Matrix.OrthoLH(configuration.Width, configuration.Height, DSystemConfiguration.ScreenNear, DSystemConfiguration.ScreenDepth);
                 #endregion
@@ -216,16 +218,19 @@ namespace DSharpDXRastertek.Series2.TutTerr03.Graphics
 
                 #region Initialize Blend States
                 var blendStateDesc = new BlendStateDescription();
+                blendStateDesc.AlphaToCoverageEnable = false;
+                blendStateDesc.IndependentBlendEnable = false;
                 blendStateDesc.RenderTarget[0].IsBlendEnabled = true;
-                blendStateDesc.RenderTarget[0].SourceBlend = BlendOption.SourceAlpha;
-                blendStateDesc.RenderTarget[0].DestinationBlend = BlendOption.InverseSourceAlpha;
                 blendStateDesc.RenderTarget[0].BlendOperation = BlendOperation.Add;
+                blendStateDesc.RenderTarget[0].AlphaBlendOperation = BlendOperation.Add;
+                blendStateDesc.RenderTarget[0].SourceBlend = BlendOption.One;
+                blendStateDesc.RenderTarget[0].DestinationBlend = BlendOption.One;
                 blendStateDesc.RenderTarget[0].SourceAlphaBlend = BlendOption.One;
                 blendStateDesc.RenderTarget[0].DestinationAlphaBlend = BlendOption.Zero;
-                blendStateDesc.RenderTarget[0].AlphaBlendOperation = BlendOperation.Add;
                 blendStateDesc.RenderTarget[0].RenderTargetWriteMask = ColorWriteMaskFlags.All;
                 AlphaEnableBlendingState = new BlendState(device, blendStateDesc);
                 blendStateDesc.RenderTarget[0].IsBlendEnabled = false;
+                blendStateDesc.AlphaToCoverageEnable = false;
                 AlphaDisableBlendingState = new BlendState(device, blendStateDesc);
                 #endregion
 
@@ -265,12 +270,12 @@ namespace DSharpDXRastertek.Series2.TutTerr03.Graphics
         public void TurnOnAlphaBlending()
         {
             var blendFactor = new Color4(0, 0, 0, 0);
-            DeviceContext.OutputMerger.SetBlendState(AlphaEnableBlendingState, blendFactor, -1);
+            DeviceContext.OutputMerger.SetBlendState(AlphaEnableBlendingState, blendFactor);
         }
         public void TurnOffAlphaBlending()
         {
             var blendFactor = new Color4(0, 0, 0, 0);
-            DeviceContext.OutputMerger.SetBlendState(AlphaDisableBlendingState, blendFactor, -1);
+            DeviceContext.OutputMerger.SetBlendState(AlphaDisableBlendingState, blendFactor);
         }
         public void BeginScene(float red, float green, float blue, float alpha)
         {

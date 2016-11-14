@@ -1,4 +1,4 @@
-﻿using DSharpDXRastertek.Series2.TutTerr06.System;
+﻿using DSharpDXRastertek.Series2.TutTerr07.System;
 using SharpDX;
 using SharpDX.Direct3D;
 using SharpDX.Direct3D11;
@@ -9,7 +9,7 @@ using System.Drawing;
 using System.IO;
 using System.Runtime.InteropServices;
 
-namespace DSharpDXRastertek.Series2.TutTerr06.Graphics.Models
+namespace DSharpDXRastertek.Series2.TutTerr07.Graphics.Models
 {
     public class DTerrain
     {
@@ -570,7 +570,7 @@ namespace DSharpDXRastertek.Series2.TutTerr06.Graphics.Models
                 // Create the index array.
                 int[] indices = new int[IndexCount];
 
-                // Load the vertex and index arrays with the terrain data.
+              // Load the vertex and index arrays with the terrain data.
                 for (var i = 0; i < VertexCount; i++)
                 {
                     vertices[i] = new DVertexType()
@@ -585,6 +585,7 @@ namespace DSharpDXRastertek.Series2.TutTerr06.Graphics.Models
 
                     indices[i] = i;
                 }
+
                 // Create the vertex buffer.
                 VertexBuffer = SharpDX.Direct3D11.Buffer.Create(device, BindFlags.VertexBuffer, vertices);
 
