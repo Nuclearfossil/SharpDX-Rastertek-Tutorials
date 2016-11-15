@@ -1187,5 +1187,20 @@ namespace SharpDXWinForm
 
             ToogleAllButtons();
         }
+
+        private void buttonS2TerrainTutorial08_Click(object sender, EventArgs e)
+        {
+            ToogleAllButtons();
+
+            // Series 2 Terrain Tutorial 8: RAW Height Maps         -  3268 lines   - (C++:  287 FPS C#:  297 FPS)
+            DSharpDXRastertek.Series2.TutTerr08.System.DSystem.StartRenderForm("Series 2 Terrain Tutorial 8: RAW Height Maps", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, checkBoxScreenSize.Checked, (int)numericUpDownTimeInSeconds.Value);
+            Thread.Sleep(3000);
+
+            // Execute Second pass with the Full Screen off since it was first sent in Fullscreen.
+            if (checkBoxScreenSize.CheckState == CheckState.Indeterminate)
+                DSharpDXRastertek.Series2.TutTerr08.System.DSystem.StartRenderForm("Series 2 Terrain Tutorial 8: RAW Height Maps", (int)numericUpDownWidth.Value, (int)numericUpDownHeight.Value, checkBoxVSync.Checked, false, (int)numericUpDownTimeInSeconds.Value);
+
+            ToogleAllButtons();
+        }
     }
 }
