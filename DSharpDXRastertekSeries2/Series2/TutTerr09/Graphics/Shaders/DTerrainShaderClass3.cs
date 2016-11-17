@@ -1,4 +1,4 @@
-﻿using DSharpDXRastertek.Series2.TutTerr08.System;
+﻿using DSharpDXRastertek.Series2.TutTerr09.System;
 using SharpDX;
 using SharpDX.D3DCompiler;
 using SharpDX.Direct3D11;
@@ -6,7 +6,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Shaders
+namespace DSharpDXRastertek.Series2.TutTerr09.Graphics.Shaders
 {
     public class DTerrainShader                   // 332 lines
     {
@@ -41,6 +41,7 @@ namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Shaders
         public InputLayout Layout { get; set; }
         public SharpDX.Direct3D11.Buffer ConstantMatrixBuffer { get; set; }
         public SharpDX.Direct3D11.Buffer ConstantLightBuffer { get; set; }
+        //public SharpDX.Direct3D11.Buffer ConstantCameraBuffer { get; set; }
         public SamplerState SamplerState { get; set; }
         
         // Constructor

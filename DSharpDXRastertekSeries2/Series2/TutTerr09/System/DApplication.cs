@@ -1,10 +1,10 @@
-﻿using DSharpDXRastertek.Series2.TutTerr08.Graphics;
-using DSharpDXRastertek.Series2.TutTerr08.Graphics.Input;
-using DSharpDXRastertek.Series2.TutTerr08.Graphics.Models;
-using DSharpDXRastertek.Series2.TutTerr08.Graphics.Shaders;
+﻿using DSharpDXRastertek.Series2.TutTerr09.Graphics;
+using DSharpDXRastertek.Series2.TutTerr09.Graphics.Input;
+using DSharpDXRastertek.Series2.TutTerr09.Graphics.Models;
+using DSharpDXRastertek.Series2.TutTerr09.Graphics.Shaders;
 using System;
 
-namespace DSharpDXRastertek.Series2.TutTerr08.System
+namespace DSharpDXRastertek.Series2.TutTerr09.System
 {
     public class DApplication
     {

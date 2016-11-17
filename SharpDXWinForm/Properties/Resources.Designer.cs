@@ -803,6 +803,16 @@ namespace SharpDXWinForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Series_2____Terrain_Tutorial_9___Terrain_Cells_Sm_ {
+            get {
+                object obj = ResourceManager.GetObject("Series 2 -- Terrain Tutorial 9 - Terrain Cells Sm ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Series_2____Tutorial_5_____Texturing_Sm {
             get {
                 object obj = ResourceManager.GetObject("Series_2____Tutorial_5_____Texturing_Sm", resourceCulture);

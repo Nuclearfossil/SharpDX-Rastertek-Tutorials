@@ -1,4 +1,4 @@
-﻿using DSharpDXRastertek.Series2.TutTerr08.System;
+﻿using DSharpDXRastertek.Series2.TutTerr09.System;
 using SharpDX;
 using SharpDX.D3DCompiler;
 using SharpDX.Direct3D11;
@@ -7,7 +7,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Shaders
+namespace DSharpDXRastertek.Series2.TutTerr09.Graphics.Shaders
 {
     public class DFontShader
     {

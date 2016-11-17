@@ -1,15 +1,13 @@
-﻿using DSharpDXRastertek.Series2.TutTerr08.System;
+﻿using DSharpDXRastertek.Series2.TutTerr09.System;
 using SharpDX;
-using SharpDX.Direct3D;
 using SharpDX.Direct3D11;
-using SharpDX.DXGI;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Runtime.InteropServices;
 
-namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Models
+namespace DSharpDXRastertek.Series2.TutTerr09.Graphics.Models
 {
     public class DTerrain
     {
@@ -38,14 +36,21 @@ namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Models
         public struct DVectorTypeShareNormal
         {
             public float x, y, z;
-            public float tu, tv;
+            // public float tu, tv;
             public float nx, ny, nz;
             public float r, g, b;
         }
+
         [StructLayout(LayoutKind.Sequential)]
         public struct DVector
         {
             public float x, y, z;
+        }
+        [StructLayout(LayoutKind.Sequential)]
+        public struct DColorVertexType
+        {
+            internal Vector3 position;
+            internal Vector4 color;
         }
         [StructLayout(LayoutKind.Sequential)]
         public struct DTempVertex
@@ -56,18 +61,17 @@ namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Models
         }
 
         // Variables
+        public int m_CellCount;
         private int m_TerrainWidth, m_TerrainHeight, m_ColourMapWidth, m_ColourMapHeight;
         private float m_TerrainScale = 12.0f;
         private string m_TerrainHeightManName, m_ColorMapName;
 
         // Properties
-        private SharpDX.Direct3D11.Buffer VertexBuffer { get; set; }
-        private SharpDX.Direct3D11.Buffer IndexBuffer { get; set; }
         private int VertexCount { get; set; }
         public int IndexCount { get; private set; }
+        public DTerrainCell[] TerrainCells { get; set; }
         public List<DHeightMapType> HeightMap = new List<DHeightMapType>();
         public DHeightMapType[] TerrainModel { get; set; }
-
 
         // Constructor
         public DTerrain() { }
@@ -99,8 +103,8 @@ namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Models
             // Calculate the tangent and binormal for the terrain model.
             CalculateTerrainVectors();
 
-            // Initialize the vertex and index buffer that hold the geometry for the terrain.
-            if (!InitializeBuffers(device))
+            // Create and load the cells with the terrain data.
+            if (!LoadTerrainCells(device))
                 return false;
             
             // We can now release the height map since it is no longer needed in memory once the 3D terrain model has been built.
@@ -108,7 +112,31 @@ namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Models
 
             return true;
         }
+        private bool LoadTerrainCells(SharpDX.Direct3D11.Device device)
+        {
+            // Set the height and width of each terrain cell to a fixed 33x33 vertex array.
+            int cellHeight = 33;
+            int cellWidth = 33;
 
+            // Calculate the number of cells needed to store the terrain data.
+            int cellRowCount = (m_TerrainWidth - 1) / (cellWidth - 1);
+            m_CellCount = cellRowCount * cellRowCount;
+
+            // Create the terrain cell array.
+            TerrainCells = new DTerrainCell[m_CellCount];
+
+            // Loop through and initialize all the terrain cells.
+            for (int j = 0; j < cellRowCount; j++)
+                for (int i = 0; i < cellRowCount; i++)
+                {
+                    int index = (cellRowCount * j) + i;
+                    TerrainCells[index] = new DTerrainCell();
+                    if (!TerrainCells[index].Initialize(device, TerrainModel, i, j, cellHeight, cellWidth, m_TerrainWidth))
+                        return false;
+                }
+             
+            return true;
+        }
         private bool LoadRawHeightMap()
         {
             byte[] bytesData = File.ReadAllBytes(DSystemConfiguration.TextureFilePath + m_TerrainHeightManName);
@@ -555,90 +583,43 @@ namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Models
                 HeightMap[i] = temp;
             }
         }
-        private bool InitializeBuffers(SharpDX.Direct3D11.Device device)
-        {
-            try
-            {
-                // Calculate the number of vertices in the terrain mesh.
-                VertexCount = (m_TerrainWidth - 1) * (m_TerrainHeight - 1) * 6;
-                // Set the index count to the same as the vertex count.
-                IndexCount = VertexCount;
-
-                // Create the vertex array.
-                DVertexType[] vertices = new DVertexType[VertexCount];
-                // Create the index array.
-                int[] indices = new int[IndexCount];
-
-                // Load the vertex and index arrays with the terrain data.
-                for (var i = 0; i < VertexCount; i++)
-                {
-                    vertices[i] = new DVertexType()
-                    {
-                        position = new Vector3(TerrainModel[i].x, TerrainModel[i].y, TerrainModel[i].z),
-                        texture = new Vector2(TerrainModel[i].tu, TerrainModel[i].tv),
-                        normal = new Vector3(TerrainModel[i].nx, TerrainModel[i].ny, TerrainModel[i].nz),
-                        tangent = new Vector3(TerrainModel[i].tx, TerrainModel[i].ty, TerrainModel[i].tz),
-                        binormal = new Vector3(TerrainModel[i].bx, TerrainModel[i].by, TerrainModel[i].bz),
-                        color = new Vector3(TerrainModel[i].r, TerrainModel[i].g, TerrainModel[i].b)
-                    };
-
-                    indices[i] = i;
-                }
-
-                // Create the vertex buffer.
-                VertexBuffer = SharpDX.Direct3D11.Buffer.Create(device, BindFlags.VertexBuffer, vertices);
-
-                // Create the index buffer.
-                IndexBuffer = SharpDX.Direct3D11.Buffer.Create(device, BindFlags.IndexBuffer, indices);
-
-                // Release the arrays now that the buffers have been created and loaded.
-                vertices = null;
-                indices = null;
-
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }
         public void ShutDown()
         {
-            // Release the vertex and index buffers.
-            ShutdownBuffers();
+            // Release the terrain cells.
+            ShutdownTerrainCells();
             // Release the height map.
             ShutdownHeightMap();
-        }
-        private void ShutdownBuffers()
-        {
-            // Return the index buffer.
-            IndexBuffer?.Dispose();
-            IndexBuffer = null;
-            // Release the vertex buffer.
-            VertexBuffer?.Dispose();
-            VertexBuffer = null;
         }
         private void ShutdownHeightMap()
         {
             // Release the height map array.
-            
             TerrainModel = null;
             HeightMap?.Clear();
             HeightMap = null;
         }
-        public void Render(DeviceContext deviceContext)
+        private void ShutdownTerrainCells()
         {
-            // Put the vertex and index buffers on the graphics pipeline to prepare them for drawing.
-            RenderBuffers(deviceContext);
+            // Release the terrain cell array.
+            for (int i = 0; i < m_CellCount; i++)
+                TerrainCells[i].ShutDown();
+
+            TerrainCells = null;
         }
-        private void RenderBuffers(DeviceContext deviceContext)
+        public void RenderCell(DeviceContext deviceContext, int cellID)
         {
-            // Set the vertex buffer to active in the input assembler so it can be rendered.
-            deviceContext.InputAssembler.SetVertexBuffers(0, new VertexBufferBinding(VertexBuffer, Utilities.SizeOf<DVertexType>(), 0));
-            // Set the index buffer to active in the input assembler so it can be rendered.
-            deviceContext.InputAssembler.SetIndexBuffer(IndexBuffer, Format.R32_UInt, 0);
-            // Set the type of the primitive that should be rendered from this vertex buffer, in this case triangles.
-            deviceContext.InputAssembler.PrimitiveTopology = PrimitiveTopology.TriangleList;
+            TerrainCells[cellID].Render(deviceContext);
+        }
+        public void RenderCellLines(DeviceContext deviceContext, int cellID)
+        {
+            TerrainCells[cellID].RenderLineBuffers(deviceContext);
+        }
+        public int GetCellIndexCount(int childIndex)
+        {
+            return TerrainCells[childIndex].IndexCount;
+        }
+        public int GetCellLinesIndexCount(int childIndex)
+        {
+            return TerrainCells[childIndex].LineIndexCount;
         }
     }
 }

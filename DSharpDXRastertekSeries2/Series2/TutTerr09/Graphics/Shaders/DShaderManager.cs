@@ -2,14 +2,12 @@
 using SharpDX.Direct3D11;
 using System;
 
-namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Shaders
+namespace DSharpDXRastertek.Series2.TutTerr09.Graphics.Shaders
 {
     public class DShaderManager
     {
         // Properties
-        // public DColorShader ColorShader { get; set; }
-        //public DTextureShader TextureShader { get; set; }
-        //public DLightShader LightShader { get; set; }
+        public DColorShader ColorShader { get; set; }
         public DFontShader FontShader { get; set; }
         public DTerrainShader TerrainShader { get; set; }
         public DSkyDomeShader SkyDomeShader { get; set; }
@@ -17,6 +15,13 @@ namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Shaders
         // Methods
         public bool Initilize(DDX11 D3DDevice, IntPtr windowsHandle)
         {
+            // Create the texture shader object.
+            ColorShader = new DColorShader();
+
+            // Initialize the texture shader object.
+            if (!ColorShader.Initialize(D3DDevice.Device, windowsHandle))
+                return false;
+
             // Create the font shader object.
             FontShader = new DFontShader();
 
@@ -51,6 +56,17 @@ namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Shaders
             // Release the font shader object.
             FontShader?.Shuddown();
             FontShader = null;
+            // Release the texture shader object.
+            ColorShader?.ShutDown();
+            ColorShader = null;
+        }
+        public bool RenderColorShader(DeviceContext deviceContext, int indexCount, Matrix worldMatrix, Matrix viewMatrix, Matrix projectionMatrix)
+        {
+            // Render the ColoreShader.
+            if (!ColorShader.Render(deviceContext, indexCount, worldMatrix, viewMatrix, projectionMatrix))
+                return false;
+
+            return true;
         }
         public bool RenderFontShader(DeviceContext deviceContext, int indexCount, Matrix worldMatrix, Matrix viewMatrix, Matrix orthoMatrix, ShaderResourceView texture, Vector4 fontColour)
         {

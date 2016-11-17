@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using TestConsole;
 
-namespace DSharpDXRastertek.Series2.TutTerr08.System
+namespace DSharpDXRastertek.Series2.TutTerr09.System
 {
     public class DSystem
     {
@@ -96,7 +96,6 @@ namespace DSharpDXRastertek.Series2.TutTerr08.System
             // Release the graphics object.
             DApplication?.Shutdown();
             DApplication = null;
-            Configuration = null;
         }
         private void ShutdownWindows()
         {

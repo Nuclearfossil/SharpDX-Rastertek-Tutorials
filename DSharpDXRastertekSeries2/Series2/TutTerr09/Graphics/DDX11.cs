@@ -1,11 +1,11 @@
-﻿using DSharpDXRastertek.Series2.TutTerr08.System;
+﻿using DSharpDXRastertek.Series2.TutTerr09.System;
 using SharpDX;
 using SharpDX.Direct3D;
 using SharpDX.Direct3D11;
 using SharpDX.DXGI;
 using System;
 
-namespace DSharpDXRastertek.Series2.TutTerr08.Graphics
+namespace DSharpDXRastertek.Series2.TutTerr09.Graphics
 {
     public class DDX11
     {
@@ -272,8 +272,6 @@ namespace DSharpDXRastertek.Series2.TutTerr08.Graphics
             RasterState = null;
             RasterStateNoCulling?.Dispose();
             RasterStateNoCulling = null;
-            RasterStateWirefram.Dispose();
-            RasterStateWirefram = null;
             DepthStencilView?.Dispose();
             DepthStencilView = null;
             DepthStencilState?.Dispose();

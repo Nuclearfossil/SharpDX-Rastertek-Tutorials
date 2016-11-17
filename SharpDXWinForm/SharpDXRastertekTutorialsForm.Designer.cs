@@ -106,6 +106,7 @@
             this.buttonS2Tutorial02 = new System.Windows.Forms.Button();
             this.buttonS2TutorialTerrain01 = new System.Windows.Forms.Button();
             this.buttonS2Tutorial03 = new System.Windows.Forms.Button();
+            this.buttonS2TerrainTutorial09 = new System.Windows.Forms.Button();
             this.buttonS2TerrainTutorial08 = new System.Windows.Forms.Button();
             this.buttonS2TerrainTutorial07 = new System.Windows.Forms.Button();
             this.buttonS2TerrainTutorial06 = new System.Windows.Forms.Button();
@@ -1350,6 +1351,7 @@
             this.tabPage3.Controls.Add(this.buttonS2Tutorial02);
             this.tabPage3.Controls.Add(this.buttonS2TutorialTerrain01);
             this.tabPage3.Controls.Add(this.buttonS2Tutorial03);
+            this.tabPage3.Controls.Add(this.buttonS2TerrainTutorial09);
             this.tabPage3.Controls.Add(this.buttonS2TerrainTutorial08);
             this.tabPage3.Controls.Add(this.buttonS2TerrainTutorial07);
             this.tabPage3.Controls.Add(this.buttonS2TerrainTutorial06);
@@ -1429,6 +1431,23 @@
             this.buttonS2Tutorial03.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.buttonS2Tutorial03.UseVisualStyleBackColor = true;
             this.buttonS2Tutorial03.Click += new System.EventHandler(this.buttonS2Tutorial3_Click);
+            // 
+            // buttonS2TerrainTutorial09
+            // 
+            this.buttonS2TerrainTutorial09.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonS2TerrainTutorial09.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonS2TerrainTutorial09.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonS2TerrainTutorial09.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonS2TerrainTutorial09.ForeColor = System.Drawing.Color.White;
+            this.buttonS2TerrainTutorial09.Image = global::SharpDXWinForm.Properties.Resources.Series_2____Terrain_Tutorial_9___Terrain_Cells_Sm_;
+            this.buttonS2TerrainTutorial09.Location = new System.Drawing.Point(14, 603);
+            this.buttonS2TerrainTutorial09.Name = "buttonS2TerrainTutorial09";
+            this.buttonS2TerrainTutorial09.Size = new System.Drawing.Size(250, 140);
+            this.buttonS2TerrainTutorial09.TabIndex = 5;
+            this.buttonS2TerrainTutorial09.Text = "Series 2 Terrain Tutorial 9: Terrain Cells";
+            this.buttonS2TerrainTutorial09.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonS2TerrainTutorial09.UseVisualStyleBackColor = false;
+            this.buttonS2TerrainTutorial09.Click += new System.EventHandler(this.buttonS2TerrainTutorial09_Click);
             // 
             // buttonS2TerrainTutorial08
             // 
@@ -1860,5 +1879,6 @@
         private System.Windows.Forms.Button buttonS2TerrainTutorial06;
         private System.Windows.Forms.Button buttonS2TerrainTutorial07;
         private System.Windows.Forms.Button buttonS2TerrainTutorial08;
+        private System.Windows.Forms.Button buttonS2TerrainTutorial09;
     }
 }

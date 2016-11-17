@@ -1,6 +1,6 @@
-﻿using DSharpDXRastertek.Series2.TutTerr08.Graphics.Data;
-using DSharpDXRastertek.Series2.TutTerr08.Graphics.Shaders;
-using DSharpDXRastertek.Series2.TutTerr08.System;
+﻿using DSharpDXRastertek.Series2.TutTerr09.Graphics.Data;
+using DSharpDXRastertek.Series2.TutTerr09.Graphics.Shaders;
+using DSharpDXRastertek.Series2.TutTerr09.System;
 using SharpDX;
 using SharpDX.Direct3D;
 using SharpDX.Direct3D11;
@@ -8,7 +8,7 @@ using SharpDX.DXGI;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
-namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Models
+namespace DSharpDXRastertek.Series2.TutTerr09.Graphics.Models
 {
     public class DText
     {
