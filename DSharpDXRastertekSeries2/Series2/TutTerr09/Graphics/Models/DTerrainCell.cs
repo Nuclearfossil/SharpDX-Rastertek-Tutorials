@@ -333,7 +333,6 @@ namespace DSharpDXRastertek.Series2.TutTerr09.Graphics.Models
             VertexBuffer?.Dispose();
             VertexBuffer = null;
         }
-    
         private void ShutdownLineBuffers()
         {
             // Release the index buffer.

@@ -18,12 +18,6 @@ namespace DSharpDXRastertek.Series2.TutTerr09.Graphics.Shaders
             public Matrix view;
             public Matrix projection;
         }
-        //[StructLayout(LayoutKind.Sequential)]
-        //internal struct DCameraBuffer
-        //{
-        //    public Vector3 cameraPosition;
-        //    public float padding;
-        //}
         [StructLayout(LayoutKind.Sequential)]
         internal struct DLightBuffer
         {
@@ -31,8 +25,6 @@ namespace DSharpDXRastertek.Series2.TutTerr09.Graphics.Shaders
             public Vector4 diffuseColor;
             public Vector3 lightDirection;
             public float padding;
-            // public float specularPower;
-            // public Vector4 specularColor;
         }
 
         // Properties
@@ -41,7 +33,6 @@ namespace DSharpDXRastertek.Series2.TutTerr09.Graphics.Shaders
         public InputLayout Layout { get; set; }
         public SharpDX.Direct3D11.Buffer ConstantMatrixBuffer { get; set; }
         public SharpDX.Direct3D11.Buffer ConstantLightBuffer { get; set; }
-        //public SharpDX.Direct3D11.Buffer ConstantCameraBuffer { get; set; }
         public SamplerState SamplerState { get; set; }
         
         // Constructor

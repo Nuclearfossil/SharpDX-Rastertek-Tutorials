@@ -272,7 +272,7 @@ namespace DSharpDXRastertek.Series2.TutTerr08.Graphics
             RasterState = null;
             RasterStateNoCulling?.Dispose();
             RasterStateNoCulling = null;
-            RasterStateWirefram.Dispose();
+            RasterStateWirefram?.Dispose();
             RasterStateWirefram = null;
             DepthStencilView?.Dispose();
             DepthStencilView = null;

@@ -37,7 +37,6 @@ namespace DSharpDXRastertek.Series2.TutTerr09.Graphics.Models
             TextureResource?.Dispose();
             TextureResource = null;
         }
-
         public Texture2D LoadFromFile(Device device, ImagingFactory factory, string fileName)
         {
             using (var bs = LoadBitmap(factory, fileName))

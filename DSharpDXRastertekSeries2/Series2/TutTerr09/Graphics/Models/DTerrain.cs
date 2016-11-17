@@ -169,7 +169,6 @@ namespace DSharpDXRastertek.Series2.TutTerr09.Graphics.Models
 
             return true;
         }
-
         private void BuildTerrainModel()
         {
             // Set the number of vertices in the model.

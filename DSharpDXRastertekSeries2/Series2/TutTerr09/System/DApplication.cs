@@ -97,6 +97,5 @@ namespace DSharpDXRastertek.Series2.TutTerr09.System
 
             return true;
         }
-
     }
 }

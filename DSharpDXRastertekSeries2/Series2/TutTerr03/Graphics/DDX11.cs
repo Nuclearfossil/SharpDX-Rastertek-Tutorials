@@ -252,6 +252,8 @@ namespace DSharpDXRastertek.Series2.TutTerr03.Graphics
             DepthDisabledStencilState = null;
             RasterState?.Dispose();
             RasterState = null;
+            RasterStateWirefram?.Dispose();
+            RasterStateWirefram = null;
             DepthStencilView?.Dispose();
             DepthStencilView = null;
             DepthStencilState?.Dispose();

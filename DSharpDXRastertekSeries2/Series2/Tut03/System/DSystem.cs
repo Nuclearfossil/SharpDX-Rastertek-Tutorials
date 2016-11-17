@@ -1,4 +1,4 @@
-﻿using DSharpDXRastertek.Series2.Tut02.Input;
+﻿using DSharpDXRastertek.Series2.Tut03.Input;
 using DSharpDXRastertek.Series2.Tut03.Graphics;
 using SharpDX.Windows;
 using System.Drawing;
@@ -84,6 +84,7 @@ namespace DSharpDXRastertek.Series2.Tut03.System
             Graphics?.ShutDown();
             Graphics = null;
             Input = null;
+            Configuration = null;
         }
         private void ShutdownWindows()
         {

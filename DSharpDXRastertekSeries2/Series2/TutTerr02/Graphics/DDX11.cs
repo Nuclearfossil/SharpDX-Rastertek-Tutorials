@@ -4,7 +4,6 @@ using SharpDX.Direct3D;
 using SharpDX.Direct3D11;
 using SharpDX.DXGI;
 using System;
-using System.Linq;
 
 namespace DSharpDXRastertek.Series2.TutTerr02.Graphics
 {
@@ -248,6 +247,8 @@ namespace DSharpDXRastertek.Series2.TutTerr02.Graphics
             DepthDisabledStencilState = null;
             RasterState?.Dispose();
             RasterState = null;
+            RasterStateWirefram?.Dispose();
+            RasterStateWirefram = null;
             DepthStencilView?.Dispose();
             DepthStencilView = null;
             DepthStencilState?.Dispose();
