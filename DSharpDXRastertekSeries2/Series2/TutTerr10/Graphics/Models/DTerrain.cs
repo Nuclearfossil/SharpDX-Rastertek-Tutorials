@@ -168,6 +168,8 @@ namespace DSharpDXRastertek.Series2.TutTerr10.Graphics.Models
                 }
             }
 
+            bytesData = null;
+
             return true;
         }
         private void BuildTerrainModel()

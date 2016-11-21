@@ -117,7 +117,7 @@ namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Models
             HeightMap = new List<DHeightMapType>(m_TerrainWidth * m_TerrainHeight);
 
             ushort tester;
-            int ind = 0, index = 0;           
+            int ind = 0, index = 0;
             // Copy the image data into the height map array.
             for (int j = 0; j < m_TerrainHeight; j++)
             {
@@ -138,6 +138,8 @@ namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Models
                     ind += 2;
                 }
             }
+
+            bytesData = null;
 
             return true;
         }
@@ -620,8 +622,7 @@ namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Models
         }
         private void ShutdownHeightMap()
         {
-            // Release the height map array.
-            
+            // Release the height map array.    
             TerrainModel = null;
             HeightMap?.Clear();
             HeightMap = null;

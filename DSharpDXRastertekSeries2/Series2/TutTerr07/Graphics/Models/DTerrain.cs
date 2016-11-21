@@ -554,6 +554,10 @@ namespace DSharpDXRastertek.Series2.TutTerr07.Graphics.Models
                         z = j
                     });
 
+
+            bitmap?.Dispose();
+            bitmap = null;
+
             return true;
         }
         private bool InitializeBuffers(SharpDX.Direct3D11.Device device)
