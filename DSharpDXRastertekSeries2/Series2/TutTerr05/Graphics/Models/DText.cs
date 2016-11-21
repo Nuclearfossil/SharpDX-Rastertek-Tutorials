@@ -172,6 +172,9 @@ namespace DSharpDXRastertek.Series2.TutTerr05.Graphics.Models
             deviceContext.UnmapSubresource(VertexBuffer, 0);
             #endregion
 
+            vertices?.Clear();
+            vertices = null;
+
             return true;
         }
         private void ReleaseSentences(DSentence sentence)

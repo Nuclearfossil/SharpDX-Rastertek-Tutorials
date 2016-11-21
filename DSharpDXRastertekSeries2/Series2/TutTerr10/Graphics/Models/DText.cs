@@ -170,6 +170,10 @@ namespace DSharpDXRastertek.Series2.TutTerr10.Graphics.Models
 
             // Unlock the vertex buffer.
             deviceContext.UnmapSubresource(VertexBuffer, 0);
+
+            vertices?.Clear();
+            vertices = null;
+
             #endregion
 
             return true;
