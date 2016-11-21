@@ -83,6 +83,7 @@ namespace DSharpDXRastertek.Series2.Tut05.System
 
             Graphics?.ShutDown();
             Graphics = null;
+            Input?.ShutDowm();
             Input = null;
             Configuration = null;
         }

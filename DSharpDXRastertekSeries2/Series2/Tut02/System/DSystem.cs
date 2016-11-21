@@ -80,6 +80,7 @@ namespace DSharpDXRastertek.Series2.Tut02.System
             Timer = null;
             Graphics?.ShutDown();
             Graphics = null;
+            Input?.ShutDowm();
             Input = null;
             Configuration = null;
         }

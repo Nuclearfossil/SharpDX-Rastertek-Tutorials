@@ -25,5 +25,10 @@ namespace DSharpDXRastertek.Series2.Tut04.Input
         {
             InputKeys[key] = false;
         }
+        public void ShutDowm()
+        {
+            InputKeys.Clear();
+            InputKeys = null;
+        }
     }
 }

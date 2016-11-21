@@ -77,6 +77,8 @@ namespace DSharpDXRastertek.Series2.TutTerr09.Graphics.Input
         }
         public void Shutdown()
         {
+            _KeyboardState = null;
+            _MouseState = null;
             // Release the mouse.
             _Mouse?.Unacquire();
             _Mouse?.Dispose();
