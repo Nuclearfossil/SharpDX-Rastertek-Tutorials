@@ -265,6 +265,8 @@
     <Compile Include="Series2\TutTerr08\Graphics\Models\DTerrain.cs" />
     <Compile Include="Series2\TutTerr09\Graphics\Camera\DCamera.cs" />
     <Compile Include="Series2\TutTerr09\Graphics\Data\DFont.cs" />
+    <Compile Include="Series2\TutTerr10\Graphics\Data\DFont.cs" />
+    <Compile Include="Series2\TutTerr10\Graphics\Data\DFrustumClass1.cs" />
     <Compile Include="Series2\TutTerr09\Graphics\Data\DLightClass3.cs" />
     <Compile Include="Series2\TutTerr09\Graphics\Data\DUserInterface.cs" />
     <Compile Include="Series2\TutTerr09\Graphics\DDX11.cs" />
@@ -299,6 +301,29 @@
     <Compile Include="Series2\TutTerr09\System\DSystem.cs" />
     <Compile Include="Series2\TutTerr09\System\DSystemConfiguration.cs" />
     <Compile Include="Series2\TutTerr09\System\DTimer.cs" />
+    <Compile Include="Series2\TutTerr10\Graphics\Camera\DCamera.cs" />
+    <Compile Include="Series2\TutTerr10\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series2\TutTerr10\Graphics\Data\DUserInterface.cs" />
+    <Compile Include="Series2\TutTerr10\Graphics\DDX11.cs" />
+    <Compile Include="Series2\TutTerr10\Graphics\DZone.cs" />
+    <Compile Include="Series2\TutTerr10\Graphics\Input\DInput.cs" />
+    <Compile Include="Series2\TutTerr10\Graphics\Input\DPosition.cs" />
+    <Compile Include="Series2\TutTerr10\Graphics\Models\DSkyDome.cs" />
+    <Compile Include="Series2\TutTerr10\Graphics\Models\DTerrain.cs" />
+    <Compile Include="Series2\TutTerr10\Graphics\Models\DTerrainCell.cs" />
+    <Compile Include="Series2\TutTerr10\Graphics\Models\DText.cs" />
+    <Compile Include="Series2\TutTerr10\Graphics\Models\DTexture.cs" />
+    <Compile Include="Series2\TutTerr10\Graphics\Models\DTextureManager.cs" />
+    <Compile Include="Series2\TutTerr10\Graphics\Shaders\DColorShader.cs" />
+    <Compile Include="Series2\TutTerr10\Graphics\Shaders\DFontShader.cs" />
+    <Compile Include="Series2\TutTerr10\Graphics\Shaders\DShaderManager.cs" />
+    <Compile Include="Series2\TutTerr10\Graphics\Shaders\DSkyDomeShaderClass.cs" />
+    <Compile Include="Series2\TutTerr10\Graphics\Shaders\DTerrainShaderClass3.cs" />
+    <Compile Include="Series2\TutTerr10\System\DApplication.cs" />
+    <Compile Include="Series2\TutTerr10\System\DFPS.cs" />
+    <Compile Include="Series2\TutTerr10\System\DSystem.cs" />
+    <Compile Include="Series2\TutTerr10\System\DSystemConfiguration.cs" />
+    <Compile Include="Series2\TutTerr10\System\DTimer.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

@@ -106,6 +106,7 @@
             this.buttonS2Tutorial02 = new System.Windows.Forms.Button();
             this.buttonS2TutorialTerrain01 = new System.Windows.Forms.Button();
             this.buttonS2Tutorial03 = new System.Windows.Forms.Button();
+            this.buttonS2TerrainTutorial10 = new System.Windows.Forms.Button();
             this.buttonS2TerrainTutorial09 = new System.Windows.Forms.Button();
             this.buttonS2TerrainTutorial08 = new System.Windows.Forms.Button();
             this.buttonS2TerrainTutorial07 = new System.Windows.Forms.Button();
@@ -152,7 +153,7 @@
             this.buttonTutorial08.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonTutorial08.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial08.ForeColor = System.Drawing.Color.White;
-            this.buttonTutorial08.Location = new System.Drawing.Point(10, 308);
+            this.buttonTutorial08.Location = new System.Drawing.Point(21, 298);
             this.buttonTutorial08.Name = "buttonTutorial08";
             this.buttonTutorial08.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial08.TabIndex = 6;
@@ -167,8 +168,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.Buttons;
-            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.ItemSize = new System.Drawing.Size(60, 28);
             this.tabControl1.Location = new System.Drawing.Point(10, 145);
@@ -246,7 +247,7 @@
             this.buttonTutorial50.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial50.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial50.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_50___Deferred_Shading_Sm;
-            this.buttonTutorial50.Location = new System.Drawing.Point(266, 2352);
+            this.buttonTutorial50.Location = new System.Drawing.Point(277, 2342);
             this.buttonTutorial50.Name = "buttonTutorial50";
             this.buttonTutorial50.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial50.TabIndex = 48;
@@ -262,7 +263,7 @@
             this.buttonTutorial31.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial31.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial31.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_31___3D_Sound_Sm;
-            this.buttonTutorial31.Location = new System.Drawing.Point(522, 1330);
+            this.buttonTutorial31.Location = new System.Drawing.Point(533, 1320);
             this.buttonTutorial31.Name = "buttonTutorial31";
             this.buttonTutorial31.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial31.TabIndex = 29;
@@ -278,7 +279,7 @@
             this.buttonTutorial49.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial49.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial49.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_49___Shadow_Mapping_And_Transparency_Sm;
-            this.buttonTutorial49.Location = new System.Drawing.Point(522, 2206);
+            this.buttonTutorial49.Location = new System.Drawing.Point(533, 2196);
             this.buttonTutorial49.Name = "buttonTutorial49";
             this.buttonTutorial49.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial49.TabIndex = 47;
@@ -294,7 +295,7 @@
             this.buttonTutorial02.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial02.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial02.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_2_____Creating_A_Framework_And_Window_Sm;
-            this.buttonTutorial02.Location = new System.Drawing.Point(10, 16);
+            this.buttonTutorial02.Location = new System.Drawing.Point(21, 6);
             this.buttonTutorial02.Name = "buttonTutorial02";
             this.buttonTutorial02.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial02.TabIndex = 0;
@@ -310,7 +311,7 @@
             this.buttonTutorial46.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial46.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial46.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_46___Glow_Sm;
-            this.buttonTutorial46.Location = new System.Drawing.Point(522, 2060);
+            this.buttonTutorial46.Location = new System.Drawing.Point(533, 2050);
             this.buttonTutorial46.Name = "buttonTutorial46";
             this.buttonTutorial46.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonTutorial46.Size = new System.Drawing.Size(250, 140);
@@ -327,7 +328,7 @@
             this.buttonTutorial28.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial28.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial28.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_28___Screen_Fades_Sm;
-            this.buttonTutorial28.Location = new System.Drawing.Point(522, 1184);
+            this.buttonTutorial28.Location = new System.Drawing.Point(533, 1174);
             this.buttonTutorial28.Name = "buttonTutorial28";
             this.buttonTutorial28.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial28.TabIndex = 26;
@@ -343,7 +344,7 @@
             this.buttonTutorial48.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial48.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial48.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_48___Directional_Shadow_Maps_Sm;
-            this.buttonTutorial48.Location = new System.Drawing.Point(266, 2206);
+            this.buttonTutorial48.Location = new System.Drawing.Point(277, 2196);
             this.buttonTutorial48.Name = "buttonTutorial48";
             this.buttonTutorial48.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial48.TabIndex = 46;
@@ -359,7 +360,7 @@
             this.buttonTutorial43.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial43.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial43.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_43___Projective_Texturing_Sm;
-            this.buttonTutorial43.Location = new System.Drawing.Point(522, 1914);
+            this.buttonTutorial43.Location = new System.Drawing.Point(533, 1904);
             this.buttonTutorial43.Name = "buttonTutorial43";
             this.buttonTutorial43.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial43.TabIndex = 41;
@@ -375,7 +376,7 @@
             this.buttonTutorial45.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial45.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial45.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_45___Managing_Multiple_Shaders_Sm;
-            this.buttonTutorial45.Location = new System.Drawing.Point(266, 2060);
+            this.buttonTutorial45.Location = new System.Drawing.Point(277, 2050);
             this.buttonTutorial45.Name = "buttonTutorial45";
             this.buttonTutorial45.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial45.TabIndex = 43;
@@ -391,7 +392,7 @@
             this.buttonTutorial05.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial05.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial05.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_5_____Texturing_Sm;
-            this.buttonTutorial05.Location = new System.Drawing.Point(10, 162);
+            this.buttonTutorial05.Location = new System.Drawing.Point(21, 152);
             this.buttonTutorial05.Name = "buttonTutorial05";
             this.buttonTutorial05.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial05.TabIndex = 3;
@@ -407,7 +408,7 @@
             this.buttonTutorial47.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial47.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial47.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_47___Picking_Sm;
-            this.buttonTutorial47.Location = new System.Drawing.Point(10, 2206);
+            this.buttonTutorial47.Location = new System.Drawing.Point(21, 2196);
             this.buttonTutorial47.Name = "buttonTutorial47";
             this.buttonTutorial47.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial47.TabIndex = 45;
@@ -423,7 +424,7 @@
             this.buttonTutorial40.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial40.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial40.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_40___Shadow_Mapping_Sm;
-            this.buttonTutorial40.Location = new System.Drawing.Point(522, 1768);
+            this.buttonTutorial40.Location = new System.Drawing.Point(533, 1758);
             this.buttonTutorial40.Name = "buttonTutorial40";
             this.buttonTutorial40.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial40.TabIndex = 38;
@@ -439,7 +440,7 @@
             this.buttonTutorial44.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial44.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial44.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_44___Projected_Light_Maps_Sm;
-            this.buttonTutorial44.Location = new System.Drawing.Point(10, 2060);
+            this.buttonTutorial44.Location = new System.Drawing.Point(21, 2050);
             this.buttonTutorial44.Name = "buttonTutorial44";
             this.buttonTutorial44.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial44.TabIndex = 42;
@@ -455,7 +456,7 @@
             this.buttonTutorial30.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial30.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial30.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_30___Multiple_Point_Lights_Sm;
-            this.buttonTutorial30.Location = new System.Drawing.Point(266, 1330);
+            this.buttonTutorial30.Location = new System.Drawing.Point(277, 1320);
             this.buttonTutorial30.Name = "buttonTutorial30";
             this.buttonTutorial30.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial30.TabIndex = 28;
@@ -471,7 +472,7 @@
             this.buttonTutorial37.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial37.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial37.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_37___Instancing_Sm;
-            this.buttonTutorial37.Location = new System.Drawing.Point(522, 1622);
+            this.buttonTutorial37.Location = new System.Drawing.Point(533, 1612);
             this.buttonTutorial37.Name = "buttonTutorial37";
             this.buttonTutorial37.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial37.TabIndex = 35;
@@ -487,7 +488,7 @@
             this.buttonTutorial25.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial25.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial25.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_25___Texture_Translation_Sm;
-            this.buttonTutorial25.Location = new System.Drawing.Point(522, 1038);
+            this.buttonTutorial25.Location = new System.Drawing.Point(533, 1028);
             this.buttonTutorial25.Name = "buttonTutorial25";
             this.buttonTutorial25.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial25.TabIndex = 23;
@@ -503,7 +504,7 @@
             this.buttonTutorial13.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial13.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial13.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_13___Direct_Input_Sm;
-            this.buttonTutorial13.Location = new System.Drawing.Point(522, 454);
+            this.buttonTutorial13.Location = new System.Drawing.Point(533, 444);
             this.buttonTutorial13.Name = "buttonTutorial13";
             this.buttonTutorial13.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial13.TabIndex = 11;
@@ -519,7 +520,7 @@
             this.buttonTutorial42.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial42.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial42.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_42___Soft_Shadows_Sm;
-            this.buttonTutorial42.Location = new System.Drawing.Point(266, 1914);
+            this.buttonTutorial42.Location = new System.Drawing.Point(277, 1904);
             this.buttonTutorial42.Name = "buttonTutorial42";
             this.buttonTutorial42.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial42.TabIndex = 40;
@@ -535,7 +536,7 @@
             this.buttonTutorial12.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial12.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial12.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_12___Font_Engine_Sm;
-            this.buttonTutorial12.Location = new System.Drawing.Point(266, 454);
+            this.buttonTutorial12.Location = new System.Drawing.Point(277, 444);
             this.buttonTutorial12.Name = "buttonTutorial12";
             this.buttonTutorial12.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial12.TabIndex = 10;
@@ -551,7 +552,7 @@
             this.buttonTutorial39.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial39.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial39.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_39___Particle_Systems_Sm;
-            this.buttonTutorial39.Location = new System.Drawing.Point(266, 1768);
+            this.buttonTutorial39.Location = new System.Drawing.Point(277, 1758);
             this.buttonTutorial39.Name = "buttonTutorial39";
             this.buttonTutorial39.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial39.TabIndex = 37;
@@ -567,7 +568,7 @@
             this.buttonTutorial03.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial03.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial03.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_3_____Initializing_DirectX_11_Sm;
-            this.buttonTutorial03.Location = new System.Drawing.Point(266, 16);
+            this.buttonTutorial03.Location = new System.Drawing.Point(277, 6);
             this.buttonTutorial03.Name = "buttonTutorial03";
             this.buttonTutorial03.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial03.TabIndex = 1;
@@ -583,7 +584,7 @@
             this.buttonTutorial36.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial36.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial36.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_36___Blur_Sm;
-            this.buttonTutorial36.Location = new System.Drawing.Point(266, 1622);
+            this.buttonTutorial36.Location = new System.Drawing.Point(277, 1612);
             this.buttonTutorial36.Name = "buttonTutorial36";
             this.buttonTutorial36.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial36.TabIndex = 34;
@@ -599,7 +600,7 @@
             this.buttonTutorial11.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial11.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial11.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_11___2D_Rendering_Sm;
-            this.buttonTutorial11.Location = new System.Drawing.Point(10, 454);
+            this.buttonTutorial11.Location = new System.Drawing.Point(21, 444);
             this.buttonTutorial11.Name = "buttonTutorial11";
             this.buttonTutorial11.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial11.TabIndex = 9;
@@ -615,7 +616,7 @@
             this.buttonTutorial04.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial04.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial04.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_4_____Buffers__Shaders__And_HLSL_Sm;
-            this.buttonTutorial04.Location = new System.Drawing.Point(522, 16);
+            this.buttonTutorial04.Location = new System.Drawing.Point(533, 6);
             this.buttonTutorial04.Name = "buttonTutorial04";
             this.buttonTutorial04.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial04.TabIndex = 2;
@@ -631,7 +632,7 @@
             this.buttonTutorial10.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial10.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial10.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_10___Specular_Lighting_Sm;
-            this.buttonTutorial10.Location = new System.Drawing.Point(522, 308);
+            this.buttonTutorial10.Location = new System.Drawing.Point(533, 298);
             this.buttonTutorial10.Name = "buttonTutorial10";
             this.buttonTutorial10.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial10.TabIndex = 8;
@@ -647,7 +648,7 @@
             this.buttonTutorial41.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial41.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial41.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_41___Multiple_Light_Shadow_Mapping_Sm;
-            this.buttonTutorial41.Location = new System.Drawing.Point(10, 1914);
+            this.buttonTutorial41.Location = new System.Drawing.Point(21, 1904);
             this.buttonTutorial41.Name = "buttonTutorial41";
             this.buttonTutorial41.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial41.TabIndex = 39;
@@ -663,7 +664,7 @@
             this.buttonTutorial34.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial34.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial34.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_34___Billboarding_Sm;
-            this.buttonTutorial34.Location = new System.Drawing.Point(522, 1476);
+            this.buttonTutorial34.Location = new System.Drawing.Point(533, 1466);
             this.buttonTutorial34.Name = "buttonTutorial34";
             this.buttonTutorial34.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial34.TabIndex = 32;
@@ -679,7 +680,7 @@
             this.buttonTutorial38.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial38.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial38.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_38___Hardware_Tessellation_Sm;
-            this.buttonTutorial38.Location = new System.Drawing.Point(10, 1768);
+            this.buttonTutorial38.Location = new System.Drawing.Point(21, 1758);
             this.buttonTutorial38.Name = "buttonTutorial38";
             this.buttonTutorial38.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial38.TabIndex = 36;
@@ -695,7 +696,7 @@
             this.buttonTutorial09.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial09.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial09.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_9_____Ambient_Lighting_Sm;
-            this.buttonTutorial09.Location = new System.Drawing.Point(266, 308);
+            this.buttonTutorial09.Location = new System.Drawing.Point(277, 298);
             this.buttonTutorial09.Name = "buttonTutorial09";
             this.buttonTutorial09.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial09.TabIndex = 7;
@@ -711,7 +712,7 @@
             this.buttonTutorial35.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial35.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial35.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_35___Depth_Buffer_Sm;
-            this.buttonTutorial35.Location = new System.Drawing.Point(10, 1622);
+            this.buttonTutorial35.Location = new System.Drawing.Point(21, 1612);
             this.buttonTutorial35.Name = "buttonTutorial35";
             this.buttonTutorial35.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial35.TabIndex = 33;
@@ -727,7 +728,7 @@
             this.buttonTutorial07.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial07.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial07.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_7_____3D_Mode_lRendering_Sm;
-            this.buttonTutorial07.Location = new System.Drawing.Point(522, 162);
+            this.buttonTutorial07.Location = new System.Drawing.Point(533, 152);
             this.buttonTutorial07.Name = "buttonTutorial07";
             this.buttonTutorial07.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial07.TabIndex = 5;
@@ -743,7 +744,7 @@
             this.buttonTutorial27.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial27.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial27.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_27___Reflection_Projective_Texturing_Sm;
-            this.buttonTutorial27.Location = new System.Drawing.Point(266, 1184);
+            this.buttonTutorial27.Location = new System.Drawing.Point(277, 1174);
             this.buttonTutorial27.Name = "buttonTutorial27";
             this.buttonTutorial27.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial27.TabIndex = 25;
@@ -759,7 +760,7 @@
             this.buttonTutorial06.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial06.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial06.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_6_____Diffuse_Lighting_Sm;
-            this.buttonTutorial06.Location = new System.Drawing.Point(266, 162);
+            this.buttonTutorial06.Location = new System.Drawing.Point(277, 152);
             this.buttonTutorial06.Name = "buttonTutorial06";
             this.buttonTutorial06.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial06.TabIndex = 4;
@@ -775,7 +776,7 @@
             this.buttonTutorial14.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial14.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial14.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_14___Direct_Sound_Sm;
-            this.buttonTutorial14.Location = new System.Drawing.Point(10, 600);
+            this.buttonTutorial14.Location = new System.Drawing.Point(21, 590);
             this.buttonTutorial14.Name = "buttonTutorial14";
             this.buttonTutorial14.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial14.TabIndex = 12;
@@ -791,7 +792,7 @@
             this.buttonTutorial18.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial18.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial18.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_18___Light_Maps_Sm;
-            this.buttonTutorial18.Location = new System.Drawing.Point(266, 746);
+            this.buttonTutorial18.Location = new System.Drawing.Point(277, 736);
             this.buttonTutorial18.Name = "buttonTutorial18";
             this.buttonTutorial18.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial18.TabIndex = 16;
@@ -807,7 +808,7 @@
             this.buttonTutorial19.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial19.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial19.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_19___Alpha_Mapping_Sm;
-            this.buttonTutorial19.Location = new System.Drawing.Point(522, 746);
+            this.buttonTutorial19.Location = new System.Drawing.Point(533, 736);
             this.buttonTutorial19.Name = "buttonTutorial19";
             this.buttonTutorial19.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial19.TabIndex = 17;
@@ -823,7 +824,7 @@
             this.buttonTutorial33.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial33.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial33.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_33___Fire_Sm;
-            this.buttonTutorial33.Location = new System.Drawing.Point(266, 1476);
+            this.buttonTutorial33.Location = new System.Drawing.Point(277, 1466);
             this.buttonTutorial33.Name = "buttonTutorial33";
             this.buttonTutorial33.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial33.TabIndex = 31;
@@ -839,7 +840,7 @@
             this.buttonTutorial22.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial22.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial22.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_22___Render_To_Texture_Sm;
-            this.buttonTutorial22.Location = new System.Drawing.Point(522, 892);
+            this.buttonTutorial22.Location = new System.Drawing.Point(533, 882);
             this.buttonTutorial22.Name = "buttonTutorial22";
             this.buttonTutorial22.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial22.TabIndex = 20;
@@ -855,7 +856,7 @@
             this.buttonTutorial29.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial29.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial29.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_29___Water_Sm;
-            this.buttonTutorial29.Location = new System.Drawing.Point(10, 1330);
+            this.buttonTutorial29.Location = new System.Drawing.Point(21, 1320);
             this.buttonTutorial29.Name = "buttonTutorial29";
             this.buttonTutorial29.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial29.TabIndex = 27;
@@ -871,7 +872,7 @@
             this.buttonTutorial17.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial17.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial17.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_17___MultiTexturing_And_TextureArrays_Sm;
-            this.buttonTutorial17.Location = new System.Drawing.Point(10, 746);
+            this.buttonTutorial17.Location = new System.Drawing.Point(21, 736);
             this.buttonTutorial17.Name = "buttonTutorial17";
             this.buttonTutorial17.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial17.TabIndex = 15;
@@ -887,7 +888,7 @@
             this.buttonTutorial16.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial16.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial16.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_16___Frustum_Culling_Sm;
-            this.buttonTutorial16.Location = new System.Drawing.Point(522, 600);
+            this.buttonTutorial16.Location = new System.Drawing.Point(533, 590);
             this.buttonTutorial16.Name = "buttonTutorial16";
             this.buttonTutorial16.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial16.TabIndex = 14;
@@ -903,7 +904,7 @@
             this.buttonTutorial24.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial24.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial24.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_24___Clipping_Planes_Sm;
-            this.buttonTutorial24.Location = new System.Drawing.Point(266, 1038);
+            this.buttonTutorial24.Location = new System.Drawing.Point(277, 1028);
             this.buttonTutorial24.Name = "buttonTutorial24";
             this.buttonTutorial24.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial24.TabIndex = 22;
@@ -919,7 +920,7 @@
             this.buttonTutorial26.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial26.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial26.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_26___Transparency_Sm;
-            this.buttonTutorial26.Location = new System.Drawing.Point(10, 1184);
+            this.buttonTutorial26.Location = new System.Drawing.Point(21, 1174);
             this.buttonTutorial26.Name = "buttonTutorial26";
             this.buttonTutorial26.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial26.TabIndex = 24;
@@ -935,7 +936,7 @@
             this.buttonTutorial15.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial15.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial15.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_15___FPS_CPU_Usage_And_Timers_Sm;
-            this.buttonTutorial15.Location = new System.Drawing.Point(266, 600);
+            this.buttonTutorial15.Location = new System.Drawing.Point(277, 590);
             this.buttonTutorial15.Name = "buttonTutorial15";
             this.buttonTutorial15.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial15.TabIndex = 13;
@@ -951,7 +952,7 @@
             this.buttonTutorial20.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial20.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial20.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_20___Bump_Mapping_Sm;
-            this.buttonTutorial20.Location = new System.Drawing.Point(10, 892);
+            this.buttonTutorial20.Location = new System.Drawing.Point(21, 882);
             this.buttonTutorial20.Name = "buttonTutorial20";
             this.buttonTutorial20.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial20.TabIndex = 18;
@@ -967,7 +968,7 @@
             this.buttonTutorial23.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial23.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial23.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_23___Fog_Sm;
-            this.buttonTutorial23.Location = new System.Drawing.Point(10, 1038);
+            this.buttonTutorial23.Location = new System.Drawing.Point(21, 1028);
             this.buttonTutorial23.Name = "buttonTutorial23";
             this.buttonTutorial23.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial23.TabIndex = 21;
@@ -983,7 +984,7 @@
             this.buttonTutorial32.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial32.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial32.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_32___Glass_And_Ice_Sm;
-            this.buttonTutorial32.Location = new System.Drawing.Point(10, 1476);
+            this.buttonTutorial32.Location = new System.Drawing.Point(21, 1466);
             this.buttonTutorial32.Name = "buttonTutorial32";
             this.buttonTutorial32.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial32.TabIndex = 30;
@@ -999,7 +1000,7 @@
             this.buttonTutorial21.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTutorial21.ForeColor = System.Drawing.Color.White;
             this.buttonTutorial21.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_21___Specular_Mapping_Sm;
-            this.buttonTutorial21.Location = new System.Drawing.Point(266, 892);
+            this.buttonTutorial21.Location = new System.Drawing.Point(277, 882);
             this.buttonTutorial21.Name = "buttonTutorial21";
             this.buttonTutorial21.Size = new System.Drawing.Size(250, 140);
             this.buttonTutorial21.TabIndex = 19;
@@ -1351,6 +1352,7 @@
             this.tabPage3.Controls.Add(this.buttonS2Tutorial02);
             this.tabPage3.Controls.Add(this.buttonS2TutorialTerrain01);
             this.tabPage3.Controls.Add(this.buttonS2Tutorial03);
+            this.tabPage3.Controls.Add(this.buttonS2TerrainTutorial10);
             this.tabPage3.Controls.Add(this.buttonS2TerrainTutorial09);
             this.tabPage3.Controls.Add(this.buttonS2TerrainTutorial08);
             this.tabPage3.Controls.Add(this.buttonS2TerrainTutorial07);
@@ -1374,7 +1376,7 @@
             this.buttonS2Tutorial05.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonS2Tutorial05.ForeColor = System.Drawing.Color.White;
             this.buttonS2Tutorial05.Image = ((System.Drawing.Image)(resources.GetObject("buttonS2Tutorial05.Image")));
-            this.buttonS2Tutorial05.Location = new System.Drawing.Point(14, 161);
+            this.buttonS2Tutorial05.Location = new System.Drawing.Point(14, 149);
             this.buttonS2Tutorial05.Name = "buttonS2Tutorial05";
             this.buttonS2Tutorial05.Size = new System.Drawing.Size(250, 140);
             this.buttonS2Tutorial05.TabIndex = 3;
@@ -1390,7 +1392,7 @@
             this.buttonS2Tutorial02.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonS2Tutorial02.ForeColor = System.Drawing.Color.White;
             this.buttonS2Tutorial02.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_2_____Creating_A_Framework_And_Window_Sm;
-            this.buttonS2Tutorial02.Location = new System.Drawing.Point(14, 15);
+            this.buttonS2Tutorial02.Location = new System.Drawing.Point(14, 3);
             this.buttonS2Tutorial02.Name = "buttonS2Tutorial02";
             this.buttonS2Tutorial02.Size = new System.Drawing.Size(250, 140);
             this.buttonS2Tutorial02.TabIndex = 3;
@@ -1407,7 +1409,7 @@
             this.buttonS2TutorialTerrain01.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonS2TutorialTerrain01.ForeColor = System.Drawing.Color.White;
             this.buttonS2TutorialTerrain01.Image = global::SharpDXWinForm.Properties.Resources.Series_2____Terrain_Tutorial_1_____Grid_and_Camera_Movement_Sm;
-            this.buttonS2TutorialTerrain01.Location = new System.Drawing.Point(270, 161);
+            this.buttonS2TutorialTerrain01.Location = new System.Drawing.Point(270, 149);
             this.buttonS2TutorialTerrain01.Name = "buttonS2TutorialTerrain01";
             this.buttonS2TutorialTerrain01.Size = new System.Drawing.Size(250, 140);
             this.buttonS2TutorialTerrain01.TabIndex = 4;
@@ -1423,7 +1425,7 @@
             this.buttonS2Tutorial03.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonS2Tutorial03.ForeColor = System.Drawing.Color.White;
             this.buttonS2Tutorial03.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_3_____Initializing_DirectX_11_Sm;
-            this.buttonS2Tutorial03.Location = new System.Drawing.Point(270, 15);
+            this.buttonS2Tutorial03.Location = new System.Drawing.Point(270, 3);
             this.buttonS2Tutorial03.Name = "buttonS2Tutorial03";
             this.buttonS2Tutorial03.Size = new System.Drawing.Size(250, 140);
             this.buttonS2Tutorial03.TabIndex = 4;
@@ -1431,6 +1433,23 @@
             this.buttonS2Tutorial03.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.buttonS2Tutorial03.UseVisualStyleBackColor = true;
             this.buttonS2Tutorial03.Click += new System.EventHandler(this.buttonS2Tutorial3_Click);
+            // 
+            // buttonS2TerrainTutorial10
+            // 
+            this.buttonS2TerrainTutorial10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonS2TerrainTutorial10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonS2TerrainTutorial10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonS2TerrainTutorial10.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonS2TerrainTutorial10.ForeColor = System.Drawing.Color.White;
+            this.buttonS2TerrainTutorial10.Image = global::SharpDXWinForm.Properties.Resources.Series_2____Terrain_Tutorial_10_____Terrain_Cell_Culling_Sm;
+            this.buttonS2TerrainTutorial10.Location = new System.Drawing.Point(270, 595);
+            this.buttonS2TerrainTutorial10.Name = "buttonS2TerrainTutorial10";
+            this.buttonS2TerrainTutorial10.Size = new System.Drawing.Size(250, 140);
+            this.buttonS2TerrainTutorial10.TabIndex = 5;
+            this.buttonS2TerrainTutorial10.Text = "Series 2 Terrain Tutorial 10: Terrain Cell Culling";
+            this.buttonS2TerrainTutorial10.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonS2TerrainTutorial10.UseVisualStyleBackColor = false;
+            this.buttonS2TerrainTutorial10.Click += new System.EventHandler(this.buttonS2TerrainTutorial10_Click);
             // 
             // buttonS2TerrainTutorial09
             // 
@@ -1440,7 +1459,7 @@
             this.buttonS2TerrainTutorial09.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonS2TerrainTutorial09.ForeColor = System.Drawing.Color.White;
             this.buttonS2TerrainTutorial09.Image = global::SharpDXWinForm.Properties.Resources.Series_2____Terrain_Tutorial_9___Terrain_Cells_Sm_;
-            this.buttonS2TerrainTutorial09.Location = new System.Drawing.Point(14, 603);
+            this.buttonS2TerrainTutorial09.Location = new System.Drawing.Point(14, 591);
             this.buttonS2TerrainTutorial09.Name = "buttonS2TerrainTutorial09";
             this.buttonS2TerrainTutorial09.Size = new System.Drawing.Size(250, 140);
             this.buttonS2TerrainTutorial09.TabIndex = 5;
@@ -1457,7 +1476,7 @@
             this.buttonS2TerrainTutorial08.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonS2TerrainTutorial08.ForeColor = System.Drawing.Color.White;
             this.buttonS2TerrainTutorial08.Image = global::SharpDXWinForm.Properties.Resources.Series_2____Terrain_Tutorial_8___RAW_Height_Mapss_Sm_;
-            this.buttonS2TerrainTutorial08.Location = new System.Drawing.Point(526, 465);
+            this.buttonS2TerrainTutorial08.Location = new System.Drawing.Point(526, 453);
             this.buttonS2TerrainTutorial08.Name = "buttonS2TerrainTutorial08";
             this.buttonS2TerrainTutorial08.Size = new System.Drawing.Size(250, 140);
             this.buttonS2TerrainTutorial08.TabIndex = 5;
@@ -1474,7 +1493,7 @@
             this.buttonS2TerrainTutorial07.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonS2TerrainTutorial07.ForeColor = System.Drawing.Color.White;
             this.buttonS2TerrainTutorial07.Image = global::SharpDXWinForm.Properties.Resources.Series_2____Terrain_Tutorial_7___Sky_Domes_Sm_;
-            this.buttonS2TerrainTutorial07.Location = new System.Drawing.Point(270, 461);
+            this.buttonS2TerrainTutorial07.Location = new System.Drawing.Point(270, 449);
             this.buttonS2TerrainTutorial07.Name = "buttonS2TerrainTutorial07";
             this.buttonS2TerrainTutorial07.Size = new System.Drawing.Size(250, 140);
             this.buttonS2TerrainTutorial07.TabIndex = 5;
@@ -1491,7 +1510,7 @@
             this.buttonS2TerrainTutorial06.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonS2TerrainTutorial06.ForeColor = System.Drawing.Color.White;
             this.buttonS2TerrainTutorial06.Image = global::SharpDXWinForm.Properties.Resources.Series_2____Terrain_Tutorial_6_____Terrain_Normal_Mapping_Sm;
-            this.buttonS2TerrainTutorial06.Location = new System.Drawing.Point(14, 457);
+            this.buttonS2TerrainTutorial06.Location = new System.Drawing.Point(14, 445);
             this.buttonS2TerrainTutorial06.Name = "buttonS2TerrainTutorial06";
             this.buttonS2TerrainTutorial06.Size = new System.Drawing.Size(250, 140);
             this.buttonS2TerrainTutorial06.TabIndex = 5;
@@ -1508,7 +1527,7 @@
             this.buttonS2TerrainTutorial05.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonS2TerrainTutorial05.ForeColor = System.Drawing.Color.White;
             this.buttonS2TerrainTutorial05.Image = global::SharpDXWinForm.Properties.Resources.Series_2____Terrain_Tutorial_5_____Color_Mapped_Terrain_Sm;
-            this.buttonS2TerrainTutorial05.Location = new System.Drawing.Point(526, 307);
+            this.buttonS2TerrainTutorial05.Location = new System.Drawing.Point(526, 295);
             this.buttonS2TerrainTutorial05.Name = "buttonS2TerrainTutorial05";
             this.buttonS2TerrainTutorial05.Size = new System.Drawing.Size(250, 140);
             this.buttonS2TerrainTutorial05.TabIndex = 5;
@@ -1525,7 +1544,7 @@
             this.buttonS2TerrainTutorial04.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonS2TerrainTutorial04.ForeColor = System.Drawing.Color.White;
             this.buttonS2TerrainTutorial04.Image = global::SharpDXWinForm.Properties.Resources.Series_2____Terrain_Tutorial_4_____Terrain_Lighting_Sm;
-            this.buttonS2TerrainTutorial04.Location = new System.Drawing.Point(270, 307);
+            this.buttonS2TerrainTutorial04.Location = new System.Drawing.Point(270, 295);
             this.buttonS2TerrainTutorial04.Name = "buttonS2TerrainTutorial04";
             this.buttonS2TerrainTutorial04.Size = new System.Drawing.Size(250, 140);
             this.buttonS2TerrainTutorial04.TabIndex = 5;
@@ -1542,7 +1561,7 @@
             this.buttonS2TerrainTutorial03.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonS2TerrainTutorial03.ForeColor = System.Drawing.Color.White;
             this.buttonS2TerrainTutorial03.Image = global::SharpDXWinForm.Properties.Resources.Series_2____Terrain_Tutorial_3_____Terrain_Texturing_Sm;
-            this.buttonS2TerrainTutorial03.Location = new System.Drawing.Point(14, 307);
+            this.buttonS2TerrainTutorial03.Location = new System.Drawing.Point(14, 295);
             this.buttonS2TerrainTutorial03.Name = "buttonS2TerrainTutorial03";
             this.buttonS2TerrainTutorial03.Size = new System.Drawing.Size(250, 140);
             this.buttonS2TerrainTutorial03.TabIndex = 5;
@@ -1559,7 +1578,7 @@
             this.buttonS2TerrainTutorial02.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonS2TerrainTutorial02.ForeColor = System.Drawing.Color.White;
             this.buttonS2TerrainTutorial02.Image = global::SharpDXWinForm.Properties.Resources.Series_2____Terrain_Tutorial_2_____Height_Mapst_Sm;
-            this.buttonS2TerrainTutorial02.Location = new System.Drawing.Point(526, 161);
+            this.buttonS2TerrainTutorial02.Location = new System.Drawing.Point(526, 149);
             this.buttonS2TerrainTutorial02.Name = "buttonS2TerrainTutorial02";
             this.buttonS2TerrainTutorial02.Size = new System.Drawing.Size(250, 140);
             this.buttonS2TerrainTutorial02.TabIndex = 5;
@@ -1575,7 +1594,7 @@
             this.buttonS2Tutorial04.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonS2Tutorial04.ForeColor = System.Drawing.Color.White;
             this.buttonS2Tutorial04.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_4_____Buffers__Shaders__And_HLSL_Sm;
-            this.buttonS2Tutorial04.Location = new System.Drawing.Point(526, 15);
+            this.buttonS2Tutorial04.Location = new System.Drawing.Point(526, 3);
             this.buttonS2Tutorial04.Name = "buttonS2Tutorial04";
             this.buttonS2Tutorial04.Size = new System.Drawing.Size(250, 140);
             this.buttonS2Tutorial04.TabIndex = 5;
@@ -1880,5 +1899,6 @@
         private System.Windows.Forms.Button buttonS2TerrainTutorial07;
         private System.Windows.Forms.Button buttonS2TerrainTutorial08;
         private System.Windows.Forms.Button buttonS2TerrainTutorial09;
+        private System.Windows.Forms.Button buttonS2TerrainTutorial10;
     }
 }

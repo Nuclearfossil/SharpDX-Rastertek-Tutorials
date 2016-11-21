@@ -43,6 +43,19 @@ namespace DSharpDXRastertek.TutTerr06.Graphics.Data
             _Planes[5] = new Plane(matrix.M14 + matrix.M12, matrix.M24 + matrix.M22, matrix.M34 + matrix.M32, matrix.M44 + matrix.M42);
             _Planes[5].Normalize();
         }
+        public bool CheckPoint(float x, float y, float z)
+        {
+            return CheckPoint(new Vector3(x, y, z));
+        }
+        private bool CheckPoint(Vector3 point)
+        {
+            // Check if the point is inside all six planes of the view frustum.
+            for (var i = 0; i < 6; i++)
+                if (Plane.DotCoordinate(_Planes[i], point) < 0f)
+                    return false;
+
+            return true;
+        }
         public bool CheckCube(Vector3 center, float radius)
         {
             return CheckCube(center.X, center.Y, center.Z, radius);
@@ -71,6 +84,51 @@ namespace DSharpDXRastertek.TutTerr06.Graphics.Data
 
                 return false;
             }
+            return true;
+        }
+        public bool CheckSphere(Vector3 center, float radius)
+        {
+            // Check if the radius of the sphere is inside the view frustum.
+            for (int i = 0; i < 6; i++)
+            {
+                if (Plane.DotCoordinate(_Planes[i], center) < -radius)
+                    return false;
+            }
+            return true;
+        }
+        private bool CheckSphere(float x, float y, float z, float radius)
+        {
+            return CheckSphere(new Vector3(x, y, z), radius);
+        }
+        public bool CheckRectangle(Vector3 center, Vector3 size)
+        {
+            return CheckRectangle(center.X, center.Y, center.Z, size.X, size.Y, size.Z);
+        }
+        private bool CheckRectangle(float xCenter, float yCenter, float zCenter, float xSize, float ySize, float zSize)
+        {
+            // Check if any of the 6 planes of the rectangle are inside the view frustum.
+            for (var i = 0; i < 6; i++)
+            {
+                if (Plane.DotCoordinate(_Planes[i], new Vector3(xCenter - xSize, yCenter - ySize, zCenter - zSize)) >= 0f)
+                    continue;
+                if (Plane.DotCoordinate(_Planes[i], new Vector3(xCenter + xSize, yCenter - ySize, zCenter - zSize)) >= 0f)
+                    continue;
+                if (Plane.DotCoordinate(_Planes[i], new Vector3(xCenter - xSize, yCenter + ySize, zCenter - zSize)) >= 0f)
+                    continue;
+                if (Plane.DotCoordinate(_Planes[i], new Vector3(xCenter + xSize, yCenter + ySize, zCenter - zSize)) >= 0f)
+                    continue;
+                if (Plane.DotCoordinate(_Planes[i], new Vector3(xCenter - xSize, yCenter - ySize, zCenter + zSize)) >= 0f)
+                    continue;
+                if (Plane.DotCoordinate(_Planes[i], new Vector3(xCenter + xSize, yCenter - ySize, zCenter + zSize)) >= 0f)
+                    continue;
+                if (Plane.DotCoordinate(_Planes[i], new Vector3(xCenter - xSize, yCenter + ySize, zCenter + zSize)) >= 0f)
+                    continue;
+                if (Plane.DotCoordinate(_Planes[i], new Vector3(xCenter + xSize, yCenter + ySize, zCenter + zSize)) >= 0f)
+                    continue;
+
+                return false;
+            }
+
             return true;
         }
     }

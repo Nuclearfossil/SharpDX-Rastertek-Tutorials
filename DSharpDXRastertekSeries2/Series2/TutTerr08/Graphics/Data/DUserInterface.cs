@@ -75,8 +75,12 @@ namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Data
         }
         public void ShutDown()
         {
+            PreviousPositions = null;
             // Release the position text strings.
+            foreach (DText sent in VideoStrings)
+                sent?.Shutdown();
             VideoStrings = null;
+
             // Release the position text strings.
             foreach (DText sentence in PositionStrings)
                 sentence?.Shutdown();
