@@ -68,7 +68,7 @@ namespace DSharpDXRastertek.Series2.TutTerr11.Graphics
                     BufferCount = 1,
                     ModeDescription = new ModeDescription(configuration.Width, configuration.Height, rational, Format.R8G8B8A8_UNorm) { Scaling = DisplayModeScaling.Unspecified, ScanlineOrdering = DisplayModeScanlineOrder.Unspecified },
                     Usage = Usage.RenderTargetOutput,
-                    OutputHandle = windowHandle,
+                    OutputHandle = windowHandle, 
                     SampleDescription = new SampleDescription(1, 0),
                     IsWindowed = !DSystemConfiguration.FullScreen,
                     Flags = SwapChainFlags.None,

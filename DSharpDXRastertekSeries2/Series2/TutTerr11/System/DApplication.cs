@@ -8,7 +8,7 @@ namespace DSharpDXRastertek.Series2.TutTerr11.System
 {
     public class DApplication
     {
-        // Properties
+        // Properties 
         public DInput Input { get; private set; }
         private DDX11 D3D { get; set; }
         public DTimer Timer { get; set; }
