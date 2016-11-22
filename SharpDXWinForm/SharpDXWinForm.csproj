@@ -386,6 +386,7 @@
     <None Include="Resources\Series 2 -- Terrain Tutorial 10  -  Terrain Cell Culling Sm.png" />
     <None Include="Resources\Series 2 -- Terrain Tutorial 11  -  Height Based Movemen Smt.png" />
     <None Include="Resources\Series 2 -- Terrain Tutorial 12  -  Terrain Mini-Maps Sm.png" />
+    <None Include="Resources\Series 2 -- Terrain Tutorial 13  -  Procedural Terrain Texturing Sm.png" />
     <Content Include="Series1\Tut14\Data\sound01.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

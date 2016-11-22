@@ -75,7 +75,7 @@ namespace DSharpDXRastertek.Series2.TutTerr13.Graphics
             // Set wire frame rendering initially to enabled.
             WireFrame = false;
             // Set the rendering of cell lines initially to enabled.
-            CellLines = true;
+            CellLines = false;
             // Set the user locked to the terrain height for movement.
             HeightLocked = true;
 
@@ -157,14 +157,17 @@ namespace DSharpDXRastertek.Series2.TutTerr13.Graphics
             // Do the terrain frame processing.
             Terrain.Frame();
 
-            float height = 99.0f;
             // If the height is locked to the terrain then position the camera on top of it.
             if (HeightLocked)
-                Terrain.GetHeightAtPosition(Position.PositionX, Position.PositionZ, out height);
+            {
+                float height;
+                if (Terrain.GetHeightAtPosition(Position.PositionX, Position.PositionZ, out height))
+                {
+                    Position.SetPosition(Position.PositionX, height + 1.0f, Position.PositionZ);
+                    Camera.SetPosition(Position.PositionX, height + 1.0f, Position.PositionZ);
+                }
+            }
                
-            Position.SetPosition(Position.PositionX, height + 1.0f, Position.PositionZ);
-            Camera.SetPosition(Position.PositionX, height + 1.0f, Position.PositionZ);
-
             // Render the graphics.
             if (!Render(direct3D, shaderManager, textureManager))
                 return false;
