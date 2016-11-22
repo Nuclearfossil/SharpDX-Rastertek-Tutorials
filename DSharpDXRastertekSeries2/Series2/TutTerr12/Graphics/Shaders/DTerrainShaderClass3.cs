@@ -21,7 +21,6 @@ namespace DSharpDXRastertek.Series2.TutTerr12.Graphics.Shaders
         [StructLayout(LayoutKind.Sequential)]
         internal struct DLightBuffer
         {
-            // public Vector4 ambientColor;
             public Vector4 diffuseColor;
             public Vector3 lightDirection;
             public float padding;
@@ -272,12 +271,9 @@ namespace DSharpDXRastertek.Series2.TutTerr12.Graphics.Shaders
                 // Copy the lighting variables into the constant buffer.
                 DLightBuffer lightBuffer = new DLightBuffer()
                 {
-                    // ambientColor = ambiant,
                     diffuseColor = diffuse,
                     lightDirection = lightDirection,
                     padding = 0.0f
-                    // specularColor = specularColor,
-                    // specularPower = specularPower
                 };
                 mappedResource.Write(lightBuffer);
 

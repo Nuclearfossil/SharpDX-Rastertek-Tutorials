@@ -127,6 +127,7 @@
             this.checkBoxTimer = new System.Windows.Forms.CheckBox();
             this.numericUpDownTimeInSeconds = new System.Windows.Forms.NumericUpDown();
             this.buttonRunPerfTests = new System.Windows.Forms.Button();
+            this.buttonS2TerrainTutorial13 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -1354,6 +1355,7 @@
             this.tabPage3.Controls.Add(this.buttonS2Tutorial02);
             this.tabPage3.Controls.Add(this.buttonS2TerrainTutorial01);
             this.tabPage3.Controls.Add(this.buttonS2Tutorial03);
+            this.tabPage3.Controls.Add(this.buttonS2TerrainTutorial13);
             this.tabPage3.Controls.Add(this.buttonS2TerrainTutorial12);
             this.tabPage3.Controls.Add(this.buttonS2TerrainTutorial11);
             this.tabPage3.Controls.Add(this.buttonS2TerrainTutorial10);
@@ -1800,6 +1802,23 @@
             this.buttonRunPerfTests.UseVisualStyleBackColor = false;
             this.buttonRunPerfTests.Click += new System.EventHandler(this.buttonRunPerfTests_Click);
             // 
+            // buttonS2TerrainTutorial13
+            // 
+            this.buttonS2TerrainTutorial13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonS2TerrainTutorial13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonS2TerrainTutorial13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonS2TerrainTutorial13.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonS2TerrainTutorial13.ForeColor = System.Drawing.Color.White;
+            this.buttonS2TerrainTutorial13.Image = global::SharpDXWinForm.Properties.Resources.Series_2____Terrain_Tutorial_12_____Terrain_Mini_Maps_Sm;
+            this.buttonS2TerrainTutorial13.Location = new System.Drawing.Point(270, 741);
+            this.buttonS2TerrainTutorial13.Name = "buttonS2TerrainTutorial13";
+            this.buttonS2TerrainTutorial13.Size = new System.Drawing.Size(250, 140);
+            this.buttonS2TerrainTutorial13.TabIndex = 5;
+            this.buttonS2TerrainTutorial13.Text = "Series 2 Terrain Tutorial 13: Procedural Terrain Texturing";
+            this.buttonS2TerrainTutorial13.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonS2TerrainTutorial13.UseVisualStyleBackColor = false;
+            this.buttonS2TerrainTutorial13.Click += new System.EventHandler(this.buttonS2TerrainTutorial13_Click);
+            // 
             // SharpDXRastertekTutorialsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -1940,5 +1959,6 @@
         private System.Windows.Forms.Button buttonS2TerrainTutorial10;
         private System.Windows.Forms.Button buttonS2TerrainTutorial11;
         private System.Windows.Forms.Button buttonS2TerrainTutorial12;
+        private System.Windows.Forms.Button buttonS2TerrainTutorial13;
     }
 }

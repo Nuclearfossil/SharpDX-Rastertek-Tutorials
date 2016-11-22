@@ -377,6 +377,34 @@
     <Compile Include="Series2\TutTerr12\System\DSystem.cs" />
     <Compile Include="Series2\TutTerr12\System\DSystemConfiguration.cs" />
     <Compile Include="Series2\TutTerr12\System\DTimer.cs" />
+    <Compile Include="Series2\TutTerr13\Graphics\cAMERA\DCamera.cs" />
+    <Compile Include="Series2\TutTerr13\Graphics\Data\DFont.cs" />
+    <Compile Include="Series2\TutTerr13\Graphics\Data\DFrustumClass1.cs" />
+    <Compile Include="Series2\TutTerr13\Graphics\Data\DLightClass3.cs" />
+    <Compile Include="Series2\TutTerr13\Graphics\Data\DUserInterface.cs" />
+    <Compile Include="Series2\TutTerr13\Graphics\DDX11.cs" />
+    <Compile Include="Series2\TutTerr13\Graphics\DZone.cs" />
+    <Compile Include="Series2\TutTerr13\Graphics\Input\DInput.cs" />
+    <Compile Include="Series2\TutTerr13\Graphics\Input\DPosition.cs" />
+    <Compile Include="Series2\TutTerr13\Graphics\Models\DBitmap.cs" />
+    <Compile Include="Series2\TutTerr13\Graphics\Models\DMiniMap.cs" />
+    <Compile Include="Series2\TutTerr13\Graphics\Models\DSkyDome.cs" />
+    <Compile Include="Series2\TutTerr13\Graphics\Models\DTerrain.cs" />
+    <Compile Include="Series2\TutTerr13\Graphics\Models\DTerrainCell.cs" />
+    <Compile Include="Series2\TutTerr13\Graphics\Models\DText.cs" />
+    <Compile Include="Series2\TutTerr13\Graphics\Models\DTexture.cs" />
+    <Compile Include="Series2\TutTerr13\Graphics\Models\DTextureManager.cs" />
+    <Compile Include="Series2\TutTerr13\Graphics\Shaders\DColorShader.cs" />
+    <Compile Include="Series2\TutTerr13\Graphics\Shaders\DFontShader.cs" />
+    <Compile Include="Series2\TutTerr13\Graphics\Shaders\DShaderManager.cs" />
+    <Compile Include="Series2\TutTerr13\Graphics\Shaders\DSkyDomeShaderClass.cs" />
+    <Compile Include="Series2\TutTerr13\Graphics\Shaders\DTerrainShaderClass3.cs" />
+    <Compile Include="Series2\TutTerr13\Graphics\Shaders\DTextureShader.cs" />
+    <Compile Include="Series2\TutTerr13\System\DApplication.cs" />
+    <Compile Include="Series2\TutTerr13\System\DFPS.cs" />
+    <Compile Include="Series2\TutTerr13\System\DSystem.cs" />
+    <Compile Include="Series2\TutTerr13\System\DSystemConfiguration.cs" />
+    <Compile Include="Series2\TutTerr13\System\DTimer.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
