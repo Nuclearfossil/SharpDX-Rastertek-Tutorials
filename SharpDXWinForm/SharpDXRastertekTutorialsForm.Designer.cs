@@ -32,26 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.buttonTutorial08 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.buttonTerrainTutorial15 = new System.Windows.Forms.Button();
-            this.buttonTerrainTutorial12 = new System.Windows.Forms.Button();
-            this.buttonTerrainTutorial09 = new System.Windows.Forms.Button();
-            this.buttonTerrainTutorial06 = new System.Windows.Forms.Button();
-            this.buttonTerrainTutorial03 = new System.Windows.Forms.Button();
-            this.buttonTerrainTutorial18 = new System.Windows.Forms.Button();
-            this.buttonTerrainTutorial19 = new System.Windows.Forms.Button();
-            this.buttonTerrainTutorial17 = new System.Windows.Forms.Button();
-            this.buttonTerrainTutorial16 = new System.Windows.Forms.Button();
-            this.buttonTerrainTutorial14 = new System.Windows.Forms.Button();
-            this.buttonTerrainTutorial11 = new System.Windows.Forms.Button();
-            this.buttonTerrainTutorial08 = new System.Windows.Forms.Button();
-            this.buttonTerrainTutorial05 = new System.Windows.Forms.Button();
-            this.buttonTerrainTutorial02 = new System.Windows.Forms.Button();
-            this.buttonTerrainTutorial13 = new System.Windows.Forms.Button();
-            this.buttonTerrainTutorial10 = new System.Windows.Forms.Button();
-            this.buttonTerrainTutorial07 = new System.Windows.Forms.Button();
-            this.buttonTerrainTutorial04 = new System.Windows.Forms.Button();
-            this.buttonTerrainTutorial01 = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.buttonTutorial50 = new System.Windows.Forms.Button();
             this.buttonTutorial31 = new System.Windows.Forms.Button();
@@ -101,11 +81,32 @@
             this.buttonTutorial23 = new System.Windows.Forms.Button();
             this.buttonTutorial32 = new System.Windows.Forms.Button();
             this.buttonTutorial21 = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.buttonTerrainTutorial15 = new System.Windows.Forms.Button();
+            this.buttonTerrainTutorial12 = new System.Windows.Forms.Button();
+            this.buttonTerrainTutorial09 = new System.Windows.Forms.Button();
+            this.buttonTerrainTutorial06 = new System.Windows.Forms.Button();
+            this.buttonTerrainTutorial03 = new System.Windows.Forms.Button();
+            this.buttonTerrainTutorial18 = new System.Windows.Forms.Button();
+            this.buttonTerrainTutorial19 = new System.Windows.Forms.Button();
+            this.buttonTerrainTutorial17 = new System.Windows.Forms.Button();
+            this.buttonTerrainTutorial16 = new System.Windows.Forms.Button();
+            this.buttonTerrainTutorial14 = new System.Windows.Forms.Button();
+            this.buttonTerrainTutorial11 = new System.Windows.Forms.Button();
+            this.buttonTerrainTutorial08 = new System.Windows.Forms.Button();
+            this.buttonTerrainTutorial05 = new System.Windows.Forms.Button();
+            this.buttonTerrainTutorial02 = new System.Windows.Forms.Button();
+            this.buttonTerrainTutorial13 = new System.Windows.Forms.Button();
+            this.buttonTerrainTutorial10 = new System.Windows.Forms.Button();
+            this.buttonTerrainTutorial07 = new System.Windows.Forms.Button();
+            this.buttonTerrainTutorial04 = new System.Windows.Forms.Button();
+            this.buttonTerrainTutorial01 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.buttonS2Tutorial05 = new System.Windows.Forms.Button();
             this.buttonS2Tutorial02 = new System.Windows.Forms.Button();
             this.buttonS2TerrainTutorial01 = new System.Windows.Forms.Button();
             this.buttonS2Tutorial03 = new System.Windows.Forms.Button();
+            this.buttonS2TerrainTutorial12 = new System.Windows.Forms.Button();
             this.buttonS2TerrainTutorial11 = new System.Windows.Forms.Button();
             this.buttonS2TerrainTutorial10 = new System.Windows.Forms.Button();
             this.buttonS2TerrainTutorial09 = new System.Windows.Forms.Button();
@@ -127,8 +128,8 @@
             this.numericUpDownTimeInSeconds = new System.Windows.Forms.NumericUpDown();
             this.buttonRunPerfTests = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWidth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHeight)).BeginInit();
@@ -179,341 +180,6 @@
             this.tabControl1.ShowToolTips = true;
             this.tabControl1.Size = new System.Drawing.Size(814, 504);
             this.tabControl1.TabIndex = 1;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.AutoScroll = true;
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial15);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial12);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial09);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial06);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial03);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial18);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial19);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial17);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial16);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial14);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial11);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial08);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial05);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial02);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial13);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial10);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial07);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial04);
-            this.tabPage2.Controls.Add(this.buttonTerrainTutorial01);
-            this.tabPage2.ForeColor = System.Drawing.Color.Black;
-            this.tabPage2.Location = new System.Drawing.Point(4, 32);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(806, 468);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Series I Terrain Tutorials";
-            // 
-            // buttonTerrainTutorial15
-            // 
-            this.buttonTerrainTutorial15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTerrainTutorial15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTerrainTutorial15.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTerrainTutorial15.ForeColor = System.Drawing.Color.White;
-            this.buttonTerrainTutorial15.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_15___Terrain_Bump_Mapping_Sm;
-            this.buttonTerrainTutorial15.Location = new System.Drawing.Point(519, 598);
-            this.buttonTerrainTutorial15.Name = "buttonTerrainTutorial15";
-            this.buttonTerrainTutorial15.Size = new System.Drawing.Size(250, 140);
-            this.buttonTerrainTutorial15.TabIndex = 14;
-            this.buttonTerrainTutorial15.Text = "Terrain Tutorial 15: Terrain Bump Mapping";
-            this.buttonTerrainTutorial15.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTerrainTutorial15.UseVisualStyleBackColor = true;
-            this.buttonTerrainTutorial15.Click += new System.EventHandler(this.buttonTerrainTutorial15_Click);
-            // 
-            // buttonTerrainTutorial12
-            // 
-            this.buttonTerrainTutorial12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTerrainTutorial12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTerrainTutorial12.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTerrainTutorial12.ForeColor = System.Drawing.Color.White;
-            this.buttonTerrainTutorial12.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_12___Perturbed_Clouds_Sm;
-            this.buttonTerrainTutorial12.Location = new System.Drawing.Point(519, 452);
-            this.buttonTerrainTutorial12.Name = "buttonTerrainTutorial12";
-            this.buttonTerrainTutorial12.Size = new System.Drawing.Size(250, 140);
-            this.buttonTerrainTutorial12.TabIndex = 11;
-            this.buttonTerrainTutorial12.Text = "Terrain Tutorial 12: Perturbed Clouds";
-            this.buttonTerrainTutorial12.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTerrainTutorial12.UseVisualStyleBackColor = true;
-            this.buttonTerrainTutorial12.Click += new System.EventHandler(this.buttonTerrainTutorial12_Click);
-            // 
-            // buttonTerrainTutorial09
-            // 
-            this.buttonTerrainTutorial09.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTerrainTutorial09.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTerrainTutorial09.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTerrainTutorial09.ForeColor = System.Drawing.Color.White;
-            this.buttonTerrainTutorial09.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_9_____Terrain_Blending_Sm;
-            this.buttonTerrainTutorial09.Location = new System.Drawing.Point(519, 306);
-            this.buttonTerrainTutorial09.Name = "buttonTerrainTutorial09";
-            this.buttonTerrainTutorial09.Size = new System.Drawing.Size(250, 140);
-            this.buttonTerrainTutorial09.TabIndex = 8;
-            this.buttonTerrainTutorial09.Text = "Terrain Tutorial 9: Terrain Blending";
-            this.buttonTerrainTutorial09.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTerrainTutorial09.UseVisualStyleBackColor = true;
-            this.buttonTerrainTutorial09.Click += new System.EventHandler(this.buttonTerrainTutorial9_Click);
-            // 
-            // buttonTerrainTutorial06
-            // 
-            this.buttonTerrainTutorial06.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTerrainTutorial06.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTerrainTutorial06.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTerrainTutorial06.ForeColor = System.Drawing.Color.White;
-            this.buttonTerrainTutorial06.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_6_____Height_Based_Movement_Sm;
-            this.buttonTerrainTutorial06.Location = new System.Drawing.Point(519, 160);
-            this.buttonTerrainTutorial06.Name = "buttonTerrainTutorial06";
-            this.buttonTerrainTutorial06.Size = new System.Drawing.Size(250, 140);
-            this.buttonTerrainTutorial06.TabIndex = 5;
-            this.buttonTerrainTutorial06.Text = "Terrain Tutorial 6: Height Based Movement";
-            this.buttonTerrainTutorial06.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTerrainTutorial06.UseVisualStyleBackColor = true;
-            this.buttonTerrainTutorial06.Click += new System.EventHandler(this.buttonTerrainTutorial6_Click);
-            // 
-            // buttonTerrainTutorial03
-            // 
-            this.buttonTerrainTutorial03.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTerrainTutorial03.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTerrainTutorial03.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTerrainTutorial03.ForeColor = System.Drawing.Color.White;
-            this.buttonTerrainTutorial03.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_3_____Terrain_Lightingt_Sm;
-            this.buttonTerrainTutorial03.Location = new System.Drawing.Point(519, 14);
-            this.buttonTerrainTutorial03.Name = "buttonTerrainTutorial03";
-            this.buttonTerrainTutorial03.Size = new System.Drawing.Size(250, 140);
-            this.buttonTerrainTutorial03.TabIndex = 2;
-            this.buttonTerrainTutorial03.Text = "Terrain Tutorial 3: Terrain Lighting";
-            this.buttonTerrainTutorial03.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTerrainTutorial03.UseVisualStyleBackColor = true;
-            this.buttonTerrainTutorial03.Click += new System.EventHandler(this.buttonTerrainTutorial3_Click);
-            // 
-            // buttonTerrainTutorial18
-            // 
-            this.buttonTerrainTutorial18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTerrainTutorial18.Enabled = false;
-            this.buttonTerrainTutorial18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTerrainTutorial18.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTerrainTutorial18.ForeColor = System.Drawing.Color.White;
-            this.buttonTerrainTutorial18.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_2_____Creating_A_Framework_And_Window_Sm;
-            this.buttonTerrainTutorial18.Location = new System.Drawing.Point(519, 752);
-            this.buttonTerrainTutorial18.Name = "buttonTerrainTutorial18";
-            this.buttonTerrainTutorial18.Size = new System.Drawing.Size(250, 140);
-            this.buttonTerrainTutorial18.TabIndex = 17;
-            this.buttonTerrainTutorial18.Text = "Terrain Tutorial 18: Large Terrain Rendering  -  Not Implemented";
-            this.buttonTerrainTutorial18.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTerrainTutorial18.UseVisualStyleBackColor = true;
-            // 
-            // buttonTerrainTutorial19
-            // 
-            this.buttonTerrainTutorial19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTerrainTutorial19.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTerrainTutorial19.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTerrainTutorial19.ForeColor = System.Drawing.Color.White;
-            this.buttonTerrainTutorial19.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_19___Foliages_Sm;
-            this.buttonTerrainTutorial19.Location = new System.Drawing.Point(263, 899);
-            this.buttonTerrainTutorial19.Name = "buttonTerrainTutorial19";
-            this.buttonTerrainTutorial19.Size = new System.Drawing.Size(250, 140);
-            this.buttonTerrainTutorial19.TabIndex = 18;
-            this.buttonTerrainTutorial19.Text = "Terrain Tutorial 19: Foliage";
-            this.buttonTerrainTutorial19.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTerrainTutorial19.UseVisualStyleBackColor = true;
-            this.buttonTerrainTutorial19.Click += new System.EventHandler(this.buttonTerrainTutorial19_Click);
-            // 
-            // buttonTerrainTutorial17
-            // 
-            this.buttonTerrainTutorial17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTerrainTutorial17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTerrainTutorial17.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTerrainTutorial17.ForeColor = System.Drawing.Color.White;
-            this.buttonTerrainTutorial17.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_17___Terrain_Texture_Layers_Sm;
-            this.buttonTerrainTutorial17.Location = new System.Drawing.Point(263, 752);
-            this.buttonTerrainTutorial17.Name = "buttonTerrainTutorial17";
-            this.buttonTerrainTutorial17.Size = new System.Drawing.Size(250, 140);
-            this.buttonTerrainTutorial17.TabIndex = 16;
-            this.buttonTerrainTutorial17.Text = "Terrain Tutorial 17: Terrain Texture Layers";
-            this.buttonTerrainTutorial17.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTerrainTutorial17.UseVisualStyleBackColor = true;
-            this.buttonTerrainTutorial17.Click += new System.EventHandler(this.buttonTerrainTutorial17_Click);
-            // 
-            // buttonTerrainTutorial16
-            // 
-            this.buttonTerrainTutorial16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTerrainTutorial16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTerrainTutorial16.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTerrainTutorial16.ForeColor = System.Drawing.Color.White;
-            this.buttonTerrainTutorial16.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_16___Small_Body_Water_Sm;
-            this.buttonTerrainTutorial16.Location = new System.Drawing.Point(7, 752);
-            this.buttonTerrainTutorial16.Name = "buttonTerrainTutorial16";
-            this.buttonTerrainTutorial16.Size = new System.Drawing.Size(250, 140);
-            this.buttonTerrainTutorial16.TabIndex = 15;
-            this.buttonTerrainTutorial16.Text = "Terrain Tutorial 16: Small Body Water";
-            this.buttonTerrainTutorial16.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTerrainTutorial16.UseVisualStyleBackColor = true;
-            this.buttonTerrainTutorial16.Click += new System.EventHandler(this.buttonTerrainTutorial16_Click);
-            // 
-            // buttonTerrainTutorial14
-            // 
-            this.buttonTerrainTutorial14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTerrainTutorial14.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTerrainTutorial14.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTerrainTutorial14.ForeColor = System.Drawing.Color.White;
-            this.buttonTerrainTutorial14.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_14___Slope_Based_Texturing_Sm;
-            this.buttonTerrainTutorial14.Location = new System.Drawing.Point(263, 598);
-            this.buttonTerrainTutorial14.Name = "buttonTerrainTutorial14";
-            this.buttonTerrainTutorial14.Size = new System.Drawing.Size(250, 140);
-            this.buttonTerrainTutorial14.TabIndex = 13;
-            this.buttonTerrainTutorial14.Text = "Terrain Tutorial 14: Slope Based Texturing";
-            this.buttonTerrainTutorial14.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTerrainTutorial14.UseVisualStyleBackColor = true;
-            this.buttonTerrainTutorial14.Click += new System.EventHandler(this.buttonTerrainTutorial14_Click);
-            // 
-            // buttonTerrainTutorial11
-            // 
-            this.buttonTerrainTutorial11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTerrainTutorial11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTerrainTutorial11.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTerrainTutorial11.ForeColor = System.Drawing.Color.White;
-            this.buttonTerrainTutorial11.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_11___Bitmap_Clouds_Sm;
-            this.buttonTerrainTutorial11.Location = new System.Drawing.Point(263, 452);
-            this.buttonTerrainTutorial11.Name = "buttonTerrainTutorial11";
-            this.buttonTerrainTutorial11.Size = new System.Drawing.Size(250, 140);
-            this.buttonTerrainTutorial11.TabIndex = 10;
-            this.buttonTerrainTutorial11.Text = "Terrain Tutorial 11: Bitmap Clouds";
-            this.buttonTerrainTutorial11.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTerrainTutorial11.UseVisualStyleBackColor = true;
-            this.buttonTerrainTutorial11.Click += new System.EventHandler(this.buttonTerrainTutorial11_Click);
-            // 
-            // buttonTerrainTutorial08
-            // 
-            this.buttonTerrainTutorial08.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTerrainTutorial08.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTerrainTutorial08.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTerrainTutorial08.ForeColor = System.Drawing.Color.White;
-            this.buttonTerrainTutorial08.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_8_____Terrain_Mini_Maps_Sm;
-            this.buttonTerrainTutorial08.Location = new System.Drawing.Point(263, 306);
-            this.buttonTerrainTutorial08.Name = "buttonTerrainTutorial08";
-            this.buttonTerrainTutorial08.Size = new System.Drawing.Size(250, 140);
-            this.buttonTerrainTutorial08.TabIndex = 7;
-            this.buttonTerrainTutorial08.Text = "Terrain Tutorial 8: Terrain Mini-Maps";
-            this.buttonTerrainTutorial08.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTerrainTutorial08.UseVisualStyleBackColor = true;
-            this.buttonTerrainTutorial08.Click += new System.EventHandler(this.buttonTerrainTutorial8_Click);
-            // 
-            // buttonTerrainTutorial05
-            // 
-            this.buttonTerrainTutorial05.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTerrainTutorial05.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTerrainTutorial05.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTerrainTutorial05.ForeColor = System.Drawing.Color.White;
-            this.buttonTerrainTutorial05.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_5_____Quad_Trees_Sm;
-            this.buttonTerrainTutorial05.Location = new System.Drawing.Point(263, 160);
-            this.buttonTerrainTutorial05.Name = "buttonTerrainTutorial05";
-            this.buttonTerrainTutorial05.Size = new System.Drawing.Size(250, 140);
-            this.buttonTerrainTutorial05.TabIndex = 4;
-            this.buttonTerrainTutorial05.Text = "Terrain Tutorial 5: Quad Trees";
-            this.buttonTerrainTutorial05.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTerrainTutorial05.UseVisualStyleBackColor = true;
-            this.buttonTerrainTutorial05.Click += new System.EventHandler(this.buttonTerrainTutorial5_Click);
-            // 
-            // buttonTerrainTutorial02
-            // 
-            this.buttonTerrainTutorial02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTerrainTutorial02.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTerrainTutorial02.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTerrainTutorial02.ForeColor = System.Drawing.Color.White;
-            this.buttonTerrainTutorial02.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_2_____Height_Mapst_Sm;
-            this.buttonTerrainTutorial02.Location = new System.Drawing.Point(263, 14);
-            this.buttonTerrainTutorial02.Name = "buttonTerrainTutorial02";
-            this.buttonTerrainTutorial02.Size = new System.Drawing.Size(250, 140);
-            this.buttonTerrainTutorial02.TabIndex = 1;
-            this.buttonTerrainTutorial02.Text = "Terrain Tutorial 2: Height Maps";
-            this.buttonTerrainTutorial02.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTerrainTutorial02.UseVisualStyleBackColor = true;
-            this.buttonTerrainTutorial02.Click += new System.EventHandler(this.buttonTerrainTutorial2_Click);
-            // 
-            // buttonTerrainTutorial13
-            // 
-            this.buttonTerrainTutorial13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTerrainTutorial13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTerrainTutorial13.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTerrainTutorial13.ForeColor = System.Drawing.Color.White;
-            this.buttonTerrainTutorial13.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_13___Terrain_Detail_Mapping_Sm;
-            this.buttonTerrainTutorial13.Location = new System.Drawing.Point(7, 598);
-            this.buttonTerrainTutorial13.Name = "buttonTerrainTutorial13";
-            this.buttonTerrainTutorial13.Size = new System.Drawing.Size(250, 140);
-            this.buttonTerrainTutorial13.TabIndex = 12;
-            this.buttonTerrainTutorial13.Text = "Terrain Tutorial 13: Terrain Detail Mapping";
-            this.buttonTerrainTutorial13.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTerrainTutorial13.UseVisualStyleBackColor = true;
-            this.buttonTerrainTutorial13.Click += new System.EventHandler(this.buttonTerrainTutorial13_Click);
-            // 
-            // buttonTerrainTutorial10
-            // 
-            this.buttonTerrainTutorial10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTerrainTutorial10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTerrainTutorial10.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTerrainTutorial10.ForeColor = System.Drawing.Color.White;
-            this.buttonTerrainTutorial10.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_10___Sky_Domes_Sm;
-            this.buttonTerrainTutorial10.Location = new System.Drawing.Point(7, 452);
-            this.buttonTerrainTutorial10.Name = "buttonTerrainTutorial10";
-            this.buttonTerrainTutorial10.Size = new System.Drawing.Size(250, 140);
-            this.buttonTerrainTutorial10.TabIndex = 9;
-            this.buttonTerrainTutorial10.Text = "Terrain Tutorial 10: Sky Domes";
-            this.buttonTerrainTutorial10.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTerrainTutorial10.UseVisualStyleBackColor = true;
-            this.buttonTerrainTutorial10.Click += new System.EventHandler(this.buttonTerrainTutorial10_Click);
-            // 
-            // buttonTerrainTutorial07
-            // 
-            this.buttonTerrainTutorial07.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTerrainTutorial07.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTerrainTutorial07.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTerrainTutorial07.ForeColor = System.Drawing.Color.White;
-            this.buttonTerrainTutorial07.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_7_____Color_Mapped_Terrain_Sm;
-            this.buttonTerrainTutorial07.Location = new System.Drawing.Point(7, 306);
-            this.buttonTerrainTutorial07.Name = "buttonTerrainTutorial07";
-            this.buttonTerrainTutorial07.Size = new System.Drawing.Size(250, 140);
-            this.buttonTerrainTutorial07.TabIndex = 6;
-            this.buttonTerrainTutorial07.Text = "Terrain Tutorial 7: Color Mapped Terrain";
-            this.buttonTerrainTutorial07.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTerrainTutorial07.UseVisualStyleBackColor = true;
-            this.buttonTerrainTutorial07.Click += new System.EventHandler(this.buttonTerrainTutorial7_Click);
-            // 
-            // buttonTerrainTutorial04
-            // 
-            this.buttonTerrainTutorial04.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTerrainTutorial04.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTerrainTutorial04.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTerrainTutorial04.ForeColor = System.Drawing.Color.White;
-            this.buttonTerrainTutorial04.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_4_____Terrain_Texturing_Sm;
-            this.buttonTerrainTutorial04.Location = new System.Drawing.Point(7, 160);
-            this.buttonTerrainTutorial04.Name = "buttonTerrainTutorial04";
-            this.buttonTerrainTutorial04.Size = new System.Drawing.Size(250, 140);
-            this.buttonTerrainTutorial04.TabIndex = 3;
-            this.buttonTerrainTutorial04.Text = "Terrain Tutorial 4: Terrain Texturing";
-            this.buttonTerrainTutorial04.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTerrainTutorial04.UseVisualStyleBackColor = true;
-            this.buttonTerrainTutorial04.Click += new System.EventHandler(this.buttonTerrainTutorial4_Click);
-            // 
-            // buttonTerrainTutorial01
-            // 
-            this.buttonTerrainTutorial01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonTerrainTutorial01.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTerrainTutorial01.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTerrainTutorial01.ForeColor = System.Drawing.Color.White;
-            this.buttonTerrainTutorial01.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_1_____Grid_and_Camera_Movement_Sm;
-            this.buttonTerrainTutorial01.Location = new System.Drawing.Point(7, 14);
-            this.buttonTerrainTutorial01.Name = "buttonTerrainTutorial01";
-            this.buttonTerrainTutorial01.Size = new System.Drawing.Size(250, 140);
-            this.buttonTerrainTutorial01.TabIndex = 0;
-            this.buttonTerrainTutorial01.Text = "Terrain Tutorial 1: Grid and Camera Movement";
-            this.buttonTerrainTutorial01.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.buttonTerrainTutorial01.UseVisualStyleBackColor = true;
-            this.buttonTerrainTutorial01.Click += new System.EventHandler(this.buttonTerrainTutorial1_Click);
             // 
             // tabPage1
             // 
@@ -1345,6 +1011,341 @@
             this.buttonTutorial21.UseVisualStyleBackColor = true;
             this.buttonTutorial21.Click += new System.EventHandler(this.buttonTutorial21_Click);
             // 
+            // tabPage2
+            // 
+            this.tabPage2.AutoScroll = true;
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial15);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial12);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial09);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial06);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial03);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial18);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial19);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial17);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial16);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial14);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial11);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial08);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial05);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial02);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial13);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial10);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial07);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial04);
+            this.tabPage2.Controls.Add(this.buttonTerrainTutorial01);
+            this.tabPage2.ForeColor = System.Drawing.Color.Black;
+            this.tabPage2.Location = new System.Drawing.Point(4, 32);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(806, 468);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Series I Terrain Tutorials";
+            // 
+            // buttonTerrainTutorial15
+            // 
+            this.buttonTerrainTutorial15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTerrainTutorial15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTerrainTutorial15.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTerrainTutorial15.ForeColor = System.Drawing.Color.White;
+            this.buttonTerrainTutorial15.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_15___Terrain_Bump_Mapping_Sm;
+            this.buttonTerrainTutorial15.Location = new System.Drawing.Point(519, 598);
+            this.buttonTerrainTutorial15.Name = "buttonTerrainTutorial15";
+            this.buttonTerrainTutorial15.Size = new System.Drawing.Size(250, 140);
+            this.buttonTerrainTutorial15.TabIndex = 14;
+            this.buttonTerrainTutorial15.Text = "Terrain Tutorial 15: Terrain Bump Mapping";
+            this.buttonTerrainTutorial15.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTerrainTutorial15.UseVisualStyleBackColor = true;
+            this.buttonTerrainTutorial15.Click += new System.EventHandler(this.buttonTerrainTutorial15_Click);
+            // 
+            // buttonTerrainTutorial12
+            // 
+            this.buttonTerrainTutorial12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTerrainTutorial12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTerrainTutorial12.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTerrainTutorial12.ForeColor = System.Drawing.Color.White;
+            this.buttonTerrainTutorial12.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_12___Perturbed_Clouds_Sm;
+            this.buttonTerrainTutorial12.Location = new System.Drawing.Point(519, 452);
+            this.buttonTerrainTutorial12.Name = "buttonTerrainTutorial12";
+            this.buttonTerrainTutorial12.Size = new System.Drawing.Size(250, 140);
+            this.buttonTerrainTutorial12.TabIndex = 11;
+            this.buttonTerrainTutorial12.Text = "Terrain Tutorial 12: Perturbed Clouds";
+            this.buttonTerrainTutorial12.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTerrainTutorial12.UseVisualStyleBackColor = true;
+            this.buttonTerrainTutorial12.Click += new System.EventHandler(this.buttonTerrainTutorial12_Click);
+            // 
+            // buttonTerrainTutorial09
+            // 
+            this.buttonTerrainTutorial09.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTerrainTutorial09.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTerrainTutorial09.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTerrainTutorial09.ForeColor = System.Drawing.Color.White;
+            this.buttonTerrainTutorial09.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_9_____Terrain_Blending_Sm;
+            this.buttonTerrainTutorial09.Location = new System.Drawing.Point(519, 306);
+            this.buttonTerrainTutorial09.Name = "buttonTerrainTutorial09";
+            this.buttonTerrainTutorial09.Size = new System.Drawing.Size(250, 140);
+            this.buttonTerrainTutorial09.TabIndex = 8;
+            this.buttonTerrainTutorial09.Text = "Terrain Tutorial 9: Terrain Blending";
+            this.buttonTerrainTutorial09.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTerrainTutorial09.UseVisualStyleBackColor = true;
+            this.buttonTerrainTutorial09.Click += new System.EventHandler(this.buttonTerrainTutorial9_Click);
+            // 
+            // buttonTerrainTutorial06
+            // 
+            this.buttonTerrainTutorial06.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTerrainTutorial06.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTerrainTutorial06.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTerrainTutorial06.ForeColor = System.Drawing.Color.White;
+            this.buttonTerrainTutorial06.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_6_____Height_Based_Movement_Sm;
+            this.buttonTerrainTutorial06.Location = new System.Drawing.Point(519, 160);
+            this.buttonTerrainTutorial06.Name = "buttonTerrainTutorial06";
+            this.buttonTerrainTutorial06.Size = new System.Drawing.Size(250, 140);
+            this.buttonTerrainTutorial06.TabIndex = 5;
+            this.buttonTerrainTutorial06.Text = "Terrain Tutorial 6: Height Based Movement";
+            this.buttonTerrainTutorial06.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTerrainTutorial06.UseVisualStyleBackColor = true;
+            this.buttonTerrainTutorial06.Click += new System.EventHandler(this.buttonTerrainTutorial6_Click);
+            // 
+            // buttonTerrainTutorial03
+            // 
+            this.buttonTerrainTutorial03.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTerrainTutorial03.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTerrainTutorial03.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTerrainTutorial03.ForeColor = System.Drawing.Color.White;
+            this.buttonTerrainTutorial03.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_3_____Terrain_Lightingt_Sm;
+            this.buttonTerrainTutorial03.Location = new System.Drawing.Point(519, 14);
+            this.buttonTerrainTutorial03.Name = "buttonTerrainTutorial03";
+            this.buttonTerrainTutorial03.Size = new System.Drawing.Size(250, 140);
+            this.buttonTerrainTutorial03.TabIndex = 2;
+            this.buttonTerrainTutorial03.Text = "Terrain Tutorial 3: Terrain Lighting";
+            this.buttonTerrainTutorial03.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTerrainTutorial03.UseVisualStyleBackColor = true;
+            this.buttonTerrainTutorial03.Click += new System.EventHandler(this.buttonTerrainTutorial3_Click);
+            // 
+            // buttonTerrainTutorial18
+            // 
+            this.buttonTerrainTutorial18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTerrainTutorial18.Enabled = false;
+            this.buttonTerrainTutorial18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTerrainTutorial18.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTerrainTutorial18.ForeColor = System.Drawing.Color.White;
+            this.buttonTerrainTutorial18.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Tutorial_2_____Creating_A_Framework_And_Window_Sm;
+            this.buttonTerrainTutorial18.Location = new System.Drawing.Point(519, 752);
+            this.buttonTerrainTutorial18.Name = "buttonTerrainTutorial18";
+            this.buttonTerrainTutorial18.Size = new System.Drawing.Size(250, 140);
+            this.buttonTerrainTutorial18.TabIndex = 17;
+            this.buttonTerrainTutorial18.Text = "Terrain Tutorial 18: Large Terrain Rendering  -  Not Implemented";
+            this.buttonTerrainTutorial18.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTerrainTutorial18.UseVisualStyleBackColor = true;
+            // 
+            // buttonTerrainTutorial19
+            // 
+            this.buttonTerrainTutorial19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTerrainTutorial19.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTerrainTutorial19.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTerrainTutorial19.ForeColor = System.Drawing.Color.White;
+            this.buttonTerrainTutorial19.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_19___Foliages_Sm;
+            this.buttonTerrainTutorial19.Location = new System.Drawing.Point(263, 899);
+            this.buttonTerrainTutorial19.Name = "buttonTerrainTutorial19";
+            this.buttonTerrainTutorial19.Size = new System.Drawing.Size(250, 140);
+            this.buttonTerrainTutorial19.TabIndex = 18;
+            this.buttonTerrainTutorial19.Text = "Terrain Tutorial 19: Foliage";
+            this.buttonTerrainTutorial19.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTerrainTutorial19.UseVisualStyleBackColor = true;
+            this.buttonTerrainTutorial19.Click += new System.EventHandler(this.buttonTerrainTutorial19_Click);
+            // 
+            // buttonTerrainTutorial17
+            // 
+            this.buttonTerrainTutorial17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTerrainTutorial17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTerrainTutorial17.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTerrainTutorial17.ForeColor = System.Drawing.Color.White;
+            this.buttonTerrainTutorial17.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_17___Terrain_Texture_Layers_Sm;
+            this.buttonTerrainTutorial17.Location = new System.Drawing.Point(263, 752);
+            this.buttonTerrainTutorial17.Name = "buttonTerrainTutorial17";
+            this.buttonTerrainTutorial17.Size = new System.Drawing.Size(250, 140);
+            this.buttonTerrainTutorial17.TabIndex = 16;
+            this.buttonTerrainTutorial17.Text = "Terrain Tutorial 17: Terrain Texture Layers";
+            this.buttonTerrainTutorial17.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTerrainTutorial17.UseVisualStyleBackColor = true;
+            this.buttonTerrainTutorial17.Click += new System.EventHandler(this.buttonTerrainTutorial17_Click);
+            // 
+            // buttonTerrainTutorial16
+            // 
+            this.buttonTerrainTutorial16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTerrainTutorial16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTerrainTutorial16.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTerrainTutorial16.ForeColor = System.Drawing.Color.White;
+            this.buttonTerrainTutorial16.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_16___Small_Body_Water_Sm;
+            this.buttonTerrainTutorial16.Location = new System.Drawing.Point(7, 752);
+            this.buttonTerrainTutorial16.Name = "buttonTerrainTutorial16";
+            this.buttonTerrainTutorial16.Size = new System.Drawing.Size(250, 140);
+            this.buttonTerrainTutorial16.TabIndex = 15;
+            this.buttonTerrainTutorial16.Text = "Terrain Tutorial 16: Small Body Water";
+            this.buttonTerrainTutorial16.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTerrainTutorial16.UseVisualStyleBackColor = true;
+            this.buttonTerrainTutorial16.Click += new System.EventHandler(this.buttonTerrainTutorial16_Click);
+            // 
+            // buttonTerrainTutorial14
+            // 
+            this.buttonTerrainTutorial14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTerrainTutorial14.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTerrainTutorial14.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTerrainTutorial14.ForeColor = System.Drawing.Color.White;
+            this.buttonTerrainTutorial14.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_14___Slope_Based_Texturing_Sm;
+            this.buttonTerrainTutorial14.Location = new System.Drawing.Point(263, 598);
+            this.buttonTerrainTutorial14.Name = "buttonTerrainTutorial14";
+            this.buttonTerrainTutorial14.Size = new System.Drawing.Size(250, 140);
+            this.buttonTerrainTutorial14.TabIndex = 13;
+            this.buttonTerrainTutorial14.Text = "Terrain Tutorial 14: Slope Based Texturing";
+            this.buttonTerrainTutorial14.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTerrainTutorial14.UseVisualStyleBackColor = true;
+            this.buttonTerrainTutorial14.Click += new System.EventHandler(this.buttonTerrainTutorial14_Click);
+            // 
+            // buttonTerrainTutorial11
+            // 
+            this.buttonTerrainTutorial11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTerrainTutorial11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTerrainTutorial11.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTerrainTutorial11.ForeColor = System.Drawing.Color.White;
+            this.buttonTerrainTutorial11.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_11___Bitmap_Clouds_Sm;
+            this.buttonTerrainTutorial11.Location = new System.Drawing.Point(263, 452);
+            this.buttonTerrainTutorial11.Name = "buttonTerrainTutorial11";
+            this.buttonTerrainTutorial11.Size = new System.Drawing.Size(250, 140);
+            this.buttonTerrainTutorial11.TabIndex = 10;
+            this.buttonTerrainTutorial11.Text = "Terrain Tutorial 11: Bitmap Clouds";
+            this.buttonTerrainTutorial11.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTerrainTutorial11.UseVisualStyleBackColor = true;
+            this.buttonTerrainTutorial11.Click += new System.EventHandler(this.buttonTerrainTutorial11_Click);
+            // 
+            // buttonTerrainTutorial08
+            // 
+            this.buttonTerrainTutorial08.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTerrainTutorial08.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTerrainTutorial08.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTerrainTutorial08.ForeColor = System.Drawing.Color.White;
+            this.buttonTerrainTutorial08.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_8_____Terrain_Mini_Maps_Sm;
+            this.buttonTerrainTutorial08.Location = new System.Drawing.Point(263, 306);
+            this.buttonTerrainTutorial08.Name = "buttonTerrainTutorial08";
+            this.buttonTerrainTutorial08.Size = new System.Drawing.Size(250, 140);
+            this.buttonTerrainTutorial08.TabIndex = 7;
+            this.buttonTerrainTutorial08.Text = "Terrain Tutorial 8: Terrain Mini-Maps";
+            this.buttonTerrainTutorial08.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTerrainTutorial08.UseVisualStyleBackColor = true;
+            this.buttonTerrainTutorial08.Click += new System.EventHandler(this.buttonTerrainTutorial8_Click);
+            // 
+            // buttonTerrainTutorial05
+            // 
+            this.buttonTerrainTutorial05.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTerrainTutorial05.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTerrainTutorial05.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTerrainTutorial05.ForeColor = System.Drawing.Color.White;
+            this.buttonTerrainTutorial05.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_5_____Quad_Trees_Sm;
+            this.buttonTerrainTutorial05.Location = new System.Drawing.Point(263, 160);
+            this.buttonTerrainTutorial05.Name = "buttonTerrainTutorial05";
+            this.buttonTerrainTutorial05.Size = new System.Drawing.Size(250, 140);
+            this.buttonTerrainTutorial05.TabIndex = 4;
+            this.buttonTerrainTutorial05.Text = "Terrain Tutorial 5: Quad Trees";
+            this.buttonTerrainTutorial05.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTerrainTutorial05.UseVisualStyleBackColor = true;
+            this.buttonTerrainTutorial05.Click += new System.EventHandler(this.buttonTerrainTutorial5_Click);
+            // 
+            // buttonTerrainTutorial02
+            // 
+            this.buttonTerrainTutorial02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTerrainTutorial02.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTerrainTutorial02.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTerrainTutorial02.ForeColor = System.Drawing.Color.White;
+            this.buttonTerrainTutorial02.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_2_____Height_Mapst_Sm;
+            this.buttonTerrainTutorial02.Location = new System.Drawing.Point(263, 14);
+            this.buttonTerrainTutorial02.Name = "buttonTerrainTutorial02";
+            this.buttonTerrainTutorial02.Size = new System.Drawing.Size(250, 140);
+            this.buttonTerrainTutorial02.TabIndex = 1;
+            this.buttonTerrainTutorial02.Text = "Terrain Tutorial 2: Height Maps";
+            this.buttonTerrainTutorial02.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTerrainTutorial02.UseVisualStyleBackColor = true;
+            this.buttonTerrainTutorial02.Click += new System.EventHandler(this.buttonTerrainTutorial2_Click);
+            // 
+            // buttonTerrainTutorial13
+            // 
+            this.buttonTerrainTutorial13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTerrainTutorial13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTerrainTutorial13.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTerrainTutorial13.ForeColor = System.Drawing.Color.White;
+            this.buttonTerrainTutorial13.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_13___Terrain_Detail_Mapping_Sm;
+            this.buttonTerrainTutorial13.Location = new System.Drawing.Point(7, 598);
+            this.buttonTerrainTutorial13.Name = "buttonTerrainTutorial13";
+            this.buttonTerrainTutorial13.Size = new System.Drawing.Size(250, 140);
+            this.buttonTerrainTutorial13.TabIndex = 12;
+            this.buttonTerrainTutorial13.Text = "Terrain Tutorial 13: Terrain Detail Mapping";
+            this.buttonTerrainTutorial13.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTerrainTutorial13.UseVisualStyleBackColor = true;
+            this.buttonTerrainTutorial13.Click += new System.EventHandler(this.buttonTerrainTutorial13_Click);
+            // 
+            // buttonTerrainTutorial10
+            // 
+            this.buttonTerrainTutorial10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTerrainTutorial10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTerrainTutorial10.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTerrainTutorial10.ForeColor = System.Drawing.Color.White;
+            this.buttonTerrainTutorial10.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_10___Sky_Domes_Sm;
+            this.buttonTerrainTutorial10.Location = new System.Drawing.Point(7, 452);
+            this.buttonTerrainTutorial10.Name = "buttonTerrainTutorial10";
+            this.buttonTerrainTutorial10.Size = new System.Drawing.Size(250, 140);
+            this.buttonTerrainTutorial10.TabIndex = 9;
+            this.buttonTerrainTutorial10.Text = "Terrain Tutorial 10: Sky Domes";
+            this.buttonTerrainTutorial10.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTerrainTutorial10.UseVisualStyleBackColor = true;
+            this.buttonTerrainTutorial10.Click += new System.EventHandler(this.buttonTerrainTutorial10_Click);
+            // 
+            // buttonTerrainTutorial07
+            // 
+            this.buttonTerrainTutorial07.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTerrainTutorial07.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTerrainTutorial07.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTerrainTutorial07.ForeColor = System.Drawing.Color.White;
+            this.buttonTerrainTutorial07.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_7_____Color_Mapped_Terrain_Sm;
+            this.buttonTerrainTutorial07.Location = new System.Drawing.Point(7, 306);
+            this.buttonTerrainTutorial07.Name = "buttonTerrainTutorial07";
+            this.buttonTerrainTutorial07.Size = new System.Drawing.Size(250, 140);
+            this.buttonTerrainTutorial07.TabIndex = 6;
+            this.buttonTerrainTutorial07.Text = "Terrain Tutorial 7: Color Mapped Terrain";
+            this.buttonTerrainTutorial07.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTerrainTutorial07.UseVisualStyleBackColor = true;
+            this.buttonTerrainTutorial07.Click += new System.EventHandler(this.buttonTerrainTutorial7_Click);
+            // 
+            // buttonTerrainTutorial04
+            // 
+            this.buttonTerrainTutorial04.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTerrainTutorial04.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTerrainTutorial04.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTerrainTutorial04.ForeColor = System.Drawing.Color.White;
+            this.buttonTerrainTutorial04.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_4_____Terrain_Texturing_Sm;
+            this.buttonTerrainTutorial04.Location = new System.Drawing.Point(7, 160);
+            this.buttonTerrainTutorial04.Name = "buttonTerrainTutorial04";
+            this.buttonTerrainTutorial04.Size = new System.Drawing.Size(250, 140);
+            this.buttonTerrainTutorial04.TabIndex = 3;
+            this.buttonTerrainTutorial04.Text = "Terrain Tutorial 4: Terrain Texturing";
+            this.buttonTerrainTutorial04.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTerrainTutorial04.UseVisualStyleBackColor = true;
+            this.buttonTerrainTutorial04.Click += new System.EventHandler(this.buttonTerrainTutorial4_Click);
+            // 
+            // buttonTerrainTutorial01
+            // 
+            this.buttonTerrainTutorial01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTerrainTutorial01.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTerrainTutorial01.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTerrainTutorial01.ForeColor = System.Drawing.Color.White;
+            this.buttonTerrainTutorial01.Image = global::SharpDXWinForm.Properties.Resources.Series_1____Terrain_Tutorial_1_____Grid_and_Camera_Movement_Sm;
+            this.buttonTerrainTutorial01.Location = new System.Drawing.Point(7, 14);
+            this.buttonTerrainTutorial01.Name = "buttonTerrainTutorial01";
+            this.buttonTerrainTutorial01.Size = new System.Drawing.Size(250, 140);
+            this.buttonTerrainTutorial01.TabIndex = 0;
+            this.buttonTerrainTutorial01.Text = "Terrain Tutorial 1: Grid and Camera Movement";
+            this.buttonTerrainTutorial01.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonTerrainTutorial01.UseVisualStyleBackColor = true;
+            this.buttonTerrainTutorial01.Click += new System.EventHandler(this.buttonTerrainTutorial1_Click);
+            // 
             // tabPage3
             // 
             this.tabPage3.AutoScroll = true;
@@ -1353,6 +1354,7 @@
             this.tabPage3.Controls.Add(this.buttonS2Tutorial02);
             this.tabPage3.Controls.Add(this.buttonS2TerrainTutorial01);
             this.tabPage3.Controls.Add(this.buttonS2Tutorial03);
+            this.tabPage3.Controls.Add(this.buttonS2TerrainTutorial12);
             this.tabPage3.Controls.Add(this.buttonS2TerrainTutorial11);
             this.tabPage3.Controls.Add(this.buttonS2TerrainTutorial10);
             this.tabPage3.Controls.Add(this.buttonS2TerrainTutorial09);
@@ -1435,6 +1437,23 @@
             this.buttonS2Tutorial03.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.buttonS2Tutorial03.UseVisualStyleBackColor = true;
             this.buttonS2Tutorial03.Click += new System.EventHandler(this.buttonS2Tutorial3_Click);
+            // 
+            // buttonS2TerrainTutorial12
+            // 
+            this.buttonS2TerrainTutorial12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonS2TerrainTutorial12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonS2TerrainTutorial12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonS2TerrainTutorial12.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonS2TerrainTutorial12.ForeColor = System.Drawing.Color.White;
+            this.buttonS2TerrainTutorial12.Image = global::SharpDXWinForm.Properties.Resources.Series_2____Terrain_Tutorial_12_____Terrain_Mini_Maps_Sm;
+            this.buttonS2TerrainTutorial12.Location = new System.Drawing.Point(14, 737);
+            this.buttonS2TerrainTutorial12.Name = "buttonS2TerrainTutorial12";
+            this.buttonS2TerrainTutorial12.Size = new System.Drawing.Size(250, 140);
+            this.buttonS2TerrainTutorial12.TabIndex = 5;
+            this.buttonS2TerrainTutorial12.Text = "Series 2 Terrain Tutorial 12: Terrain Mini-Maps ";
+            this.buttonS2TerrainTutorial12.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonS2TerrainTutorial12.UseVisualStyleBackColor = false;
+            this.buttonS2TerrainTutorial12.Click += new System.EventHandler(this.buttonS2TerrainTutorial12_Click);
             // 
             // buttonS2TerrainTutorial11
             // 
@@ -1810,8 +1829,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SharpDXRastertekTutorialsForm";
             this.tabControl1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWidth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHeight)).EndInit();
@@ -1920,5 +1939,6 @@
         private System.Windows.Forms.Button buttonS2TerrainTutorial09;
         private System.Windows.Forms.Button buttonS2TerrainTutorial10;
         private System.Windows.Forms.Button buttonS2TerrainTutorial11;
+        private System.Windows.Forms.Button buttonS2TerrainTutorial12;
     }
 }
