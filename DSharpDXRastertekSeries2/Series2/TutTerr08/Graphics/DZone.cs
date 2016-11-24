@@ -40,7 +40,7 @@ namespace DSharpDXRastertek.Series2.TutTerr08.Graphics
             // Create the position object.  
             Position = new DPosition();
             // Set the initial position and rotation of the viewer.28.0f, 5.0f, -10.0f
-            Position.SetPosition(512.0f, 30.0f, 1034.0f);
+            Position.SetPosition(512.0f, 30.0f, 1000.0f);
             Position.SetRotation(0.0f, 180.0f, 0.0f);
 
             // Create the light object.
