@@ -93,7 +93,8 @@ namespace DSharpDXRastertek.Series2.TutTerr13.Graphics.Models
             if (!CalculateNormals())
                 return false;
 
-            BuildTerrainModel();
+            if (!BuildTerrainModel())
+                return false;
 
             // Calculate the tangent and binormal for the terrain model.
             CalculateTerrainVectors();
@@ -166,109 +167,118 @@ namespace DSharpDXRastertek.Series2.TutTerr13.Graphics.Models
 
             return true;
         }
-        private void BuildTerrainModel()
+        private bool BuildTerrainModel()
         {
-            // Set the number of vertices in the model.
-            VertexCount = (m_TerrainWidth - 1) * (m_TerrainHeight - 1) * 6;
-            // Create the terrain model array.
-            TerrainModel = new DHeightMapType[VertexCount];
-
-            // Load the terrain model with the height map terrain data.
-            int index = 0;
-            for (int j = 0; j < (m_TerrainHeight - 1); j++)
+            try
             {
-                for (int i = 0; i < (m_TerrainWidth - 1); i++)
+                // Set the number of vertices in the model.
+                VertexCount = (m_TerrainWidth - 1) * (m_TerrainHeight - 1) * 6;
+                // Create the terrain model array.
+                TerrainModel = new DHeightMapType[VertexCount];
+
+                // Load the terrain model with the height map terrain data.
+                int index = 0;
+                for (int j = 0; j < (m_TerrainHeight - 1); j++)
                 {
-                    int index1 = (m_TerrainWidth * j) + i;          // Bottom left.
-                    int index2 = (m_TerrainWidth * j) + (i + 1);      // Bottom right.
-                    int index3 = (m_TerrainWidth * (j + 1)) + i;      // Upper left.
-                    int index4 = (m_TerrainWidth * (j + 1)) + (i + 1);  // Upper right.
+                    for (int i = 0; i < (m_TerrainWidth - 1); i++)
+                    {
+                        int index1 = (m_TerrainWidth * j) + i;          // Bottom left.
+                        int index2 = (m_TerrainWidth * j) + (i + 1);      // Bottom right.
+                        int index3 = (m_TerrainWidth * (j + 1)) + i;      // Upper left.
+                        int index4 = (m_TerrainWidth * (j + 1)) + (i + 1);  // Upper right.
 
-                    // Upper left.
-                    TerrainModel[index].x = HeightMap[index3].x;
-                    TerrainModel[index].y = HeightMap[index3].y;
-                    TerrainModel[index].z = HeightMap[index3].z;
-                    TerrainModel[index].nx = HeightMap[index3].nx;
-                    TerrainModel[index].ny = HeightMap[index3].ny;
-                    TerrainModel[index].nz = HeightMap[index3].nz;
-                    TerrainModel[index].tu = 0.0f;
-                    TerrainModel[index].tv = 0.0f;
-                    TerrainModel[index].r = HeightMap[index3].r;
-                    TerrainModel[index].g = HeightMap[index3].g;
-                    TerrainModel[index].b = HeightMap[index3].b;
-                    index++;
+                        // Upper left.
+                        TerrainModel[index].x = HeightMap[index3].x;
+                        TerrainModel[index].y = HeightMap[index3].y;
+                        TerrainModel[index].z = HeightMap[index3].z;
+                        TerrainModel[index].nx = HeightMap[index3].nx;
+                        TerrainModel[index].ny = HeightMap[index3].ny;
+                        TerrainModel[index].nz = HeightMap[index3].nz;
+                        TerrainModel[index].tu = 0.0f;
+                        TerrainModel[index].tv = 0.0f;
+                        TerrainModel[index].r = HeightMap[index3].r;
+                        TerrainModel[index].g = HeightMap[index3].g;
+                        TerrainModel[index].b = HeightMap[index3].b;
+                        index++;
 
-                    // Upper right.
-                    TerrainModel[index].x = HeightMap[index4].x;
-                    TerrainModel[index].y = HeightMap[index4].y;
-                    TerrainModel[index].z = HeightMap[index4].z;
-                    TerrainModel[index].nx = HeightMap[index4].nx;
-                    TerrainModel[index].ny = HeightMap[index4].ny;
-                    TerrainModel[index].nz = HeightMap[index4].nz;
-                    TerrainModel[index].tu = 1.0f;
-                    TerrainModel[index].tv = 0.0f;
-                    TerrainModel[index].r = HeightMap[index3].r;
-                    TerrainModel[index].g = HeightMap[index3].g;
-                    TerrainModel[index].b = HeightMap[index3].b;
-                    index++;
+                        // Upper right.
+                        TerrainModel[index].x = HeightMap[index4].x;
+                        TerrainModel[index].y = HeightMap[index4].y;
+                        TerrainModel[index].z = HeightMap[index4].z;
+                        TerrainModel[index].nx = HeightMap[index4].nx;
+                        TerrainModel[index].ny = HeightMap[index4].ny;
+                        TerrainModel[index].nz = HeightMap[index4].nz;
+                        TerrainModel[index].tu = 1.0f;
+                        TerrainModel[index].tv = 0.0f;
+                        TerrainModel[index].r = HeightMap[index4].r;
+                        TerrainModel[index].g = HeightMap[index4].g;
+                        TerrainModel[index].b = HeightMap[index4].b;
+                        index++;
 
-                    // Bottom left.
-                    TerrainModel[index].x = HeightMap[index1].x;
-                    TerrainModel[index].y = HeightMap[index1].y;
-                    TerrainModel[index].z = HeightMap[index1].z;
-                    TerrainModel[index].nx = HeightMap[index1].nx;
-                    TerrainModel[index].ny = HeightMap[index1].ny;
-                    TerrainModel[index].nz = HeightMap[index1].nz;
-                    TerrainModel[index].tu = 0.0f;
-                    TerrainModel[index].tv = 1.0f;
-                    TerrainModel[index].r = HeightMap[index3].r;
-                    TerrainModel[index].g = HeightMap[index3].g;
-                    TerrainModel[index].b = HeightMap[index3].b;
-                    index++;
+                        // Bottom left.
+                        TerrainModel[index].x = HeightMap[index1].x;
+                        TerrainModel[index].y = HeightMap[index1].y;
+                        TerrainModel[index].z = HeightMap[index1].z;
+                        TerrainModel[index].nx = HeightMap[index1].nx;
+                        TerrainModel[index].ny = HeightMap[index1].ny;
+                        TerrainModel[index].nz = HeightMap[index1].nz;
+                        TerrainModel[index].tu = 0.0f;
+                        TerrainModel[index].tv = 1.0f;
+                        TerrainModel[index].r = HeightMap[index1].r;
+                        TerrainModel[index].g = HeightMap[index1].g;
+                        TerrainModel[index].b = HeightMap[index1].b;
+                        index++;
 
-                    // Bottom left.
-                    TerrainModel[index].x = HeightMap[index1].x;
-                    TerrainModel[index].y = HeightMap[index1].y;
-                    TerrainModel[index].z = HeightMap[index1].z;
-                    TerrainModel[index].nx = HeightMap[index1].nx;
-                    TerrainModel[index].ny = HeightMap[index1].ny;
-                    TerrainModel[index].nz = HeightMap[index1].nz;
-                    TerrainModel[index].tu = 0.0f;
-                    TerrainModel[index].tv = 1.0f;
-                    TerrainModel[index].r = HeightMap[index3].r;
-                    TerrainModel[index].g = HeightMap[index3].g;
-                    TerrainModel[index].b = HeightMap[index3].b;
-                    index++;
+                        // Bottom left.
+                        TerrainModel[index].x = HeightMap[index1].x;
+                        TerrainModel[index].y = HeightMap[index1].y;
+                        TerrainModel[index].z = HeightMap[index1].z;
+                        TerrainModel[index].nx = HeightMap[index1].nx;
+                        TerrainModel[index].ny = HeightMap[index1].ny;
+                        TerrainModel[index].nz = HeightMap[index1].nz;
+                        TerrainModel[index].tu = 0.0f;
+                        TerrainModel[index].tv = 1.0f;
+                        TerrainModel[index].r = HeightMap[index1].r;
+                        TerrainModel[index].g = HeightMap[index1].g;
+                        TerrainModel[index].b = HeightMap[index1].b;
+                        index++;
 
-                    // Upper right.
-                    TerrainModel[index].x = HeightMap[index4].x;
-                    TerrainModel[index].y = HeightMap[index4].y;
-                    TerrainModel[index].z = HeightMap[index4].z;
-                    TerrainModel[index].nx = HeightMap[index4].nx;
-                    TerrainModel[index].ny = HeightMap[index4].ny;
-                    TerrainModel[index].nz = HeightMap[index4].nz;
-                    TerrainModel[index].tu = 1.0f;
-                    TerrainModel[index].tv = 0.0f;
-                    TerrainModel[index].r = HeightMap[index3].r;
-                    TerrainModel[index].g = HeightMap[index3].g;
-                    TerrainModel[index].b = HeightMap[index3].b;
-                    index++;
+                        // Upper right.
+                        TerrainModel[index].x = HeightMap[index4].x;
+                        TerrainModel[index].y = HeightMap[index4].y;
+                        TerrainModel[index].z = HeightMap[index4].z;
+                        TerrainModel[index].nx = HeightMap[index4].nx;
+                        TerrainModel[index].ny = HeightMap[index4].ny;
+                        TerrainModel[index].nz = HeightMap[index4].nz;
+                        TerrainModel[index].tu = 1.0f;
+                        TerrainModel[index].tv = 0.0f;
+                        TerrainModel[index].r = HeightMap[index4].r;
+                        TerrainModel[index].g = HeightMap[index4].g;
+                        TerrainModel[index].b = HeightMap[index4].b;
+                        index++;
 
-                    // Bottom right.
-                    TerrainModel[index].x = HeightMap[index2].x;
-                    TerrainModel[index].y = HeightMap[index2].y;
-                    TerrainModel[index].z = HeightMap[index2].z;
-                    TerrainModel[index].nx = HeightMap[index2].nx;
-                    TerrainModel[index].ny = HeightMap[index2].ny;
-                    TerrainModel[index].nz = HeightMap[index2].nz;
-                    TerrainModel[index].tu = 1.0f;
-                    TerrainModel[index].tv = 1.0f;
-                    TerrainModel[index].r = HeightMap[index3].r;
-                    TerrainModel[index].g = HeightMap[index3].g;
-                    TerrainModel[index].b = HeightMap[index3].b;
-                    index++;
+                        // Bottom right.
+                        TerrainModel[index].x = HeightMap[index2].x;
+                        TerrainModel[index].y = HeightMap[index2].y;
+                        TerrainModel[index].z = HeightMap[index2].z;
+                        TerrainModel[index].nx = HeightMap[index2].nx;
+                        TerrainModel[index].ny = HeightMap[index2].ny;
+                        TerrainModel[index].nz = HeightMap[index2].nz;
+                        TerrainModel[index].tu = 1.0f;
+                        TerrainModel[index].tv = 1.0f;
+                        TerrainModel[index].r = HeightMap[index2].r;
+                        TerrainModel[index].g = HeightMap[index2].g;
+                        TerrainModel[index].b = HeightMap[index2].b;
+                        index++;
+                    }
                 }
             }
+            catch
+            {
+                return false;
+            }
+
+            return true;
         }
         private void CalculateTerrainVectors()
         {
