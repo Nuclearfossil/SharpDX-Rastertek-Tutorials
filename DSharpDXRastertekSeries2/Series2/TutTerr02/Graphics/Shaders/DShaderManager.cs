@@ -15,14 +15,12 @@ namespace DSharpDXRastertek.Series2.TutTerr02.Graphics.Shaders
         {
             // Create the texture shader object.
             ColorShader = new DColorShader();
-
             // Initialize the texture shader object.
             if (!ColorShader.Initialize(D3DDevice.Device, windowsHandle))
                 return false;
 
             // Create the font shader object.
             FontShader = new DFontShader();
-
             // Initialize the font shader object.
             if (!FontShader.Initialize(D3DDevice.Device, windowsHandle))
                 return false;

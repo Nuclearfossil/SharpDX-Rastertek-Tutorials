@@ -11,40 +11,30 @@ namespace DSharpDXRastertek.Series2.TutTerr13.Graphics.Shaders
         public DFontShader FontShader { get; set; }
         public DTerrainShader TerrainShader { get; set; }
         public DSkyDomeShader SkyDomeShader { get; set; }
-        public DTextureShader TextureShader { get; set; }
 
-        // Methodsb
+        // Methods
         public bool Initilize(DDX11 D3DDevice, IntPtr windowsHandle)
         {
-            // Create the Texture Shader for drawing the minimap
-            TextureShader = new DTextureShader();
-            if (!TextureShader.Initialize(D3DDevice.Device, windowsHandle))
-                return false;
-
             // Create the texture shader object.
             ColorShader = new DColorShader();
-
             // Initialize the texture shader object.
             if (!ColorShader.Initialize(D3DDevice.Device, windowsHandle))
                 return false;
 
             // Create the font shader object.
             FontShader = new DFontShader();
-
             // Initialize the font shader object.
             if (!FontShader.Initialize(D3DDevice.Device, windowsHandle))
                 return false;
 
             // Create the sky dome shader object.
             SkyDomeShader = new DSkyDomeShader();
-
             // Initialize the sky dome shader object.
             if (!SkyDomeShader.Initialize(D3DDevice.Device, windowsHandle))
                 return false;
 
             // Create the terrain shader object.
             TerrainShader = new DTerrainShader();
-
             // Initialize the terrain shader object.
             if (!TerrainShader.Initialize(D3DDevice.Device, windowsHandle))
                 return false;
@@ -53,8 +43,6 @@ namespace DSharpDXRastertek.Series2.TutTerr13.Graphics.Shaders
         }
         public void ShutDown()
         {
-            TextureShader?.ShutDown();
-            TextureShader = null;
             // Release the sky dome shader object.
             SkyDomeShader.ShutDown();
             SkyDomeShader = null;
@@ -67,14 +55,6 @@ namespace DSharpDXRastertek.Series2.TutTerr13.Graphics.Shaders
             // Release the texture shader object.
             ColorShader?.ShutDown();
             ColorShader = null;
-        }
-        public bool RenderTextureShader(DeviceContext deviceContext, int indexCount, Matrix worldMatrix, Matrix viewMatrix, Matrix projectionMatrix, ShaderResourceView texture)
-        {
-            // Render the TextureShader.
-            if (!TextureShader.Render(deviceContext, indexCount, worldMatrix, viewMatrix, projectionMatrix, texture))
-                return false;
-
-            return true;
         }
         public bool RenderColorShader(DeviceContext deviceContext, int indexCount, Matrix worldMatrix, Matrix viewMatrix, Matrix projectionMatrix)
         {

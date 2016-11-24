@@ -154,7 +154,6 @@
     <Compile Include="Series2\TutTerr03\Graphics\Models\DText.cs" />
     <Compile Include="Series2\TutTerr03\Graphics\Models\DTexture.cs" />
     <Compile Include="Series2\TutTerr03\Graphics\Models\DTextureManager.cs" />
-    <Compile Include="Series2\TutTerr03\Graphics\Shaders\DColorShader.cs" />
     <Compile Include="Series2\TutTerr03\Graphics\Shaders\DFontShader.cs" />
     <Compile Include="Series2\TutTerr03\Graphics\Shaders\DShaderManager.cs" />
     <Compile Include="Series2\TutTerr03\Graphics\Shaders\DTextureShader.cs" />
@@ -175,11 +174,9 @@
     <Compile Include="Series2\TutTerr04\Graphics\Models\DText.cs" />
     <Compile Include="Series2\TutTerr04\Graphics\Models\DTexture.cs" />
     <Compile Include="Series2\TutTerr04\Graphics\Models\DTextureManager.cs" />
-    <Compile Include="Series2\TutTerr04\Graphics\Shaders\DColorShader.cs" />
     <Compile Include="Series2\TutTerr04\Graphics\Shaders\DFontShader.cs" />
     <Compile Include="Series2\TutTerr04\Graphics\Shaders\DLightShaderClass3.cs" />
     <Compile Include="Series2\TutTerr04\Graphics\Shaders\DShaderManager.cs" />
-    <Compile Include="Series2\TutTerr04\Graphics\Shaders\DTextureShader.cs" />
     <Compile Include="Series2\TutTerr04\System\DApplication.cs" />
     <Compile Include="Series2\TutTerr04\System\DFPS.cs" />
     <Compile Include="Series2\TutTerr04\System\DSystem.cs" />
@@ -197,12 +194,9 @@
     <Compile Include="Series2\TutTerr05\Graphics\Models\DText.cs" />
     <Compile Include="Series2\TutTerr05\Graphics\Models\DTexture.cs" />
     <Compile Include="Series2\TutTerr05\Graphics\Models\DTextureManager.cs" />
-    <Compile Include="Series2\TutTerr05\Graphics\Shaders\DColorShader.cs" />
     <Compile Include="Series2\TutTerr05\Graphics\Shaders\DFontShader.cs" />
-    <Compile Include="Series2\TutTerr05\Graphics\Shaders\DLightShaderClass3.cs" />
     <Compile Include="Series2\TutTerr05\Graphics\Shaders\DShaderManager.cs" />
     <Compile Include="Series2\TutTerr05\Graphics\Shaders\DTerrainShaderClass3.cs" />
-    <Compile Include="Series2\TutTerr05\Graphics\Shaders\DTextureShader.cs" />
     <Compile Include="Series2\TutTerr05\System\DApplication.cs" />
     <Compile Include="Series2\TutTerr05\System\DFPS.cs" />
     <Compile Include="Series2\TutTerr05\System\DSystem.cs" />
@@ -220,12 +214,9 @@
     <Compile Include="Series2\TutTerr06\Graphics\Models\DText.cs" />
     <Compile Include="Series2\TutTerr06\Graphics\Models\DTexture.cs" />
     <Compile Include="Series2\TutTerr06\Graphics\Models\DTextureManager.cs" />
-    <Compile Include="Series2\TutTerr06\Graphics\Shaders\DColorShader.cs" />
     <Compile Include="Series2\TutTerr06\Graphics\Shaders\DFontShader.cs" />
-    <Compile Include="Series2\TutTerr06\Graphics\Shaders\DLightShaderClass3.cs" />
     <Compile Include="Series2\TutTerr06\Graphics\Shaders\DShaderManager.cs" />
     <Compile Include="Series2\TutTerr06\Graphics\Shaders\DTerrainShaderClass3.cs" />
-    <Compile Include="Series2\TutTerr06\Graphics\Shaders\DTextureShader.cs" />
     <Compile Include="Series2\TutTerr06\System\DApplication.cs" />
     <Compile Include="Series2\TutTerr06\System\DFPS.cs" />
     <Compile Include="Series2\TutTerr06\System\DSystem.cs" />
@@ -386,8 +377,6 @@
     <Compile Include="Series2\TutTerr13\Graphics\DZone.cs" />
     <Compile Include="Series2\TutTerr13\Graphics\Input\DInput.cs" />
     <Compile Include="Series2\TutTerr13\Graphics\Input\DPosition.cs" />
-    <Compile Include="Series2\TutTerr13\Graphics\Models\DBitmap.cs" />
-    <Compile Include="Series2\TutTerr13\Graphics\Models\DMiniMap.cs" />
     <Compile Include="Series2\TutTerr13\Graphics\Models\DSkyDome.cs" />
     <Compile Include="Series2\TutTerr13\Graphics\Models\DTerrain.cs" />
     <Compile Include="Series2\TutTerr13\Graphics\Models\DTerrainCell.cs" />
@@ -399,7 +388,6 @@
     <Compile Include="Series2\TutTerr13\Graphics\Shaders\DShaderManager.cs" />
     <Compile Include="Series2\TutTerr13\Graphics\Shaders\DSkyDomeShaderClass.cs" />
     <Compile Include="Series2\TutTerr13\Graphics\Shaders\DTerrainShaderClass3.cs" />
-    <Compile Include="Series2\TutTerr13\Graphics\Shaders\DTextureShader.cs" />
     <Compile Include="Series2\TutTerr13\System\DApplication.cs" />
     <Compile Include="Series2\TutTerr13\System\DFPS.cs" />
     <Compile Include="Series2\TutTerr13\System\DSystem.cs" />

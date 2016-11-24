@@ -7,7 +7,6 @@ namespace DSharpDXRastertek.Series2.TutTerr03.Graphics.Shaders
     public class DShaderManager
     {
         // Properties
-        public DColorShader ColorShader { get; set; }
         public DTextureShader TextureShader { get; set; }
         public DFontShader FontShader { get; set; }
 
@@ -15,22 +14,13 @@ namespace DSharpDXRastertek.Series2.TutTerr03.Graphics.Shaders
         public bool Initilize(DDX11 D3DDevice, IntPtr windowsHandle)
         {
             // Create the texture shader object.
-            ColorShader = new DColorShader();
-
-            // Initialize the texture shader object.
-            if (!ColorShader.Initialize(D3DDevice.Device, windowsHandle))
-                return false;
-
-            // Create the texture shader object.
             TextureShader = new DTextureShader();
-
             // Initialize the texture shader object.
             if (!TextureShader.Initialize(D3DDevice.Device, windowsHandle))
                 return false;
 
             // Create the font shader object.
             FontShader = new DFontShader();
-
             // Initialize the font shader object.
             if (!FontShader.Initialize(D3DDevice.Device, windowsHandle))
                 return false;
@@ -45,17 +35,6 @@ namespace DSharpDXRastertek.Series2.TutTerr03.Graphics.Shaders
             // Release the texture shader object.
             TextureShader?.ShutDown();
             TextureShader = null;
-            // Release the texture shader object.
-            ColorShader?.ShutDown();
-            ColorShader = null;
-        }
-        public bool RenderColorShader(DeviceContext deviceContext, int indexCount, Matrix worldMatrix, Matrix viewMatrix, Matrix projectionMatrix)
-        {
-            // Render the ColoreShader.
-            if (!ColorShader.Render(deviceContext, indexCount, worldMatrix, viewMatrix, projectionMatrix))
-                return false;
-
-            return true;
         }
         public bool RenderTextureShader(DeviceContext deviceContext, int indexCount, Matrix worldMatrix, Matrix viewMatrix, Matrix projectionMatrix, ShaderResourceView texture)
         {

@@ -7,9 +7,6 @@ namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Shaders
     public class DShaderManager
     {
         // Properties
-        // public DColorShader ColorShader { get; set; }
-        //public DTextureShader TextureShader { get; set; }
-        //public DLightShader LightShader { get; set; }
         public DFontShader FontShader { get; set; }
         public DTerrainShader TerrainShader { get; set; }
         public DSkyDomeShader SkyDomeShader { get; set; }

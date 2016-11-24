@@ -58,7 +58,6 @@ namespace DSharpDXRastertek.Series2.TutTerr12.Graphics.Models
             // Put the mini-map bitmap vertex and index buffers on the graphics pipeline to prepare them for drawing.
             if (!MiniMapBitmap.Render(deviceContext, m_mapLocationX, m_mapLocationY))
                 return false;
-
             // Render the mini-map bitmap using the texture shader.
             if (!shaderManager.RenderTextureShader(deviceContext, MiniMapBitmap.IndexCount, worldMatrix, viewMatrix, orthoMatrix, MiniMapBitmap.Texture.TextureResource))
                 return false;

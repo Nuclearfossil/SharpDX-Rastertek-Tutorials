@@ -17,7 +17,7 @@ namespace DSharpDXRastertek.Series2.TutTerr13.Graphics.Data
         public DText[] VideoStrings { get; set; }
         public int[] PreviousPositions { get; set; }
         public DText[] RenderCountStrings { get; set; }
-        public DMiniMap MiniMap { get; set; }
+        // public DMiniMap MiniMap { get; set; }
 
         // Constructor
         public DUserInterface() { }
@@ -85,20 +85,10 @@ namespace DSharpDXRastertek.Series2.TutTerr13.Graphics.Data
             if (!RenderCountStrings[2].Initialize(D3Ddevice.Device, Font1, configuration, 32, "Cells Culled: 0", 10, 290, 1.0f, 1.0f, 1.0f, false, D3Ddevice.DeviceContext))
                 return false;
 
-            // Create the mini-map object.
-            MiniMap = new DMiniMap();
-            // Initialize the mini-map object.
-            if (!MiniMap.Initialize(D3Ddevice.Device, D3Ddevice.DeviceContext, configuration, 1025, 1025))
-                return false;
-
             return true;
         }
         public void ShutDown() 
         {
-            // Release the mini-map object.
-            MiniMap?.ShutDown();
-            MiniMap = null;
-
             // Release the render count strings.
             foreach (DText aSent in RenderCountStrings)
                 aSent?.Shutdown();
@@ -131,9 +121,6 @@ namespace DSharpDXRastertek.Series2.TutTerr13.Graphics.Data
             // Update the position strings.
             if (!UpdatePositionStrings(posX, posY, posZ, rotX, rotY, rotZ, deviceContext))
                 return false;
-
-            // Update the mini-map position indicator.
-            MiniMap.PositionUpdate(posX, posZ);
 
             return true;
         }
@@ -276,10 +263,6 @@ namespace DSharpDXRastertek.Series2.TutTerr13.Graphics.Data
 
             // Turn off alpha blending now that the text has been rendered.
             D3DDevice.TurnOffAlphaBlending();
-
-            if (!MiniMap.Render(D3DDevice.DeviceContext, shaderManager, worldMatrix, baseViewMatrix, orthoMatrix))
-                return false;
-
             // Turn the Z buffer back on now that the 2D rendering has completed.
             D3DDevice.TurnZBufferOn();
 
