@@ -37,7 +37,7 @@ namespace DSharpDXRastertek.Series2.TutTerr07.Graphics.Shaders
         public void ShutDown()
         {
             // Release the sky dome shader object.
-            SkyDomeShader.ShutDown();
+            SkyDomeShader?.ShutDown();
             SkyDomeShader = null;
             // Release the Terrain Shader ibject.
             TerrainShader?.ShutDown();

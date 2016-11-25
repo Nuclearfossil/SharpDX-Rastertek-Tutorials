@@ -94,14 +94,14 @@ namespace DSharpDXRastertek.Series2.TutTerr07.Graphics.Shaders
 
                 // Setup the description of the gradient constant buffer that is in the pixel shader.
                 BufferDescription gradientBufferDesc = new BufferDescription()
-              {
-                  Usage = ResourceUsage.Dynamic,
-                  SizeInBytes = Utilities.SizeOf<DGradientBuffer>(),
-                  BindFlags = BindFlags.ConstantBuffer,
-                  CpuAccessFlags = CpuAccessFlags.Write,
-                  OptionFlags = ResourceOptionFlags.None,
-                  StructureByteStride = 0
-              };
+                {
+                    Usage = ResourceUsage.Dynamic,
+                    SizeInBytes = Utilities.SizeOf<DGradientBuffer>(),
+                    BindFlags = BindFlags.ConstantBuffer,
+                    CpuAccessFlags = CpuAccessFlags.Write,
+                    OptionFlags = ResourceOptionFlags.None,
+                    StructureByteStride = 0
+                };
 
                 // Create the constant buffer pointer so we can access the pixel shader constant buffer from within this class.
                 ConstantGradientBuffer = new SharpDX.Direct3D11.Buffer(device, gradientBufferDesc);

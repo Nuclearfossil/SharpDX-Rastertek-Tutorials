@@ -169,8 +169,8 @@ namespace DSharpDXRastertek.Series2.TutTerr07.Graphics
             // Reset the world matrix.
             worldMatrix = direct3D.WorldMatrix;
             // Turn the Z buffer back and back face culling on.
-            direct3D.TurnOnCulling();
             direct3D.TurnZBufferOn();
+            direct3D.TurnOnCulling();
 
             // Turn on wire frame rendering of the terrain if needed.
             if (WireFrame)

@@ -3,12 +3,10 @@ using SharpDX;
 using SharpDX.Direct3D;
 using SharpDX.Direct3D11;
 using SharpDX.DXGI;
-using System.Collections.Generic;
-using System.Drawing;
+using System;
+using System.Globalization;
 using System.IO;
 using System.Runtime.InteropServices;
-using System; 
-using System.Globalization;
 
 namespace DSharpDXRastertek.Series2.TutTerr07.Graphics.Models
 {
@@ -39,24 +37,15 @@ namespace DSharpDXRastertek.Series2.TutTerr07.Graphics.Models
         public int IndexCount { get; private set; }
         public DModelType[] Model { get; private set; }
 
-        //public List<DHeightMapType> HeightMap = new List<DHeightMapType>();
-
         // Constructor
         public DSkyDome() { }
 
         // Methods.
         public bool Initialize(SharpDX.Direct3D11.Device device, string setupFilename)
         {
-            //// Get the terrain filename, dimensions, and so forth from the setup file.
-            //if (!LoadSetupFile(setupFilename))
-            //    return false;
-
             // Load in the sky dome model.
             if (!LoadSkyDomeModel(setupFilename))
                 return false;
-
-            // Setup the X and Z coordinates for the height map as well as scale the terrain height by the height scale value.
-            // SetTerrainCoordinates();
 
             // Initialize the vertex and index buffer that hold the geometry for the terrain.
             if (!InitializeBuffers(device))
@@ -152,68 +141,6 @@ namespace DSharpDXRastertek.Series2.TutTerr07.Graphics.Models
 
             return true;
         }
-
-        //private bool LoadSetupFile(string setupFilename)
-        //{
-        //    // Open the setup file.  If it could not open the file then exit.
-        //    setupFilename = DSystemConfiguration.DataFilePath + setupFilename;
-
-        //    // Get all the lines containing the font data.
-        //    var setupLines = File.ReadAllLines(setupFilename);
-
-        //    // Read in the terrain file name.
-        //    m_TerrainHeightManName = setupLines[0].Trim("Terrain Filename: ".ToCharArray());
-        //    // Read in the terrain height & width.
-        //    m_TerrainHeight = int.Parse(setupLines[1].Trim("Terrain Height: ".ToCharArray()));
-        //    m_TerrainWidth = int.Parse(setupLines[2].Trim("Terrain Width: ".ToCharArray()));
-        //    // Read in the terrain height scaling.
-        //    m_TerrainScale = float.Parse(setupLines[3].Trim("Terrain Scaling: ".ToCharArray()));
-
-        //    return true;
-        //}
-        //private void SetTerrainCoordinates()
-        //{
-        //    for (var i = 0; i < HeightMap.Count; i++)
-        //    {
-        //        var temp = HeightMap[i];
-        //        temp.y /= m_TerrainScale;
-        //        HeightMap[i] = temp;
-        //    }
-        //}
-        //private bool LoadHeightMap()
-        //{
-        //    Bitmap bitmap;
-
-        //    try
-        //    {
-        //        // Open the height map file in binary.
-        //        bitmap = new Bitmap(DSystemConfiguration.TextureFilePath + m_TerrainHeightManName);
-        //    }
-        //    catch
-        //    {
-        //        return false;
-        //    }
-
-        //    // Check if the width and height are correct acording to bitmap file.
-        //    if (m_TerrainWidth != bitmap.Width || m_TerrainHeight != bitmap.Height)
-        //        return false;
-
-        //    // Create the structure to hold the height map data.
-        //    HeightMap = new List<DHeightMapType>(m_TerrainWidth * m_TerrainHeight);
-        //    bitmap.RotateFlip(RotateFlipType.RotateNoneFlipY);
-
-        //    // Read the image data into the height map
-        //    for (var j = 0; j < m_TerrainHeight; j++)
-        //        for (var i = 0; i < m_TerrainWidth; i++)
-        //            HeightMap.Add(new DHeightMapType()
-        //            {
-        //                x = i,
-        //                y = bitmap.GetPixel(i, j).R,
-        //                z = j
-        //            });
-
-        //    return true;
-        //}
         private bool InitializeBuffers(SharpDX.Direct3D11.Device device)
         {
             try
