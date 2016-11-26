@@ -101,6 +101,7 @@ namespace DSharpDXRastertek.Tut06.System
             Graphics?.ShutDown();
             Graphics = null;
             Input = null;
+            Configuration = null;
         }
         private void ShutdownWindows()
         {

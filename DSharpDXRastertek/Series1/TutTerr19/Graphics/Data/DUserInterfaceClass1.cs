@@ -76,11 +76,16 @@ namespace DSharpDXRastertek.TutTerr19.Graphics.Data
         public void ShutDown()
         {
             // Release the position text strings.
+            foreach (DText sent in VideoStrings)
+                sent?.Shutdown();
             VideoStrings = null;
+
             // Release the position text strings.
             foreach (DText sentence in PositionStrings)
                 sentence?.Shutdown();
             PositionStrings = null;
+
+            PreviousPositions = null;
             // Release the fps text string.
             FpsString?.Shutdown();
             FpsString = null;

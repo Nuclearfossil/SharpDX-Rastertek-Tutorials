@@ -557,6 +557,11 @@ namespace DSharpDXRastertek.TutTerr17.Graphics.Models
         }
         private void ShutdownBuffers()
         {
+            // Release the Textures within this class.
+            ColorTexture?.ShutDown();
+            ColorTexture = null;
+            NormalMapTexture?.ShutDown();
+            NormalMapTexture = null;
             // Return the index buffer.
             IndexBuffer?.Dispose();
             IndexBuffer = null;

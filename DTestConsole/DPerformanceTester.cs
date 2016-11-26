@@ -151,7 +151,9 @@ namespace TestConsole
                 WriteFPSTest();
 
             SampleFloatSet.Clear();
+            SampleFloatSet = null;
             sb.Clear();
+            sb = null;
         }
     }
 }

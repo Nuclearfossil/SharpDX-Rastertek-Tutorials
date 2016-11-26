@@ -134,6 +134,7 @@ namespace DSharpDXRastertek.Tut14.System
             // Release DriectInput related object.
             Input?.Shutdown();
             Input = null;
+            Configuration = null;
         }
         private void ShutdownWindows()
         {

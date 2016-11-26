@@ -78,6 +78,7 @@ namespace DSharpDXRastertek.TutTerr12.Graphics.Models
             // Release the arrays now that the buffers have been created and loaded.
             vertices = null;
             indices = null;
+            ReleaseSkyDomeModel();
 
             return true;
         }

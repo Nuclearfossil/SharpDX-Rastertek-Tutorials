@@ -161,6 +161,7 @@ namespace DSharpDXRastertek.Tut48.System
             // Release DriectInput related object.
             Input?.Shutdown();
             Input = null;
+            Configuration = null;
         }
         private void ShutdownWindows()
         {

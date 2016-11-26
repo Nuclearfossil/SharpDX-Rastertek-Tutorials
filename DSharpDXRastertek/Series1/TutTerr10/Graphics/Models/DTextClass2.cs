@@ -333,6 +333,9 @@ namespace DSharpDXRastertek.TutTerr10.Graphics.Models
             // Create the index buffer.
             sentence.IndexBuffer = SharpDX.Direct3D11.Buffer.Create(device, BindFlags.IndexBuffer, indices);
 
+            vertices = null;
+            indices = null;
+
             return true;
         }
         private bool UpdateSentence2(ref DSentence sentence, string text, int positionX, int positionY, float red, float green, float blue, DeviceContext deviceContext)
@@ -379,6 +382,9 @@ namespace DSharpDXRastertek.TutTerr10.Graphics.Models
             deviceContext.UnmapSubresource(sentence.VertexBuffer, 0);
             #endregion
 
+            vertices?.Clear();
+            vertices = null;
+
             return true;
         }
         private bool UpdateSentece(ref DSentence sentence, string text, int positionX, int positionY, float red, float green, float blue, DeviceContext deviceContext)
@@ -419,6 +425,9 @@ namespace DSharpDXRastertek.TutTerr10.Graphics.Models
             // Unlock the vertex buffer.
             deviceContext.UnmapSubresource(sentence.VertexBuffer, 0);
             #endregion
+
+            vertices?.Clear();
+            vertices = null;
 
             return true;
         }

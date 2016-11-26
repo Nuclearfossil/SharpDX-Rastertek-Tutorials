@@ -118,6 +118,7 @@ namespace DSharpDXRastertek.TutTerr14.Graphics.Models
             // Release all sentances however many there may be.
             foreach (DSentence sentance in sentences)
                 ReleaseSentences(sentance);
+            sentences = null;
 
             // Release the font shader object.
             FontShader?.Shuddown();
@@ -376,6 +377,9 @@ namespace DSharpDXRastertek.TutTerr14.Graphics.Models
             deviceContext.UnmapSubresource(sentence.VertexBuffer, 0);
             #endregion
 
+            vertices?.Clear();
+            vertices = null;
+
             return true;
         }
         private bool UpdateSentece(ref DSentence sentence, string text, int positionX, int positionY, float red, float green, float blue, DeviceContext deviceContext)
@@ -415,6 +419,9 @@ namespace DSharpDXRastertek.TutTerr14.Graphics.Models
             // Unlock the vertex buffer.
             deviceContext.UnmapSubresource(sentence.VertexBuffer, 0);
             #endregion
+
+            vertices?.Clear();
+            vertices = null;
 
             return true;
         }

@@ -32,7 +32,6 @@ namespace DSharpDXRastertek.TutTerr19.Graphics.Models
         const int NUM_SENTENCES = 12;
 
         // Properties
-        public DFontShader FontShader;
         public int ScreenWidth;
         public int ScreenHeight;
         public DSentence[] sentences = new DSentence[NUM_SENTENCES];
@@ -71,10 +70,18 @@ namespace DSharpDXRastertek.TutTerr19.Graphics.Models
             // Release all sentances however many there may be.
             foreach (DSentence sentance in sentences)
                 ReleaseSentences(sentance);
+            sentences = null;
 
-            // Release the font shader object.
-            FontShader?.Shuddown();
-            FontShader = null;
+            // Release the DText vertex buffer.
+            VertexBuffer?.Dispose();
+            VertexBuffer = null;
+            VertexBuffer2?.Dispose();
+            VertexBuffer2 = null;
+            // Release the DText index buffer.
+            IndexBuffer?.Dispose();
+            IndexBuffer = null;
+            VertexBuffer2?.Dispose();
+            VertexBuffer2 = null;
         }
         public bool Render(DeviceContext deviceContext, DShaderManager shaderManager, Matrix worldMatrix, Matrix viewMatrix, Matrix orthoMatrix, ShaderResourceView fontTexture)
         {
@@ -195,6 +202,9 @@ namespace DSharpDXRastertek.TutTerr19.Graphics.Models
             {
                 // Perform same mapping and writings code as above except for the shadows offset position for the effect.
             }
+
+            vertices?.Clear();
+            vertices = null;
 
             return true;
         }

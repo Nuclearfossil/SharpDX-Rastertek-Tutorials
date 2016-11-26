@@ -110,6 +110,7 @@ namespace DSharpDXRastertek.TutTerr05.Graphics.Models
             // Release all sentances however many there may be.
             foreach (DSentence sentance in sentences)
                 ReleaseSentences(sentance);
+            sentences = null;
 
             // Release the font object.
             Font?.Shutdown();
@@ -323,6 +324,9 @@ namespace DSharpDXRastertek.TutTerr05.Graphics.Models
             // Create the index buffer.
             sentence.IndexBuffer = SharpDX.Direct3D11.Buffer.Create(device, BindFlags.IndexBuffer, indices);
 
+            vertices = null;
+            indices = null;
+
             return true;
         }
         private bool UpdateSentece(ref DSentence sentence, string text, int positionX, int positionY, float red, float green, float blue, DeviceContext deviceContext)
@@ -362,6 +366,9 @@ namespace DSharpDXRastertek.TutTerr05.Graphics.Models
             // Unlock the vertex buffer.
             deviceContext.UnmapSubresource(sentence.VertexBuffer, 0);
             #endregion
+
+            vertices?.Clear();
+            vertices = null;
 
             return true;
         }

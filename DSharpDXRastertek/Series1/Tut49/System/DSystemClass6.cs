@@ -81,6 +81,7 @@ namespace DSharpDXRastertek.Tut49.System
             // Release the graphics object.
             DApplication?.ShutDown();
             DApplication = null;
+            Configuration = null;
         }
         private void ShutdownWindows()
         {

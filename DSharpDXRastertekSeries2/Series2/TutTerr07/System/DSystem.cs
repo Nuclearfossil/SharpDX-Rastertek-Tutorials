@@ -96,6 +96,7 @@ namespace DSharpDXRastertek.Series2.TutTerr07.System
             // Release the graphics object.
             DApplication?.Shutdown();
             DApplication = null;
+            Configuration = null;
         }
         private void ShutdownWindows()
         {
