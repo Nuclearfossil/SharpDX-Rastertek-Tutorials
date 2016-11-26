@@ -71,10 +71,7 @@ namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Models
             {
                 // Open the model file.
                 string[] lines = File.ReadAllLines(skyDomeModelFileName);
-                byte[] bytesData = File.ReadAllBytes(skyDomeModelFileName);
-
-                ushort ttt = BitConverter.ToUInt16(bytesData, 0);
-
+              
                 // Read up to the value of vertex count.
                 int lineIndex = 0;
                 bool found = false;
@@ -136,6 +133,8 @@ namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Models
                     Model[vertexWriteIndex].nz = float.Parse(segments[7], NumberStyles.Float, CultureInfo.InvariantCulture);
                     vertexWriteIndex++;
                 }
+
+                lines = null;
             }
             catch (Exception)
             {

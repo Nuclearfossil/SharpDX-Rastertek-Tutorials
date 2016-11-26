@@ -105,9 +105,6 @@ namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Models
             if (!InitializeBuffers(device))
                 return false;
             
-            // We can now release the height map since it is no longer needed in memory once the 3D terrain model has been built.
-            ShutdownHeightMap();
-
             return true;
         }
 
@@ -257,6 +254,10 @@ namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Models
                         index++;
                     }
                 }
+
+                // For memorys sake, clear these no longer referenced 'DHeightMapType' List since they were just passed to another array above.
+                HeightMap?.Clear();
+                HeightMap = null;
             }
             catch
             {
@@ -604,6 +605,9 @@ namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Models
                     indices[i] = i;
                 }
 
+                // Yo AVOID OutOfMemory Exceptions being trown first,  release the height map since it is no longer needed in memory once the 3D terrain model has been built.
+                ShutdownHeightMap();
+
                 // Create the vertex buffer.
                 VertexBuffer = SharpDX.Direct3D11.Buffer.Create(device, BindFlags.VertexBuffer, vertices);
 
@@ -614,7 +618,7 @@ namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Models
                 vertices = null;
                 indices = null;
             }
-            catch
+            catch (Exception ex)
             {
                 return false;
             }
@@ -641,8 +645,6 @@ namespace DSharpDXRastertek.Series2.TutTerr08.Graphics.Models
         {
             // Release the height map array.    
             TerrainModel = null;
-            HeightMap?.Clear();
-            HeightMap = null;
         }
         public void Render(DeviceContext deviceContext)
         {
