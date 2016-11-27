@@ -76,7 +76,7 @@ namespace DSharpDXRastertek.Series2.TutTerr11.Graphics.Models
 
         // Constructor
         public DTerrain() { }
-
+         
         // Methods.
         public bool Initialize(SharpDX.Direct3D11.Device device, string setupFilename)
         {

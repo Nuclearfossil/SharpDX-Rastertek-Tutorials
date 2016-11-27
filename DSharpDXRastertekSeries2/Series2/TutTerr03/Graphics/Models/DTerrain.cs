@@ -65,9 +65,6 @@ namespace DSharpDXRastertek.Series2.TutTerr03.Graphics.Models
             if (!InitializeBuffers(device))
                 return false;
 
-            // We can now release the height map since it is no longer needed in memory once the 3D terrain model has been built.
-            ShutdownHeightMap();
-
             return true;
         }
         private bool LoadSetupFile(string setupFilename)
@@ -85,6 +82,8 @@ namespace DSharpDXRastertek.Series2.TutTerr03.Graphics.Models
             m_TerrainWidth = int.Parse(setupLines[2].Trim("Terrain Width: ".ToCharArray()));
             // Read in the terrain height scaling.
             m_TerrainScale = float.Parse(setupLines[3].Trim("Terrain Scaling: ".ToCharArray()));
+
+            setupLines = null;
 
             return true;
         }
@@ -210,6 +209,8 @@ namespace DSharpDXRastertek.Series2.TutTerr03.Graphics.Models
                         #endregion
                     }
                 }
+
+                ShutdownHeightMap();
 
                 // Create the vertex buffer.
                 VertexBuffer = SharpDX.Direct3D11.Buffer.Create(device, BindFlags.VertexBuffer, vertices);

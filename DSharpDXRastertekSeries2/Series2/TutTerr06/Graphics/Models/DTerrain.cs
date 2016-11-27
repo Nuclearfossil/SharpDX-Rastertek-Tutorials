@@ -104,10 +104,7 @@ namespace DSharpDXRastertek.Series2.TutTerr06.Graphics.Models
             // Initialize the vertex and index buffer that hold the geometry for the terrain.
             if (!InitializeBuffers(device))
                 return false;
-            
-            // We can now release the height map since it is no longer needed in memory once the 3D terrain model has been built.
-            ShutdownHeightMap();
-
+           
             return true;
         }
         private bool BuildTerrainModel()
@@ -215,6 +212,10 @@ namespace DSharpDXRastertek.Series2.TutTerr06.Graphics.Models
                         index++;
                     }
                 }
+
+                // For memorys sake, clear these no longer referenced 'DHeightMapType' List since they were just passed to another array above.
+                HeightMap?.Clear();
+                HeightMap = null;
             }
             catch
             {
@@ -378,7 +379,7 @@ namespace DSharpDXRastertek.Series2.TutTerr06.Graphics.Models
                 }
 
             // Release the bitmap image data.
-            colourBitMap.Dispose();
+            colourBitMap?.Dispose();
             colourBitMap = null;
 
             return true;
@@ -521,6 +522,8 @@ namespace DSharpDXRastertek.Series2.TutTerr06.Graphics.Models
             // Read in the ColorMap File Name.
             m_ColorMapName = setupLines[4].TrimStart("Color Map Filename: ".ToCharArray());
 
+            setupLines = null;
+
             return true;
         }
         private void SetTerrainCoordinates()
@@ -598,6 +601,9 @@ namespace DSharpDXRastertek.Series2.TutTerr06.Graphics.Models
 
                     indices[i] = i;
                 }
+
+                ShutdownHeightMap();
+
                 // Create the vertex buffer.
                 VertexBuffer = SharpDX.Direct3D11.Buffer.Create(device, BindFlags.VertexBuffer, vertices);
 
@@ -635,8 +641,6 @@ namespace DSharpDXRastertek.Series2.TutTerr06.Graphics.Models
         {
             // Release the height map array.
             TerrainModel = null;
-            HeightMap?.Clear();
-            HeightMap = null;
         }
         public void Render(DeviceContext deviceContext)
         {

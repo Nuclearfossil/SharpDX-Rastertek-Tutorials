@@ -57,9 +57,6 @@ namespace DSharpDXRastertek.Series2.TutTerr11.Graphics.Models
             // Set the color at the center of the sky dome.
             m_centerColor = new Vector4(0.0f, 0.5f, 0.8f, 1.0f);
 
-            // We can now release the height map since it is no longer needed in memory once the 3D terrain model has been built.
-            ShutdownHeightMap();
-
             return true;
         }
 
@@ -71,10 +68,7 @@ namespace DSharpDXRastertek.Series2.TutTerr11.Graphics.Models
             {
                 // Open the model file.
                 string[] lines = File.ReadAllLines(skyDomeModelFileName);
-                byte[] bytesData = File.ReadAllBytes(skyDomeModelFileName);
-
-                ushort ttt = BitConverter.ToUInt16(bytesData, 0);
-
+               
                 // Read up to the value of vertex count.
                 int lineIndex = 0;
                 bool found = false;
@@ -136,6 +130,8 @@ namespace DSharpDXRastertek.Series2.TutTerr11.Graphics.Models
                     Model[vertexWriteIndex].nz = float.Parse(segments[7], NumberStyles.Float, CultureInfo.InvariantCulture);
                     vertexWriteIndex++;
                 }
+
+                lines = null;
             }
             catch (Exception)
             {
@@ -159,6 +155,8 @@ namespace DSharpDXRastertek.Series2.TutTerr11.Graphics.Models
                     vertices[i].position = new Vector3(Model[i].x, Model[i].y, Model[i].z);
                     indices[i] = i;
                 }
+
+                ShutdownHeightMap();
 
                 // Create the vertex buffer.
                 VertexBuffer = SharpDX.Direct3D11.Buffer.Create(device, BindFlags.VertexBuffer, vertices);

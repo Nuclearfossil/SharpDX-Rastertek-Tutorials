@@ -79,9 +79,6 @@ namespace DSharpDXRastertek.Series2.TutTerr05.Graphics.Models
             if (!InitializeBuffers(device))
                 return false;
 
-            // We can now release the height map since it is no longer needed in memory once the 3D terrain model has been built.
-            ShutdownHeightMap();
-
             return true;
         }
         private bool LoadColorMap()
@@ -119,7 +116,7 @@ namespace DSharpDXRastertek.Series2.TutTerr05.Graphics.Models
                 }
 
             // Release the bitmap image data.
-            colourBitMap.Dispose();
+            colourBitMap?.Dispose();
             colourBitMap = null;
 
             return true;
@@ -262,6 +259,8 @@ namespace DSharpDXRastertek.Series2.TutTerr05.Graphics.Models
             // Read in the ColorMap File Name.
             m_ColorMapName = setupLines[4].TrimStart("Color Map Filename: ".ToCharArray());
 
+            setupLines = null;
+
             return true;
         }
         private void SetTerrainCoordinates()
@@ -398,6 +397,8 @@ namespace DSharpDXRastertek.Series2.TutTerr05.Graphics.Models
                         #endregion
                     }
                 }
+
+                ShutdownHeightMap();
 
                 // Create the vertex buffer.
                 VertexBuffer = SharpDX.Direct3D11.Buffer.Create(device, BindFlags.VertexBuffer, vertices);

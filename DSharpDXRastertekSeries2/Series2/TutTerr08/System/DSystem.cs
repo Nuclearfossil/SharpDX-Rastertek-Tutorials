@@ -18,26 +18,30 @@ namespace DSharpDXRastertek.Series2.TutTerr08.System
         public static void StartRenderForm(string title, int width, int height, bool vSync, bool fullScreen = true, int testTimeSeconds = 0)
         {
             DSystem system = new DSystem();
-            system.Initialize(title, width, height, vSync, fullScreen, testTimeSeconds);
+            // To address the scenario that your Graphics card does not have enough memory to load this tutorial, we will shutdiwb abd returb execution of this tutorial when failing to initialize due to an OutOfMemory Error.
+            if (!system.Initialize(title, width, height, vSync, fullScreen, testTimeSeconds))
+            {
+                system?.ShutDown();
+                return;
+            }
             system.RunRenderForm();
         }
         // Methods
         public virtual bool Initialize(string title, int width, int height, bool vSync, bool fullScreen, int testTimeSeconds)
         {
-            bool result = false;
+            bool result = true;
 
             if (Configuration == null)
                 Configuration = new DSystemConfiguration(title, width, height, fullScreen, vSync);
 
             // Initialize Window.
             InitializeWindows(title);
-
             // Create the application wrapper object.
             DApplication = new DApplication();
 
             // Initialize the application wrapper object.
             if (!DApplication.Initialize(Configuration, RenderForm.Handle))
-                return false;
+                result = false;
 
             DPerfLogger.Initialize("RenderForm C# SharpDX: " + Configuration.Width + "x" + Configuration.Height + " VSync:" + DSystemConfiguration.VerticalSyncEnabled + " FullScreen:" + DSystemConfiguration.FullScreen + "   " + RenderForm.Text, testTimeSeconds, Configuration.Width, Configuration.Height); ;
 
@@ -69,7 +73,7 @@ namespace DSharpDXRastertek.Series2.TutTerr08.System
         }
         public bool Frame()
         {
-            // Read the user input.
+            // Read the user input.     
             if (!DApplication.Input.Frame() || DApplication.Input.IsEscapePressed())
                 return false;
 

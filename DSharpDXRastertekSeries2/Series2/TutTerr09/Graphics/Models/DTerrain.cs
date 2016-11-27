@@ -107,10 +107,7 @@ namespace DSharpDXRastertek.Series2.TutTerr09.Graphics.Models
             // Create and load the cells with the terrain data.
             if (!LoadTerrainCells(device))
                 return false;
-            
-            // We can now release the height map since it is no longer needed in memory once the 3D terrain model has been built.
-            ShutdownHeightMap();
-
+           
             return true;
         }
         private bool LoadTerrainCells(SharpDX.Direct3D11.Device device)
@@ -135,7 +132,9 @@ namespace DSharpDXRastertek.Series2.TutTerr09.Graphics.Models
                     if (!TerrainCells[index].Initialize(device, TerrainModel, i, j, cellHeight, cellWidth, m_TerrainWidth))
                         return false;
                 }
-             
+
+            ShutdownHeightMap();
+
             return true;
         }
         private bool LoadRawHeightMap()
@@ -277,6 +276,9 @@ namespace DSharpDXRastertek.Series2.TutTerr09.Graphics.Models
                         index++;
                     }
                 }
+
+                HeightMap?.Clear();
+                HeightMap = null;
             }
             catch
             {
@@ -440,7 +442,7 @@ namespace DSharpDXRastertek.Series2.TutTerr09.Graphics.Models
                 }
 
             // Release the bitmap image data.
-            colourBitMap.Dispose();
+            colourBitMap?.Dispose();
             colourBitMap = null;
 
             return true;
@@ -583,6 +585,8 @@ namespace DSharpDXRastertek.Series2.TutTerr09.Graphics.Models
             // Read in the ColorMap File Name.
             m_ColorMapName = setupLines[4].TrimStart("Color Map Filename: ".ToCharArray());
 
+            setupLines = null;
+
             return true;
         }
         private void SetTerrainCoordinates()
@@ -605,8 +609,7 @@ namespace DSharpDXRastertek.Series2.TutTerr09.Graphics.Models
         {
             // Release the height map array.
             TerrainModel = null;
-            HeightMap?.Clear();
-            HeightMap = null;
+           
         }
         private void ShutdownTerrainCells()
         {
