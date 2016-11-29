@@ -19,12 +19,10 @@ namespace DSharpDXRastertek.Series2.TutTerr08.System
         {
             DSystem system = new DSystem();
             // To address the scenario that your Graphics card does not have enough memory to load this tutorial, we will shutdiwb abd returb execution of this tutorial when failing to initialize due to an OutOfMemory Error.
-            if (!system.Initialize(title, width, height, vSync, fullScreen, testTimeSeconds))
-            {
+            if (system.Initialize(title, width, height, vSync, fullScreen, testTimeSeconds))
+                system.RunRenderForm();
+            else
                 system?.ShutDown();
-                return;
-            }
-            system.RunRenderForm();
         }
         // Methods
         public virtual bool Initialize(string title, int width, int height, bool vSync, bool fullScreen, int testTimeSeconds)
