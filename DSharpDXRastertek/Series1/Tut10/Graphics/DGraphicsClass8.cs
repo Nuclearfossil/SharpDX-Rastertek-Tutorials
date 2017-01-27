@@ -142,7 +142,7 @@ namespace DSharpDXRastertek.Tut10.Graphics
         // Static Methods
         public static void Rotate()
         {
-            Rotation += D3DX_PI * 0.005f; // (float)Math.PI
+            Rotation += D3DX_PI * 0.0005f; // (float)Math.PI
 
             if (Rotation > 360)
                 Rotation -= 360;
