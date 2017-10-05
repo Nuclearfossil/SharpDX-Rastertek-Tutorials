@@ -101,7 +101,7 @@ namespace DSharpDXRastertek.Tut28.System
             }
 
             // Finally render the graphics to the screen.
-            if (!Graphics.Frame(4.3f))
+            if (!Graphics.Frame(Timer.FrameTime))
                 return false;
 
             // Finally render the graphics to the screen.

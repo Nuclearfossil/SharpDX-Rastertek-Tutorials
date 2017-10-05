@@ -117,7 +117,7 @@ namespace DSharpDXRastertek.Tut28.Graphics
 
                 #region Initialize Variables
                 // Set the fade in time to 3000 milliseconds
-                FadeInTime = 3000;
+                FadeInTime = 5000;
                 // Initialize the accumulated time to zero milliseconds.
                 AccumulatedTime = 0;
                 // Initialize the fade percentage to zero at first so the scene is black.
