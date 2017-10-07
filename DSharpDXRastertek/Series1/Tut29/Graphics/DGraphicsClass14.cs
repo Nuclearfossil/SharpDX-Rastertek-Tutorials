@@ -36,10 +36,6 @@ namespace DSharpDXRastertek.Tut29.Graphics
         #endregion     
 
         #region Variables
-        private float FadeInTime { get; set; }
-        private float AccumulatedTime { get; set; }
-        private float FadePercentage { get; set; }
-        private bool FadeDone { get; set; }
         private float WaterHeight { get; set; }
         private float WaterTranslation { get; set; }
         #endregion
