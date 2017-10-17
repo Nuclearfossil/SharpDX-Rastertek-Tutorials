@@ -71,7 +71,7 @@ namespace DSharpDXRastertek.Tut32.Graphics
                 // Create the wall model class.
                 WindowModel = new DModel();
 
-                // Initialize the wall model object.    "lens2.txt"   "triangle.txt"
+                // Initialize the wall model object.
                 if (!WindowModel.Initialize(D3D.Device, "square.txt", new[] { "glass01.bmp", "bump03.bmp" }))
                 {
                     MessageBox.Show("Could not initialize the wall model object", "Error", MessageBoxButtons.OK);
