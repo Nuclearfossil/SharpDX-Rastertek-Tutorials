@@ -119,15 +119,16 @@ namespace DSharpDXRastertek.Tut13.Input
             catch (SharpDX.SharpDXException ex)
             {
                 resultCode = ex.Descriptor; // ex.ResultCode;
-            }
-            catch (Exception)
-            {
                 return false;
             }
+            //catch (Exception)
+            //{
+            //    return false;
+            //}
 
             // Error usually occurs when mouse pointer is off the window and pressed. Short dircuit re aquisition of the mouse when the Mouse cursor if off the Windows.
-            if (DSystem.IsMouseOffScreen)
-                return true;
+            //if (DSystem.IsMouseOffScreen)
+            //    return true;
 
             // If the keyboard lost focus or was not acquired then try to get control back.
             if (resultCode == ResultCode.InputLost || resultCode == ResultCode.NotAcquired)

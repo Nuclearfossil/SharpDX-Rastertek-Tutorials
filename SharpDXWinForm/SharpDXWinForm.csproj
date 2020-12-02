@@ -68,10 +68,10 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>FBB9A8FF9692D44E7CEB5D04F82496DEEECEEFB5</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>D004E8BA70A8E1D693C618989BD93AEFFBE033C2</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>SharpDXWinForm_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>SharpDXWinForm_1_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -1497,6 +1497,7 @@
     <Content Include="Series2\TutTerr14\Shaders\texture.vs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="SharpDXWinForm_1_TemporaryKey.pfx" />
     <None Include="SharpDXWinForm_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

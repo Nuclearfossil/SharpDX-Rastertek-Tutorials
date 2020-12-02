@@ -161,9 +161,6 @@ namespace DSharpDXRastertek.Tut26.Graphics
             if (!TextureShader.Render(D3D.DeviceContext, Model.IndexCount, worldMatrix, viewMatrix, projectionMatrix, Model.TextureCollection.Select(item => item.TextureResource).First()))
                 return false;
 
-            // Put the model vertex and index buffers on the graphics pipeline to prepare them for drawing.
-            Model.Render(D3D.DeviceContext);
-
             // Translate to the right by one unit and towards the camera by one unit.
             Matrix.Translation(1, 0, -1, out worldMatrix);
 

@@ -1,15 +1,15 @@
 # SharpDX Rastertek Tutorials Series I
   Install Link: <a href=https://raw.githubusercontent.com/Dan6040/SharpDX-Rastertek-Tutorials/master/SharpDXWinForm/publish/setup.exe>Install WinForms (x86) Edition Executable of This Repo (Published Updates)</a>
   
-This is a C# repository based off the Rastertek Tutorial Series posted on www.Rastertek.com, is a literal conversion of the C++ iimplementations posted on the WebSite, to a .NET C# based implementation using SharpDX 3.0.2, DirectX 11 &amp; WinForms. 
-This is indented for C# developers to use as a reference when trying to learn DirectX 11 3D programminf, especially when most examples using DirectX are written in C++, so this repo is mimiking ALOT of common C++ DirectX style code writing but in your favorite language C#! So please unless you find an error its not intended for new contributions, its easy to run these tutorials as I have included a Winforms UI for executing every Tutorial example found on www.Rastertek.com. Enjoy!.
+This is a C# repository based off the Rastertek Tutorial Series posted on www.Rastertek.com, is a literal conversion of the C++ implementations posted on the WebSite, to a .NET C# based implementation using SharpDX 3.0.2, DirectX 11 &amp; WinForms. 
+This is intended for C# developers to use as a reference when trying to learn DirectX 11 3D programming, especially when most examples using DirectX are written in C++, so this repo is mimiking ALOT of common C++ DirectX style code writing but in your favorite language C#! So please unless you find an error its not intended for new contributions, its easy to run these tutorials as I have included a Winforms UI for executing every Tutorial example found on www.Rastertek.com. Enjoy!.
 
 
 ** Notes:  All Screenshots were taken from this codes execution in C# so what you see is what you will get!. As well as All Performance Test Results in Frames Per Second, were run off my Desktop HP System., that only has DirectX 10.1, and all screen sizes were recorded in 800x600 for both the C++ and C# implementations.
 
 <table><tr><td width="40%">
 
--<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%202%20%20-%20%20Creating%20A%20Framework%20And%20Window%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
+<image src="SharpDXWinForm/Resources/Series%201%20--%20Tutorial%202%20%20-%20%20Creating%20A%20Framework%20And%20Window%20Sm.png?raw="true" width="100%"></td><td valign="top"><h4>
 Tutorial 2: Creating a Framework and Window
 </h4><i>
 -   278 lines   - (C++: 0 FPS C#: 0 FPS)
